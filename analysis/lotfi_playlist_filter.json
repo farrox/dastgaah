@@ -33,78 +33,66 @@
   "kept": [
     {
       "track": "NA - Chaharmezrab Delkash [eOuJWJsMg7Q]",
-      "do": 318.7926947434929,
-      "n_strikes": 310,
-      "onset_rate": 3.5552293663970866,
-      "voice_score": 0.0
+      "do": 318.4762699661344,
+      "n_strikes": 149,
+      "mode": "direct"
+    },
+    {
+      "track": "NA - Chaharmezrab Foroud [yL5PGyIKPFk]",
+      "do": 324.2303658314461,
+      "n_strikes": 101,
+      "mode": "rescued(n=17)"
     },
     {
       "track": "NA - Chaharmezrab [2btvT4nvQGc]",
-      "do": 318.3821571262282,
-      "n_strikes": 438,
-      "onset_rate": 4.2056641143721905,
-      "voice_score": 0.0
+      "do": 317.74532826331017,
+      "n_strikes": 229,
+      "mode": "direct"
     },
     {
       "track": "NA - Daramad Mahur [tx_Zm_LLFYE]",
-      "do": 318.9325013802232,
-      "n_strikes": 274,
-      "onset_rate": 2.668017926098013,
-      "voice_score": 1.0
+      "do": 318.5015998021045,
+      "n_strikes": 241,
+      "mode": "direct"
     },
     {
       "track": "NA - Delkash Part I [t3A_w3lYkj8]",
-      "do": 318.8946495086844,
-      "n_strikes": 197,
-      "onset_rate": 3.366004704934611,
-      "voice_score": 0.0
+      "do": 318.31277318014065,
+      "n_strikes": 167,
+      "mode": "direct"
     },
     {
       "track": "NA - Delkash Part II [e4rLCVnFhyo]",
-      "do": 318.73006745706664,
-      "n_strikes": 349,
-      "onset_rate": 3.4056678806898337,
-      "voice_score": 1.0
+      "do": 318.2332669795409,
+      "n_strikes": 258,
+      "mode": "direct"
     },
     {
       "track": "NA - Foroud [ND2LBrDWLI0]",
-      "do": 317.3780988718367,
-      "n_strikes": 213,
-      "onset_rate": 3.5067695214105794,
-      "voice_score": 0.0
+      "do": 318.32899611004046,
+      "n_strikes": 149,
+      "mode": "direct"
     },
     {
       "track": "NA - Foroud [VGKV9VFX3U4]",
-      "do": 318.66249774797046,
-      "n_strikes": 249,
-      "onset_rate": 3.368089908483799,
-      "voice_score": 1.0
+      "do": 318.48434997297363,
+      "n_strikes": 191,
+      "mode": "direct"
     },
     {
       "track": "NA - Kereshmeh [K8D0Sg3DsPA]",
-      "do": 318.62839884850973,
-      "n_strikes": 121,
-      "onset_rate": 2.9944511355815555,
-      "voice_score": 0.0
+      "do": 317.87546425607536,
+      "n_strikes": 116,
+      "mode": "direct"
     },
     {
       "track": "NA - Zarbi [xTjZow2V5Z4]",
-      "do": 319.4613699205512,
-      "n_strikes": 337,
-      "onset_rate": 3.320177836951095,
-      "voice_score": 0.0
+      "do": 318.703854580376,
+      "n_strikes": 273,
+      "mode": "direct"
     }
   ],
-  "skipped": [
-    {
-      "track": "NA - Chaharmezrab Foroud [yL5PGyIKPFk]",
-      "reasons": [
-        "Do drift -61\u00a2"
-      ],
-      "voice_score": 1.0,
-      "do": 307.966515455454
-    }
-  ],
+  "skipped": [],
   "details": [
     {
       "label": "Re\u2193",
@@ -219,6 +207,6 @@
       "n": 0
     }
   ],
-  "n_strikes": 2488,
-  "median_do": 318.73006745706664
+  "n_strikes": 1874,
+  "median_do": 318.4026330380874
 }
