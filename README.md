@@ -6,7 +6,12 @@ Empirical pitch and scale-degree latch analysis of *Dastgāh-e Māhur* across **
 
 ![Mahur v3 latch fingerprint](output.png)
 
-- **4-Page Empirical Pitch Report:** [`mahur_pitch_analysis.pdf`](mahur_pitch_analysis.pdf) ([`analysis/mahur_pitch_analysis.pdf`](analysis/mahur_pitch_analysis.pdf))
+- **5-Page Empirical Pitch & Historical Theory Report:** [`mahur_pitch_analysis.pdf`](mahur_pitch_analysis.pdf) ([`analysis/mahur_pitch_analysis.pdf`](analysis/mahur_pitch_analysis.pdf))
+  - *Page 1:* 17-Slot Cross-Instrument Latch Fingerprint & Absolute `Do` Spectrum (`199.7–441.5 Hz`).
+  - *Page 2:* Diatonic vs. *Koron* Pair Discrimination (`La/Laᵏ↓`, `Re/Reᵏ`, `Mi/Miᵏ`, `Si/Siᵏ`) & 44,848-Strike Density.
+  - *Page 3:* `13 × 17` Register Coverage Matrix, Rescued Track `Do` Trajectories & Modulating *Gushehs*.
+  - *Page 4:* Setar Shared-Fret Couplings (`Reᵏ→Laᵏ↓`, `Re→La↓`, `Miᵏ→Si↓`, `Mi→Siᵏ`) & 22-Row Reference Table.
+  - *Page 5:* Historical & Modern Theory Comparison — Testing Ṣafī al-Dīn al-Urmawī (*al-Risālah al-Sharafīyah*), ʿAbd al-Qādir al-Marāghī, Al-Fārābī/Zalzal (`13/12`), Vaziri (`24-TET`), and the Shared-Fret Hybrid model (`3.6¢` RMS error across all 16 non-`Do` slots).
 - **2-Page Frequency Extraction DSP Audit & Benchmark:** [`frequency_extraction_audit.pdf`](frequency_extraction_audit.pdf) ([`analysis/frequency_extraction_audit.pdf`](analysis/frequency_extraction_audit.pdf))
 
 ---
