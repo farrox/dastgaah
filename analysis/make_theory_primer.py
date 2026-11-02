@@ -719,6 +719,10 @@ def page10() -> str:
             (138.6, "+139¢", "13/12", "Reᵏ (Fārābī)", "#DC2626"),
             (294.1, "+294¢", "32/27", "Mi♭ (32/27)", "#2563EB"),
             (498.0, "+498¢", "4/3", "Pure 4th", "#16A34A"),
+        ], [
+            (0.0, 138.6, "139¢"),
+            (138.6, 294.1, "155¢"),
+            (294.1, 498.0, "204¢"),
         ], "Steps: 13/12 (138.6¢) + 155.5¢ + 9/8 (203.9¢) = 4/3 (498¢) · Qajar variant: limma 256/243 (90.2¢)", 145),
 
         ("2. Dāng-e Māhūr (Māhūr, Rāst-Panjgāh)", [
@@ -726,6 +730,10 @@ def page10() -> str:
             (203.9, "+204¢", "9/8", "Re (9/8)", "#2563EB"),
             (407.8, "+408¢", "81/64 | 5/4", "Mi (ditone/5:4)", "#D97706"),
             (498.0, "+498¢", "4/3", "Fa (4/3)", "#16A34A"),
+        ], [
+            (0.0, 203.9, "204¢"),
+            (203.9, 407.8, "204¢"),
+            (407.8, 498.0, "90¢"),
         ], "Steps: 9/8 (204¢) + 9/8 (204¢) + 256/243 (90¢) = 4/3 · Major 3rd: Marāghī 81/64 vs Urmawī 5/4 (386¢)", 295),
 
         ("3. Dāng-e Chahārgāh (Augmented 2nd)", [
@@ -733,6 +741,10 @@ def page10() -> str:
             (138.6, "+139¢", "13/12", "Reᵏ (13/12)", "#DC2626"),
             (407.8, "+408¢", "81/64", "Mi (81/64)", "#D97706"),
             (498.0, "+498¢", "4/3", "Fa (4/3)", "#16A34A"),
+        ], [
+            (0.0, 138.6, "139¢"),
+            (138.6, 407.8, "269¢"),
+            (407.8, 498.0, "90¢"),
         ], "Steps: ~139¢ (13/12) + ~269¢ (augmented 2nd) + ~90¢ (limma) = 4/3 (498¢)", 445),
 
         ("4. Dāng-e Esfahān / Minor (T-S-T)", [
@@ -740,23 +752,36 @@ def page10() -> str:
             (203.9, "+204¢", "9/8", "Re (9/8)", "#2563EB"),
             (294.1, "+294¢", "32/27 | 6/5", "Mi♭ (Pyth/Just)", "#9333EA"),
             (498.0, "+498¢", "4/3", "Fa (4/3)", "#16A34A"),
+        ], [
+            (0.0, 203.9, "204¢"),
+            (203.9, 294.1, "90¢"),
+            (294.1, 498.0, "204¢"),
         ], "Steps: 9/8 (204¢) + 256/243 (90¢) + 9/8 (204¢) = 4/3 · Minor 3rd: 32/27 (294.1¢) vs Just 6/5 (315.6¢)", 595),
     ]
 
     x0, x1 = 810, 1330
-    for title, notes, desc, y in dangs:
+    for title, notes, step_intervals, desc, y in dangs:
         o.append(f'<rect x="785" y="{y}" width="570" height="135" rx="6" fill="#F8FAFC" stroke="#CBD5E1"/>')
         o.append(f'<text x="800" y="{y+22}" font-size="12.5" font-weight="700" fill="#0F172A">{title}</text>')
         o.append(f'<line x1="{x0}" y1="{y+62}" x2="{x1}" y2="{y+62}" stroke="#94A3B8" stroke-width="2"/>')
+
+        # Interval step labels directly on the line segments
+        for s_start, s_end, s_label in step_intervals:
+            sx0 = x0 + (s_start / 498.0) * (x1 - x0)
+            sx1 = x0 + (s_end / 498.0) * (x1 - x0)
+            smid = 0.5 * (sx0 + sx1)
+            # Subtle bracket or interval badge
+            o.append(f'<rect x="{smid-14:.1f}" y="{y+53}" width="28" height="18" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>')
+            o.append(f'<text x="{smid:.1f}" y="{y+66}" font-size="9" font-weight="700" class="mono" fill="#475569" text-anchor="middle">{s_label}</text>')
 
         for c_val, c_str, rat_str, lbl, col in notes:
             xx = x0 + (c_val / 498.0) * (x1 - x0)
             o.append(f'<circle cx="{xx:.1f}" cy="{y+62}" r="5.5" fill="{col}"/>')
             o.append(f'<text x="{xx:.1f}" y="{y+43}" font-size="10.5" font-weight="700" fill="{col}" text-anchor="middle">{rat_str}</text>')
-            o.append(f'<text x="{xx:.1f}" y="{y+55}" font-size="9.5" fill="{col}" text-anchor="middle">{c_str}</text>')
-            o.append(f'<text x="{xx:.1f}" y="{y+80}" font-size="10" fill="#334155" text-anchor="middle">{lbl}</text>')
+            o.append(f'<text x="{xx:.1f}" y="{y+54}" font-size="9.5" fill="{col}" text-anchor="middle">{c_str}</text>')
+            o.append(f'<text x="{xx:.1f}" y="{y+84}" font-size="10" fill="#334155" text-anchor="middle">{lbl}</text>')
 
-        o.append(f'<text x="800" y="{y+115}" font-size="10" fill="#475569">{desc}</text>')
+        o.append(f'<text x="800" y="{y+118}" font-size="10" fill="#475569">{desc}</text>')
 
     # 5. SUPERIMPOSED RULER ON STRING 1 (Do)
     y5 = 750
