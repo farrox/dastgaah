@@ -1,0 +1,795 @@
+{
+  "dastgah": "Dastgah-e Shur",
+  "n_masters": 10,
+  "total_strikes": 32075,
+  "consensus": {
+    "zir_e_ist_7th": {
+      "target_theory_cents": -203.9,
+      "consensus_median_cents": -191.87,
+      "delta_cents": 12.03,
+      "spread_sigma_cents": 11.96,
+      "fretted_median_cents": -190.89,
+      "fretless_median_cents": -193.28,
+      "total_strikes": 3692,
+      "active_masters": 10
+    },
+    "ist_tonic": {
+      "target_theory_cents": 0.0,
+      "consensus_median_cents": 14.45,
+      "delta_cents": 14.45,
+      "spread_sigma_cents": 5.04,
+      "fretted_median_cents": 15.69,
+      "fretless_median_cents": 10.59,
+      "total_strikes": 6126,
+      "active_masters": 10
+    },
+    "neutral_2nd_koron": {
+      "target_theory_cents": 138.6,
+      "consensus_median_cents": 154.75,
+      "delta_cents": 16.15,
+      "spread_sigma_cents": 18.91,
+      "fretted_median_cents": 158.31,
+      "fretless_median_cents": 152.2,
+      "total_strikes": 2648,
+      "active_masters": 10
+    },
+    "minor_3rd": {
+      "target_theory_cents": 294.1,
+      "consensus_median_cents": 302.01,
+      "delta_cents": 7.91,
+      "spread_sigma_cents": 12.36,
+      "fretted_median_cents": 303.89,
+      "fretless_median_cents": 302.01,
+      "total_strikes": 3558,
+      "active_masters": 9
+    },
+    "pure_4th": {
+      "target_theory_cents": 498.0,
+      "consensus_median_cents": 511.35,
+      "delta_cents": 13.35,
+      "spread_sigma_cents": 11.93,
+      "fretted_median_cents": 509.4,
+      "fretless_median_cents": 512.42,
+      "total_strikes": 4493,
+      "active_masters": 9
+    },
+    "fifth_sol": {
+      "target_theory_cents": 702.0,
+      "consensus_median_cents": 714.78,
+      "delta_cents": 12.78,
+      "spread_sigma_cents": 6.24,
+      "fretted_median_cents": 715.97,
+      "fretless_median_cents": 712.55,
+      "total_strikes": 3276,
+      "active_masters": 9
+    },
+    "neutral_6th_koron": {
+      "target_theory_cents": 840.6,
+      "consensus_median_cents": 834.1,
+      "delta_cents": -6.5,
+      "spread_sigma_cents": 23.25,
+      "fretted_median_cents": 817.0,
+      "fretless_median_cents": 845.91,
+      "total_strikes": 2314,
+      "active_masters": 10
+    },
+    "minor_7th": {
+      "target_theory_cents": 996.1,
+      "consensus_median_cents": 1009.11,
+      "delta_cents": 13.01,
+      "spread_sigma_cents": 12.63,
+      "fretted_median_cents": 1009.11,
+      "fretless_median_cents": 1009.27,
+      "total_strikes": 3606,
+      "active_masters": 9
+    },
+    "octave": {
+      "target_theory_cents": 1200.0,
+      "consensus_median_cents": 1215.43,
+      "delta_cents": 15.43,
+      "spread_sigma_cents": 4.18,
+      "fretted_median_cents": 1215.12,
+      "fretless_median_cents": 1215.75,
+      "total_strikes": 5540,
+      "active_masters": 10
+    }
+  },
+  "sources": {
+    "alizadeh_tar": {
+      "category": "tar",
+      "lineage": "modern",
+      "fretless": false,
+      "ist_hz": 368.4,
+      "total_strikes": 5055,
+      "slots": {
+        "zir_e_ist_7th": {
+          "median_cents": -192.85,
+          "std_cents": 17.93,
+          "n_strikes": 377,
+          "target_cents": -203.9,
+          "delta_target": 11.05
+        },
+        "ist_tonic": {
+          "median_cents": 20.12,
+          "std_cents": 11.27,
+          "n_strikes": 756,
+          "target_cents": 0.0,
+          "delta_target": 20.12
+        },
+        "neutral_2nd_koron": {
+          "median_cents": 162.77,
+          "std_cents": 20.75,
+          "n_strikes": 337,
+          "target_cents": 138.6,
+          "delta_target": 24.17
+        },
+        "minor_3rd": {
+          "median_cents": 310.26,
+          "std_cents": 9.03,
+          "n_strikes": 1205,
+          "target_cents": 294.1,
+          "delta_target": 16.16
+        },
+        "pure_4th": {
+          "median_cents": 517.35,
+          "std_cents": 10.58,
+          "n_strikes": 964,
+          "target_cents": 498.0,
+          "delta_target": 19.35
+        },
+        "fifth_sol": {
+          "median_cents": 711.02,
+          "std_cents": 17.54,
+          "n_strikes": 638,
+          "target_cents": 702.0,
+          "delta_target": 9.02
+        },
+        "neutral_6th_koron": {
+          "median_cents": 809.23,
+          "std_cents": 24.36,
+          "n_strikes": 221,
+          "target_cents": 840.6,
+          "delta_target": -31.37
+        },
+        "minor_7th": {
+          "median_cents": 1008.15,
+          "std_cents": 17.02,
+          "n_strikes": 370,
+          "target_cents": 996.1,
+          "delta_target": 12.05
+        },
+        "octave": {
+          "median_cents": 1219.86,
+          "std_cents": 10.44,
+          "n_strikes": 531,
+          "target_cents": 1200.0,
+          "delta_target": 19.86
+        }
+      }
+    },
+    "shahnazi_tar": {
+      "category": "tar",
+      "lineage": "qajar_radif",
+      "fretless": false,
+      "ist_hz": 213.2,
+      "total_strikes": 4238,
+      "slots": {
+        "zir_e_ist_7th": {
+          "median_cents": -181.2,
+          "std_cents": 11.46,
+          "n_strikes": 531,
+          "target_cents": -203.9,
+          "delta_target": 22.7
+        },
+        "ist_tonic": {
+          "median_cents": 15.69,
+          "std_cents": 15.18,
+          "n_strikes": 800,
+          "target_cents": 0.0,
+          "delta_target": 15.69
+        },
+        "neutral_2nd_koron": {
+          "median_cents": 134.15,
+          "std_cents": 21.08,
+          "n_strikes": 271,
+          "target_cents": 138.6,
+          "delta_target": -4.45
+        },
+        "minor_3rd": {
+          "median_cents": 311.8,
+          "std_cents": 18.51,
+          "n_strikes": 288,
+          "target_cents": 294.1,
+          "delta_target": 17.7
+        },
+        "pure_4th": {
+          "median_cents": 507.45,
+          "std_cents": 16.0,
+          "n_strikes": 1186,
+          "target_cents": 498.0,
+          "delta_target": 9.45
+        },
+        "fifth_sol": {
+          "median_cents": 719.76,
+          "std_cents": 20.48,
+          "n_strikes": 230,
+          "target_cents": 702.0,
+          "delta_target": 17.76
+        },
+        "neutral_6th_koron": {
+          "median_cents": 817.0,
+          "std_cents": 16.61,
+          "n_strikes": 317,
+          "target_cents": 840.6,
+          "delta_target": -23.6
+        },
+        "minor_7th": {
+          "median_cents": 1018.8,
+          "std_cents": 11.46,
+          "n_strikes": 531,
+          "target_cents": 996.1,
+          "delta_target": 22.7
+        },
+        "octave": {
+          "median_cents": 1215.12,
+          "std_cents": 14.62,
+          "n_strikes": 764,
+          "target_cents": 1200.0,
+          "delta_target": 15.12
+        }
+      }
+    },
+    "forutan_setar": {
+      "category": "setar",
+      "lineage": "qajar_radif",
+      "fretless": false,
+      "ist_hz": 311.2,
+      "total_strikes": 2882,
+      "slots": {
+        "zir_e_ist_7th": {
+          "median_cents": -224.15,
+          "std_cents": 16.84,
+          "n_strikes": 693,
+          "target_cents": -203.9,
+          "delta_target": -20.25
+        },
+        "ist_tonic": {
+          "median_cents": 18.27,
+          "std_cents": 15.96,
+          "n_strikes": 645,
+          "target_cents": 0.0,
+          "delta_target": 18.27
+        },
+        "neutral_2nd_koron": {
+          "median_cents": 165.78,
+          "std_cents": 18.99,
+          "n_strikes": 154,
+          "target_cents": 138.6,
+          "delta_target": 27.18
+        },
+        "minor_3rd": {
+          "median_cents": 274.44,
+          "std_cents": 20.86,
+          "n_strikes": 430,
+          "target_cents": 294.1,
+          "delta_target": -19.66
+        },
+        "pure_4th": {
+          "median_cents": 480.44,
+          "std_cents": 16.64,
+          "n_strikes": 472,
+          "target_cents": 498.0,
+          "delta_target": -17.56
+        },
+        "fifth_sol": {
+          "median_cents": 714.78,
+          "std_cents": 19.65,
+          "n_strikes": 34,
+          "target_cents": 702.0,
+          "delta_target": 12.78
+        },
+        "neutral_6th_koron": {
+          "median_cents": 816.62,
+          "std_cents": 18.02,
+          "n_strikes": 16,
+          "target_cents": 840.6,
+          "delta_target": -23.98
+        },
+        "minor_7th": {
+          "median_cents": 976.09,
+          "std_cents": 16.65,
+          "n_strikes": 677,
+          "target_cents": 996.1,
+          "delta_target": -20.01
+        },
+        "octave": {
+          "median_cents": 1217.91,
+          "std_cents": 15.23,
+          "n_strikes": 624,
+          "target_cents": 1200.0,
+          "delta_target": 17.91
+        }
+      }
+    },
+    "nariman_oud": {
+      "category": "oud",
+      "lineage": "classical",
+      "fretless": true,
+      "ist_hz": 194.8,
+      "total_strikes": 8338,
+      "slots": {
+        "zir_e_ist_7th": {
+          "median_cents": -200.86,
+          "std_cents": 17.02,
+          "n_strikes": 747,
+          "target_cents": -203.9,
+          "delta_target": 3.04
+        },
+        "ist_tonic": {
+          "median_cents": 10.59,
+          "std_cents": 11.57,
+          "n_strikes": 2258,
+          "target_cents": 0.0,
+          "delta_target": 10.59
+        },
+        "neutral_2nd_koron": {
+          "median_cents": 152.2,
+          "std_cents": 11.06,
+          "n_strikes": 828,
+          "target_cents": 138.6,
+          "delta_target": 13.6
+        },
+        "minor_3rd": {
+          "median_cents": 302.01,
+          "std_cents": 18.06,
+          "n_strikes": 461,
+          "target_cents": 294.1,
+          "delta_target": 7.91
+        },
+        "pure_4th": {
+          "median_cents": 512.56,
+          "std_cents": 13.14,
+          "n_strikes": 588,
+          "target_cents": 498.0,
+          "delta_target": 14.56
+        },
+        "fifth_sol": {
+          "median_cents": 716.75,
+          "std_cents": 8.97,
+          "n_strikes": 1036,
+          "target_cents": 702.0,
+          "delta_target": 14.75
+        },
+        "neutral_6th_koron": {
+          "median_cents": 854.76,
+          "std_cents": 14.87,
+          "n_strikes": 996,
+          "target_cents": 840.6,
+          "delta_target": 14.16
+        },
+        "minor_7th": {
+          "median_cents": 999.53,
+          "std_cents": 16.46,
+          "n_strikes": 738,
+          "target_cents": 996.1,
+          "delta_target": 3.43
+        },
+        "octave": {
+          "median_cents": 1210.01,
+          "std_cents": 10.11,
+          "n_strikes": 2150,
+          "target_cents": 1200.0,
+          "delta_target": 10.01
+        }
+      }
+    },
+    "shekarchi_kamancheh": {
+      "category": "kamancheh",
+      "lineage": "canonical",
+      "fretless": true,
+      "ist_hz": 437.0,
+      "total_strikes": 4354,
+      "slots": {
+        "zir_e_ist_7th": {
+          "median_cents": -190.1,
+          "std_cents": 17.12,
+          "n_strikes": 326,
+          "target_cents": -203.9,
+          "delta_target": 13.8
+        },
+        "ist_tonic": {
+          "median_cents": 17.19,
+          "std_cents": 14.04,
+          "n_strikes": 348,
+          "target_cents": 0.0,
+          "delta_target": 17.19
+        },
+        "neutral_2nd_koron": {
+          "median_cents": 159.36,
+          "std_cents": 15.36,
+          "n_strikes": 388,
+          "target_cents": 138.6,
+          "delta_target": 20.76
+        },
+        "minor_3rd": {
+          "median_cents": 305.77,
+          "std_cents": 16.39,
+          "n_strikes": 797,
+          "target_cents": 294.1,
+          "delta_target": 11.67
+        },
+        "pure_4th": {
+          "median_cents": 520.41,
+          "std_cents": 11.8,
+          "n_strikes": 624,
+          "target_cents": 498.0,
+          "delta_target": 22.41
+        },
+        "fifth_sol": {
+          "median_cents": 703.88,
+          "std_cents": 20.24,
+          "n_strikes": 848,
+          "target_cents": 702.0,
+          "delta_target": 1.88
+        },
+        "neutral_6th_koron": {
+          "median_cents": 822.28,
+          "std_cents": 20.67,
+          "n_strikes": 213,
+          "target_cents": 840.6,
+          "delta_target": -18.32
+        },
+        "minor_7th": {
+          "median_cents": 1009.9,
+          "std_cents": 17.12,
+          "n_strikes": 326,
+          "target_cents": 996.1,
+          "delta_target": 13.8
+        },
+        "octave": {
+          "median_cents": 1215.75,
+          "std_cents": 13.27,
+          "n_strikes": 330,
+          "target_cents": 1200.0,
+          "delta_target": 15.75
+        }
+      }
+    },
+    "karimi_vocal": {
+      "category": "voice",
+      "lineage": "canonical",
+      "fretless": true,
+      "ist_hz": 235.2,
+      "total_strikes": 3964,
+      "slots": {
+        "zir_e_ist_7th": {
+          "median_cents": -193.28,
+          "std_cents": 23.91,
+          "n_strikes": 331,
+          "target_cents": -203.9,
+          "delta_target": 10.62
+        },
+        "ist_tonic": {
+          "median_cents": 6.4,
+          "std_cents": 19.89,
+          "n_strikes": 568,
+          "target_cents": 0.0,
+          "delta_target": 6.4
+        },
+        "neutral_2nd_koron": {
+          "median_cents": 146.21,
+          "std_cents": 17.51,
+          "n_strikes": 435,
+          "target_cents": 138.6,
+          "delta_target": 7.61
+        },
+        "minor_3rd": {
+          "median_cents": 290.08,
+          "std_cents": 21.8,
+          "n_strikes": 167,
+          "target_cents": 294.1,
+          "delta_target": -4.02
+        },
+        "pure_4th": {
+          "median_cents": 501.65,
+          "std_cents": 15.86,
+          "n_strikes": 297,
+          "target_cents": 498.0,
+          "delta_target": 3.65
+        },
+        "fifth_sol": {
+          "median_cents": 706.65,
+          "std_cents": 16.84,
+          "n_strikes": 338,
+          "target_cents": 702.0,
+          "delta_target": 4.65
+        },
+        "neutral_6th_koron": {
+          "median_cents": 845.91,
+          "std_cents": 22.32,
+          "n_strikes": 383,
+          "target_cents": 840.6,
+          "delta_target": 5.31
+        },
+        "minor_7th": {
+          "median_cents": 1008.65,
+          "std_cents": 21.34,
+          "n_strikes": 305,
+          "target_cents": 996.1,
+          "delta_target": 12.55
+        },
+        "octave": {
+          "median_cents": 1207.11,
+          "std_cents": 18.02,
+          "n_strikes": 531,
+          "target_cents": 1200.0,
+          "delta_target": 7.11
+        }
+      }
+    },
+    "kasaei_ney_setar": {
+      "category": "ney_setar",
+      "lineage": "classical",
+      "fretless": true,
+      "ist_hz": 544.6,
+      "total_strikes": 996,
+      "slots": {
+        "zir_e_ist_7th": {
+          "median_cents": -194.5,
+          "std_cents": 6.67,
+          "n_strikes": 28,
+          "target_cents": -203.9,
+          "delta_target": 9.4
+        },
+        "ist_tonic": {
+          "median_cents": 6.17,
+          "std_cents": 9.22,
+          "n_strikes": 130,
+          "target_cents": 0.0,
+          "delta_target": 6.17
+        },
+        "neutral_2nd_koron": {
+          "median_cents": 157.29,
+          "std_cents": 10.99,
+          "n_strikes": 94,
+          "target_cents": 138.6,
+          "delta_target": 18.69
+        },
+        "minor_3rd": {
+          "median_cents": 313.11,
+          "std_cents": 7.24,
+          "n_strikes": 113,
+          "target_cents": 294.1,
+          "delta_target": 19.01
+        },
+        "pure_4th": {
+          "median_cents": 512.42,
+          "std_cents": 5.3,
+          "n_strikes": 178,
+          "target_cents": 498.0,
+          "delta_target": 14.42
+        },
+        "fifth_sol": {
+          "median_cents": 723.64,
+          "std_cents": 22.2,
+          "n_strikes": 26,
+          "target_cents": 702.0,
+          "delta_target": 21.64
+        },
+        "neutral_6th_koron": {
+          "median_cents": 807.73,
+          "std_cents": 25.47,
+          "n_strikes": 8,
+          "target_cents": 840.6,
+          "delta_target": -32.87
+        },
+        "minor_7th": null,
+        "octave": {
+          "median_cents": 1217.61,
+          "std_cents": 0.27,
+          "n_strikes": 3,
+          "target_cents": 1200.0,
+          "delta_target": 17.61
+        }
+      }
+    },
+    "lotfi_solo": {
+      "category": "tar_setar",
+      "lineage": "classical",
+      "fretless": false,
+      "ist_hz": 201.2,
+      "total_strikes": 915,
+      "slots": {
+        "zir_e_ist_7th": {
+          "median_cents": -190.89,
+          "std_cents": 8.49,
+          "n_strikes": 334,
+          "target_cents": -203.9,
+          "delta_target": 13.01
+        },
+        "ist_tonic": {
+          "median_cents": 9.62,
+          "std_cents": 6.8,
+          "n_strikes": 179,
+          "target_cents": 0.0,
+          "delta_target": 9.62
+        },
+        "neutral_2nd_koron": {
+          "median_cents": 101.68,
+          "std_cents": 15.64,
+          "n_strikes": 36,
+          "target_cents": 138.6,
+          "delta_target": -36.92
+        },
+        "minor_3rd": {
+          "median_cents": 297.52,
+          "std_cents": 7.42,
+          "n_strikes": 48,
+          "target_cents": 294.1,
+          "delta_target": 3.42
+        },
+        "pure_4th": {
+          "median_cents": 511.35,
+          "std_cents": 8.57,
+          "n_strikes": 107,
+          "target_cents": 498.0,
+          "delta_target": 13.35
+        },
+        "fifth_sol": null,
+        "neutral_6th_koron": {
+          "median_cents": 858.64,
+          "std_cents": 12.67,
+          "n_strikes": 65,
+          "target_cents": 840.6,
+          "delta_target": 18.04
+        },
+        "minor_7th": {
+          "median_cents": 1009.11,
+          "std_cents": 8.49,
+          "n_strikes": 334,
+          "target_cents": 996.1,
+          "delta_target": 13.01
+        },
+        "octave": {
+          "median_cents": 1209.49,
+          "std_cents": 6.51,
+          "n_strikes": 178,
+          "target_cents": 1200.0,
+          "delta_target": 9.49
+        }
+      }
+    },
+    "saba_violin": {
+      "category": "violin",
+      "lineage": "classical",
+      "fretless": true,
+      "ist_hz": 232.8,
+      "total_strikes": 1153,
+      "slots": {
+        "zir_e_ist_7th": {
+          "median_cents": -188.77,
+          "std_cents": 14.74,
+          "n_strikes": 309,
+          "target_cents": -203.9,
+          "delta_target": 15.13
+        },
+        "ist_tonic": {
+          "median_cents": 17.51,
+          "std_cents": 13.14,
+          "n_strikes": 396,
+          "target_cents": 0.0,
+          "delta_target": 17.51
+        },
+        "neutral_2nd_koron": {
+          "median_cents": 151.74,
+          "std_cents": 9.13,
+          "n_strikes": 92,
+          "target_cents": 138.6,
+          "delta_target": 13.14
+        },
+        "minor_3rd": {
+          "median_cents": 296.74,
+          "std_cents": 16.73,
+          "n_strikes": 49,
+          "target_cents": 294.1,
+          "delta_target": 2.64
+        },
+        "pure_4th": {
+          "median_cents": 500.82,
+          "std_cents": 12.3,
+          "n_strikes": 77,
+          "target_cents": 498.0,
+          "delta_target": 2.82
+        },
+        "fifth_sol": {
+          "median_cents": 712.55,
+          "std_cents": 13.2,
+          "n_strikes": 78,
+          "target_cents": 702.0,
+          "delta_target": 10.55
+        },
+        "neutral_6th_koron": {
+          "median_cents": 862.97,
+          "std_cents": 10.53,
+          "n_strikes": 45,
+          "target_cents": 840.6,
+          "delta_target": 22.37
+        },
+        "minor_7th": {
+          "median_cents": 1011.23,
+          "std_cents": 14.74,
+          "n_strikes": 309,
+          "target_cents": 996.1,
+          "delta_target": 15.13
+        },
+        "octave": {
+          "median_cents": 1216.58,
+          "std_cents": 12.64,
+          "n_strikes": 382,
+          "target_cents": 1200.0,
+          "delta_target": 16.58
+        }
+      }
+    },
+    "borumand_tar_setar": {
+      "category": "tar_setar",
+      "lineage": "qajar_radif",
+      "fretless": false,
+      "ist_hz": 131.0,
+      "total_strikes": 180,
+      "slots": {
+        "zir_e_ist_7th": {
+          "median_cents": -183.32,
+          "std_cents": 4.4,
+          "n_strikes": 16,
+          "target_cents": -203.9,
+          "delta_target": 20.58
+        },
+        "ist_tonic": {
+          "median_cents": 13.21,
+          "std_cents": 4.48,
+          "n_strikes": 46,
+          "target_cents": 0.0,
+          "delta_target": 13.21
+        },
+        "neutral_2nd_koron": {
+          "median_cents": 158.31,
+          "std_cents": 5.05,
+          "n_strikes": 13,
+          "target_cents": 138.6,
+          "delta_target": 19.71
+        },
+        "minor_3rd": null,
+        "pure_4th": null,
+        "fifth_sol": {
+          "median_cents": 717.16,
+          "std_cents": 5.15,
+          "n_strikes": 48,
+          "target_cents": 702.0,
+          "delta_target": 15.16
+        },
+        "neutral_6th_koron": {
+          "median_cents": 863.08,
+          "std_cents": 5.65,
+          "n_strikes": 50,
+          "target_cents": 840.6,
+          "delta_target": 22.48
+        },
+        "minor_7th": {
+          "median_cents": 1016.68,
+          "std_cents": 4.4,
+          "n_strikes": 16,
+          "target_cents": 996.1,
+          "delta_target": 20.58
+        },
+        "octave": {
+          "median_cents": 1213.13,
+          "std_cents": 4.44,
+          "n_strikes": 47,
+          "target_cents": 1200.0,
+          "delta_target": 13.13
+        }
+      }
+    }
+  }
+}

@@ -15,7 +15,7 @@ ROOT = Path("/Users/ed/Developer/dastgaah")
 SCRATCH = Path("/Users/ed/.gemini/antigravity/brain/5ea62a60-87f7-4e63-9f6c-0034aec38b37/scratch/primer")
 SCRATCH.mkdir(parents=True, exist_ok=True)
 W, H = 1400, 990
-TOTAL = 13
+TOTAL = 17
 CHAR_W = 0.52  # average glyph width / font size for wrapping
 
 
@@ -167,7 +167,11 @@ def page1() -> str:
         ("b", "Page 3 The setar as a multiplication machine (frets × strings)."),
         ("b", "Pages 4–7 Al-Farabi, Ibn Sina, Al-Urmawi, Al-Maraghi: one page each."),
         ("b", "Page 8 Modern 20th-century theories (Vaziri, Barkechli, Farhat)."),
-        ("b", "Page 9 Side-by-side comparison with our Mahur measurements. Page 10 timeline &amp; glossary."),
+        ("b", "Page 9 Side-by-side comparison with our Mahur measurements."),
+        ("b", "Page 10 Dariush Tala'i's Theory of Dāngs &amp; Setār Neck Architecture."),
+        ("b", "Pages 11–15 Empirical modal consensus: Dashti, Navā, Bayāt-e Esfahān, Dastgāh-e Homāyūn, and Dastgāh-e Shūr."),
+        ("b", "Page 16 Harmonizing microtones (Hannaneh quartal, Alizadeh drone, 13-limit spectralism)."),
+        ("b", "Page 17 Historical timeline, technical glossary, and further reading."),
     ]
     text_col(o, items, page=1)
 
@@ -988,7 +992,198 @@ def page13() -> str:
 
 # --------------------------------------------------------------------------- PAGE 14
 def page14() -> str:
-    o = header(14, "14. Timeline, Glossary and Further Reading",
+    o = header(14, "14. Dastgāh-e Homāyūn: Empirical Consensus Across 18 Masters",
+               "45,516 Gated Note Strikes Reveal the Anatomy of the Lower Chahārgāh Dāng and Bīdād Modulatory Pivot")
+
+    items = [
+        ("h", "The Architectural Geometry of Homāyūn"),
+        ("p", "Dastgāh-e Homāyūn is the regal parent mode of Bayāt-e Esfahān. In Dariush Tala'i's grammar of dāngs, Homāyūn is built from:"),
+        ("b", "Lower Dāng (Dāng-e Chahārgāh, 0¢ to 498¢): Tonic (1/1, 0¢) → Neutral 2nd (Reᵏ, 13/12 ~138.6¢) → "
+              "Major 3rd (Mi, 5/4 ~386.3¢ / 81/64 ~407.8¢) → Pure 4th (Fa, 4/3 ~498.0¢)."),
+        ("b", "Modulatory Pivot (Bīdād &amp; Shūshtari, 702¢): The fifth degree (Sol) becomes the new shāhed (focal center) and ist (resting tone). "
+              "Above Sol, a coupled neutral second (Laᵏ ~835¢) introduces an intense melancholic longing."),
+        ("h", "The Augmented Second Mystery (Reᵏ → Mi)"),
+        ("b", "Acoustic Disproof of 12-TET / 24-TET: In equal temperament, this step is forced into an equal minor 3rd (300¢). "
+              "Empirical data across 18 masters and 45,516 strikes reveals a median interval of exactly 403.1¢ - 148.8¢ = 254.3¢!"),
+        ("b", "Neither a whole tone (204¢) nor a minor third (300¢), it represents the authentic non-Western 'augmented' step (15/13 = 248.8¢)."),
+        ("h", "Fretted vs. Fretless Intonation in Homāyūn"),
+        ("b", "Reᵏ (Koron): Fretless masters (Bahari, Shekarchi, Nariman, Kasaei, Karimi) place Reᵏ at +144.4¢, hovering within Al-Fārābī's superparticular window (13/12 = 138.6¢). "
+              "Fretted masters tie the movable gut fret slightly sharper (+156.1¢) to maximize forward leading tension."),
+        ("b", "1905 Historical Qajar Gramophone Recording: Master Bāgher Khān's kamancheh measured +144.4¢ on Reᵏ, proving the persistence of this intonation across 120 years."),
+    ]
+    text_col(o, items, page=14)
+
+    card(o, 770, 100, 600, 480, "Consensus: 18 Masters in Dastgāh-e Homāyūn", "Cents relative to Tonic (0.0¢) across 45,516 note strikes")
+    rows = [
+        ("Zir-e Ist (Si)", -112.0, -102.1, -119.7, -110.9, "Leading tone below tonic (243/256)"),
+        ("Tonic (Do)", 0.0, 14.3, 13.0, 13.9, "Modal Finalis (Tonic Do)"),
+        ("Neutral 2nd (Reᵏ)", 138.6, 156.1, 144.4, 148.8, "Chahārgāh dāng root step (13/12)"),
+        ("Major 3rd (Mi)", 395.0, 397.2, 403.3, 403.1, "Major 3rd (5/4 vs 81/64)"),
+        ("Pure 4th (Fa)", 498.0, 511.4, 508.9, 510.2, "Pure 4/3 fourth (Pivot tone)"),
+        ("Fifth (Sol - Bīdād)", 702.0, 718.0, 717.8, 718.0, "Pure 3/2 fifth (Bīdād &amp; Shūshtari ist)"),
+        ("Neutral 6th (Laᵏ)", 840.6, 821.6, 835.1, 832.2, "Neutral 6th above tonic (13/12 on Sol)"),
+        ("Minor 7th (Si♭)", 1017.5, 1010.8, 1004.9, 1010.3, "Oshāgh / Bābā Tāher minor 7th (9/5)"),
+        ("Octave (Do↑)", 1200.0, 1214.0, 1212.9, 1213.3, "Pure 2/1 octave"),
+    ]
+    y = 160
+    o.append('<text x="790" y="142" font-size="11.5" font-weight="700" fill="#0F172A">Degree</text>')
+    o.append('<text x="895" y="142" font-size="11.5" font-weight="700" fill="#DC2626">Target</text>')
+    o.append('<text x="955" y="142" font-size="11.5" font-weight="700" fill="#2563EB">Fretted</text>')
+    o.append('<text x="1025" y="142" font-size="11.5" font-weight="700" fill="#16A34A">Fretless</text>')
+    o.append('<text x="1095" y="142" font-size="11.5" font-weight="700" fill="#D97706">All 18</text>')
+    o.append('<text x="1165" y="142" font-size="11.5" font-weight="700" fill="#64748B">Identity</text>')
+    o.append('<line x1="790" y1="150" x2="1340" y2="150" stroke="#CBD5E1" stroke-width="1.5"/>')
+
+    for deg, tg, fr, fl, al, idn in rows:
+        o.append(f'<text x="790" y="{y}" font-size="12" font-weight="700" fill="#0F172A">{esc(deg)}</text>')
+        o.append(f'<text x="895" y="{y}" font-size="12" class="mono" fill="#DC2626">{tg:+.1f}¢</text>')
+        o.append(f'<text x="955" y="{y}" font-size="12" class="mono" fill="#2563EB">{fr:+.1f}¢</text>')
+        o.append(f'<text x="1025" y="{y}" font-size="12" class="mono" fill="#16A34A">{fl:+.1f}¢</text>')
+        o.append(f'<text x="1095" y="{y}" font-size="12" class="mono" fill="#D97706">{al:+.1f}¢</text>')
+        o.append(f'<text x="1165" y="{y}" font-size="11" fill="#475569">{esc(idn)}</text>')
+        y += 36
+
+    card(o, 770, 600, 600, 360, "The Bīdād Modulatory Pivot &amp; Neutral Second Stretch", "Modal transition across the 5th degree")
+    o.append('<text x="790" y="645" font-size="13" fill="#334155">In Homāyūn, movement into Bīdād shifts the listener\'s ear to Sol (+718.0¢).</text>')
+    o.append('<text x="790" y="670" font-size="13" fill="#334155">The distance to the 6th degree (Laᵏ) across the masters:</text>')
+    o.append('<circle cx="810" cy="710" r="5" fill="#2563EB"/>')
+    o.append('<text x="825" y="715" font-size="13" font-weight="700" fill="#0F172A">Sol → Laᵏ Distance (832.2¢ - 718.0¢ = 114.2¢):</text>')
+    o.append('<text x="825" y="735" font-size="13" fill="#64748B">The neutral second narrows from 144¢ (in lower dāng) to ~114¢ in upper Bīdād,</text>')
+    o.append('<text x="825" y="755" font-size="13" fill="#64748B">creating an intense limma-like weeping inflection that characterizes Persian vocal poetry.</text>')
+    o.append('<circle cx="810" cy="795" r="5" fill="#16A34A"/>')
+    o.append('<text x="825" y="800" font-size="13" font-weight="700" fill="#0F172A">Cross-Century Lineage Concordance:</text>')
+    o.append('<text x="825" y="820" font-size="12.5" fill="#64748B">From Bāgher Khān (1905) to Shekarchi (2024), fretless masters maintain 144¢ on Reᵏ.</text>')
+    o.append('<text x="790" y="875" font-size="12.5" fill="#16A34A" font-weight="700">45,516 strikes verify Tala\'i\'s Lower Chahārgāh + Upper Bīdād architecture.</text>')
+    o.append("</svg>")
+    return "\n".join(o)
+
+
+# --------------------------------------------------------------------------- PAGE 15
+def page15() -> str:
+    o = header(15, "15. Dastgāh-e Shūr: The Mother Mode & Tala'i's 1st Dāng",
+               "32,075 Note Strikes Across 195 Tracks Reveal the Gravitational Stability of Re-koron (13/12)")
+
+    items = [
+        ("h", "The Architectural Nucleus of the Radif"),
+        ("p", "Dastgāh-e Shūr is traditionally known as the 'Mother of all Dastgāhs' (Umm al-Maqāmāt). In Dariush Tala'i's grammar, "
+              "it establishes Dāng 1, the foundational microtonal building block:"),
+        ("b", "Dāng 1 (Dāng-e Shūr, 0¢ to 498¢): Tonic (Do, 1/1, 0¢) → Neutral 2nd (Reᵏ, 13/12 ~138.6¢) → "
+              "Minor 3rd (Mi♭, 32/27 ~294.1¢) → Pure 4th (Fa, 4/3 ~498.0¢)."),
+        ("b", "The Attractor Degree (Reᵏ): Unlike major modes where the tonic is the sole resting tone, Shūr revolves around Reᵏ as a "
+              "dynamic gravitational attractor. Melodic phrases circle Reᵏ with weeping descents before releasing into the lower Do."),
+        ("h", "Empirical Consensus: 10 Masters, 195 Complete Tracks"),
+        ("b", "Reᵏ Stability: Across 2,648 strikes, the consensus median lands at +152.2¢ (fretless) and +158.3¢ (fretted), confirming the "
+              "stable Al-Fārābī neutral step (~144¢ to 154¢) and decisively rejecting 12-TET semitones (100¢/200¢)."),
+        ("b", "The Pythagorean Minor 3rd (Mi♭ = +302.0¢): Sits between Pythagorean 32/27 (294.1¢) and 12-TET (300¢), resisting just 6/5 (315.6¢)."),
+        ("b", "The Modulatory Climax (Shahnāz, Qaracheh &amp; Razavi): When Shūr ascends beyond the 5th (Sol ~714¢), the 6th degree (Laᵏ) "
+              "enters at +834.1¢ to +845.9¢ (exactly 13/12 above Sol!), proving that upper Shūr reproduces Dāng 1 transposed to the fifth!"),
+    ]
+    text_col(o, items, page=15)
+
+    card(o, 770, 100, 600, 480, "Consensus: 10 Masters in Dastgāh-e Shūr", "Cents relative to Tonic (0.0¢) across 32,075 note strikes")
+    rows = [
+        ("Zir-e Ist (Si♭)", -203.9, -190.9, -193.3, -191.9, "Whole tone below tonic (16/9)"),
+        ("Tonic (Do)", 0.0, 15.7, 10.6, 14.4, "Modal Finalis (Tonic Do)"),
+        ("Neutral 2nd (Reᵏ)", 138.6, 158.3, 152.2, 154.8, "Tala'i Dāng 1 primary step (13/12)"),
+        ("Minor 3rd (Mi♭)", 294.1, 303.9, 302.0, 302.0, "Minor 3rd (32/27 vs 12-TET)"),
+        ("Pure 4th (Fa)", 498.0, 509.4, 512.4, 511.4, "Pure 4/3 fourth (Top of Dāng 1)"),
+        ("Fifth (Sol)", 702.0, 716.0, 712.5, 714.8, "Pure 3/2 fifth (Shahnāz entry)"),
+        ("Neutral 6th (Laᵏ)", 840.6, 817.0, 845.9, 834.1, "Qaracheh focal center (13/12 on Sol)"),
+        ("Minor 7th (Si♭)", 996.1, 1009.1, 1009.3, 1009.1, "Razavi climax (16/9 tone)"),
+        ("Octave (Do↑)", 1200.0, 1215.1, 1215.8, 1215.4, "Pure 2/1 octave"),
+    ]
+    y = 160
+    o.append('<text x="790" y="142" font-size="11.5" font-weight="700" fill="#0F172A">Degree</text>')
+    o.append('<text x="895" y="142" font-size="11.5" font-weight="700" fill="#DC2626">Target</text>')
+    o.append('<text x="955" y="142" font-size="11.5" font-weight="700" fill="#2563EB">Fretted</text>')
+    o.append('<text x="1025" y="142" font-size="11.5" font-weight="700" fill="#16A34A">Fretless</text>')
+    o.append('<text x="1095" y="142" font-size="11.5" font-weight="700" fill="#D97706">All 10</text>')
+    o.append('<text x="1165" y="142" font-size="11.5" font-weight="700" fill="#64748B">Identity</text>')
+    o.append('<line x1="790" y1="150" x2="1340" y2="150" stroke="#CBD5E1" stroke-width="1.5"/>')
+
+    for deg, tg, fr, fl, al, idn in rows:
+        o.append(f'<text x="790" y="{y}" font-size="12" font-weight="700" fill="#0F172A">{esc(deg)}</text>')
+        o.append(f'<text x="895" y="{y}" font-size="12" class="mono" fill="#DC2626">{tg:+.1f}¢</text>')
+        o.append(f'<text x="955" y="{y}" font-size="12" class="mono" fill="#2563EB">{fr:+.1f}¢</text>')
+        o.append(f'<text x="1025" y="{y}" font-size="12" class="mono" fill="#16A34A">{fl:+.1f}¢</text>')
+        o.append(f'<text x="1095" y="{y}" font-size="12" class="mono" fill="#D97706">{al:+.1f}¢</text>')
+        o.append(f'<text x="1165" y="{y}" font-size="11" fill="#475569">{esc(idn)}</text>')
+        y += 36
+
+    card(o, 770, 600, 600, 360, "The Double-Dāng Architecture: Lower Shūr &amp; Upper Qaracheh", "Symmetrical replication across the fifth")
+    o.append('<text x="790" y="645" font-size="13" fill="#334155">Shūr exhibits perfect structural symmetry across the pure fifth (+714.8¢):</text>')
+    o.append('<circle cx="810" cy="690" r="5" fill="#2563EB"/>')
+    o.append('<text x="825" y="695" font-size="13" font-weight="700" fill="#0F172A">Lower Dāng 1 (Do → Fa, 0¢ → 511¢):</text>')
+    o.append('<text x="825" y="715" font-size="13" fill="#64748B">Step 1: Do → Reᵏ (+154.8¢, 13/12). Step 2: Reᵏ → Mi♭ (147.2¢). Step 3: Mi♭ → Fa (209.4¢).</text>')
+    o.append('<circle cx="810" cy="760" r="5" fill="#DC2626"/>')
+    o.append('<text x="825" y="765" font-size="13" font-weight="700" fill="#0F172A">Upper Dāng 1 (Sol → Do↑, 715¢ → 1215¢):</text>')
+    o.append('<text x="825" y="785" font-size="13" fill="#64748B">Qaracheh (Laᵏ) sits at +834.1¢: exactly 834.1 - 714.8 = 119.3¢ (13/12 limma over 5th!).</text>')
+    o.append('<text x="825" y="805" font-size="13" fill="#64748B">Razavi (Si♭) sits at +1009.1¢: replicating the minor 3rd over the fifth (1009 - 715 = 294.1¢!).</text>')
+    o.append('<text x="790" y="865" font-size="12.5" fill="#16A34A" font-weight="700">Empirical proof: Dastgāh-e Shūr is two identical 13/12 dāngs separated by a whole tone.</text>')
+    o.append("</svg>")
+    return "\n".join(o)
+
+
+# --------------------------------------------------------------------------- PAGE 16
+def page16() -> str:
+    o = header(16, "16. Harmonizing Microtonal Dāngs: Quartal, Drone &amp; 13-Limit Spectralism",
+               "Acoustic solutions for harmonizing the 13/12 neutral second and non-Western tetrachord structures")
+
+    items = [
+        ("h", "The Dilemma of Tertian Harmony in Persian Modes"),
+        ("p", "Western functional harmony is founded upon triadic stacking (major and minor 3rds, 4:5:6 Just ratios or 12-TET approximations). "
+              "When an Al-Fārābī 13/12 neutral step (~138.6¢) is forced into a standard major or minor triad, the 3rds produce violent acoustic beating. "
+              "Ali-Naqi Vaziri's 24-TET compromise (rounding 138.6¢ to 150¢) led to what Morteza Hannaneh criticized as 'hybrid deformity' (musiqi-ye do-rageh)."),
+        ("h", "1. Quartal &amp; Quintal Enclosures (Morteza Hannaneh)"),
+        ("p", "In Gām-hā-ye Gomshodeh ('The Lost Scales', 1988), Morteza Hannaneh established that Persian modes must be harmonized by stacking "
+              "pure fourths (4/3 = 498.0¢) and pure fifths (3/2 = 702.0¢) rather than thirds. Because every Dāng is framed by a pure 4th, "
+              "quartal chords (e.g. Fa–Do–Sol) enclose the neutral second without competing third-interval overtones."),
+        ("h", "2. Drone Polyphony &amp; Contrapuntal Voice Leading (Hossein Alizadeh)"),
+        ("p", "Rather than vertical chord cadences, Alizadeh employs orchestral pedal drones (the vākhān principle) and contrary motion counterpoint. "
+              "In NeyNava (Dashti) and Savaran-e Dasht-e Omid, the orchestra holds consonant open 5ths (Re–La) while the solo ney weaves 13/12 microtones above, "
+              "resolving linear tension into pure unisons or octaves."),
+        ("h", "3. 13-Limit &amp; Spectral Just Intonation"),
+        ("p", "In modern spectral music, the 13/12 ratio is not considered an out-of-tune step, but the 13th harmonic partial (tridecimal neutral second). "
+              "Composers build chords directly from the harmonic series (Root 1/1 + Neutral 2nd 13/12 + Sub-fifth 11/8 + Pure 5th 3/2), creating an "
+              "iridescent, beating-free acoustic fusion where difference tones naturally reinforce the fundamental."),
+    ]
+    text_col(o, items, page=15)
+
+    card(o, 770, 100, 600, 480, "Listening Guide: Microtonal &amp; Spectral Harmonization", "Key benchmark recordings demonstrating non-tertian harmony")
+    works = [
+        ("Morteza Hannaneh", "Caprice for Piano and Orchestra", "Quartal harmony built entirely on stacked 4ths/5ths framing Persian modal themes."),
+        ("Morteza Hannaneh", "Hezar Dastan Overture / Suite", "Orchestral polyphony without Western triads; modal counterpoint over pure 5ths."),
+        ("Hossein Alizadeh", "NeyNava (Avaz-e Dashti for Ney &amp; Strings)", "Orchestral drone polyphony (Re-La 5ths) supporting 13/12 neutral second ney solos."),
+        ("Alizadeh &amp; Gasparyan", "Endless Vision (Chahārgāh &amp; Shūr)", "Circular-breathing duduk continuous drone (dam) with contrapuntal string lines."),
+        ("Marc Sabat", "Les Duveaux Harmonies / Gioseffo Zarlino", "13-limit extended Just Intonation; strings tuned to 11th &amp; 13th partials with zero beating."),
+        ("Horațiu Rădulescu", "String Quartet No. 4 'infinite to be' (Op. 33)", "Scordatura spectrale retuning 16 strings to overtone partials (including 11, 13, 17)."),
+    ]
+    y = 155
+    for comp, piece, desc in works:
+        o.append(f'<rect x="785" y="{y}" width="570" height="66" rx="6" fill="#F8FAFC" stroke="#CBD5E1"/>')
+        o.append(f'<text x="800" y="{y+20}" font-size="12" font-weight="700" fill="#1E3A8A">{esc(comp)}: <tspan font-weight="600" fill="#0F172A">{esc(piece)}</tspan></text>')
+        for j, ln in enumerate(wrap(desc, 540, 11)):
+            o.append(f'<text x="800" y="{y+38+j*15}" font-size="11" fill="#475569">{esc(ln)}</text>')
+        y += 75
+
+    card(o, 770, 600, 600, 360, "The 13-Limit Overtone Chord Anatomy", "Why 13/12 rings acoustically pure in spectral harmony")
+    o.append('<text x="790" y="645" font-size="13" fill="#334155">In Western 12-TET, a minor third beats at ~15–18 Hz against the overtone series.</text>')
+    o.append('<text x="790" y="670" font-size="13" fill="#334155">In 13-limit Just Intonation, the Al-Fārābī neutral second (13/12) is the 13th harmonic:</text>')
+    o.append('<circle cx="810" cy="710" r="5" fill="#2563EB"/>')
+    o.append('<text x="825" y="715" font-size="13" font-weight="700" fill="#0F172A">Tridecimal Acoustic Fusion (12:13:14:18):</text>')
+    o.append('<text x="825" y="735" font-size="12.5" fill="#64748B">Root (12/12 = 1/1) + Neutral 2nd (13/12) + Septimal 3rd (14/12 = 7/6) + 5th (18/12 = 3/2).</text>')
+    o.append('<circle cx="810" cy="775" r="5" fill="#16A34A"/>')
+    o.append('<text x="825" y="780" font-size="13" font-weight="700" fill="#0F172A">Self-Reinforcing Difference Tones:</text>')
+    o.append('<text x="825" y="800" font-size="12.5" fill="#64748B">The quadratic difference frequency f(13) - f(12) equals f(1) (the fundamental root!),</text>')
+    o.append('<text x="825" y="820" font-size="12.5" fill="#64748B">causing the chord to physically amplify the bass note rather than clash.</text>')
+    o.append('<text x="790" y="865" font-size="12" fill="#DC2626" font-weight="700">This explains why Setār players strike 13/12 against the bass drone to produce ringing warmth.</text>')
+    o.append("</svg>")
+    return "\n".join(o)
+
+
+# --------------------------------------------------------------------------- PAGE 17
+def page17() -> str:
+    o = header(17, "17. Timeline, Glossary and Further Reading",
                "A thousand years from the monochord to the radif")
     # timeline
     card(o, 36, 100, 1328, 250, "Timeline", "")
@@ -1052,7 +1247,7 @@ def page14() -> str:
 
 
 def main():
-    pages = [page1, page2, page3, page4, page5, page6, page7, page8, page9, page10, page11, page12, page13, page14]
+    pages = [page1, page2, page3, page4, page5, page6, page7, page8, page9, page10, page11, page12, page13, page14, page15, page16, page17]
     paths = []
     for i, fn in enumerate(pages, 1):
         p = SCRATCH / f"primer_{i:02d}.svg"

@@ -16,13 +16,16 @@ Empirical pitch and scale-degree latch analysis of Persian Classical Music (*Rad
 
 ![Mahur v3 latch fingerprint](output.png)
 
-- **14-Page Persian Classical Music Theory Primer:** [`persian_music_theory_primer.pdf`](persian_music_theory_primer.pdf) ([`analysis/persian_music_theory_primer.pdf`](analysis/persian_music_theory_primer.pdf))
+- **17-Page Persian Classical Music Theory Primer:** [`persian_music_theory_primer.pdf`](persian_music_theory_primer.pdf) ([`analysis/persian_music_theory_primer.pdf`](analysis/persian_music_theory_primer.pdf))
   - *Pages 1–9:* Historical monochord theory from Pythagoras, Al-Fārābī, Ibn Sīnā, Ṣafī al-Dīn al-Urmawī (17-note gamut), and ʿAbd al-Qādir al-Marāghī.
   - *Page 10:* Dariush Tala'i's Theory of Dāngs & Setār Neck Architecture (4 tetrachords + superimposed String 1 ruler with pure ratios).
   - *Page 11:* Āvāz-e Dashti: Fretted vs. Fretless (12 Masters, 10,256 strikes) & Proof of the Bimodal Variable 5th Degree (*motaghayyer*).
   - *Page 12:* Dastgāh-e Navā: 11 Masters (10,743 strikes) & Resolution of the Limma (256/243) vs. Superparticular (13/12) Controversy.
   - *Page 13:* Āvāz-e Bayāt-e Esfahān: 18 Masters (36,234 strikes) & Empirical Proof of the Pythagorean Minor 3rd (32/27 = 294.1¢) and Upper Chahārgāh Coupling.
-  - *Page 14:* Historical Timeline, Technical Glossary, and Further Reading.
+  - *Page 14:* Dastgāh-e Homāyūn: 18 Masters (45,516 strikes) & Empirical Proof of the Lower Chahārgāh Dāng, Augmented Second (254.3¢), and Bīdād Modulatory Pivot.
+  - *Page 15:* Dastgāh-e Shūr: The Mother Mode & Tala'i's 1st Dāng (10 Masters, 32,075 strikes) — Superparticular $13/12$ ($Re^k = +154.8¢$), Pythagorean $32/27$ ($Mi\flat = +302.0¢$), and Double-Dāng Symmetrical Modulation over the 5th degree (*Shahnāz*, *Qaracheh*, *Razavi*).
+  - *Page 16:* Harmonizing Microtonal Dāngs: Quartal Enclosures, Drone Counterpoint & 13-Limit Spectral Harmony (Hannaneh, Alizadeh, Sabat, Rădulescu).
+  - *Page 17:* Historical Timeline, Technical Glossary, and Further Reading.
 - **6-Page Empirical Pitch & Historical Theory Report:** [`mahur_pitch_analysis.pdf`](mahur_pitch_analysis.pdf) ([`analysis/mahur_pitch_analysis.pdf`](analysis/mahur_pitch_analysis.pdf))
   - *Page 1:* 17-Slot Cross-Instrument Latch Fingerprint & Absolute `Do` Spectrum (`199.7–441.5 Hz`).
   - *Page 2:* Diatonic vs. *Koron* Pair Discrimination (`La/Laᵏ↓`, `Re/Reᵏ`, `Mi/Miᵏ`, `Si/Siᵏ`) & 44,848-Strike Density.
@@ -116,6 +119,39 @@ Testing the `44,848`-strike v3 consensus against five historical and modern tuni
 | `saba` | Abolhasan Saba — *Setar by Saba: Mahoor* | Setar | `376.5 Hz` | `11.9¢` | `65` windows (`45s/15s`) | `1,232` |
 | `shahnazi` | Ali-Akbar Shahnazi — *Advanced Radif III* | Tar | `383.8 Hz` | `13.4¢` | `23/23` (`+4` rescued) | `2,059` |
 | `shekarchi` | Aliakbar Shekarchi — *Kemancheh Radif* | Kemancheh | `441.5 Hz` | `13.2¢` | `33/33` (`100%` direct) | `5,511` |
+
+---
+
+## Dastgāh-e Shūr Corpus & Consensus (10 Masters, 32,075 Gated Strikes)
+
+| SourceKey | Master & Repertoire | Instrument Family | Tonic `Do` (Hz) | Total Strikes |
+|---|---|---|---:|---:|
+| `alizadeh_tar` | Hossein Alizadeh — *Radif Navazi: Shur* (35 tracks) | Fretted Lute (Tār) | `368.4 Hz` | `5,055` |
+| `shahnazi_tar` | Ali-Akbar Shahnazi — *Advanced Radif I: Shur* (30 tracks) | Fretted Lute (Tār) | `213.2 Hz` | `4,238` |
+| `forutan_setar` | Yusef Forutan — *Setar Radif I: Shur* (21 tracks) | Fretted Lute (Setār) | `311.2 Hz` | `2,882` |
+| `nariman_oud` | Mansour Nariman — *Iranian Music Radif for Oud: Shur* (35 tracks) | Fretless Lute (Oud) | `194.8 Hz` | `8,338` |
+| `shekarchi_kamancheh` | Ali-Akbar Shekarchi — *Radif of Persian Classical Music: Shour* (35 tracks) | Fretless Bowed (Kamāncheh) | `437.0 Hz` | `4,354` |
+| `karimi_vocal` | Mahmoud Karimi — *Vocal Radif Vol. 1: Dastgah-e Shur* (25 tracks) | Vocal | `235.2 Hz` | `3,964` |
+| `kasaei_ney_setar` | Hassan Kasaei — *Radif 1: Shur* (11 tracks) | Aerophone (Ney) / Setār | `544.6 Hz` | `996` |
+| `lotfi_solo` | Mohammad-Reza Lotfi — *Dastgah-e Shur Recital* | Fretted Lute (Tār / Setār) | `201.2 Hz` | `915` |
+| `saba_violin` | Abolhasan Saba — *Violin Solo in Shur* | Fretless Bowed (Violin) | `232.8 Hz` | `1,153` |
+| `borumand_tar_setar` | Nur-Ali Borumand — *Mirza Abdollah Radif: Shur* | Fretted Lute (Tār / Setār) | `131.0 Hz` | `180` |
+
+### Dastgāh-e Shūr Empirical Pitch Consensus & Symmetrical Architecture
+
+The consensus across 32,075 strikes confirms Tala'i's 1st Dāng model ($1/1 \rightarrow 13/12 \rightarrow 32/27 \rightarrow 4/3$) and reveals how Shūr replicates this exact tetrachord over the fifth degree ($Sol$):
+
+| Scale Degree / Gusheh Slot | Theoretical Target Ratio | Theory (¢) | Fretted Median (¢) | Fretless Median (¢) | Consensus Median (¢) | Active Strikes |
+|---|---|---:|---:|---:|---:|---:|
+| **Zir-e Ist (Sub-tonic 7th)** | Pythagorean minor 7th ($16/9$) | `−203.9¢` | `−190.9¢` | `−193.3¢` | `−191.9¢` | `3,692` |
+| **Ist (Tonic $Do$)** | Unison ($1/1$) | `0.0¢` | `+15.7¢` | `+10.6¢` | `+14.5¢` | `6,126` |
+| **Neutral 2nd ($Re^k$)** | Al-Fārābī superparticular ($13/12$) | `+138.6¢` | `+158.3¢` | `+152.2¢` | `+154.8¢` | `2,648` |
+| **Minor 3rd ($Mi\flat$)** | Pythagorean minor third ($32/27$) | `+294.1¢` | `+303.9¢` | `+302.0¢` | `+302.0¢` | `3,558` |
+| **Pure 4th ($Fa$)** | Perfect fourth ($4/3$) | `+498.0¢` | `+509.4¢` | `+512.4¢` | `+511.4¢` | `4,493` |
+| **Fifth ($Sol$ — *Shahnāz*)** | Perfect fifth ($3/2$) | `+702.0¢` | `+716.0¢` | `+712.6¢` | `+714.8¢` | `3,276` |
+| **Neutral 6th ($La^k$ — *Qaracheh*)** | $3/2 \times 13/12$ ($13/8$) | `+840.6¢` | `+817.0¢` | `+845.9¢` | `+834.1¢` | `2,314` |
+| **Minor 7th ($Si\flat$ — *Razavi*)** | $3/2 \times 32/27$ ($16/9$) | `+996.1¢` | `+1009.1¢` | `+1009.3¢` | `+1009.1¢` | `3,606` |
+| **Octave ($Do'$)** | Octave ($2/1$) | `+1200.0¢` | `+1215.1¢` | `+1215.8¢` | `+1215.4¢` | `5,540` |
 
 ---
 
