@@ -902,42 +902,41 @@ def page11() -> str:
     # 2. DRAW 7 DASTGAH ROWS IN CONTINUOUS MODAL SEQUENCE
     # Continuous progression: Māhūr [M+M] -> Esfahān [E+C] -> Shūr [S+S] -> Navā [S+S] -> Segāh [S+Sg] -> Homāyūn [C+S] -> Chahārgāh [C+C]
     dastgah_rows = [
-        ("1. Dastgāh-e Māhūr", "Symmetrical double-major dāngs [M + M] separated by whole tone", [
+        ("1. Dastgāh-e Māhūr", "Symmetrical double-major dāngs [M + M] separated by whole tone (Do / Sol)", [
             (0.0, 498.0, "M 1 (Do)", C_MAH, [(0.0, "Do"), (203.9, "Re"), (407.8, "Mi"), (498.0, "Fa")]),
-            (702.0, 1200.0, "M 2 (Sol)", C_MAH, [(702.0, "Sol"), (906.0, "La"), (1110.0, "Si"), (1200.0, "Do\'")]),
+            (702.0, 1200.0, "M 2 (Sol)", C_MAH, [(702.0, "Sol"), (906.0, "La"), (1110.0, "Si"), (1200.0, "Do'")]),
         ], 192),
 
-        ("2. Āvāz-e Bayāt-e Esfahān", "Lower Minor dāng [E] on Do + Upper Augmented [C] on Sol", [
+        ("2. Āvāz-e Bayāt-e Esfahān", "Lower Minor dāng [E] on Do + Upper Augmented [C] on Sol (Shares right C with Chahārgāh)", [
             (0.0, 498.0, "E (Do)", C_ESF, [(0.0, "Do"), (203.9, "Re"), (294.1, "Mi♭"), (498.0, "Fa")]),
-            (702.0, 1200.0, "C (Sol)", C_CHAH, [(702.0, "Sol"), (840.6, "Laᵏ"), (1110.0, "Si"), (1200.0, "Do\'")]),
+            (702.0, 1200.0, "C (Sol)", C_CHAH, [(702.0, "Sol"), (840.6, "Laᵏ"), (1110.0, "Si"), (1200.0, "Do'")]),
         ], 302),
 
-        ("3. Dastgāh-e Shūr", "Symmetrical double-neutral dāngs [S + S] separated by whole tone", [
-            (0.0, 498.0, "S 1 (Do)", C_SHU, [(0.0, "Do"), (138.6, "Reᵏ"), (294.1, "Mi♭"), (498.0, "Fa")]),
-            (702.0, 1200.0, "S 2 (Sol)", C_SHU, [(702.0, "Sol"), (834.1, "Laᵏ"), (996.1, "Si♭"), (1200.0, "Do\'")]),
+        ("3. Dastgāh-e Chahārgāh", "Symmetrical double-augmented [C + C] (Exact right-side C overlap with Esfahān)", [
+            (0.0, 498.0, "C 1 (Do)", C_CHAH, [(0.0, "Do"), (138.6, "Reᵏ"), (407.8, "Mi"), (498.0, "Fa")]),
+            (702.0, 1200.0, "C 2 (Sol)", C_CHAH, [(702.0, "Sol"), (840.6, "Laᵏ"), (1110.0, "Si"), (1200.0, "Do'")]),
         ], 412),
 
-        ("4. Dastgāh-e Navā", "Lower pedestal [S] on Do + Core resting axis [S] on Fa", [
-            (0.0, 498.0, "S (Pedestal)", C_SHU, [(0.0, "Do"), (138.6, "Reᵏ"), (294.1, "Mi♭"), (498.0, "Fa")]),
-            (498.0, 996.1, "S (Īst on Fa)", C_SHU, [(498.0, "Fa"), (702.0, "Sol"), (834.1, "Laᵏ"), (996.1, "Si♭")]),
-        ], 522),
-
-        ("5. Dastgāh-e Segāh", "Tala'i transposition: S on Re (+204¢) creates derived Sg resting on Miᵏ (+355¢)", [
-            (203.9, 702.0, "S (Rooted on Re)", C_SHU, [(203.9, "Re"), (354.5, "Miᵏ"), (498.0, "Fa"), (702.0, "Sol")]),
-            (354.5, 852.5, "Sg (Īst on Miᵏ)", C_SEG, [(354.5, "Miᵏ"), (498.0, "Fa"), (702.0, "Sol"), (848.0, "Laᵏ")]),
-        ], 632),
-
-        ("6. Dastgāh-e Homāyūn", "Lower Augmented [C] on Do + Upper Neutral [S] on Fa (Bīdād conjoined)", [
+        ("4. Dastgāh-e Homāyūn", "Lower Augmented [C] on Do + Upper Neutral [S] on Fa (Exact left-side C overlap with Chahārgāh)", [
             (0.0, 498.0, "C (Do)", C_CHAH, [(0.0, "Do"), (138.6, "Reᵏ"), (407.8, "Mi"), (498.0, "Fa")]),
             (498.0, 996.1, "S (Bīdād on Fa)", C_SHU, [(498.0, "Fa"), (702.0, "Sol"), (792.0, "La♭"), (996.1, "Si♭")]),
+        ], 522),
+
+        ("5. Dastgāh-e Navā", "Lower Pedestal [S] on Do + Core Axis [S] on Fa (Exact right-side S overlap with Homāyūn Bīdād)", [
+            (0.0, 498.0, "S (Pedestal)", C_SHU, [(0.0, "Do"), (138.6, "Reᵏ"), (294.1, "Mi♭"), (498.0, "Fa")]),
+            (498.0, 996.1, "S (Īst on Fa)", C_SHU, [(498.0, "Fa"), (702.0, "Sol"), (834.1, "Laᵏ"), (996.1, "Si♭")]),
+        ], 632),
+
+        ("6. Dastgāh-e Shūr", "Symmetrical double-neutral [S + S] (Exact left-side S overlap with Navā Pedestal)", [
+            (0.0, 498.0, "S 1 (Do)", C_SHU, [(0.0, "Do"), (138.6, "Reᵏ"), (294.1, "Mi♭"), (498.0, "Fa")]),
+            (702.0, 1200.0, "S 2 (Sol)", C_SHU, [(702.0, "Sol"), (834.1, "Laᵏ"), (996.1, "Si♭"), (1200.0, "Do'")]),
         ], 742),
 
-        ("7. Dastgāh-e Chahārgāh", "Symmetrical double-augmented dāngs [C + C] separated by whole tone", [
-            (0.0, 498.0, "C 1 (Do)", C_CHAH, [(0.0, "Do"), (138.6, "Reᵏ"), (407.8, "Mi"), (498.0, "Fa")]),
-            (702.0, 1200.0, "C 2 (Sol)", C_CHAH, [(702.0, "Sol"), (840.6, "Laᵏ"), (1110.0, "Si"), (1200.0, "Do\'")]),
+        ("7. Dastgāh-e Segāh", "Tala'i step-shift: S on Re (+204¢) creates derived Sg resting on Miᵏ (+355¢)", [
+            (203.9, 702.0, "S (Rooted on Re)", C_SHU, [(203.9, "Re"), (354.5, "Miᵏ"), (498.0, "Fa"), (702.0, "Sol")]),
+            (354.5, 852.5, "Sg (Īst on Miᵏ)", C_SEG, [(354.5, "Miᵏ"), (498.0, "Fa"), (702.0, "Sol"), (848.0, "Laᵏ")]),
         ], 852),
     ]
-
     for title, subtitle, dang_spans, ry in dastgah_rows:
         # Translucent row card (0.80 opacity) so background fret lines remain visible behind the cards
         o.append(f'<rect x="36" y="{ry}" width="1328" height="98" rx="6" fill="#FFFFFF" fill-opacity="0.80" stroke="#E2E8F0" stroke-width="1.0"/>')
