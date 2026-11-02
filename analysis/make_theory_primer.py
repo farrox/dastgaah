@@ -828,10 +828,9 @@ def page11() -> str:
     o = header(11, "11. Modal Anatomy: Dāng Architecture Across the Dastgāhs",
                "Vertical fret grid on Setār String 1 (Do centered) showing exact primary Dāng 1 & Dāng 2 spans for each mode")
 
-    # Legend / Explanatory Top Card
-    card(o, 36, 95, 1328, 115, "Setār Fret Ruler Reference (Nut to Octave: −498¢ to +702¢, Centered on Do = 0¢)", "")
-    o.append('<text x="56" y="142" font-size="12.5" fill="#334155">In Persian classical practice, every Dastgāh is assembled from two primary conjunct or disjunct Dāngs spanning a pure fourth (~498¢).</text>')
-    o.append('<text x="56" y="162" font-size="12.5" fill="#334155">Below, the Setār neck is plotted horizontally with <tspan font-weight="700" fill="#0F172A">Do (0¢)</tspan> in the center. Vertical grid lines mark physical frets. Shaded blocks show the active primary Dāngs for each mode\'s Darāmad.</text>')
+    # Legend / Explanatory Top Card (Compact)
+    card(o, 36, 88, 1328, 62, "Setār Fretboard Modal Ruler (Nut to Octave: −500¢ to +1200¢, Centered on Do = 0¢)", "")
+    o.append('<text x="56" y="128" font-size="12" fill="#334155">Every Dastgāh is assembled from two primary conjunct or disjunct Dāngs (~498¢). Dots mark exact note frets within each Dāng. Vertical lines show Setār neck frets.</text>')
 
     # Frets definition: (cents_rel_do, name, ratio, is_primary)
     frets = [
@@ -848,83 +847,104 @@ def page11() -> str:
         (407.8, "Mi", "81/64", True),
         (498.0, "Fa", "4/3", True),
         (702.0, "Sol", "3/2", True),
+        (840.6, "Laᵏ", "13/8", True),
+        (906.0, "La", "27/16", False),
+        (996.1, "Si♭", "16/9", True),
+        (1110.0, "Si", "243/128", False),
+        (1200.0, "Do'", "2/1", True),
     ]
 
-    c_min, c_max = -550.0, 750.0
-    x_left, x_right = 160.0, 1310.0
+    c_min, c_max = -560.0, 1260.0
+    x_left, x_right = 230.0, 1335.0
 
     def c_to_x(c_val: float) -> float:
         return x_left + (c_val - c_min) / (c_max - c_min) * (x_right - x_left)
 
-    grid_y_top = 225
-    grid_y_bot = 955
+    grid_y_top = 180
+    grid_y_bot = 970
 
     # Draw vertical fret grid lines
     for c_val, name, ratio, is_primary in frets:
         xx = c_to_x(c_val)
-        is_do = (c_val == 0.0)
+        is_do = (c_val == 0.0 or c_val == 1200.0)
         line_col = "#0F172A" if is_do else ("#CBD5E1" if not is_primary else "#94A3B8")
-        line_w = 2.5 if is_do else (1.5 if is_primary else 1.0)
+        line_w = 2.0 if is_do else (1.2 if is_primary else 0.8)
         dash = ' stroke-dasharray="3,3"' if not is_primary and not is_do else ''
         o.append(f'<line x1="{xx:.1f}" y1="{grid_y_top}" x2="{xx:.1f}" y2="{grid_y_bot}" stroke="{line_col}" stroke-width="{line_w}"{dash}/>')
         
         # Fret header label at top
-        bg_col = "#0F172A" if is_do else "#F1F5F9"
+        bg_col = "#0F172A" if is_do else ("#F1F5F9" if is_primary else "#FFFFFF")
         txt_col = "#F8FAFC" if is_do else "#334155"
-        o.append(f'<rect x="{xx-22:.1f}" y="{grid_y_top-18}" width="44" height="20" rx="4" fill="{bg_col}" stroke="#94A3B8"/>')
-        o.append(f'<text x="{xx:.1f}" y="{grid_y_top-4}" font-size="11" font-weight="700" fill="{txt_col}" text-anchor="middle">{esc(name)}</text>')
-        o.append(f'<text x="{xx:.1f}" y="{grid_y_top-24}" font-size="9.5" class="mono" fill="#64748B" text-anchor="middle">{c_val:+.0f}¢</text>')
+        o.append(f'<rect x="{xx-18:.1f}" y="{grid_y_top-18}" width="36" height="18" rx="3" fill="{bg_col}" stroke="#94A3B8" stroke-width="0.8"/>')
+        o.append(f'<text x="{xx:.1f}" y="{grid_y_top-5}" font-size="9.5" font-weight="700" fill="{txt_col}" text-anchor="middle">{esc(name)}</text>')
+        o.append(f'<text x="{xx:.1f}" y="{grid_y_top-22}" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">{c_val:+.0f}¢</text>')
 
-    # Dastgah modal profiles
-    # Format: (name, subtext, dangs_list, y_pos)
-    # dangs_list: [(c_start, c_end, label, color, notes_str, dang_num_str)]
+    # 7 Dastgah rows: Chahargah, Shur, Mahur, Homayun, Segah, Esfahan, Nava
+    # Each row: (title, subtitle, dangs, ry)
+    # dangs: [(start_c, end_c, d_title, d_color, [(note_c, note_name), ...])]
     dastgah_rows = [
-        ("Dastgāh-e Chahārgāh", "Symmetrical double-augmented dāngs separated by whole tone", [
-            (0.0, 498.0, "Dāng 1 (Chahārgāh): Do → Fa", "#DC2626", "Do · Reᵏ (+139¢) · Mi (+408¢) · Fa (+498¢)", "Dāng 1"),
-            (702.0, 1200.0, "Dāng 2 (Chahārgāh): Sol → Do↑", "#DC2626", "Sol · Laᵏ (+841¢) · Si (+1110¢) · Do↑ (+1200¢)", "Dāng 2"),
-        ], 260),
+        ("Dastgāh-e Chahārgāh", "Symmetrical double-augmented dāngs", [
+            (0.0, 498.0, "Dāng 1 (Chahārgāh)", "#DC2626", [(0.0, "Do"), (138.6, "Reᵏ"), (407.8, "Mi"), (498.0, "Fa")]),
+            (702.0, 1200.0, "Dāng 2 (Chahārgāh)", "#DC2626", [(702.0, "Sol"), (840.6, "Laᵏ"), (1110.0, "Si"), (1200.0, "Do'")]),
+        ], 195),
 
-        ("Dastgāh-e Shūr", "Symmetrical double-dāngs (Dāng 1) separated by whole tone", [
-            (0.0, 498.0, "Dāng 1 (Shūr): Do → Fa", "#2563EB", "Do · Reᵏ (+139¢) · Mi♭ (+294¢) · Fa (+498¢)", "Dāng 1 (Daramad)"),
-            (702.0, 1200.0, "Dāng 2 (Qaracheh/Razavi): Sol → Do↑", "#2563EB", "Sol · Laᵏ (+834¢) · Si♭ (+1009¢) · Do↑ (+1200¢)", "Dāng 2 (Shahnāz)"),
-        ], 380),
+        ("Dastgāh-e Shūr", "Symmetrical double-Shūr dāngs", [
+            (0.0, 498.0, "Dāng 1 (Shūr)", "#2563EB", [(0.0, "Do"), (138.6, "Reᵏ"), (294.1, "Mi♭"), (498.0, "Fa")]),
+            (702.0, 1200.0, "Dāng 2 (Qaracheh/Razavi)", "#2563EB", [(702.0, "Sol"), (834.1, "Laᵏ"), (996.1, "Si♭"), (1200.0, "Do'")]),
+        ], 305),
 
-        ("Dastgāh-e Māhūr", "Two identical major diatonic dāngs (Dāng 2) separated by whole tone", [
-            (0.0, 498.0, "Dāng 1 (Māhūr): Do → Fa", "#059669", "Do · Re (+204¢) · Mi (+408¢) · Fa (+498¢)", "Dāng 1 (Daramad)"),
-            (702.0, 1200.0, "Dāng 2 (Māhūr 5th): Sol → Do↑", "#059669", "Sol · La (+906¢) · Si (+1110¢) · Do↑ (+1200¢)", "Dāng 2 (Feyli)"),
-        ], 500),
+        ("Dastgāh-e Māhūr", "Two identical major diatonic dāngs", [
+            (0.0, 498.0, "Dāng 1 (Māhūr)", "#059669", [(0.0, "Do"), (203.9, "Re"), (407.8, "Mi"), (498.0, "Fa")]),
+            (702.0, 1200.0, "Dāng 2 (Māhūr 5th)", "#059669", [(702.0, "Sol"), (906.0, "La"), (1110.0, "Si"), (1200.0, "Do'")]),
+        ], 415),
 
-        ("Dastgāh-e Homāyūn", "Lower Chahārgāh dāng (Dāng 4) + Upper Shūr dāng (Dāng 1) conjoined", [
-            (0.0, 498.0, "Dāng 1 (Chahārgāh-type): Do → Fa", "#D97706", "Do · Reᵏ (+139¢) · Mi (+408¢) · Fa (+498¢)", "Dāng 1 (Daramad)"),
-            (498.0, 996.0, "Dāng 2 (Shūr-type Bīdād): Fa → Si♭", "#2563EB", "Fa · Sol (+702¢) · La♭ (+792¢) · Si♭ (+996¢)", "Dāng 2 (Bīdād Pivot)"),
-        ], 620),
+        ("Dastgāh-e Homāyūn", "Lower Chahārgāh + Upper Shūr conjoined", [
+            (0.0, 498.0, "Dāng 1 (Chahārgāh-type)", "#D97706", [(0.0, "Do"), (138.6, "Reᵏ"), (407.8, "Mi"), (498.0, "Fa")]),
+            (498.0, 996.1, "Dāng 2 (Bīdād Pivot)", "#2563EB", [(498.0, "Fa"), (702.0, "Sol"), (792.0, "La♭"), (996.1, "Si♭")]),
+        ], 525),
 
-        ("Dastgāh-e Segāh", "Dāng 3 rooted on Miᵏ (+355¢), shifting to Dāng 4 in Mokhālef (Do)", [
-            (-147.9, 354.5, "Preparation Dāng: Re → Miᵏ", "#6366F1", "Re · Mi♭ · Miᵏ (Īst Resolution)", "Zīr-e Īst"),
-            (354.5, 852.5, "Dāng 3 (Segāh Īst): Miᵏ → Laᵏ", "#7C3AED", "Miᵏ (0¢) · Fa (+142¢) · Sol (+352¢) · Laᵏ (+494¢)", "Primary Dāng 3"),
-        ], 740),
+        ("Dastgāh-e Segāh", "Dāng 3 on Miᵏ (+355¢), Mokhālef in Do", [
+            (-147.9, 354.5, "Prep: Re → Miᵏ", "#6366F1", [(-147.9, "Re"), (-20.0, "Mi♭"), (354.5, "Miᵏ")]),
+            (354.5, 852.5, "Dāng 3 (Segāh Īst)", "#7C3AED", [(354.5, "Miᵏ"), (498.0, "Fa"), (702.0, "Sol"), (848.0, "Laᵏ")]),
+        ], 635),
 
-        ("Āvāz-e Bayāt-e Esfahān", "Minor Dāng 4 on Do + Upper Chahārgāh Dāng on Sol (Ouj)", [
-            (0.0, 498.0, "Dāng 1 (Esfahān Minor): Do → Fa", "#0891B2", "Do · Re (+204¢) · Mi♭ (+294¢) · Fa (+498¢)", "Dāng 1 (Daramad)"),
-            (702.0, 1200.0, "Dāng 2 (Chahārgāh Ouj): Sol → Do↑", "#DC2626", "Sol · Laᵏ (+841¢) · Si (+1110¢) · Do↑ (+1200¢)", "Dāng 2 (Ouj / Climax)"),
-        ], 860),
+        ("Āvāz-e Bayāt-e Esfahān", "Minor Dāng on Do + Upper Chahārgāh Ouj", [
+            (0.0, 498.0, "Dāng 1 (Minor)", "#0891B2", [(0.0, "Do"), (203.9, "Re"), (294.1, "Mi♭"), (498.0, "Fa")]),
+            (702.0, 1200.0, "Dāng 2 (Chahārgāh Ouj)", "#DC2626", [(702.0, "Sol"), (840.6, "Laᵏ"), (1110.0, "Si"), (1200.0, "Do'")]),
+        ], 745),
+
+        ("Dastgāh-e Navā", "Tonal axis on Fa (+498¢) + Lower Shūr dāng", [
+            (0.0, 498.0, "Dāng 1 (Lower Pedestal)", "#2563EB", [(0.0, "Do"), (138.6, "Reᵏ"), (294.1, "Mi♭"), (498.0, "Fa")]),
+            (498.0, 996.1, "Dāng 2 (Navā Īst on Fa)", "#0D9488", [(498.0, "Fa"), (702.0, "Sol"), (834.1, "Laᵏ"), (996.1, "Si♭")]),
+        ], 855),
     ]
 
     for title, subtitle, dang_spans, ry in dastgah_rows:
-        # Row background card
-        o.append(f'<rect x="36" y="{ry}" width="1328" height="105" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>')
-        o.append(f'<text x="50" y="{ry+24}" font-size="13" font-weight="700" fill="#0F172A">{esc(title)}</text>')
-        o.append(f'<text x="50" y="{ry+40}" font-size="10.5" fill="#64748B">{esc(subtitle)}</text>')
+        # Compact Row card
+        o.append(f'<rect x="36" y="{ry}" width="1328" height="98" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.0"/>')
+        o.append(f'<text x="46" y="{ry+22}" font-size="12" font-weight="700" fill="#0F172A">{esc(title)}</text>')
+        o.append(f'<text x="46" y="{ry+38}" font-size="9.5" fill="#64748B">{esc(subtitle)}</text>')
 
-        # Draw Dāng span bars
-        for c_start, c_end, d_label, col, notes_str, badge in dang_spans:
-            x_s = max(x_left, c_to_x(c_start))
-            x_e = min(x_right, c_to_x(c_end))
-            bw = x_e - x_s
-            o.append(f'<rect x="{x_s:.1f}" y="{ry+50}" width="{bw:.1f}" height="24" rx="5" fill="{col}" fill-opacity="0.18" stroke="{col}" stroke-width="1.8"/>')
-            o.append(f'<text x="{x_s+8:.1f}" y="{ry+66}" font-size="10.5" font-weight="700" fill="{col}">{esc(badge)}</text>')
-            o.append(f'<text x="{x_s+65:.1f}" y="{ry+66}" font-size="10" font-weight="600" fill="#1E293B">[{c_end-c_start:+.0f}¢ Dāng]</text>')
-            o.append(f'<text x="{x_s+8:.1f}" y="{ry+90}" font-size="10" fill="#334155">{esc(notes_str)}</text>')
+        # Draw each Dāng block
+        for c_start, c_end, d_title, col, notes_in_dang in dang_spans:
+            x_s = c_to_x(c_start)
+            x_e = c_to_x(c_end)
+            bw = max(10.0, x_e - x_s)
+            
+            # Shaded Dāng enclosure
+            o.append(f'<rect x="{x_s:.1f}" y="{ry+46}" width="{bw:.1f}" height="42" rx="4" fill="{col}" fill-opacity="0.12" stroke="{col}" stroke-width="1.4"/>')
+            
+            # Badge text
+            o.append(f'<text x="{x_s+6:.1f}" y="{ry+58}" font-size="9.5" font-weight="700" fill="{col}">{esc(d_title)}</text>')
+            
+            # Note dots & labels inside the Dāng
+            for n_c, n_lbl in notes_in_dang:
+                nx = c_to_x(n_c)
+                o.append(f'<circle cx="{nx:.1f}" cy="{ry+74}" r="4.0" fill="{col}"/>')
+                o.append(f'<text x="{nx:.1f}" y="{ry+86}" font-size="8.5" font-weight="600" fill="#1E293B" text-anchor="middle">{esc(n_lbl)}</text>')
+
+    o.append("</svg>")
+    return "\n".join(o)
 
     o.append("</svg>")
     return "\n".join(o)
