@@ -15,7 +15,7 @@ ROOT = Path("/Users/ed/Developer/dastgaah")
 SCRATCH = Path("/Users/ed/.gemini/antigravity/brain/5ea62a60-87f7-4e63-9f6c-0034aec38b37/scratch/primer")
 SCRATCH.mkdir(parents=True, exist_ok=True)
 W, H = 1400, 990
-TOTAL = 17
+TOTAL = 18
 CHAR_W = 0.52  # average glyph width / font size for wrapping
 
 
@@ -1124,9 +1124,77 @@ def page15() -> str:
     return "\n".join(o)
 
 
-# --------------------------------------------------------------------------- PAGE 16
+# --------------------------------------------------------------------------- PAGE 16: SHUR VS NAVA VS DASHTI
 def page16() -> str:
-    o = header(16, "16. Harmonizing Microtonal Dāngs: Quartal, Drone &amp; 13-Limit Spectralism",
+    o = header(16, "16. Shūr vs. Navā vs. Dashtī: Tetrachords, Tonics &amp; Motaghayyer",
+               "Empirical comparative analysis across 50,000+ strikes: Why identical pitch gamuts produce divergent modes")
+
+    items = [
+        ("h", "The Surface Illusion: Shared Fret Classes"),
+        ("p", "In Persian pedagogical tradition, Navā and Āvāz-e Dashtī are frequently introduced as offshoots or cousins of Dastgāh-e Shūr. "
+              "On a setār neck, an amateur plucks the same sequence of notes: Do, Reᵏ, Mi♭, Fa, Sol, Laᵏ, Si♭. "
+              "Yet musically and phenomenologically, they belong to completely distinct aesthetic worlds: Shūr is solemn and primordial, "
+              "Navā is quiet and nocturnal, while Dashtī is agonizingly melancholic. "
+              "Our 4-stage DSP strike extractions reveal that the differences stem from three acoustic laws: tonic orientation, upper dāng modulation, and dynamic pitch instability."),
+        ("h", "1. Shūr: Symmetrical Double-Dāng Grounded on Do"),
+        ("p", "Shūr establishes Do (0¢) as both the absolute resting tonic (Īst) and melodic axis (Shāhed). "
+              "Its lower tetrachord (Tala'i Dāng 1: Do–Reᵏ–Mi♭–Fa) replicates symmetrically over the pure fifth (Sol, +714.8¢) into Qaracheh (Laᵏ) and Razavi (Si♭). "
+              "All scale degrees are pitch-stable (non-motaghayyer), anchored by the robust 13/12 neutral second (+154.8¢)."),
+        ("h", "2. Navā: Tonal Axis Suspended on the 4th Degree (Fa)"),
+        ("p", "Navā shifts the entire resting center up a perfect fourth to Fa (+511.4¢). Do is no longer home; rather, the lower notes serve as an inverted pedestal. "
+              "Melodic development climbs into Gusheh-ye Neyshāburak, where the upper tetrachord drops its neutral second and mutates into Tala'i Dāng 2 "
+              "(the Mahūr major dāng), creating philosophical contemplation rather than Shūr's gravitas."),
+        ("h", "3. Dashtī: The Motaghayyer (Variable 5th Degree)"),
+        ("p", "Dashtī centers on the 5th degree (Sol). Crucially, this fifth is not fixed. In the emotional climax (Ouj / Bīdakhānī), "
+              "masters deliberately flatten Sol from +702¢ down to +640¢–+670¢ (Sol Koron). "
+              "Fretless instruments (kamāncheh, ney) slide continuously into this microtonal depression, while fretted lutes (tār, setār) bend strings "
+              "to generate the weeping 'soz' before collapsing back into Shūr's Do for the final foroud."),
+    ]
+    text_col(o, items, page=16)
+
+    card(o, 770, 100, 600, 480, "Consensus Comparison Matrix: Shūr vs. Navā vs. Dashtī", "Comparative pitch and behavioral matrix across 3 distinct datasets")
+    rows = [
+        ("Tonic / Īst", "1st Degree (Do, 0¢)", "4th Degree (Fa, +511¢)", "Do (Final Foroud)"),
+        ("Shāhed (Axis)", "1st Degree (Do, 0¢)", "4th Degree (Fa, +511¢)", "5th Degree (Sol / Solᵏ)"),
+        ("Tetrachord 1", "Dāng 1 (Do-Reᵏ-Mi♭-Fa)", "Dāng 1 (Do-Reᵏ-Mi♭-Fa)", "Dāng 1 (re-anchored)"),
+        ("Tetrachord 2", "Dāng 1 over 5th (Sol-Laᵏ)", "Dāng 2 (Neyshāburak)", "Ouj micro-cluster"),
+        ("Variable Note", "None (100% Fixed)", "None (Stable on Fa)", "5th (Sol ↔ Solᵏ: 640–702¢)"),
+        ("Affect / Hāl", "Majestic, Primordial", "Contemplative, Serene", "Tragic, Weeping, Ecstatic"),
+        ("Active Strikes", "32,075 strikes (10 masters)", "10,743 strikes (11 masters)", "10,256 strikes (12 masters)"),
+    ]
+    o.append('<text x="790" y="142" font-size="11.5" font-weight="700" fill="#1E3A8A">Feature</text>')
+    o.append('<text x="895" y="142" font-size="11.5" font-weight="700" fill="#2563EB">Dastgāh-e Shūr</text>')
+    o.append('<text x="1055" y="142" font-size="11.5" font-weight="700" fill="#16A34A">Dastgāh-e Navā</text>')
+    o.append('<text x="1205" y="142" font-size="11.5" font-weight="700" fill="#DC2626">Āvāz-e Dashtī</text>')
+    o.append('<line x1="790" y1="150" x2="1340" y2="150" stroke="#CBD5E1" stroke-width="1.5"/>')
+    y = 175
+    for feat, sh, nv, ds in rows:
+        o.append(f'<text x="790" y="{y}" font-size="11" font-weight="700" fill="#0F172A">{esc(feat)}</text>')
+        o.append(f'<text x="895" y="{y}" font-size="11" fill="#1E293B">{esc(sh)}</text>')
+        o.append(f'<text x="1055" y="{y}" font-size="11" fill="#1E293B">{esc(nv)}</text>')
+        o.append(f'<text x="1205" y="{y}" font-size="11" fill="#1E293B">{esc(ds)}</text>')
+        y += 42
+
+    card(o, 770, 600, 600, 360, "The Acoustic Mechanics of the Motaghayyer in Dashtī", "Fretted vs. fretless execution of the bent 5th degree")
+    o.append('<text x="790" y="645" font-size="13" fill="#334155">In Dashtī, the 5th degree is bimodal, alternating between pure 5th and flat koron:</text>')
+    o.append('<rect x="790" y="670" width="560" height="75" rx="6" fill="#FEF2F2" stroke="#FECACA"/>')
+    o.append('<text x="805" y="695" font-size="12.5" font-weight="700" fill="#991B1B">Fretless Bowed &amp; Wind (Shekarchi Kamāncheh, Kasaei Ney):</text>')
+    o.append('<text x="805" y="715" font-size="12" fill="#7F1D1D">Glides seamlessly between Sol (+702¢) and Sol Koron (+645¢). The microtonal inflection is</text>')
+    o.append('<text x="805" y="733" font-size="12" fill="#7F1D1D">continuous, reflecting Persian vocal tahrir techniques.</text>')
+
+    o.append('<rect x="790" y="760" width="560" height="75" rx="6" fill="#EFF6FF" stroke="#BFDBFE"/>')
+    o.append('<text x="805" y="785" font-size="12.5" font-weight="700" fill="#1E40AF">Fretted Lutes (Alizadeh Tār, Ebadi &amp; Forutan Setār):</text>')
+    o.append('<text x="805" y="805" font-size="12" fill="#1E3A8A">Because the neck lacks a fixed fret at +650¢, masters fret Fa (+500¢) and pull the string,</text>')
+    o.append('<text x="805" y="823" font-size="12" fill="#1E3A8A">or fret Sol (+702¢) while muting with the knuckle to simulate the downward crying pull.</text>')
+
+    o.append('<text x="790" y="875" font-size="12.5" fill="#16A34A" font-weight="700">Conclusion: The motaghayyer transforms an otherwise stable Shūr dāng into intense modal pathos.</text>')
+    o.append("</svg>")
+    return "\n".join(o)
+
+
+# --------------------------------------------------------------------------- PAGE 17: HARMONIZING DANGS
+def page17() -> str:
+    o = header(17, "17. Harmonizing Microtonal Dāngs: Quartal, Drone &amp; 13-Limit Spectralism",
                "Acoustic solutions for harmonizing the 13/12 neutral second and non-Western tetrachord structures")
 
     items = [
@@ -1181,9 +1249,9 @@ def page16() -> str:
     return "\n".join(o)
 
 
-# --------------------------------------------------------------------------- PAGE 17
-def page17() -> str:
-    o = header(17, "17. Timeline, Glossary and Further Reading",
+# --------------------------------------------------------------------------- PAGE 18
+def page18() -> str:
+    o = header(18, "18. Timeline, Glossary and Further Reading",
                "A thousand years from the monochord to the radif")
     # timeline
     card(o, 36, 100, 1328, 250, "Timeline", "")
@@ -1247,7 +1315,10 @@ def page17() -> str:
 
 
 def main():
-    pages = [page1, page2, page3, page4, page5, page6, page7, page8, page9, page10, page11, page12, page13, page14, page15, page16, page17]
+    pages = [
+        page1, page2, page3, page4, page5, page6, page7, page8, page9, page10,
+        page11, page12, page13, page14, page15, page16, page17, page18
+    ]
     paths = []
     for i, fn in enumerate(pages, 1):
         p = SCRATCH / f"primer_{i:02d}.svg"
@@ -1256,6 +1327,12 @@ def main():
     out = ROOT / "persian_music_theory_primer.pdf"
     subprocess.run(["/opt/homebrew/bin/rsvg-convert", "-f", "pdf", "-o", str(out)] + paths, check=True)
     print("Wrote", out, f"({out.stat().st_size/1024:.0f} KB)")
+    
+    # Also sync copy to analysis/
+    ana_out = ROOT / "analysis" / "persian_music_theory_primer.pdf"
+    subprocess.run(["cp", str(out), str(ana_out)], check=True)
+    print("Copied to", ana_out)
+    
     pts, gaps = urmawi_17()
     print("17-note gaps:", sorted({round(g, 1) for g in gaps}), "n=", len(pts))
 
