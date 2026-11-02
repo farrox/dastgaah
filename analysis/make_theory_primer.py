@@ -15,7 +15,7 @@ ROOT = Path("/Users/ed/Developer/dastgaah")
 SCRATCH = Path("/Users/ed/.gemini/antigravity/brain/5ea62a60-87f7-4e63-9f6c-0034aec38b37/scratch/primer")
 SCRATCH.mkdir(parents=True, exist_ok=True)
 W, H = 1400, 990
-TOTAL = 19
+TOTAL = 20
 CHAR_W = 0.52  # average glyph width / font size for wrapping
 
 
@@ -823,9 +823,116 @@ def page10() -> str:
     return "\n".join(o)
 
 
-# --------------------------------------------------------------------------- PAGE 11
+# --------------------------------------------------------------------------- PAGE 11: FULL-PAGE DANG ARCHITECTURE & FRET MAP
 def page11() -> str:
-    o = header(11, "11. Tala'i Dāngs in Action: Āvāz-e Dashti (Fretted vs. Fretless)",
+    o = header(11, "11. Modal Anatomy: Dāng Architecture Across the Dastgāhs",
+               "Vertical fret grid on Setār String 1 (Do centered) showing exact primary Dāng 1 & Dāng 2 spans for each mode")
+
+    # Legend / Explanatory Top Card
+    card(o, 36, 95, 1328, 115, "Setār Fret Ruler Reference (Nut to Octave: −498¢ to +702¢, Centered on Do = 0¢)", "")
+    o.append('<text x="56" y="142" font-size="12.5" fill="#334155">In Persian classical practice, every Dastgāh is assembled from two primary conjunct or disjunct Dāngs spanning a pure fourth (~498¢).</text>')
+    o.append('<text x="56" y="162" font-size="12.5" fill="#334155">Below, the Setār neck is plotted horizontally with <tspan font-weight="700" fill="#0F172A">Do (0¢)</tspan> in the center. Vertical grid lines mark physical frets. Shaded blocks show the active primary Dāngs for each mode\'s Darāmad.</text>')
+
+    # Frets definition: (cents_rel_do, name, ratio, is_primary)
+    frets = [
+        (-498.0, "Sol↓", "3/4", True),
+        (-359.5, "Laᵏ↓", "13/16", False),
+        (-294.1, "La↓", "27/32", False),
+        (-203.9, "Si♭↓", "16/9", True),
+        (-90.2, "Siᵏ↓", "limma", False),
+        (0.0, "Do", "1/1", True),
+        (138.6, "Reᵏ", "13/12", True),
+        (203.9, "Re", "9/8", True),
+        (294.1, "Mi♭", "32/27", False),
+        (354.5, "Miᵏ", "27/22", True),
+        (407.8, "Mi", "81/64", True),
+        (498.0, "Fa", "4/3", True),
+        (702.0, "Sol", "3/2", True),
+    ]
+
+    c_min, c_max = -550.0, 750.0
+    x_left, x_right = 160.0, 1310.0
+
+    def c_to_x(c_val: float) -> float:
+        return x_left + (c_val - c_min) / (c_max - c_min) * (x_right - x_left)
+
+    grid_y_top = 225
+    grid_y_bot = 955
+
+    # Draw vertical fret grid lines
+    for c_val, name, ratio, is_primary in frets:
+        xx = c_to_x(c_val)
+        is_do = (c_val == 0.0)
+        line_col = "#0F172A" if is_do else ("#CBD5E1" if not is_primary else "#94A3B8")
+        line_w = 2.5 if is_do else (1.5 if is_primary else 1.0)
+        dash = ' stroke-dasharray="3,3"' if not is_primary and not is_do else ''
+        o.append(f'<line x1="{xx:.1f}" y1="{grid_y_top}" x2="{xx:.1f}" y2="{grid_y_bot}" stroke="{line_col}" stroke-width="{line_w}"{dash}/>')
+        
+        # Fret header label at top
+        bg_col = "#0F172A" if is_do else "#F1F5F9"
+        txt_col = "#F8FAFC" if is_do else "#334155"
+        o.append(f'<rect x="{xx-22:.1f}" y="{grid_y_top-18}" width="44" height="20" rx="4" fill="{bg_col}" stroke="#94A3B8"/>')
+        o.append(f'<text x="{xx:.1f}" y="{grid_y_top-4}" font-size="11" font-weight="700" fill="{txt_col}" text-anchor="middle">{esc(name)}</text>')
+        o.append(f'<text x="{xx:.1f}" y="{grid_y_top-24}" font-size="9.5" class="mono" fill="#64748B" text-anchor="middle">{c_val:+.0f}¢</text>')
+
+    # Dastgah modal profiles
+    # Format: (name, subtext, dangs_list, y_pos)
+    # dangs_list: [(c_start, c_end, label, color, notes_str, dang_num_str)]
+    dastgah_rows = [
+        ("Dastgāh-e Chahārgāh", "Symmetrical double-augmented dāngs separated by whole tone", [
+            (0.0, 498.0, "Dāng 1 (Chahārgāh): Do → Fa", "#DC2626", "Do · Reᵏ (+139¢) · Mi (+408¢) · Fa (+498¢)", "Dāng 1"),
+            (702.0, 1200.0, "Dāng 2 (Chahārgāh): Sol → Do↑", "#DC2626", "Sol · Laᵏ (+841¢) · Si (+1110¢) · Do↑ (+1200¢)", "Dāng 2"),
+        ], 260),
+
+        ("Dastgāh-e Shūr", "Symmetrical double-dāngs (Dāng 1) separated by whole tone", [
+            (0.0, 498.0, "Dāng 1 (Shūr): Do → Fa", "#2563EB", "Do · Reᵏ (+139¢) · Mi♭ (+294¢) · Fa (+498¢)", "Dāng 1 (Daramad)"),
+            (702.0, 1200.0, "Dāng 2 (Qaracheh/Razavi): Sol → Do↑", "#2563EB", "Sol · Laᵏ (+834¢) · Si♭ (+1009¢) · Do↑ (+1200¢)", "Dāng 2 (Shahnāz)"),
+        ], 380),
+
+        ("Dastgāh-e Māhūr", "Two identical major diatonic dāngs (Dāng 2) separated by whole tone", [
+            (0.0, 498.0, "Dāng 1 (Māhūr): Do → Fa", "#059669", "Do · Re (+204¢) · Mi (+408¢) · Fa (+498¢)", "Dāng 1 (Daramad)"),
+            (702.0, 1200.0, "Dāng 2 (Māhūr 5th): Sol → Do↑", "#059669", "Sol · La (+906¢) · Si (+1110¢) · Do↑ (+1200¢)", "Dāng 2 (Feyli)"),
+        ], 500),
+
+        ("Dastgāh-e Homāyūn", "Lower Chahārgāh dāng (Dāng 4) + Upper Shūr dāng (Dāng 1) conjoined", [
+            (0.0, 498.0, "Dāng 1 (Chahārgāh-type): Do → Fa", "#D97706", "Do · Reᵏ (+139¢) · Mi (+408¢) · Fa (+498¢)", "Dāng 1 (Daramad)"),
+            (498.0, 996.0, "Dāng 2 (Shūr-type Bīdād): Fa → Si♭", "#2563EB", "Fa · Sol (+702¢) · La♭ (+792¢) · Si♭ (+996¢)", "Dāng 2 (Bīdād Pivot)"),
+        ], 620),
+
+        ("Dastgāh-e Segāh", "Dāng 3 rooted on Miᵏ (+355¢), shifting to Dāng 4 in Mokhālef (Do)", [
+            (-147.9, 354.5, "Preparation Dāng: Re → Miᵏ", "#6366F1", "Re · Mi♭ · Miᵏ (Īst Resolution)", "Zīr-e Īst"),
+            (354.5, 852.5, "Dāng 3 (Segāh Īst): Miᵏ → Laᵏ", "#7C3AED", "Miᵏ (0¢) · Fa (+142¢) · Sol (+352¢) · Laᵏ (+494¢)", "Primary Dāng 3"),
+        ], 740),
+
+        ("Āvāz-e Bayāt-e Esfahān", "Minor Dāng 4 on Do + Upper Chahārgāh Dāng on Sol (Ouj)", [
+            (0.0, 498.0, "Dāng 1 (Esfahān Minor): Do → Fa", "#0891B2", "Do · Re (+204¢) · Mi♭ (+294¢) · Fa (+498¢)", "Dāng 1 (Daramad)"),
+            (702.0, 1200.0, "Dāng 2 (Chahārgāh Ouj): Sol → Do↑", "#DC2626", "Sol · Laᵏ (+841¢) · Si (+1110¢) · Do↑ (+1200¢)", "Dāng 2 (Ouj / Climax)"),
+        ], 860),
+    ]
+
+    for title, subtitle, dang_spans, ry in dastgah_rows:
+        # Row background card
+        o.append(f'<rect x="36" y="{ry}" width="1328" height="105" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>')
+        o.append(f'<text x="50" y="{ry+24}" font-size="13" font-weight="700" fill="#0F172A">{esc(title)}</text>')
+        o.append(f'<text x="50" y="{ry+40}" font-size="10.5" fill="#64748B">{esc(subtitle)}</text>')
+
+        # Draw Dāng span bars
+        for c_start, c_end, d_label, col, notes_str, badge in dang_spans:
+            x_s = max(x_left, c_to_x(c_start))
+            x_e = min(x_right, c_to_x(c_end))
+            bw = x_e - x_s
+            o.append(f'<rect x="{x_s:.1f}" y="{ry+50}" width="{bw:.1f}" height="24" rx="5" fill="{col}" fill-opacity="0.18" stroke="{col}" stroke-width="1.8"/>')
+            o.append(f'<text x="{x_s+8:.1f}" y="{ry+66}" font-size="10.5" font-weight="700" fill="{col}">{esc(badge)}</text>')
+            o.append(f'<text x="{x_s+65:.1f}" y="{ry+66}" font-size="10" font-weight="600" fill="#1E293B">[{c_end-c_start:+.0f}¢ Dāng]</text>')
+            o.append(f'<text x="{x_s+8:.1f}" y="{ry+90}" font-size="10" fill="#334155">{esc(notes_str)}</text>')
+
+    o.append("</svg>")
+    return "\n".join(o)
+
+
+# --------------------------------------------------------------------------- PAGE 12
+def page12() -> str:
+    o = header(12, "12. Tala'i Dāngs in Action: Āvāz-e Dashti (Fretted vs. Fretless)",
                "Testing the Dāng-e Shūr and the variable degree (motaghayyer) across 12 masters (fretted tar/setar vs. fretless oud/kamancheh/voice)")
 
     items = [
@@ -886,8 +993,8 @@ def page11() -> str:
 
 
 # --------------------------------------------------------------------------- PAGE 12
-def page12() -> str:
-    o = header(12, "12. Dastgāh-e Navā &amp; The 3rd String (Re): 11 Masters Analyzed",
+def page13() -> str:
+    o = header(13, "13. Dastgāh-e Navā &amp; The 3rd String (Re): 11 Masters Analyzed",
                "Qajar lineage (Borumand, Neydavud, Shahnazi), Classical Setār (Saba, Ebadi, Janmohammadi, Alizadeh) &amp; Fretless")
 
     items = [
@@ -950,8 +1057,8 @@ def page12() -> str:
 
 
 # --------------------------------------------------------------------------- PAGE 13
-def page13() -> str:
-    o = header(13, "13. Āvāz-e Bayāt-e Esfahān: Empirical Proof of Tala'i's 4th Dāng",
+def page14() -> str:
+    o = header(14, "14. Āvāz-e Bayāt-e Esfahān: Empirical Proof of Tala'i's 4th Dāng",
                "18 Canonical Masters (36,234 note strikes) prove the Pythagorean Minor 3rd (32/27) & Upper Chahārgāh Coupling")
 
     items = [
@@ -1016,8 +1123,8 @@ def page13() -> str:
 
 
 # --------------------------------------------------------------------------- PAGE 14
-def page14() -> str:
-    o = header(14, "14. Dastgāh-e Homāyūn: Empirical Consensus Across 18 Masters",
+def page15() -> str:
+    o = header(15, "15. Dastgāh-e Homāyūn: Empirical Consensus Across 18 Masters",
                "45,516 Gated Note Strikes Reveal the Anatomy of the Lower Chahārgāh Dāng and Bīdād Modulatory Pivot")
 
     items = [
@@ -1084,8 +1191,8 @@ def page14() -> str:
 
 
 # --------------------------------------------------------------------------- PAGE 15
-def page15() -> str:
-    o = header(15, "15. Dastgāh-e Shūr: The Mother Mode & Tala'i's 1st Dāng",
+def page16() -> str:
+    o = header(16, "16. Dastgāh-e Shūr: The Mother Mode & Tala'i's 1st Dāng",
                "32,075 Note Strikes Across 195 Tracks Reveal the Gravitational Stability of Re-koron (13/12)")
 
     items = [
@@ -1150,8 +1257,8 @@ def page15() -> str:
 
 
 # --------------------------------------------------------------------------- PAGE 16: SHUR VS NAVA VS DASHTI
-def page16() -> str:
-    o = header(16, "16. Shūr vs. Navā vs. Dashtī: Tetrachords, Tonics &amp; Motaghayyer",
+def page17() -> str:
+    o = header(17, "17. Shūr vs. Navā vs. Dashtī: Tetrachords, Tonics &amp; Motaghayyer",
                "Empirical comparative analysis across 50,000+ strikes: Why identical pitch gamuts produce divergent modes")
 
     items = [
@@ -1218,8 +1325,8 @@ def page16() -> str:
 
 
 # --------------------------------------------------------------------------- PAGE 17: DASTGAH-E SEGAH
-def page17() -> str:
-    o = header(17, "17. Dastgāh-e Segāh: Zalzal's Neutral Third &amp; Tala'i's 3rd Dāng",
+def page18() -> str:
+    o = header(18, "18. Dastgāh-e Segāh: Zalzal's Neutral Third &amp; Tala'i's 3rd Dāng",
                "Empirical consensus across 12 canonical masters (11,438 strikes): Validating the 27/22 neutral third")
 
     items = [
@@ -1293,9 +1400,9 @@ def page17() -> str:
     return "\n".join(o)
 
 
-# --------------------------------------------------------------------------- PAGE 18: HARMONIZING DANGS
-def page18() -> str:
-    o = header(18, "18. Harmonizing Microtonal Dāngs: Quartal, Drone &amp; 13-Limit Spectralism",
+# --------------------------------------------------------------------------- PAGE 19: HARMONIZING DANGS
+def page19() -> str:
+    o = header(19, "19. Harmonizing Microtonal Dāngs: Quartal, Drone &amp; 13-Limit Spectralism",
                "Acoustic solutions for harmonizing the 13/12 neutral second and non-Western tetrachord structures")
 
     items = [
@@ -1350,9 +1457,9 @@ def page18() -> str:
     return "\n".join(o)
 
 
-# --------------------------------------------------------------------------- PAGE 19
-def page19() -> str:
-    o = header(19, "19. Timeline, Glossary and Further Reading",
+# --------------------------------------------------------------------------- PAGE 20
+def page20() -> str:
+    o = header(20, "20. Timeline, Glossary and Further Reading",
                "A thousand years from the monochord to the radif")
     # timeline
     card(o, 36, 100, 1328, 250, "Timeline", "")
@@ -1418,7 +1525,7 @@ def page19() -> str:
 def main():
     pages = [
         page1, page2, page3, page4, page5, page6, page7, page8, page9, page10,
-        page11, page12, page13, page14, page15, page16, page17, page18, page19
+        page11, page12, page13, page14, page15, page16, page17, page18, page19, page20
     ]
     paths = []
     for i, fn in enumerate(pages, 1):

@@ -16,18 +16,19 @@ Empirical pitch and scale-degree latch analysis of Persian Classical Music (*Rad
 
 ![Mahur v3 latch fingerprint](output.png)
 
-- **19-Page Persian Classical Music Theory Primer:** [`persian_music_theory_primer.pdf`](persian_music_theory_primer.pdf) ([`analysis/persian_music_theory_primer.pdf`](analysis/persian_music_theory_primer.pdf))
+- **20-Page Persian Classical Music Theory Primer:** [`persian_music_theory_primer.pdf`](persian_music_theory_primer.pdf) ([`analysis/persian_music_theory_primer.pdf`](analysis/persian_music_theory_primer.pdf))
   - *Pages 1–9:* Historical monochord theory from Pythagoras, Al-Fārābī, Ibn Sīnā, Ṣafī al-Dīn al-Urmawī (17-note gamut), and ʿAbd al-Qādir al-Marāghī.
-  - *Page 10:* Dariush Tala'i's Theory of Dāngs & Setār Neck Architecture (4 tetrachords + superimposed String 1 ruler with pure ratios).
-  - *Page 11:* Āvāz-e Dashti: Fretted vs. Fretless (12 Masters, 10,256 strikes) & Proof of the Bimodal Variable 5th Degree (*motaghayyer*).
-  - *Page 12:* Dastgāh-e Navā: 11 Masters (10,743 strikes) & Resolution of the Limma (256/243) vs. Superparticular (13/12) Controversy.
-  - *Page 13:* Āvāz-e Bayāt-e Esfahān: 18 Masters (36,234 strikes) & Empirical Proof of the Pythagorean Minor 3rd (32/27 = 294.1¢) and Upper Chahārgāh Coupling.
-  - *Page 14:* Dastgāh-e Homāyūn: 18 Masters (45,516 strikes) & Empirical Proof of the Lower Chahārgāh Dāng, Augmented Second (254.3¢), and Bīdād Modulatory Pivot.
-  - *Page 15:* Dastgāh-e Shūr: The Mother Mode & Tala'i's 1st Dāng (10 Masters, 32,075 strikes) — Superparticular $13/12$ ($Re^k = +154.8¢$), Pythagorean $32/27$ ($Mi\flat = +302.0¢$), and Double-Dāng Symmetrical Modulation over the 5th degree (*Shahnāz*, *Qaracheh*, *Razavi*).
-  - *Page 16:* Shūr vs. Navā vs. Dashtī: Tetrachords, Tonics & Motaghayyer (Comparative consensus across 53,000+ strikes explaining why identical pitch gamuts produce divergent modes).
-  - *Page 17:* Dastgāh-e Segāh: Zalzal's Neutral Third & Tala'i's 3rd Dāng (12 Masters, 11,438 strikes) — Validating Mansūr Zalzal's superparticular neutral third ($27/22 = +352.2¢$), the Zābol neutral second ($+141.5¢$), and Mokhālef climax pivot ($+850.4¢$).
-  - *Page 18:* Harmonizing Microtonal Dāngs: Quartal Enclosures, Drone Counterpoint & 13-Limit Spectral Harmony (Hannaneh, Alizadeh, Sabat, Rădulescu).
-  - *Page 19:* Historical Timeline, Technical Glossary, and Further Reading.
+  - *Page 10:* Dariush Tala'i's Theory of Dāngs & Setār Neck Architecture (4 tetrachords + superimposed String 1 ruler with pure ratios and explicit cents step badges).
+  - *Page 11:* **Modal Anatomy: Dāng Architecture Across the Dastgāhs** (Vertical Setār fret grid with $Do$ centered, displaying stacked Dāng 1 & Dāng 2 spans for Chahārgāh, Shūr, Māhūr, Homāyūn, Segāh, and Esfahān).
+  - *Page 12:* Āvāz-e Dashti: Fretted vs. Fretless (12 Masters, 10,256 strikes) & Proof of the Bimodal Variable 5th Degree (*motaghayyer*).
+  - *Page 13:* Dastgāh-e Navā: 11 Masters (10,743 strikes) & Resolution of the Limma (256/243) vs. Superparticular (13/12) Controversy.
+  - *Page 14:* Āvāz-e Bayāt-e Esfahān: 18 Masters (36,234 strikes) & Empirical Proof of the Pythagorean Minor 3rd (32/27 = 294.1¢) and Upper Chahārgāh Coupling.
+  - *Page 15:* Dastgāh-e Homāyūn: 18 Masters (45,516 strikes) & Empirical Proof of the Lower Chahārgāh Dāng, Augmented Second (254.3¢), and Bīdād Modulatory Pivot.
+  - *Page 16:* Dastgāh-e Shūr: The Mother Mode & Tala'i's 1st Dāng (10 Masters, 32,075 strikes) — Superparticular $13/12$ ($Re^k = +154.8¢$), Pythagorean $32/27$ ($Mi\flat = +302.0¢$), and Double-Dāng Symmetrical Modulation over the 5th degree (*Shahnāz*, *Qaracheh*, *Razavi*).
+  - *Page 17:* Shūr vs. Navā vs. Dashtī: Tetrachords, Tonics & Motaghayyer (Comparative consensus across 53,000+ strikes explaining why identical pitch gamuts produce divergent modes).
+  - *Page 18:* Dastgāh-e Segāh: Zalzal's Neutral Third & Tala'i's 3rd Dāng (12 Masters, 11,438 strikes) — Validating Mansūr Zalzal's superparticular neutral third ($27/22 = +352.2¢$), the Zābol neutral second ($+141.5¢$), and Mokhālef climax pivot ($+850.4¢$).
+  - *Page 19:* Harmonizing Microtonal Dāngs: Quartal Enclosures, Drone Counterpoint & 13-Limit Spectral Harmony (Hannaneh, Alizadeh, Sabat, Rădulescu).
+  - *Page 20:* Historical Timeline, Technical Glossary, and Further Reading.
 - **6-Page Empirical Pitch & Historical Theory Report:** [`mahur_pitch_analysis.pdf`](mahur_pitch_analysis.pdf) ([`analysis/mahur_pitch_analysis.pdf`](analysis/mahur_pitch_analysis.pdf))
   - *Page 1:* 17-Slot Cross-Instrument Latch Fingerprint & Absolute `Do` Spectrum (`199.7–441.5 Hz`).
   - *Page 2:* Diatonic vs. *Koron* Pair Discrimination (`La/Laᵏ↓`, `Re/Reᵏ`, `Mi/Miᵏ`, `Si/Siᵏ`) & 44,848-Strike Density.
