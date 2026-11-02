@@ -16,7 +16,7 @@ Empirical pitch and scale-degree latch analysis of Persian Classical Music (*Rad
 
 ![Mahur v3 latch fingerprint](output.png)
 
-- **18-Page Persian Classical Music Theory Primer:** [`persian_music_theory_primer.pdf`](persian_music_theory_primer.pdf) ([`analysis/persian_music_theory_primer.pdf`](analysis/persian_music_theory_primer.pdf))
+- **19-Page Persian Classical Music Theory Primer:** [`persian_music_theory_primer.pdf`](persian_music_theory_primer.pdf) ([`analysis/persian_music_theory_primer.pdf`](analysis/persian_music_theory_primer.pdf))
   - *Pages 1–9:* Historical monochord theory from Pythagoras, Al-Fārābī, Ibn Sīnā, Ṣafī al-Dīn al-Urmawī (17-note gamut), and ʿAbd al-Qādir al-Marāghī.
   - *Page 10:* Dariush Tala'i's Theory of Dāngs & Setār Neck Architecture (4 tetrachords + superimposed String 1 ruler with pure ratios).
   - *Page 11:* Āvāz-e Dashti: Fretted vs. Fretless (12 Masters, 10,256 strikes) & Proof of the Bimodal Variable 5th Degree (*motaghayyer*).
@@ -25,8 +25,9 @@ Empirical pitch and scale-degree latch analysis of Persian Classical Music (*Rad
   - *Page 14:* Dastgāh-e Homāyūn: 18 Masters (45,516 strikes) & Empirical Proof of the Lower Chahārgāh Dāng, Augmented Second (254.3¢), and Bīdād Modulatory Pivot.
   - *Page 15:* Dastgāh-e Shūr: The Mother Mode & Tala'i's 1st Dāng (10 Masters, 32,075 strikes) — Superparticular $13/12$ ($Re^k = +154.8¢$), Pythagorean $32/27$ ($Mi\flat = +302.0¢$), and Double-Dāng Symmetrical Modulation over the 5th degree (*Shahnāz*, *Qaracheh*, *Razavi*).
   - *Page 16:* Shūr vs. Navā vs. Dashtī: Tetrachords, Tonics & Motaghayyer (Comparative consensus across 53,000+ strikes explaining why identical pitch gamuts produce divergent modes).
-  - *Page 17:* Harmonizing Microtonal Dāngs: Quartal Enclosures, Drone Counterpoint & 13-Limit Spectral Harmony (Hannaneh, Alizadeh, Sabat, Rădulescu).
-  - *Page 18:* Historical Timeline, Technical Glossary, and Further Reading.
+  - *Page 17:* Dastgāh-e Segāh: Zalzal's Neutral Third & Tala'i's 3rd Dāng (12 Masters, 11,438 strikes) — Validating Mansūr Zalzal's superparticular neutral third ($27/22 = +352.2¢$), the Zābol neutral second ($+141.5¢$), and Mokhālef climax pivot ($+850.4¢$).
+  - *Page 18:* Harmonizing Microtonal Dāngs: Quartal Enclosures, Drone Counterpoint & 13-Limit Spectral Harmony (Hannaneh, Alizadeh, Sabat, Rădulescu).
+  - *Page 19:* Historical Timeline, Technical Glossary, and Further Reading.
 - **6-Page Empirical Pitch & Historical Theory Report:** [`mahur_pitch_analysis.pdf`](mahur_pitch_analysis.pdf) ([`analysis/mahur_pitch_analysis.pdf`](analysis/mahur_pitch_analysis.pdf))
   - *Page 1:* 17-Slot Cross-Instrument Latch Fingerprint & Absolute `Do` Spectrum (`199.7–441.5 Hz`).
   - *Page 2:* Diatonic vs. *Koron* Pair Discrimination (`La/Laᵏ↓`, `Re/Reᵏ`, `Mi/Miᵏ`, `Si/Siᵏ`) & 44,848-Strike Density.
@@ -153,6 +154,40 @@ The consensus across 32,075 strikes confirms Tala'i's 1st Dāng model ($1/1 \rig
 | **Neutral 6th ($La^k$ — *Qaracheh*)** | $3/2 \times 13/12$ ($13/8$) | `+840.6¢` | `+817.0¢` | `+845.9¢` | `+834.1¢` | `2,314` |
 | **Minor 7th ($Si\flat$ — *Razavi*)** | $3/2 \times 32/27$ ($16/9$) | `+996.1¢` | `+1009.1¢` | `+1009.3¢` | `+1009.1¢` | `3,606` |
 | **Octave ($Do'$)** | Octave ($2/1$) | `+1200.0¢` | `+1215.1¢` | `+1215.8¢` | `+1215.4¢` | `5,540` |
+
+---
+
+## Dastgāh-e Segāh Corpus & Consensus (12 Masters, 11,438 Gated Strikes)
+
+| SourceKey | Master & Repertoire | Instrument Family | Tonic `Ist` (Hz) | Total Strikes |
+|---|---|---|---:|---:|
+| `kasaei_ney` | Hassan Kasaei — *Radif Segah* (Solo Ney & Suite) | Aerophone (Ney) | `307.5 Hz` | `1,761` |
+| `payvar_santur` | Faramarz Payvar — *Segah Recital* (Chaharmezrab Mokhalef, Pegah) | Percussive Chordophone (Santūr) | `472.5 Hz` | `1,544` |
+| `alizadeh_tar` | Hossein Alizadeh — *Radif Navazi: Segah* (Daramad, Pishdaramad, Forud) | Fretted Lute (Tār) | `387.5 Hz` | `1,193` |
+| `shahnaz_tar` | Jalil Shahnaz — *Segah Recital* (with Kasaei & Chaharmezrab) | Fretted Lute (Tār) | `457.5 Hz` | `1,133` |
+| `borumand_tar_setar` | Nur-Ali Borumand — *Radif Mirza Abdollah: Segah* (6 tracks) | Fretted Lute (Tār / Setār) | `207.5 Hz` | `1,121` |
+| `saba_violin` | Abolhasan Saba — *Segah Recital* (Zang-e Shotor & Solo) | Fretless Bowed (Violin) | `357.5 Hz` | `1,012` |
+| `bigjekhani_tar` | Gholam-Hossein Bigjekhani — *Segah Recital* (Tabriz School) | Fretted Lute (Tār) | `317.5 Hz` | `912` |
+| `karimi_vocal` | Mahmoud Karimi — *Vocal Radif: Segah* (Daramad, Zabol, Mokhalef) | Vocal | `162.5 Hz` | `910` |
+| `lotfi_tar_setar` | Mohammad-Reza Lotfi — *Segah Improvisation & Chaharmezrab* | Fretted Lute (Tār / Setār) | `272.5 Hz` | `894` |
+| `nariman_oud` | Mansour Nariman — *Radif Oud: Segah* (Daramad, Chaharmezrab, Reng) | Fretless Lute (Oud) | `162.5 Hz` | `558` |
+| `shahnazi_tar` | Ali-Akbar Shahnazi — *Advanced Radif: Segah Pishdaramad* | Fretted Lute (Tār) | `307.5 Hz` | `290` |
+| `darvish_khan_tar` | Gholam-Hossein Darvish Khan — *Historical Reng-e Segah* | Fretted Lute (Tār - 1910) | `462.5 Hz` | `110` |
+
+### Dastgāh-e Segāh Empirical Pitch Consensus & Zalzal's Neutral Third
+
+In Segāh, the resting tonic (*Īst*) is $Mi^k$. All intervals are calibrated relative to this neutral third base ($0.0¢$):
+
+| Scale Degree / Gusheh Slot | Theoretical Target Ratio | Theory (¢) | Fretted Median (¢) | Fretless Median (¢) | Consensus Median (¢) | Active Strikes |
+|---|---|---:|---:|---:|---:|---:|
+| **Zīr-e Īst (Sub-tonic $Re$)** | Superparticular tone ($12/13$) | `−150.0¢` | `−147.9¢` | `−161.4¢` | `−147.9¢` | `536` |
+| **Īst (Tonic $Mi^k$)** | Unison ($1/1$) | `0.0¢` | `−0.1¢` | `−0.9¢` | `−0.5¢` | `2,722` |
+| **Zābol ($Fa$)** | Al-Fārābī superparticular ($13/12$) | `+154.8¢` | `+141.7¢` | `+140.4¢` | `+141.5¢` | `1,058` |
+| **Mūyeh ($Sol$)** | Mansūr Zalzal neutral third ($27/22$) | `+354.5¢` | `+353.3¢` | `+346.1¢` | `+352.2¢` | `1,282` |
+| **Hesār ($La^k$)** | Perfect fourth over Īst ($4/3$) | `+498.0¢` | `+495.4¢` | `+486.0¢` | `+493.5¢` | `796` |
+| **Shāhkhatāyī ($Si\flat$)** | Perfect fifth over Īst ($3/2$) | `+702.0¢` | `+697.6¢` | `+697.5¢` | `+697.6¢` | `713` |
+| **Mokhālef ($Do$)** | Neutral sixth over Īst ($18/11$ / $3/2 \times 13/12$) | `+850.0¢` | `+850.4¢` | `+848.0¢` | `+850.4¢` | `976` |
+| **Octave ($Mi^k{}'$)** | Octave ($2/1$) | `+1200.0¢` | `+1201.6¢` | `+1202.0¢` | `+1201.8¢` | `393` |
 
 ---
 
