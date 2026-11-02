@@ -1,0 +1,1353 @@
+{
+  "dastgah": "Bayat-e Esfahan",
+  "n_masters": 18,
+  "total_strikes": 36234,
+  "consensus": {
+    "zir_e_ist_koron": {
+      "target_theory_cents": -138.6,
+      "consensus_median_cents": -131.81,
+      "delta_cents": 6.79,
+      "spread_sigma_cents": 15.82,
+      "fretted_median_cents": -132.78,
+      "fretless_median_cents": -120.07,
+      "total_strikes": 1914,
+      "active_masters": 17
+    },
+    "ist_tonic": {
+      "target_theory_cents": 0.0,
+      "consensus_median_cents": 1.08,
+      "delta_cents": 1.08,
+      "spread_sigma_cents": 3.27,
+      "fretted_median_cents": 0.89,
+      "fretless_median_cents": 2.31,
+      "total_strikes": 9216,
+      "active_masters": 18
+    },
+    "whole_tone_2nd": {
+      "target_theory_cents": 203.9,
+      "consensus_median_cents": 204.45,
+      "delta_cents": 0.55,
+      "spread_sigma_cents": 9.93,
+      "fretted_median_cents": 203.9,
+      "fretless_median_cents": 207.71,
+      "total_strikes": 4694,
+      "active_masters": 16
+    },
+    "minor_3rd": {
+      "target_theory_cents": 294.1,
+      "consensus_median_cents": 289.99,
+      "delta_cents": -4.11,
+      "spread_sigma_cents": 8.56,
+      "fretted_median_cents": 289.99,
+      "fretless_median_cents": 291.06,
+      "total_strikes": 2454,
+      "active_masters": 17
+    },
+    "pure_4th": {
+      "target_theory_cents": 498.0,
+      "consensus_median_cents": 494.8,
+      "delta_cents": -3.2,
+      "spread_sigma_cents": 9.81,
+      "fretted_median_cents": 495.64,
+      "fretless_median_cents": 490.13,
+      "total_strikes": 3096,
+      "active_masters": 18
+    },
+    "fifth_sol": {
+      "target_theory_cents": 702.0,
+      "consensus_median_cents": 702.73,
+      "delta_cents": 0.73,
+      "spread_sigma_cents": 7.38,
+      "fretted_median_cents": 702.88,
+      "fretless_median_cents": 696.25,
+      "total_strikes": 4014,
+      "active_masters": 17
+    },
+    "neutral_6th": {
+      "target_theory_cents": 840.6,
+      "consensus_median_cents": 840.35,
+      "delta_cents": -0.25,
+      "spread_sigma_cents": 9.02,
+      "fretted_median_cents": 840.35,
+      "fretless_median_cents": 839.4,
+      "total_strikes": 1712,
+      "active_masters": 17
+    },
+    "leading_tone_7th": {
+      "target_theory_cents": 1109.8,
+      "consensus_median_cents": 1082.21,
+      "delta_cents": -27.59,
+      "spread_sigma_cents": 15.37,
+      "fretted_median_cents": 1076.99,
+      "fretless_median_cents": 1084.83,
+      "total_strikes": 1714,
+      "active_masters": 17
+    },
+    "octave": {
+      "target_theory_cents": 1200.0,
+      "consensus_median_cents": 1201.09,
+      "delta_cents": 1.09,
+      "spread_sigma_cents": 3.1,
+      "fretted_median_cents": 1200.66,
+      "fretless_median_cents": 1202.09,
+      "total_strikes": 8657,
+      "active_masters": 18
+    }
+  },
+  "sources": {
+    "borumand_tar_setar": {
+      "category": "tar_setar",
+      "lineage": "qajar_radif",
+      "fretless": false,
+      "ist_hz": 371.0,
+      "total_strikes": 3118,
+      "slots": {
+        "zir_e_ist_koron": {
+          "median_cents": -142.23,
+          "std_cents": 12.09,
+          "n_strikes": 137,
+          "target_cents": -138.6,
+          "delta_target": -3.63
+        },
+        "ist_tonic": {
+          "median_cents": -0.5,
+          "std_cents": 10.56,
+          "n_strikes": 478,
+          "target_cents": 0.0,
+          "delta_target": -0.5
+        },
+        "whole_tone_2nd": {
+          "median_cents": 205.17,
+          "std_cents": 14.07,
+          "n_strikes": 369,
+          "target_cents": 203.9,
+          "delta_target": 1.27
+        },
+        "minor_3rd": {
+          "median_cents": 289.99,
+          "std_cents": 8.38,
+          "n_strikes": 126,
+          "target_cents": 294.1,
+          "delta_target": -4.11
+        },
+        "pure_4th": {
+          "median_cents": 506.08,
+          "std_cents": 12.51,
+          "n_strikes": 341,
+          "target_cents": 498.0,
+          "delta_target": 8.08
+        },
+        "fifth_sol": {
+          "median_cents": 705.94,
+          "std_cents": 10.2,
+          "n_strikes": 568,
+          "target_cents": 702.0,
+          "delta_target": 3.94
+        },
+        "neutral_6th": {
+          "median_cents": 840.35,
+          "std_cents": 17.27,
+          "n_strikes": 210,
+          "target_cents": 840.6,
+          "delta_target": -0.25
+        },
+        "leading_tone_7th": {
+          "median_cents": 1058.72,
+          "std_cents": 12.64,
+          "n_strikes": 122,
+          "target_cents": 1109.8,
+          "delta_target": -51.08
+        },
+        "octave": {
+          "median_cents": 1199.48,
+          "std_cents": 10.28,
+          "n_strikes": 476,
+          "target_cents": 1200.0,
+          "delta_target": -0.52
+        }
+      }
+    },
+    "neydavud_tar": {
+      "category": "tar",
+      "lineage": "qajar_radif",
+      "fretless": false,
+      "ist_hz": 398.5,
+      "total_strikes": 1753,
+      "slots": {
+        "zir_e_ist_koron": {
+          "median_cents": -100.57,
+          "std_cents": 8.2,
+          "n_strikes": 56,
+          "target_cents": -138.6,
+          "delta_target": 38.03
+        },
+        "ist_tonic": {
+          "median_cents": 0.94,
+          "std_cents": 14.05,
+          "n_strikes": 201,
+          "target_cents": 0.0,
+          "delta_target": 0.94
+        },
+        "whole_tone_2nd": {
+          "median_cents": 186.15,
+          "std_cents": 13.8,
+          "n_strikes": 49,
+          "target_cents": 203.9,
+          "delta_target": -17.75
+        },
+        "minor_3rd": {
+          "median_cents": 286.07,
+          "std_cents": 19.44,
+          "n_strikes": 131,
+          "target_cents": 294.1,
+          "delta_target": -8.03
+        },
+        "pure_4th": {
+          "median_cents": 502.59,
+          "std_cents": 13.56,
+          "n_strikes": 145,
+          "target_cents": 498.0,
+          "delta_target": 4.59
+        },
+        "fifth_sol": {
+          "median_cents": 708.7,
+          "std_cents": 22.08,
+          "n_strikes": 29,
+          "target_cents": 702.0,
+          "delta_target": 6.7
+        },
+        "neutral_6th": {
+          "median_cents": 824.16,
+          "std_cents": 18.46,
+          "n_strikes": 51,
+          "target_cents": 840.6,
+          "delta_target": -16.44
+        },
+        "leading_tone_7th": {
+          "median_cents": 1111.03,
+          "std_cents": 10.76,
+          "n_strikes": 215,
+          "target_cents": 1109.8,
+          "delta_target": 1.23
+        },
+        "octave": {
+          "median_cents": 1200.72,
+          "std_cents": 13.9,
+          "n_strikes": 192,
+          "target_cents": 1200.0,
+          "delta_target": 0.72
+        }
+      }
+    },
+    "shahnazi_tar": {
+      "category": "tar",
+      "lineage": "qajar_radif",
+      "fretless": false,
+      "ist_hz": 287.0,
+      "total_strikes": 2924,
+      "slots": {
+        "zir_e_ist_koron": {
+          "median_cents": -167.82,
+          "std_cents": 15.79,
+          "n_strikes": 20,
+          "target_cents": -138.6,
+          "delta_target": -29.22
+        },
+        "ist_tonic": {
+          "median_cents": 1.78,
+          "std_cents": 12.5,
+          "n_strikes": 675,
+          "target_cents": 0.0,
+          "delta_target": 1.78
+        },
+        "whole_tone_2nd": {
+          "median_cents": 202.92,
+          "std_cents": 25.73,
+          "n_strikes": 27,
+          "target_cents": 203.9,
+          "delta_target": -0.98
+        },
+        "minor_3rd": {
+          "median_cents": 305.25,
+          "std_cents": 18.34,
+          "n_strikes": 37,
+          "target_cents": 294.1,
+          "delta_target": 11.15
+        },
+        "pure_4th": {
+          "median_cents": 505.96,
+          "std_cents": 11.14,
+          "n_strikes": 357,
+          "target_cents": 498.0,
+          "delta_target": 7.96
+        },
+        "fifth_sol": {
+          "median_cents": 702.88,
+          "std_cents": 11.16,
+          "n_strikes": 668,
+          "target_cents": 702.0,
+          "delta_target": 0.88
+        },
+        "neutral_6th": {
+          "median_cents": 837.93,
+          "std_cents": 27.67,
+          "n_strikes": 182,
+          "target_cents": 840.6,
+          "delta_target": -2.67
+        },
+        "leading_tone_7th": {
+          "median_cents": 1068.22,
+          "std_cents": 33.42,
+          "n_strikes": 5,
+          "target_cents": 1109.8,
+          "delta_target": -41.58
+        },
+        "octave": {
+          "median_cents": 1201.76,
+          "std_cents": 12.12,
+          "n_strikes": 671,
+          "target_cents": 1200.0,
+          "delta_target": 1.76
+        }
+      }
+    },
+    "forutan_setar": {
+      "category": "setar",
+      "lineage": "qajar_radif",
+      "fretless": false,
+      "ist_hz": 355.0,
+      "total_strikes": 1070,
+      "slots": {
+        "zir_e_ist_koron": {
+          "median_cents": -131.99,
+          "std_cents": 21.63,
+          "n_strikes": 79,
+          "target_cents": -138.6,
+          "delta_target": 6.61
+        },
+        "ist_tonic": {
+          "median_cents": 5.53,
+          "std_cents": 11.91,
+          "n_strikes": 542,
+          "target_cents": 0.0,
+          "delta_target": 5.53
+        },
+        "whole_tone_2nd": {
+          "median_cents": 204.08,
+          "std_cents": 8.62,
+          "n_strikes": 122,
+          "target_cents": 203.9,
+          "delta_target": 0.18
+        },
+        "minor_3rd": {
+          "median_cents": 284.72,
+          "std_cents": 24.16,
+          "n_strikes": 29,
+          "target_cents": 294.1,
+          "delta_target": -9.38
+        },
+        "pure_4th": {
+          "median_cents": 496.18,
+          "std_cents": 10.06,
+          "n_strikes": 25,
+          "target_cents": 498.0,
+          "delta_target": -1.82
+        },
+        "fifth_sol": {
+          "median_cents": 704.16,
+          "std_cents": 6.71,
+          "n_strikes": 131,
+          "target_cents": 702.0,
+          "delta_target": 2.16
+        },
+        "neutral_6th": {
+          "median_cents": 836.18,
+          "std_cents": 11.78,
+          "n_strikes": 64,
+          "target_cents": 840.6,
+          "delta_target": -4.42
+        },
+        "leading_tone_7th": {
+          "median_cents": 1089.58,
+          "std_cents": 26.31,
+          "n_strikes": 83,
+          "target_cents": 1109.8,
+          "delta_target": -20.22
+        },
+        "octave": {
+          "median_cents": 1205.63,
+          "std_cents": 11.17,
+          "n_strikes": 537,
+          "target_cents": 1200.0,
+          "delta_target": 5.63
+        }
+      }
+    },
+    "saba_radif": {
+      "category": "setar_vio",
+      "lineage": "qajar_radif",
+      "fretless": false,
+      "ist_hz": 533.0,
+      "total_strikes": 4336,
+      "slots": {
+        "zir_e_ist_koron": {
+          "median_cents": -152.27,
+          "std_cents": 20.46,
+          "n_strikes": 495,
+          "target_cents": -138.6,
+          "delta_target": -13.67
+        },
+        "ist_tonic": {
+          "median_cents": 9.18,
+          "std_cents": 19.41,
+          "n_strikes": 585,
+          "target_cents": 0.0,
+          "delta_target": 9.18
+        },
+        "whole_tone_2nd": {
+          "median_cents": 226.31,
+          "std_cents": 16.97,
+          "n_strikes": 361,
+          "target_cents": 203.9,
+          "delta_target": 22.41
+        },
+        "minor_3rd": {
+          "median_cents": 297.57,
+          "std_cents": 24.88,
+          "n_strikes": 73,
+          "target_cents": 294.1,
+          "delta_target": 3.47
+        },
+        "pure_4th": {
+          "median_cents": 493.15,
+          "std_cents": 14.01,
+          "n_strikes": 400,
+          "target_cents": 498.0,
+          "delta_target": -4.85
+        },
+        "fifth_sol": {
+          "median_cents": 702.73,
+          "std_cents": 12.78,
+          "n_strikes": 313,
+          "target_cents": 702.0,
+          "delta_target": 0.73
+        },
+        "neutral_6th": {
+          "median_cents": 840.88,
+          "std_cents": 22.88,
+          "n_strikes": 169,
+          "target_cents": 840.6,
+          "delta_target": 0.28
+        },
+        "leading_tone_7th": {
+          "median_cents": 1093.64,
+          "std_cents": 25.91,
+          "n_strikes": 94,
+          "target_cents": 1109.8,
+          "delta_target": -16.16
+        },
+        "octave": {
+          "median_cents": 1208.78,
+          "std_cents": 17.41,
+          "n_strikes": 506,
+          "target_cents": 1200.0,
+          "delta_target": 8.78
+        }
+      }
+    },
+    "talai_tar": {
+      "category": "tar",
+      "lineage": "canonical",
+      "fretless": false,
+      "ist_hz": 379.0,
+      "total_strikes": 2111,
+      "slots": {
+        "zir_e_ist_koron": {
+          "median_cents": -132.94,
+          "std_cents": 18.46,
+          "n_strikes": 102,
+          "target_cents": -138.6,
+          "delta_target": 5.66
+        },
+        "ist_tonic": {
+          "median_cents": -0.52,
+          "std_cents": 13.07,
+          "n_strikes": 781,
+          "target_cents": 0.0,
+          "delta_target": -0.52
+        },
+        "whole_tone_2nd": {
+          "median_cents": 188.44,
+          "std_cents": 15.55,
+          "n_strikes": 337,
+          "target_cents": 203.9,
+          "delta_target": -15.46
+        },
+        "minor_3rd": {
+          "median_cents": 282.71,
+          "std_cents": 16.59,
+          "n_strikes": 91,
+          "target_cents": 294.1,
+          "delta_target": -11.39
+        },
+        "pure_4th": {
+          "median_cents": 492.1,
+          "std_cents": 13.43,
+          "n_strikes": 165,
+          "target_cents": 498.0,
+          "delta_target": -5.9
+        },
+        "fifth_sol": {
+          "median_cents": 693.85,
+          "std_cents": 14.54,
+          "n_strikes": 376,
+          "target_cents": 702.0,
+          "delta_target": -8.15
+        },
+        "neutral_6th": {
+          "median_cents": 834.06,
+          "std_cents": 11.01,
+          "n_strikes": 189,
+          "target_cents": 840.6,
+          "delta_target": -6.54
+        },
+        "leading_tone_7th": {
+          "median_cents": 1080.87,
+          "std_cents": 25.2,
+          "n_strikes": 109,
+          "target_cents": 1109.8,
+          "delta_target": -28.93
+        },
+        "octave": {
+          "median_cents": 1198.7,
+          "std_cents": 12.84,
+          "n_strikes": 737,
+          "target_cents": 1200.0,
+          "delta_target": -1.3
+        }
+      }
+    },
+    "alizadeh_setar": {
+      "category": "setar",
+      "lineage": "modern",
+      "fretless": false,
+      "ist_hz": 490.0,
+      "total_strikes": 703,
+      "slots": {
+        "zir_e_ist_koron": {
+          "median_cents": -131.81,
+          "std_cents": 22.86,
+          "n_strikes": 127,
+          "target_cents": -138.6,
+          "delta_target": 6.79
+        },
+        "ist_tonic": {
+          "median_cents": 0.98,
+          "std_cents": 11.48,
+          "n_strikes": 205,
+          "target_cents": 0.0,
+          "delta_target": 0.98
+        },
+        "whole_tone_2nd": {
+          "median_cents": 208.56,
+          "std_cents": 10.17,
+          "n_strikes": 151,
+          "target_cents": 203.9,
+          "delta_target": 4.66
+        },
+        "minor_3rd": {
+          "median_cents": 295.36,
+          "std_cents": 19.6,
+          "n_strikes": 57,
+          "target_cents": 294.1,
+          "delta_target": 1.26
+        },
+        "pure_4th": {
+          "median_cents": 517.93,
+          "std_cents": 21.02,
+          "n_strikes": 38,
+          "target_cents": 498.0,
+          "delta_target": 19.93
+        },
+        "fifth_sol": {
+          "median_cents": 712.06,
+          "std_cents": 15.19,
+          "n_strikes": 11,
+          "target_cents": 702.0,
+          "delta_target": 10.06
+        },
+        "neutral_6th": {
+          "median_cents": 850.62,
+          "std_cents": 15.61,
+          "n_strikes": 36,
+          "target_cents": 840.6,
+          "delta_target": 10.02
+        },
+        "leading_tone_7th": {
+          "median_cents": 1074.1,
+          "std_cents": 15.25,
+          "n_strikes": 98,
+          "target_cents": 1109.8,
+          "delta_target": -35.7
+        },
+        "octave": {
+          "median_cents": 1200.6,
+          "std_cents": 9.66,
+          "n_strikes": 195,
+          "target_cents": 1200.0,
+          "delta_target": 0.6
+        }
+      }
+    },
+    "lotfi_solo": {
+      "category": "tar_setar",
+      "lineage": "classical",
+      "fretless": false,
+      "ist_hz": 281.8,
+      "total_strikes": 2838,
+      "slots": {
+        "zir_e_ist_koron": {
+          "median_cents": -148.76,
+          "std_cents": 19.66,
+          "n_strikes": 105,
+          "target_cents": -138.6,
+          "delta_target": -10.16
+        },
+        "ist_tonic": {
+          "median_cents": -0.8,
+          "std_cents": 7.69,
+          "n_strikes": 1068,
+          "target_cents": 0.0,
+          "delta_target": -0.8
+        },
+        "whole_tone_2nd": {
+          "median_cents": 202.69,
+          "std_cents": 8.31,
+          "n_strikes": 571,
+          "target_cents": 203.9,
+          "delta_target": -1.21
+        },
+        "minor_3rd": {
+          "median_cents": 278.45,
+          "std_cents": 7.21,
+          "n_strikes": 283,
+          "target_cents": 294.1,
+          "delta_target": -15.65
+        },
+        "pure_4th": {
+          "median_cents": 485.67,
+          "std_cents": 9.3,
+          "n_strikes": 221,
+          "target_cents": 498.0,
+          "delta_target": -12.33
+        },
+        "fifth_sol": {
+          "median_cents": 697.82,
+          "std_cents": 7.23,
+          "n_strikes": 341,
+          "target_cents": 702.0,
+          "delta_target": -4.18
+        },
+        "neutral_6th": {
+          "median_cents": 843.25,
+          "std_cents": 18.29,
+          "n_strikes": 54,
+          "target_cents": 840.6,
+          "delta_target": 2.65
+        },
+        "leading_tone_7th": {
+          "median_cents": 1062.22,
+          "std_cents": 18.73,
+          "n_strikes": 60,
+          "target_cents": 1109.8,
+          "delta_target": -47.58
+        },
+        "octave": {
+          "median_cents": 1199.2,
+          "std_cents": 7.47,
+          "n_strikes": 1066,
+          "target_cents": 1200.0,
+          "delta_target": -0.8
+        }
+      }
+    },
+    "kasaei_solo": {
+      "category": "ney_setar",
+      "lineage": "classical",
+      "fretless": false,
+      "ist_hz": 315.0,
+      "total_strikes": 1188,
+      "slots": {
+        "zir_e_ist_koron": {
+          "median_cents": -132.78,
+          "std_cents": 19.53,
+          "n_strikes": 68,
+          "target_cents": -138.6,
+          "delta_target": 5.82
+        },
+        "ist_tonic": {
+          "median_cents": -1.32,
+          "std_cents": 15.41,
+          "n_strikes": 409,
+          "target_cents": 0.0,
+          "delta_target": -1.32
+        },
+        "whole_tone_2nd": {
+          "median_cents": 204.82,
+          "std_cents": 22.24,
+          "n_strikes": 58,
+          "target_cents": 203.9,
+          "delta_target": 0.92
+        },
+        "minor_3rd": {
+          "median_cents": 305.45,
+          "std_cents": 16.64,
+          "n_strikes": 56,
+          "target_cents": 294.1,
+          "delta_target": 11.35
+        },
+        "pure_4th": {
+          "median_cents": 495.11,
+          "std_cents": 11.02,
+          "n_strikes": 19,
+          "target_cents": 498.0,
+          "delta_target": -2.89
+        },
+        "fifth_sol": {
+          "median_cents": 697.67,
+          "std_cents": 12.95,
+          "n_strikes": 105,
+          "target_cents": 702.0,
+          "delta_target": -4.33
+        },
+        "neutral_6th": {
+          "median_cents": 836.07,
+          "std_cents": 21.14,
+          "n_strikes": 175,
+          "target_cents": 840.6,
+          "delta_target": -4.53
+        },
+        "leading_tone_7th": {
+          "median_cents": 1092.63,
+          "std_cents": 27.19,
+          "n_strikes": 85,
+          "target_cents": 1109.8,
+          "delta_target": -17.17
+        },
+        "octave": {
+          "median_cents": 1198.68,
+          "std_cents": 15.01,
+          "n_strikes": 406,
+          "target_cents": 1200.0,
+          "delta_target": -1.32
+        }
+      }
+    },
+    "shahnaz_tar": {
+      "category": "tar",
+      "lineage": "classical",
+      "fretless": false,
+      "ist_hz": 436.0,
+      "total_strikes": 3591,
+      "slots": {
+        "zir_e_ist_koron": {
+          "median_cents": -125.65,
+          "std_cents": 24.78,
+          "n_strikes": 90,
+          "target_cents": -138.6,
+          "delta_target": 12.95
+        },
+        "ist_tonic": {
+          "median_cents": 0.83,
+          "std_cents": 9.15,
+          "n_strikes": 680,
+          "target_cents": 0.0,
+          "delta_target": 0.83
+        },
+        "whole_tone_2nd": {
+          "median_cents": 212.64,
+          "std_cents": 13.8,
+          "n_strikes": 155,
+          "target_cents": 203.9,
+          "delta_target": 8.74
+        },
+        "minor_3rd": {
+          "median_cents": 291.37,
+          "std_cents": 14.96,
+          "n_strikes": 222,
+          "target_cents": 294.1,
+          "delta_target": -2.73
+        },
+        "pure_4th": {
+          "median_cents": 494.02,
+          "std_cents": 9.83,
+          "n_strikes": 217,
+          "target_cents": 498.0,
+          "delta_target": -3.98
+        },
+        "fifth_sol": {
+          "median_cents": 696.33,
+          "std_cents": 9.03,
+          "n_strikes": 352,
+          "target_cents": 702.0,
+          "delta_target": -5.67
+        },
+        "neutral_6th": {
+          "median_cents": 853.9,
+          "std_cents": 13.21,
+          "n_strikes": 83,
+          "target_cents": 840.6,
+          "delta_target": 13.3
+        },
+        "leading_tone_7th": {
+          "median_cents": 1109.63,
+          "std_cents": 22.17,
+          "n_strikes": 159,
+          "target_cents": 1109.8,
+          "delta_target": -0.17
+        },
+        "octave": {
+          "median_cents": 1201.09,
+          "std_cents": 8.4,
+          "n_strikes": 617,
+          "target_cents": 1200.0,
+          "delta_target": 1.09
+        }
+      }
+    },
+    "bigjekhani_tar": {
+      "category": "tar",
+      "lineage": "tabriz_qajar",
+      "fretless": false,
+      "ist_hz": 366.5,
+      "total_strikes": 2584,
+      "slots": {
+        "zir_e_ist_koron": {
+          "median_cents": -146.76,
+          "std_cents": 15.97,
+          "n_strikes": 95,
+          "target_cents": -138.6,
+          "delta_target": -8.16
+        },
+        "ist_tonic": {
+          "median_cents": -4.32,
+          "std_cents": 12.16,
+          "n_strikes": 481,
+          "target_cents": 0.0,
+          "delta_target": -4.32
+        },
+        "whole_tone_2nd": {
+          "median_cents": 203.71,
+          "std_cents": 21.05,
+          "n_strikes": 472,
+          "target_cents": 203.9,
+          "delta_target": -0.19
+        },
+        "minor_3rd": {
+          "median_cents": 295.7,
+          "std_cents": 10.96,
+          "n_strikes": 195,
+          "target_cents": 294.1,
+          "delta_target": 1.6
+        },
+        "pure_4th": {
+          "median_cents": 494.48,
+          "std_cents": 9.98,
+          "n_strikes": 211,
+          "target_cents": 498.0,
+          "delta_target": -3.52
+        },
+        "fifth_sol": {
+          "median_cents": 711.23,
+          "std_cents": 9.75,
+          "n_strikes": 428,
+          "target_cents": 702.0,
+          "delta_target": 9.23
+        },
+        "neutral_6th": {
+          "median_cents": 846.12,
+          "std_cents": 16.64,
+          "n_strikes": 158,
+          "target_cents": 840.6,
+          "delta_target": 5.52
+        },
+        "leading_tone_7th": {
+          "median_cents": 1059.53,
+          "std_cents": 18.14,
+          "n_strikes": 68,
+          "target_cents": 1109.8,
+          "delta_target": -50.27
+        },
+        "octave": {
+          "median_cents": 1195.66,
+          "std_cents": 11.56,
+          "n_strikes": 477,
+          "target_cents": 1200.0,
+          "delta_target": -4.34
+        }
+      }
+    },
+    "ebadi_setar": {
+      "category": "setar",
+      "lineage": "classical",
+      "fretless": false,
+      "ist_hz": 423.5,
+      "total_strikes": 814,
+      "slots": {
+        "zir_e_ist_koron": null,
+        "ist_tonic": {
+          "median_cents": 1.18,
+          "std_cents": 7.31,
+          "n_strikes": 261,
+          "target_cents": 0.0,
+          "delta_target": 1.18
+        },
+        "whole_tone_2nd": null,
+        "minor_3rd": {
+          "median_cents": 288.6,
+          "std_cents": 6.75,
+          "n_strikes": 79,
+          "target_cents": 294.1,
+          "delta_target": -5.5
+        },
+        "pure_4th": {
+          "median_cents": 505.02,
+          "std_cents": 6.52,
+          "n_strikes": 65,
+          "target_cents": 498.0,
+          "delta_target": 7.02
+        },
+        "fifth_sol": null,
+        "neutral_6th": null,
+        "leading_tone_7th": null,
+        "octave": {
+          "median_cents": 1201.09,
+          "std_cents": 7.44,
+          "n_strikes": 244,
+          "target_cents": 1200.0,
+          "delta_target": 1.09
+        }
+      }
+    },
+    "kamalian_setar": {
+      "category": "setar",
+      "lineage": "classical",
+      "fretless": false,
+      "ist_hz": 373.0,
+      "total_strikes": 1019,
+      "slots": {
+        "zir_e_ist_koron": {
+          "median_cents": -131.18,
+          "std_cents": 13.84,
+          "n_strikes": 51,
+          "target_cents": -138.6,
+          "delta_target": 7.42
+        },
+        "ist_tonic": {
+          "median_cents": -5.45,
+          "std_cents": 9.3,
+          "n_strikes": 392,
+          "target_cents": 0.0,
+          "delta_target": -5.45
+        },
+        "whole_tone_2nd": {
+          "median_cents": 201.65,
+          "std_cents": 14.27,
+          "n_strikes": 283,
+          "target_cents": 203.9,
+          "delta_target": -2.25
+        },
+        "minor_3rd": {
+          "median_cents": 278.81,
+          "std_cents": 18.07,
+          "n_strikes": 69,
+          "target_cents": 294.1,
+          "delta_target": -15.29
+        },
+        "pure_4th": {
+          "median_cents": 490.79,
+          "std_cents": 11.67,
+          "n_strikes": 71,
+          "target_cents": 498.0,
+          "delta_target": -7.21
+        },
+        "fifth_sol": {
+          "median_cents": 697.68,
+          "std_cents": 10.12,
+          "n_strikes": 95,
+          "target_cents": 702.0,
+          "delta_target": -4.32
+        },
+        "neutral_6th": {
+          "median_cents": 833.18,
+          "std_cents": 10.12,
+          "n_strikes": 13,
+          "target_cents": 840.6,
+          "delta_target": -7.42
+        },
+        "leading_tone_7th": {
+          "median_cents": 1071.94,
+          "std_cents": 14.49,
+          "n_strikes": 47,
+          "target_cents": 1109.8,
+          "delta_target": -37.86
+        },
+        "octave": {
+          "median_cents": 1196.02,
+          "std_cents": 8.84,
+          "n_strikes": 259,
+          "target_cents": 1200.0,
+          "delta_target": -3.98
+        }
+      }
+    },
+    "hormozi_setar": {
+      "category": "setar",
+      "lineage": "qajar_radif",
+      "fretless": false,
+      "ist_hz": 365.0,
+      "total_strikes": 172,
+      "slots": {
+        "zir_e_ist_koron": {
+          "median_cents": -123.01,
+          "std_cents": 7.03,
+          "n_strikes": 12,
+          "target_cents": -138.6,
+          "delta_target": 15.59
+        },
+        "ist_tonic": {
+          "median_cents": 2.24,
+          "std_cents": 5.49,
+          "n_strikes": 135,
+          "target_cents": 0.0,
+          "delta_target": 2.24
+        },
+        "whole_tone_2nd": null,
+        "minor_3rd": null,
+        "pure_4th": {
+          "median_cents": 502.08,
+          "std_cents": 7.94,
+          "n_strikes": 3,
+          "target_cents": 498.0,
+          "delta_target": 4.08
+        },
+        "fifth_sol": {
+          "median_cents": 705.54,
+          "std_cents": 5.63,
+          "n_strikes": 12,
+          "target_cents": 702.0,
+          "delta_target": 3.54
+        },
+        "neutral_6th": {
+          "median_cents": 844.23,
+          "std_cents": 5.45,
+          "n_strikes": 7,
+          "target_cents": 840.6,
+          "delta_target": 3.63
+        },
+        "leading_tone_7th": {
+          "median_cents": 1076.99,
+          "std_cents": 7.03,
+          "n_strikes": 12,
+          "target_cents": 1109.8,
+          "delta_target": -32.81
+        },
+        "octave": {
+          "median_cents": 1202.1,
+          "std_cents": 5.48,
+          "n_strikes": 116,
+          "target_cents": 1200.0,
+          "delta_target": 2.1
+        }
+      }
+    },
+    "nariman_oud": {
+      "category": "oud",
+      "lineage": "classical",
+      "fretless": true,
+      "ist_hz": 196.0,
+      "total_strikes": 1337,
+      "slots": {
+        "zir_e_ist_koron": {
+          "median_cents": -121.87,
+          "std_cents": 13.53,
+          "n_strikes": 108,
+          "target_cents": -138.6,
+          "delta_target": 16.73
+        },
+        "ist_tonic": {
+          "median_cents": 2.24,
+          "std_cents": 8.5,
+          "n_strikes": 493,
+          "target_cents": 0.0,
+          "delta_target": 2.24
+        },
+        "whole_tone_2nd": {
+          "median_cents": 207.68,
+          "std_cents": 11.76,
+          "n_strikes": 164,
+          "target_cents": 203.9,
+          "delta_target": 3.78
+        },
+        "minor_3rd": {
+          "median_cents": 287.67,
+          "std_cents": 16.66,
+          "n_strikes": 130,
+          "target_cents": 294.1,
+          "delta_target": -6.43
+        },
+        "pure_4th": {
+          "median_cents": 500.67,
+          "std_cents": 12.4,
+          "n_strikes": 70,
+          "target_cents": 498.0,
+          "delta_target": 2.67
+        },
+        "fifth_sol": {
+          "median_cents": 698.09,
+          "std_cents": 7.12,
+          "n_strikes": 163,
+          "target_cents": 702.0,
+          "delta_target": -3.91
+        },
+        "neutral_6th": {
+          "median_cents": 834.06,
+          "std_cents": 19.18,
+          "n_strikes": 81,
+          "target_cents": 840.6,
+          "delta_target": -6.54
+        },
+        "leading_tone_7th": {
+          "median_cents": 1083.04,
+          "std_cents": 23.22,
+          "n_strikes": 143,
+          "target_cents": 1109.8,
+          "delta_target": -26.76
+        },
+        "octave": {
+          "median_cents": 1202.32,
+          "std_cents": 7.06,
+          "n_strikes": 487,
+          "target_cents": 1200.0,
+          "delta_target": 2.32
+        }
+      }
+    },
+    "shekarchi_kamancheh": {
+      "category": "kamancheh",
+      "lineage": "canonical",
+      "fretless": true,
+      "ist_hz": 574.0,
+      "total_strikes": 1235,
+      "slots": {
+        "zir_e_ist_koron": {
+          "median_cents": -118.27,
+          "std_cents": 8.72,
+          "n_strikes": 109,
+          "target_cents": -138.6,
+          "delta_target": 20.33
+        },
+        "ist_tonic": {
+          "median_cents": 3.45,
+          "std_cents": 8.6,
+          "n_strikes": 394,
+          "target_cents": 0.0,
+          "delta_target": 3.45
+        },
+        "whole_tone_2nd": {
+          "median_cents": 207.74,
+          "std_cents": 12.98,
+          "n_strikes": 443,
+          "target_cents": 203.9,
+          "delta_target": 3.84
+        },
+        "minor_3rd": {
+          "median_cents": 294.46,
+          "std_cents": 16.08,
+          "n_strikes": 132,
+          "target_cents": 294.1,
+          "delta_target": 0.36
+        },
+        "pure_4th": {
+          "median_cents": 494.4,
+          "std_cents": 15.6,
+          "n_strikes": 46,
+          "target_cents": 498.0,
+          "delta_target": -3.6
+        },
+        "fifth_sol": {
+          "median_cents": 711.65,
+          "std_cents": 11.75,
+          "n_strikes": 40,
+          "target_cents": 702.0,
+          "delta_target": 9.65
+        },
+        "neutral_6th": {
+          "median_cents": 855.87,
+          "std_cents": 15.4,
+          "n_strikes": 40,
+          "target_cents": 840.6,
+          "delta_target": 15.27
+        },
+        "leading_tone_7th": {
+          "median_cents": 1082.21,
+          "std_cents": 10.91,
+          "n_strikes": 112,
+          "target_cents": 1109.8,
+          "delta_target": -27.59
+        },
+        "octave": {
+          "median_cents": 1203.61,
+          "std_cents": 8.3,
+          "n_strikes": 339,
+          "target_cents": 1200.0,
+          "delta_target": 3.61
+        }
+      }
+    },
+    "bahari_kamancheh": {
+      "category": "kamancheh",
+      "lineage": "historical",
+      "fretless": true,
+      "ist_hz": 499.0,
+      "total_strikes": 1539,
+      "slots": {
+        "zir_e_ist_koron": {
+          "median_cents": -122.28,
+          "std_cents": 16.52,
+          "n_strikes": 34,
+          "target_cents": -138.6,
+          "delta_target": 16.32
+        },
+        "ist_tonic": {
+          "median_cents": 2.38,
+          "std_cents": 13.55,
+          "n_strikes": 439,
+          "target_cents": 0.0,
+          "delta_target": 2.38
+        },
+        "whole_tone_2nd": {
+          "median_cents": 197.99,
+          "std_cents": 18.97,
+          "n_strikes": 557,
+          "target_cents": 203.9,
+          "delta_target": -5.91
+        },
+        "minor_3rd": {
+          "median_cents": 280.1,
+          "std_cents": 17.65,
+          "n_strikes": 234,
+          "target_cents": 294.1,
+          "delta_target": -14.0
+        },
+        "pure_4th": {
+          "median_cents": 473.55,
+          "std_cents": 13.48,
+          "n_strikes": 78,
+          "target_cents": 498.0,
+          "delta_target": -24.45
+        },
+        "fifth_sol": {
+          "median_cents": 684.95,
+          "std_cents": 10.72,
+          "n_strikes": 57,
+          "target_cents": 702.0,
+          "delta_target": -17.05
+        },
+        "neutral_6th": {
+          "median_cents": 844.74,
+          "std_cents": 14.33,
+          "n_strikes": 8,
+          "target_cents": 840.6,
+          "delta_target": 4.14
+        },
+        "leading_tone_7th": {
+          "median_cents": 1086.62,
+          "std_cents": 21.67,
+          "n_strikes": 36,
+          "target_cents": 1109.8,
+          "delta_target": -23.18
+        },
+        "octave": {
+          "median_cents": 1201.85,
+          "std_cents": 13.81,
+          "n_strikes": 346,
+          "target_cents": 1200.0,
+          "delta_target": 1.85
+        }
+      }
+    },
+    "karimi_vocal": {
+      "category": "voice",
+      "lineage": "canonical",
+      "fretless": true,
+      "ist_hz": 195.0,
+      "total_strikes": 3902,
+      "slots": {
+        "zir_e_ist_koron": {
+          "median_cents": -117.39,
+          "std_cents": 15.82,
+          "n_strikes": 226,
+          "target_cents": -138.6,
+          "delta_target": 21.21
+        },
+        "ist_tonic": {
+          "median_cents": 1.46,
+          "std_cents": 19.39,
+          "n_strikes": 997,
+          "target_cents": 0.0,
+          "delta_target": 1.46
+        },
+        "whole_tone_2nd": {
+          "median_cents": 220.39,
+          "std_cents": 16.42,
+          "n_strikes": 575,
+          "target_cents": 203.9,
+          "delta_target": 16.49
+        },
+        "minor_3rd": {
+          "median_cents": 300.49,
+          "std_cents": 22.16,
+          "n_strikes": 510,
+          "target_cents": 294.1,
+          "delta_target": 6.39
+        },
+        "pure_4th": {
+          "median_cents": 485.86,
+          "std_cents": 14.75,
+          "n_strikes": 624,
+          "target_cents": 498.0,
+          "delta_target": -12.14
+        },
+        "fifth_sol": {
+          "median_cents": 694.4,
+          "std_cents": 13.41,
+          "n_strikes": 325,
+          "target_cents": 702.0,
+          "delta_target": -7.6
+        },
+        "neutral_6th": {
+          "median_cents": 824.13,
+          "std_cents": 18.86,
+          "n_strikes": 192,
+          "target_cents": 840.6,
+          "delta_target": -16.47
+        },
+        "leading_tone_7th": {
+          "median_cents": 1087.38,
+          "std_cents": 19.37,
+          "n_strikes": 266,
+          "target_cents": 1109.8,
+          "delta_target": -22.42
+        },
+        "octave": {
+          "median_cents": 1201.47,
+          "std_cents": 18.98,
+          "n_strikes": 986,
+          "target_cents": 1200.0,
+          "delta_target": 1.47
+        }
+      }
+    }
+  }
+}

@@ -16,6 +16,13 @@ Empirical pitch and scale-degree latch analysis of Persian Classical Music (*Rad
 
 ![Mahur v3 latch fingerprint](output.png)
 
+- **14-Page Persian Classical Music Theory Primer:** [`persian_music_theory_primer.pdf`](persian_music_theory_primer.pdf) ([`analysis/persian_music_theory_primer.pdf`](analysis/persian_music_theory_primer.pdf))
+  - *Pages 1–9:* Historical monochord theory from Pythagoras, Al-Fārābī, Ibn Sīnā, Ṣafī al-Dīn al-Urmawī (17-note gamut), and ʿAbd al-Qādir al-Marāghī.
+  - *Page 10:* Dariush Tala'i's Theory of Dāngs & Setār Neck Architecture (4 tetrachords + superimposed String 1 ruler with pure ratios).
+  - *Page 11:* Āvāz-e Dashti: Fretted vs. Fretless (12 Masters, 10,256 strikes) & Proof of the Bimodal Variable 5th Degree (*motaghayyer*).
+  - *Page 12:* Dastgāh-e Navā: 11 Masters (10,743 strikes) & Resolution of the Limma (256/243) vs. Superparticular (13/12) Controversy.
+  - *Page 13:* Āvāz-e Bayāt-e Esfahān: 18 Masters (36,234 strikes) & Empirical Proof of the Pythagorean Minor 3rd (32/27 = 294.1¢) and Upper Chahārgāh Coupling.
+  - *Page 14:* Historical Timeline, Technical Glossary, and Further Reading.
 - **6-Page Empirical Pitch & Historical Theory Report:** [`mahur_pitch_analysis.pdf`](mahur_pitch_analysis.pdf) ([`analysis/mahur_pitch_analysis.pdf`](analysis/mahur_pitch_analysis.pdf))
   - *Page 1:* 17-Slot Cross-Instrument Latch Fingerprint & Absolute `Do` Spectrum (`199.7–441.5 Hz`).
   - *Page 2:* Diatonic vs. *Koron* Pair Discrimination (`La/Laᵏ↓`, `Re/Reᵏ`, `Mi/Miᵏ`, `Si/Siᵏ`) & 44,848-Strike Density.
