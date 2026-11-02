@@ -1,0 +1,963 @@
+{
+  "sources": {
+    "borumand_tar_setar": {
+      "category": "tar_setar",
+      "fretless": false,
+      "lineage": "qajar",
+      "ist_hz": 211.6,
+      "total_strikes": 476,
+      "slots": {
+        "zir_e_ist": {
+          "median_cents": -192.8,
+          "std_cents": 5.95,
+          "n_strikes": 11
+        },
+        "ist": {
+          "median_cents": -0.14,
+          "std_cents": 3.89,
+          "n_strikes": 112
+        },
+        "koron_2nd": {
+          "median_cents": 90.65,
+          "std_cents": 18.18,
+          "n_strikes": 90
+        },
+        "minor_3rd": {
+          "median_cents": 306.0,
+          "std_cents": 11.89,
+          "n_strikes": 107
+        },
+        "shahed_4th": {
+          "median_cents": 500.98,
+          "std_cents": 3.56,
+          "n_strikes": 40
+        },
+        "fifth": null,
+        "degree_6th_koron": {
+          "median_cents": 782.78,
+          "std_cents": 9.88,
+          "n_strikes": 26
+        },
+        "octave": {
+          "median_cents": 1197.52,
+          "std_cents": 2.12,
+          "n_strikes": 57
+        }
+      }
+    },
+    "neydavud_tar": {
+      "category": "tar",
+      "fretless": false,
+      "lineage": "qajar",
+      "ist_hz": 200.2,
+      "total_strikes": 3188,
+      "slots": {
+        "zir_e_ist": {
+          "median_cents": -232.64,
+          "std_cents": 18.95,
+          "n_strikes": 202
+        },
+        "ist": {
+          "median_cents": -4.44,
+          "std_cents": 15.79,
+          "n_strikes": 837
+        },
+        "koron_2nd": {
+          "median_cents": 162.1,
+          "std_cents": 21.4,
+          "n_strikes": 66
+        },
+        "minor_3rd": {
+          "median_cents": 276.45,
+          "std_cents": 15.88,
+          "n_strikes": 264
+        },
+        "shahed_4th": {
+          "median_cents": 487.21,
+          "std_cents": 9.24,
+          "n_strikes": 387
+        },
+        "fifth": {
+          "median_cents": 684.82,
+          "std_cents": 13.13,
+          "n_strikes": 395
+        },
+        "degree_6th_koron": {
+          "median_cents": 814.84,
+          "std_cents": 16.01,
+          "n_strikes": 481
+        },
+        "octave": {
+          "median_cents": 1188.73,
+          "std_cents": 7.55,
+          "n_strikes": 510
+        }
+      }
+    },
+    "shahnazi_tar": {
+      "category": "tar",
+      "fretless": false,
+      "lineage": "qajar",
+      "ist_hz": 225.0,
+      "total_strikes": 181,
+      "slots": {
+        "zir_e_ist": null,
+        "ist": {
+          "median_cents": -0.57,
+          "std_cents": 7.49,
+          "n_strikes": 37
+        },
+        "koron_2nd": {
+          "median_cents": 106.48,
+          "std_cents": 5.41,
+          "n_strikes": 6
+        },
+        "minor_3rd": null,
+        "shahed_4th": {
+          "median_cents": 498.38,
+          "std_cents": 4.0,
+          "n_strikes": 12
+        },
+        "fifth": {
+          "median_cents": 703.54,
+          "std_cents": 10.92,
+          "n_strikes": 11
+        },
+        "degree_6th_koron": null,
+        "octave": {
+          "median_cents": 1196.01,
+          "std_cents": 3.84,
+          "n_strikes": 20
+        }
+      }
+    },
+    "saba_setar": {
+      "category": "setar",
+      "fretless": false,
+      "lineage": "transitional",
+      "ist_hz": 236.1,
+      "total_strikes": 2331,
+      "slots": {
+        "zir_e_ist": {
+          "median_cents": -218.43,
+          "std_cents": 16.26,
+          "n_strikes": 571
+        },
+        "ist": {
+          "median_cents": -9.56,
+          "std_cents": 15.86,
+          "n_strikes": 454
+        },
+        "koron_2nd": {
+          "median_cents": 108.99,
+          "std_cents": 28.67,
+          "n_strikes": 100
+        },
+        "minor_3rd": {
+          "median_cents": 266.0,
+          "std_cents": 15.97,
+          "n_strikes": 264
+        },
+        "shahed_4th": {
+          "median_cents": 479.26,
+          "std_cents": 14.77,
+          "n_strikes": 220
+        },
+        "fifth": {
+          "median_cents": 720.35,
+          "std_cents": 5.36,
+          "n_strikes": 10
+        },
+        "degree_6th_koron": {
+          "median_cents": 783.9,
+          "std_cents": 9.99,
+          "n_strikes": 38
+        },
+        "octave": {
+          "median_cents": 1185.35,
+          "std_cents": 9.56,
+          "n_strikes": 328
+        }
+      }
+    },
+    "ebadi_setar": {
+      "category": "setar",
+      "fretless": false,
+      "lineage": "transitional",
+      "ist_hz": 237.2,
+      "total_strikes": 1140,
+      "slots": {
+        "zir_e_ist": {
+          "median_cents": -207.46,
+          "std_cents": 13.89,
+          "n_strikes": 99
+        },
+        "ist": {
+          "median_cents": 0.54,
+          "std_cents": 8.55,
+          "n_strikes": 501
+        },
+        "koron_2nd": {
+          "median_cents": 134.56,
+          "std_cents": 3.15,
+          "n_strikes": 10
+        },
+        "minor_3rd": {
+          "median_cents": 281.41,
+          "std_cents": 11.91,
+          "n_strikes": 124
+        },
+        "shahed_4th": {
+          "median_cents": 501.76,
+          "std_cents": 8.65,
+          "n_strikes": 98
+        },
+        "fifth": {
+          "median_cents": 712.76,
+          "std_cents": 8.89,
+          "n_strikes": 46
+        },
+        "degree_6th_koron": {
+          "median_cents": 842.01,
+          "std_cents": 12.75,
+          "n_strikes": 99
+        },
+        "octave": {
+          "median_cents": 1195.93,
+          "std_cents": 3.31,
+          "n_strikes": 240
+        }
+      }
+    },
+    "janmohammadi_setar": {
+      "category": "setar",
+      "fretless": false,
+      "lineage": "modern",
+      "ist_hz": 233.9,
+      "total_strikes": 1642,
+      "slots": {
+        "zir_e_ist": {
+          "median_cents": -198.04,
+          "std_cents": 3.71,
+          "n_strikes": 130
+        },
+        "ist": {
+          "median_cents": 0.4,
+          "std_cents": 4.61,
+          "n_strikes": 164
+        },
+        "koron_2nd": {
+          "median_cents": 148.38,
+          "std_cents": 12.24,
+          "n_strikes": 32
+        },
+        "minor_3rd": {
+          "median_cents": 304.35,
+          "std_cents": 4.15,
+          "n_strikes": 102
+        },
+        "shahed_4th": {
+          "median_cents": 505.91,
+          "std_cents": 6.68,
+          "n_strikes": 807
+        },
+        "fifth": {
+          "median_cents": 709.75,
+          "std_cents": 7.02,
+          "n_strikes": 191
+        },
+        "degree_6th_koron": {
+          "median_cents": 792.27,
+          "std_cents": 5.49,
+          "n_strikes": 193
+        },
+        "octave": {
+          "median_cents": 1197.61,
+          "std_cents": 1.91,
+          "n_strikes": 76
+        }
+      }
+    },
+    "alizadeh_setar": {
+      "category": "setar",
+      "fretless": false,
+      "lineage": "modern",
+      "ist_hz": 245.3,
+      "total_strikes": 347,
+      "slots": {
+        "zir_e_ist": {
+          "median_cents": -208.68,
+          "std_cents": 4.24,
+          "n_strikes": 34
+        },
+        "ist": {
+          "median_cents": 0.32,
+          "std_cents": 3.75,
+          "n_strikes": 40
+        },
+        "koron_2nd": null,
+        "minor_3rd": {
+          "median_cents": 306.59,
+          "std_cents": 15.89,
+          "n_strikes": 5
+        },
+        "shahed_4th": {
+          "median_cents": 482.89,
+          "std_cents": 15.52,
+          "n_strikes": 22
+        },
+        "fifth": {
+          "median_cents": 705.46,
+          "std_cents": 7.06,
+          "n_strikes": 135
+        },
+        "degree_6th_koron": null,
+        "octave": {
+          "median_cents": 1197.95,
+          "std_cents": 2.79,
+          "n_strikes": 18
+        }
+      }
+    },
+    "talai_tar": {
+      "category": "tar",
+      "fretless": false,
+      "lineage": "modern",
+      "ist_hz": 275.9,
+      "total_strikes": 764,
+      "slots": {
+        "zir_e_ist": {
+          "median_cents": -192.88,
+          "std_cents": 24.64,
+          "n_strikes": 121
+        },
+        "ist": {
+          "median_cents": -10.96,
+          "std_cents": 16.66,
+          "n_strikes": 201
+        },
+        "koron_2nd": {
+          "median_cents": 110.55,
+          "std_cents": 16.47,
+          "n_strikes": 25
+        },
+        "minor_3rd": {
+          "median_cents": 270.17,
+          "std_cents": 26.13,
+          "n_strikes": 64
+        },
+        "shahed_4th": {
+          "median_cents": 484.43,
+          "std_cents": 16.22,
+          "n_strikes": 65
+        },
+        "fifth": {
+          "median_cents": 718.24,
+          "std_cents": 24.36,
+          "n_strikes": 33
+        },
+        "degree_6th_koron": {
+          "median_cents": 813.03,
+          "std_cents": 15.91,
+          "n_strikes": 83
+        },
+        "octave": {
+          "median_cents": 1185.43,
+          "std_cents": 6.06,
+          "n_strikes": 133
+        }
+      }
+    },
+    "nariman_oud": {
+      "category": "oud",
+      "fretless": true,
+      "lineage": "classical",
+      "ist_hz": 149.3,
+      "total_strikes": 827,
+      "slots": {
+        "zir_e_ist": {
+          "median_cents": -210.93,
+          "std_cents": 7.65,
+          "n_strikes": 102
+        },
+        "ist": {
+          "median_cents": -0.32,
+          "std_cents": 6.37,
+          "n_strikes": 191
+        },
+        "koron_2nd": {
+          "median_cents": 136.51,
+          "std_cents": 11.52,
+          "n_strikes": 176
+        },
+        "minor_3rd": {
+          "median_cents": 276.19,
+          "std_cents": 15.22,
+          "n_strikes": 92
+        },
+        "shahed_4th": {
+          "median_cents": 495.67,
+          "std_cents": 5.42,
+          "n_strikes": 141
+        },
+        "fifth": {
+          "median_cents": 692.21,
+          "std_cents": 12.46,
+          "n_strikes": 62
+        },
+        "degree_6th_koron": {
+          "median_cents": 789.01,
+          "std_cents": 12.32,
+          "n_strikes": 11
+        },
+        "octave": {
+          "median_cents": 1196.53,
+          "std_cents": 3.02,
+          "n_strikes": 99
+        }
+      }
+    },
+    "shekarchi_kamancheh": {
+      "category": "kamancheh",
+      "fretless": true,
+      "lineage": "classical",
+      "ist_hz": 439.3,
+      "total_strikes": 1063,
+      "slots": {
+        "zir_e_ist": {
+          "median_cents": -225.51,
+          "std_cents": 16.04,
+          "n_strikes": 109
+        },
+        "ist": {
+          "median_cents": 0.05,
+          "std_cents": 7.21,
+          "n_strikes": 137
+        },
+        "koron_2nd": {
+          "median_cents": 149.65,
+          "std_cents": 21.72,
+          "n_strikes": 28
+        },
+        "minor_3rd": {
+          "median_cents": 279.57,
+          "std_cents": 19.81,
+          "n_strikes": 51
+        },
+        "shahed_4th": {
+          "median_cents": 471.87,
+          "std_cents": 12.09,
+          "n_strikes": 141
+        },
+        "fifth": {
+          "median_cents": 683.89,
+          "std_cents": 14.03,
+          "n_strikes": 212
+        },
+        "degree_6th_koron": {
+          "median_cents": 830.61,
+          "std_cents": 20.51,
+          "n_strikes": 88
+        },
+        "octave": {
+          "median_cents": 1192.49,
+          "std_cents": 5.88,
+          "n_strikes": 66
+        }
+      }
+    },
+    "karimi_vocal": {
+      "category": "vocal",
+      "fretless": true,
+      "lineage": "classical",
+      "ist_hz": 169.9,
+      "total_strikes": 572,
+      "slots": {
+        "zir_e_ist": {
+          "median_cents": -219.73,
+          "std_cents": 24.96,
+          "n_strikes": 73
+        },
+        "ist": {
+          "median_cents": -0.49,
+          "std_cents": 18.03,
+          "n_strikes": 120
+        },
+        "koron_2nd": null,
+        "minor_3rd": {
+          "median_cents": 296.66,
+          "std_cents": 18.68,
+          "n_strikes": 69
+        },
+        "shahed_4th": {
+          "median_cents": 508.72,
+          "std_cents": 15.35,
+          "n_strikes": 71
+        },
+        "fifth": {
+          "median_cents": 707.45,
+          "std_cents": 16.13,
+          "n_strikes": 97
+        },
+        "degree_6th_koron": {
+          "median_cents": 845.24,
+          "std_cents": 23.63,
+          "n_strikes": 55
+        },
+        "octave": {
+          "median_cents": 1188.48,
+          "std_cents": 10.06,
+          "n_strikes": 62
+        }
+      }
+    }
+  },
+  "consensus": {
+    "all_masters": {
+      "zir_e_ist": {
+        "median_cents": -209.81,
+        "mean_cents": -210.71,
+        "std_cents": 12.86,
+        "n_sources": 10,
+        "source_medians": [
+          -192.8,
+          -232.64,
+          -218.43,
+          -207.46,
+          -198.04,
+          -208.68,
+          -192.88,
+          -210.93,
+          -225.51,
+          -219.73
+        ]
+      },
+      "ist": {
+        "median_cents": -0.32,
+        "mean_cents": -2.29,
+        "std_cents": 3.99,
+        "n_sources": 11,
+        "source_medians": [
+          -0.14,
+          -4.44,
+          -0.57,
+          -9.56,
+          0.54,
+          0.4,
+          0.32,
+          -10.96,
+          -0.32,
+          0.05,
+          -0.49
+        ]
+      },
+      "koron_2nd": {
+        "median_cents": 134.56,
+        "mean_cents": 127.54,
+        "std_cents": 22.81,
+        "n_sources": 9,
+        "source_medians": [
+          90.65,
+          162.1,
+          106.48,
+          108.99,
+          134.56,
+          148.38,
+          110.55,
+          136.51,
+          149.65
+        ]
+      },
+      "minor_3rd": {
+        "median_cents": 280.49,
+        "mean_cents": 286.34,
+        "std_cents": 14.74,
+        "n_sources": 10,
+        "source_medians": [
+          306.0,
+          276.45,
+          266.0,
+          281.41,
+          304.35,
+          306.59,
+          270.17,
+          276.19,
+          279.57,
+          296.66
+        ]
+      },
+      "shahed_4th": {
+        "median_cents": 495.67,
+        "mean_cents": 492.46,
+        "std_cents": 11.41,
+        "n_sources": 11,
+        "source_medians": [
+          500.98,
+          487.21,
+          498.38,
+          479.26,
+          501.76,
+          505.91,
+          482.89,
+          484.43,
+          495.67,
+          471.87,
+          508.72
+        ]
+      },
+      "fifth": {
+        "median_cents": 706.46,
+        "mean_cents": 703.85,
+        "std_cents": 12.27,
+        "n_sources": 10,
+        "source_medians": [
+          684.82,
+          703.54,
+          720.35,
+          712.76,
+          709.75,
+          705.46,
+          718.24,
+          692.21,
+          683.89,
+          707.45
+        ]
+      },
+      "degree_6th_koron": {
+        "median_cents": 813.03,
+        "mean_cents": 810.41,
+        "std_cents": 23.33,
+        "n_sources": 9,
+        "source_medians": [
+          782.78,
+          814.84,
+          783.9,
+          842.01,
+          792.27,
+          813.03,
+          789.01,
+          830.61,
+          845.24
+        ]
+      },
+      "octave": {
+        "median_cents": 1195.93,
+        "mean_cents": 1192.91,
+        "std_cents": 4.78,
+        "n_sources": 11,
+        "source_medians": [
+          1197.52,
+          1188.73,
+          1196.01,
+          1185.35,
+          1195.93,
+          1197.61,
+          1197.95,
+          1185.43,
+          1196.53,
+          1192.49,
+          1188.48
+        ]
+      }
+    },
+    "qajar": {
+      "zir_e_ist": {
+        "median_cents": -212.72,
+        "mean_cents": -212.72,
+        "std_cents": 19.92,
+        "n_sources": 2,
+        "source_medians": [
+          -192.8,
+          -232.64
+        ]
+      },
+      "ist": {
+        "median_cents": -0.57,
+        "mean_cents": -1.72,
+        "std_cents": 1.93,
+        "n_sources": 3,
+        "source_medians": [
+          -0.14,
+          -4.44,
+          -0.57
+        ]
+      },
+      "koron_2nd": {
+        "median_cents": 106.48,
+        "mean_cents": 119.74,
+        "std_cents": 30.64,
+        "n_sources": 3,
+        "source_medians": [
+          90.65,
+          162.1,
+          106.48
+        ]
+      },
+      "minor_3rd": {
+        "median_cents": 291.23,
+        "mean_cents": 291.23,
+        "std_cents": 14.78,
+        "n_sources": 2,
+        "source_medians": [
+          306.0,
+          276.45
+        ]
+      },
+      "shahed_4th": {
+        "median_cents": 498.38,
+        "mean_cents": 495.52,
+        "std_cents": 5.97,
+        "n_sources": 3,
+        "source_medians": [
+          500.98,
+          487.21,
+          498.38
+        ]
+      },
+      "fifth": {
+        "median_cents": 694.18,
+        "mean_cents": 694.18,
+        "std_cents": 9.36,
+        "n_sources": 2,
+        "source_medians": [
+          684.82,
+          703.54
+        ]
+      },
+      "degree_6th_koron": {
+        "median_cents": 798.81,
+        "mean_cents": 798.81,
+        "std_cents": 16.03,
+        "n_sources": 2,
+        "source_medians": [
+          782.78,
+          814.84
+        ]
+      },
+      "octave": {
+        "median_cents": 1196.01,
+        "mean_cents": 1194.09,
+        "std_cents": 3.84,
+        "n_sources": 3,
+        "source_medians": [
+          1197.52,
+          1188.73,
+          1196.01
+        ]
+      }
+    },
+    "fretted": {
+      "zir_e_ist": {
+        "median_cents": -207.46,
+        "mean_cents": -207.28,
+        "std_cents": 13.48,
+        "n_sources": 7,
+        "source_medians": [
+          -192.8,
+          -232.64,
+          -218.43,
+          -207.46,
+          -198.04,
+          -208.68,
+          -192.88
+        ]
+      },
+      "ist": {
+        "median_cents": -0.35,
+        "mean_cents": -3.05,
+        "std_cents": 4.44,
+        "n_sources": 8,
+        "source_medians": [
+          -0.14,
+          -4.44,
+          -0.57,
+          -9.56,
+          0.54,
+          0.4,
+          0.32,
+          -10.96
+        ]
+      },
+      "koron_2nd": {
+        "median_cents": 110.55,
+        "mean_cents": 123.1,
+        "std_cents": 23.84,
+        "n_sources": 7,
+        "source_medians": [
+          90.65,
+          162.1,
+          106.48,
+          108.99,
+          134.56,
+          148.38,
+          110.55
+        ]
+      },
+      "minor_3rd": {
+        "median_cents": 281.41,
+        "mean_cents": 287.28,
+        "std_cents": 16.53,
+        "n_sources": 7,
+        "source_medians": [
+          306.0,
+          276.45,
+          266.0,
+          281.41,
+          304.35,
+          306.59,
+          270.17
+        ]
+      },
+      "shahed_4th": {
+        "median_cents": 492.79,
+        "mean_cents": 492.6,
+        "std_cents": 9.57,
+        "n_sources": 8,
+        "source_medians": [
+          500.98,
+          487.21,
+          498.38,
+          479.26,
+          501.76,
+          505.91,
+          482.89,
+          484.43
+        ]
+      },
+      "fifth": {
+        "median_cents": 709.75,
+        "mean_cents": 707.85,
+        "std_cents": 11.0,
+        "n_sources": 7,
+        "source_medians": [
+          684.82,
+          703.54,
+          720.35,
+          712.76,
+          709.75,
+          705.46,
+          718.24
+        ]
+      },
+      "degree_6th_koron": {
+        "median_cents": 802.65,
+        "mean_cents": 804.8,
+        "std_cents": 20.94,
+        "n_sources": 6,
+        "source_medians": [
+          782.78,
+          814.84,
+          783.9,
+          842.01,
+          792.27,
+          813.03
+        ]
+      },
+      "octave": {
+        "median_cents": 1195.97,
+        "mean_cents": 1193.07,
+        "std_cents": 5.22,
+        "n_sources": 8,
+        "source_medians": [
+          1197.52,
+          1188.73,
+          1196.01,
+          1185.35,
+          1195.93,
+          1197.61,
+          1197.95,
+          1185.43
+        ]
+      }
+    },
+    "fretless": {
+      "zir_e_ist": {
+        "median_cents": -219.73,
+        "mean_cents": -218.72,
+        "std_cents": 5.99,
+        "n_sources": 3,
+        "source_medians": [
+          -210.93,
+          -225.51,
+          -219.73
+        ]
+      },
+      "ist": {
+        "median_cents": -0.32,
+        "mean_cents": -0.25,
+        "std_cents": 0.23,
+        "n_sources": 3,
+        "source_medians": [
+          -0.32,
+          0.05,
+          -0.49
+        ]
+      },
+      "koron_2nd": {
+        "median_cents": 143.08,
+        "mean_cents": 143.08,
+        "std_cents": 6.57,
+        "n_sources": 2,
+        "source_medians": [
+          136.51,
+          149.65
+        ]
+      },
+      "minor_3rd": {
+        "median_cents": 279.57,
+        "mean_cents": 284.14,
+        "std_cents": 8.96,
+        "n_sources": 3,
+        "source_medians": [
+          276.19,
+          279.57,
+          296.66
+        ]
+      },
+      "shahed_4th": {
+        "median_cents": 495.67,
+        "mean_cents": 492.09,
+        "std_cents": 15.26,
+        "n_sources": 3,
+        "source_medians": [
+          495.67,
+          471.87,
+          508.72
+        ]
+      },
+      "fifth": {
+        "median_cents": 692.21,
+        "mean_cents": 694.52,
+        "std_cents": 9.76,
+        "n_sources": 3,
+        "source_medians": [
+          692.21,
+          683.89,
+          707.45
+        ]
+      },
+      "degree_6th_koron": {
+        "median_cents": 830.61,
+        "mean_cents": 821.62,
+        "std_cents": 23.82,
+        "n_sources": 3,
+        "source_medians": [
+          789.01,
+          830.61,
+          845.24
+        ]
+      },
+      "octave": {
+        "median_cents": 1192.49,
+        "mean_cents": 1192.5,
+        "std_cents": 3.29,
+        "n_sources": 3,
+        "source_medians": [
+          1196.53,
+          1192.49,
+          1188.48
+        ]
+      }
+    }
+  }
+}

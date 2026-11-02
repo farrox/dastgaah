@@ -1,17 +1,28 @@
 # dastgaah
 
-Empirical pitch and scale-degree latch analysis of *Dastgāh-e Māhur* across **13 canonical recordings** (7 Setar, 3 Tar, 1 Oud, 1 Kemancheh, 1 Voice — **287 tracks, 44,848 stationarity- and confidence-gated note strikes**).
+Empirical pitch and scale-degree latch analysis of Persian Classical Music (*Radif* & *Dastgāh* system) across canonical master recordings (Setār, Tār, Oud, Kamāncheh, Voice) with 4-stage DSP pitch extraction, historical interval modeling, and modal geometry.
+
+---
+
+## Dariush Tala'i's Theory of Dāngs & Setār Neck Architecture
+
+![Dariush Tala'i Theory of Dangs and Setar Neck Architecture](figures/talai_dangs_architecture.png)
+
+*The four elemental tetrachord building blocks (Dāngs) of the Radif system according to Dariush Tala'i, plotted with pure mathematical ratios, dual historical tuning shifts, and their physical superimposition on Setār String 1 ($Do$). The phantom $Mi^k$ fret ($+342.5¢$, $117/96$ or Zalzal's $27/22$) appears only when a dāng is rooted on $Re$ ($9/8 \times 13/12$).*
+
+---
 
 ## Latch Fingerprint (v3 — 17 Slots Across 13 Sources)
 
 ![Mahur v3 latch fingerprint](output.png)
 
-- **5-Page Empirical Pitch & Historical Theory Report:** [`mahur_pitch_analysis.pdf`](mahur_pitch_analysis.pdf) ([`analysis/mahur_pitch_analysis.pdf`](analysis/mahur_pitch_analysis.pdf))
+- **6-Page Empirical Pitch & Historical Theory Report:** [`mahur_pitch_analysis.pdf`](mahur_pitch_analysis.pdf) ([`analysis/mahur_pitch_analysis.pdf`](analysis/mahur_pitch_analysis.pdf))
   - *Page 1:* 17-Slot Cross-Instrument Latch Fingerprint & Absolute `Do` Spectrum (`199.7–441.5 Hz`).
   - *Page 2:* Diatonic vs. *Koron* Pair Discrimination (`La/Laᵏ↓`, `Re/Reᵏ`, `Mi/Miᵏ`, `Si/Siᵏ`) & 44,848-Strike Density.
   - *Page 3:* `13 × 17` Register Coverage Matrix, Rescued Track `Do` Trajectories & Modulating *Gushehs*.
   - *Page 4:* Setar Shared-Fret Couplings (`Reᵏ→Laᵏ↓`, `Re→La↓`, `Miᵏ→Si↓`, `Mi→Siᵏ`) & 22-Row Reference Table.
   - *Page 5:* Historical & Modern Theory Comparison — Testing Ṣafī al-Dīn al-Urmawī (*al-Risālah al-Sharafīyah*), ʿAbd al-Qādir al-Marāghī, Al-Fārābī/Zalzal (`13/12`), Vaziri (`24-TET`), and the Shared-Fret Hybrid model (`3.6¢` RMS error across all 16 non-`Do` slots).
+  - *Page 6:* Plain-English Reading Guide — Self-contained narrative walkthrough of the manuscript diagrams and what the empirical data reveals about Persian music theory.
 - **2-Page Frequency Extraction DSP Audit & Benchmark:** [`frequency_extraction_audit.pdf`](frequency_extraction_audit.pdf) ([`analysis/frequency_extraction_audit.pdf`](analysis/frequency_extraction_audit.pdf))
 
 ---
@@ -58,6 +69,26 @@ Full CSV table with reference frequencies (`Do = 261.63 Hz`, `326.40 Hz`, `330.0
 | `Sol↑` | `+702.1¢` | `3.8¢` | `+702.0¢` | **3/2** (pure 5th above `Do`) | **13/13** (folded) |
 | `Laᵏ↑` | `+837.8¢` | `9.5¢` | `+840.5¢` | **13/8** (upper-octave `Laᵏ↓ + 1200¢` in *Delkash*) | **5/13** (native) |
 | `La↑` | `+899.9¢` | `8.2¢` | `+905.9¢` | **27/16** (octave of `La↓`) | **13/13** (folded) |
+
+---
+
+## What Our Data Reveals About Persian Music Theory (Pages 5 & 6 of Report)
+
+Testing the `44,848`-strike v3 consensus against five historical and modern tuning systems shows why no single textbook theory succeeds on its own (`16.1–18.8¢` RMS error), whereas a **3-Layer Shared-Fret Hybrid Model** fits all 16 non-`Do` scale degrees within **`3.6¢` RMS**:
+
+1. **Layer 1 — The Diatonic Skeleton Is 100% Urmawī & Marāghī’s Pythagorean Frame (`4:3`, `3:2`, `9:8`):**
+   - The fourth (`Sol↓ = −497.9¢`, `Fa↑ = +495.9¢`), fifth (`Sol↑ = +702.1¢`, `Fa↓ = −704.1¢`), whole tone (`Re = +201.5¢`, `Re↓ = −998.5¢`), and sixth (`La↓ = −300.1¢ ≈ 27/32`) lock to Ṣafī al-Dīn al-Urmawī (*al-Risālah al-Sharafīyah*) and ʿAbd al-Qādir al-Marāghī’s 3-limit Pythagorean framework within `0.1–2.4¢` (rejecting the `10/9 = 182.4¢` minor tone and `5/3 = 884.4¢` sixth).
+2. **Layer 2 — The Major Third (`Mi = +400.8¢`) Bridges Urmawī’s `5/4` (`+386.3¢`) and Marāghī’s `81/64` (`+407.8¢`):**
+   - Rather than random error, the 13 masters span the exact historical comma between Urmawī’s pure harmonic third (`5/4 = +386.3¢`, played by **Nariman `+386.9¢`** and **Saba `+386.6¢`**) and Marāghī’s Pythagorean ditone (`81/64 = +407.8¢`, played by **Kasaei `+406.5¢`**, **Shahnazi `+403.2¢`**, **Lotfi `+402.9¢`**, **Ebadi `+412.0¢`**, and **Borumand `+414.7¢`**).
+3. **Layer 3 — *Koron* Notes (`Reᵏ = +137.5¢`, `Laᵏ↓ = −355.7¢`) Match Al-Fārābī / Zalzal’s `13/12` (`+138.6¢`):**
+   - Rejects both Vaziri’s quarter-tone (`24-TET = +150¢`) and Barkechli’s Pythagorean limma (`+90¢` / `+114¢`), locking within **`1.1¢`** of the Zalzalian neutral second `13/12` (`+138.6¢`).
+4. **The "One Fret, Two Strings" Rule & the Qajar-to-Modern Shift in *Gusheh-ye Shekaste* (`Miᵏ`):**
+   - Because setar and tar frets are tied across the entire neck, four frets on the `Do` melody string automatically generate four lower-octave degrees when plucked on the open `Sol` (`−497.9¢`) string:
+     - `Reᵏ (+137.5¢)` on `Sol` string $\to$ **`Laᵏ↓ (−355.7¢)`** (`13/16 = −359.5¢`)
+     - `Re (+201.5¢)` on `Sol` string $\to$ **`La↓ (−300.1¢)`** (`27/32 = −294.1¢`)
+     - `Miᵏ (+288.2¢)` on `Sol` string $\to$ **`Si↓ (−211.0¢)`** (`Δ = 1.3¢`)
+     - `Mi (+400.8¢)` on `Sol` string $\to$ **`Siᵏ (−100.3¢)`** (`Δ = 3.2¢`)
+   - This shared-fret economy explains a major historical shift in *Gusheh-ye Shekaste* (`Miᵏ`): the three oldest Qajar-trained masters (**Borumand `+341¢`**, **Forutan `+336¢`**, **Neydavud `+332¢`**) still preserve the high Zalzalian neutral third (`~335–350¢`) of medieval *Rāst*, whereas the 10 modern masters moved `Miᵏ` down to **`+288.2¢`** (Marāghī’s `32/27 = +294.1¢` minor third) so that a single fret serves as both `Miᵏ` on the `Do` string (`+288¢`) and `Si↓` on the `Sol` string (`−211¢`).
 
 ---
 

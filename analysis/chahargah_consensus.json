@@ -1,0 +1,2164 @@
+{
+ "sources": {
+  "nariman": {
+   "median_do": 263.8683659105462,
+   "mahur_do": 264.8227919461506,
+   "do_shift_vs_mahur_cents": -6.250668733808569,
+   "n_tracks": 20,
+   "n_tracks_used": 14,
+   "n_strikes": 4040,
+   "do_std_cents": 60.87183521872265,
+   "details": [
+    {
+     "label": "Fa↓",
+     "template_cents": -702.0,
+     "ok": false,
+     "matched_cents": -749.2210547067951,
+     "delta_cents": -47.221054706795144,
+     "n": 53,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 51
+    },
+    {
+     "label": "Sol↓",
+     "template_cents": -498.0,
+     "ok": true,
+     "matched_cents": -513.3490661404725,
+     "delta_cents": -15.349066140472473,
+     "n": 739,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 738
+    },
+    {
+     "label": "Laᵏ↓",
+     "template_cents": -355.0,
+     "ok": true,
+     "matched_cents": -391.60912859947535,
+     "delta_cents": -36.609128599475355,
+     "n": 657,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 657
+    },
+    {
+     "label": "La↓",
+     "template_cents": -300.0,
+     "ok": true,
+     "matched_cents": -274.3576156169671,
+     "delta_cents": 25.64238438303289,
+     "n": 34,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 34
+    },
+    {
+     "label": "Si↓",
+     "template_cents": -209.0,
+     "ok": false,
+     "matched_cents": -252.29532833149324,
+     "delta_cents": -43.29532833149324,
+     "n": 135,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 135
+    },
+    {
+     "label": "Do",
+     "template_cents": 0.0,
+     "ok": true,
+     "matched_cents": 0.0,
+     "delta_cents": 0.0,
+     "n": 657,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 657
+    },
+    {
+     "label": "Reᵏ",
+     "template_cents": 138.0,
+     "ok": true,
+     "matched_cents": 122.2376800124012,
+     "delta_cents": -15.7623199875988,
+     "n": 173,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 173
+    },
+    {
+     "label": "Re",
+     "template_cents": 202.0,
+     "ok": true,
+     "matched_cents": 207.2844738356805,
+     "delta_cents": 5.284473835680501,
+     "n": 338,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 114
+    },
+    {
+     "label": "Mi",
+     "template_cents": 400.0,
+     "ok": false,
+     "matched_cents": null,
+     "delta_cents": null,
+     "n": 0,
+     "octave_folded": false,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Fa↑",
+     "template_cents": 498.0,
+     "ok": false,
+     "matched_cents": 450.77894529320474,
+     "delta_cents": -47.22105470679526,
+     "n": 53,
+     "octave_folded": true,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Sol↑",
+     "template_cents": 702.0,
+     "ok": true,
+     "matched_cents": 686.6509338595274,
+     "delta_cents": -15.349066140472587,
+     "n": 739,
+     "octave_folded": true,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Laᵏ↑",
+     "template_cents": 840.0,
+     "ok": false,
+     "matched_cents": null,
+     "delta_cents": null,
+     "n": 0,
+     "octave_folded": false,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Si↑",
+     "template_cents": 991.0,
+     "ok": false,
+     "matched_cents": 947.7046716685068,
+     "delta_cents": -43.29532833149324,
+     "n": 135,
+     "octave_folded": true,
+     "native": false,
+     "n_native": 0
+    }
+   ]
+  },
+  "alizadeh": {
+   "median_do": 329.8744140684528,
+   "mahur_do": 331.09425373234933,
+   "do_shift_vs_mahur_cents": -6.390107310820357,
+   "n_tracks": 32,
+   "n_tracks_used": 28,
+   "n_strikes": 3280,
+   "do_std_cents": 39.73668130652488,
+   "details": [
+    {
+     "label": "Fa↓",
+     "template_cents": -702.0,
+     "ok": true,
+     "matched_cents": -700.7771790058748,
+     "delta_cents": 1.2228209941251862,
+     "n": 554,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 442
+    },
+    {
+     "label": "Sol↓",
+     "template_cents": -498.0,
+     "ok": false,
+     "matched_cents": -546.9758496651558,
+     "delta_cents": -48.975849665155806,
+     "n": 37,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 30
+    },
+    {
+     "label": "Laᵏ↓",
+     "template_cents": -355.0,
+     "ok": true,
+     "matched_cents": -358.479353497852,
+     "delta_cents": -3.479353497852003,
+     "n": 15,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 15
+    },
+    {
+     "label": "La↓",
+     "template_cents": -300.0,
+     "ok": true,
+     "matched_cents": -311.18536144010613,
+     "delta_cents": -11.185361440106135,
+     "n": 234,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 234
+    },
+    {
+     "label": "Si↓",
+     "template_cents": -209.0,
+     "ok": true,
+     "matched_cents": -202.51483792570195,
+     "delta_cents": 6.485162074298046,
+     "n": 188,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 185
+    },
+    {
+     "label": "Do",
+     "template_cents": 0.0,
+     "ok": true,
+     "matched_cents": -0.14461367235674494,
+     "delta_cents": -0.14461367235674494,
+     "n": 1135,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 1135
+    },
+    {
+     "label": "Reᵏ",
+     "template_cents": 138.0,
+     "ok": true,
+     "matched_cents": 144.6221366782022,
+     "delta_cents": 6.622136678202196,
+     "n": 574,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 574
+    },
+    {
+     "label": "Re",
+     "template_cents": 202.0,
+     "ok": false,
+     "matched_cents": 151.0454905967519,
+     "delta_cents": -50.954509403248096,
+     "n": 218,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 217
+    },
+    {
+     "label": "Mi",
+     "template_cents": 400.0,
+     "ok": true,
+     "matched_cents": 396.87423237874697,
+     "delta_cents": -3.1257676212530328,
+     "n": 105,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 105
+    },
+    {
+     "label": "Fa↑",
+     "template_cents": 498.0,
+     "ok": true,
+     "matched_cents": 499.2228209941252,
+     "delta_cents": 1.2228209941251862,
+     "n": 554,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 112
+    },
+    {
+     "label": "Sol↑",
+     "template_cents": 702.0,
+     "ok": false,
+     "matched_cents": 653.0241503348443,
+     "delta_cents": -48.97584966515569,
+     "n": 37,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 14
+    },
+    {
+     "label": "Laᵏ↑",
+     "template_cents": 840.0,
+     "ok": false,
+     "matched_cents": null,
+     "delta_cents": null,
+     "n": 0,
+     "octave_folded": false,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Si↑",
+     "template_cents": 991.0,
+     "ok": true,
+     "matched_cents": 997.485162074298,
+     "delta_cents": 6.485162074298046,
+     "n": 188,
+     "octave_folded": true,
+     "native": false,
+     "n_native": 0
+    }
+   ]
+  },
+  "shekarchi": {
+   "median_do": 437.4228311604918,
+   "mahur_do": 441.7417292255226,
+   "do_shift_vs_mahur_cents": -17.009519876664992,
+   "n_tracks": 31,
+   "n_tracks_used": 25,
+   "n_strikes": 4248,
+   "do_std_cents": 74.40115022763331,
+   "details": [
+    {
+     "label": "Fa↓",
+     "template_cents": -702.0,
+     "ok": true,
+     "matched_cents": -699.850887135995,
+     "delta_cents": 2.149112864005019,
+     "n": 657,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 176
+    },
+    {
+     "label": "Sol↓",
+     "template_cents": -498.0,
+     "ok": true,
+     "matched_cents": -494.0747505896841,
+     "delta_cents": 3.925249410315928,
+     "n": 254,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 25
+    },
+    {
+     "label": "Laᵏ↓",
+     "template_cents": -355.0,
+     "ok": true,
+     "matched_cents": -362.1011229969888,
+     "delta_cents": -7.101122996988806,
+     "n": 16,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 16
+    },
+    {
+     "label": "La↓",
+     "template_cents": -300.0,
+     "ok": true,
+     "matched_cents": -323.22292082372917,
+     "delta_cents": -23.22292082372917,
+     "n": 75,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 75
+    },
+    {
+     "label": "Si↓",
+     "template_cents": -209.0,
+     "ok": true,
+     "matched_cents": -215.81557381227276,
+     "delta_cents": -6.81557381227276,
+     "n": 287,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 55
+    },
+    {
+     "label": "Do",
+     "template_cents": 0.0,
+     "ok": true,
+     "matched_cents": -0.006455151094735972,
+     "delta_cents": -0.006455151094735972,
+     "n": 967,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 967
+    },
+    {
+     "label": "Reᵏ",
+     "template_cents": 138.0,
+     "ok": true,
+     "matched_cents": 143.1027407288169,
+     "delta_cents": 5.1027407288169115,
+     "n": 528,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 528
+    },
+    {
+     "label": "Re",
+     "template_cents": 202.0,
+     "ok": false,
+     "matched_cents": 152.46486476266347,
+     "delta_cents": -49.53513523733653,
+     "n": 198,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 195
+    },
+    {
+     "label": "Mi",
+     "template_cents": 400.0,
+     "ok": true,
+     "matched_cents": 382.9430396249593,
+     "delta_cents": -17.056960375040717,
+     "n": 90,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 90
+    },
+    {
+     "label": "Fa↑",
+     "template_cents": 498.0,
+     "ok": true,
+     "matched_cents": 500.149112864005,
+     "delta_cents": 2.149112864005019,
+     "n": 657,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 480
+    },
+    {
+     "label": "Sol↑",
+     "template_cents": 702.0,
+     "ok": true,
+     "matched_cents": 705.9252494103159,
+     "delta_cents": 3.925249410315928,
+     "n": 254,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 258
+    },
+    {
+     "label": "Laᵏ↑",
+     "template_cents": 840.0,
+     "ok": true,
+     "matched_cents": 834.4344990793871,
+     "delta_cents": -5.5655009206128625,
+     "n": 91,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 91
+    },
+    {
+     "label": "Si↑",
+     "template_cents": 991.0,
+     "ok": true,
+     "matched_cents": 984.1844261877274,
+     "delta_cents": -6.815573812272646,
+     "n": 287,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 241
+    }
+   ]
+  },
+  "borumand": {
+   "median_do": 337.4429233759631,
+   "mahur_do": 325.60377707946077,
+   "do_shift_vs_mahur_cents": 61.831276233635435,
+   "n_tracks": 33,
+   "n_tracks_used": 23,
+   "n_strikes": 5440,
+   "do_std_cents": 61.567629433373114,
+   "details": [
+    {
+     "label": "Fa↓",
+     "template_cents": -702.0,
+     "ok": false,
+     "matched_cents": -751.5731721177406,
+     "delta_cents": -49.57317211774057,
+     "n": 83,
+     "octave_folded": true,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Sol↓",
+     "template_cents": -498.0,
+     "ok": true,
+     "matched_cents": -498.6333952134098,
+     "delta_cents": -0.6333952134098126,
+     "n": 869,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 524
+    },
+    {
+     "label": "Laᵏ↓",
+     "template_cents": -355.0,
+     "ok": true,
+     "matched_cents": -366.92522748242834,
+     "delta_cents": -11.92522748242834,
+     "n": 316,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 316
+    },
+    {
+     "label": "La↓",
+     "template_cents": -300.0,
+     "ok": true,
+     "matched_cents": -274.8865582703831,
+     "delta_cents": 25.11344172961691,
+     "n": 167,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 167
+    },
+    {
+     "label": "Si↓",
+     "template_cents": -209.0,
+     "ok": true,
+     "matched_cents": -225.12104288747912,
+     "delta_cents": -16.12104288747912,
+     "n": 45,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 35
+    },
+    {
+     "label": "Do",
+     "template_cents": 0.0,
+     "ok": true,
+     "matched_cents": -0.05513700206760729,
+     "delta_cents": -0.05513700206760729,
+     "n": 1066,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 1066
+    },
+    {
+     "label": "Reᵏ",
+     "template_cents": 138.0,
+     "ok": true,
+     "matched_cents": 138.87836400345793,
+     "delta_cents": 0.8783640034579321,
+     "n": 552,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 552
+    },
+    {
+     "label": "Re",
+     "template_cents": 202.0,
+     "ok": true,
+     "matched_cents": 211.6588233895232,
+     "delta_cents": 9.658823389523207,
+     "n": 200,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 200
+    },
+    {
+     "label": "Mi",
+     "template_cents": 400.0,
+     "ok": true,
+     "matched_cents": 438.2288669204477,
+     "delta_cents": 38.22886692044767,
+     "n": 37,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 37
+    },
+    {
+     "label": "Fa↑",
+     "template_cents": 498.0,
+     "ok": false,
+     "matched_cents": 448.42682788225943,
+     "delta_cents": -49.57317211774057,
+     "n": 83,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 81
+    },
+    {
+     "label": "Sol↑",
+     "template_cents": 702.0,
+     "ok": true,
+     "matched_cents": 701.3666047865902,
+     "delta_cents": -0.6333952134098126,
+     "n": 869,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 345
+    },
+    {
+     "label": "Laᵏ↑",
+     "template_cents": 840.0,
+     "ok": true,
+     "matched_cents": 829.8410183071389,
+     "delta_cents": -10.158981692861062,
+     "n": 208,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 208
+    },
+    {
+     "label": "Si↑",
+     "template_cents": 991.0,
+     "ok": true,
+     "matched_cents": 974.8789571125208,
+     "delta_cents": -16.121042887479234,
+     "n": 45,
+     "octave_folded": true,
+     "native": false,
+     "n_native": 0
+    }
+   ]
+  },
+  "forutan": {
+   "median_do": 225.76626543583401,
+   "mahur_do": 225.21406052727508,
+   "do_shift_vs_mahur_cents": 4.239636908724217,
+   "n_tracks": 10,
+   "n_tracks_used": 10,
+   "n_strikes": 2164,
+   "do_std_cents": 2.9456644604280173,
+   "details": [
+    {
+     "label": "Fa↓",
+     "template_cents": -702.0,
+     "ok": true,
+     "matched_cents": -705.900009156541,
+     "delta_cents": -3.9000091565410457,
+     "n": 211,
+     "octave_folded": true,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Sol↓",
+     "template_cents": -498.0,
+     "ok": true,
+     "matched_cents": -490.98420567452035,
+     "delta_cents": 7.015794325479646,
+     "n": 1031,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 16
+    },
+    {
+     "label": "Laᵏ↓",
+     "template_cents": -355.0,
+     "ok": true,
+     "matched_cents": -343.4398125695949,
+     "delta_cents": 11.560187430405108,
+     "n": 41,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 41
+    },
+    {
+     "label": "La↓",
+     "template_cents": -300.0,
+     "ok": false,
+     "matched_cents": null,
+     "delta_cents": null,
+     "n": 0,
+     "octave_folded": false,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Si↓",
+     "template_cents": -209.0,
+     "ok": false,
+     "matched_cents": null,
+     "delta_cents": null,
+     "n": 0,
+     "octave_folded": true,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Do",
+     "template_cents": 0.0,
+     "ok": true,
+     "matched_cents": 0.0,
+     "delta_cents": 0.0,
+     "n": 238,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 238
+    },
+    {
+     "label": "Reᵏ",
+     "template_cents": 138.0,
+     "ok": true,
+     "matched_cents": 135.25737318725544,
+     "delta_cents": -2.742626812744561,
+     "n": 44,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 44
+    },
+    {
+     "label": "Re",
+     "template_cents": 202.0,
+     "ok": false,
+     "matched_cents": 153.3390040095536,
+     "delta_cents": -48.660995990446395,
+     "n": 8,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 8
+    },
+    {
+     "label": "Mi",
+     "template_cents": 400.0,
+     "ok": true,
+     "matched_cents": 401.7615839072224,
+     "delta_cents": 1.7615839072224162,
+     "n": 199,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 199
+    },
+    {
+     "label": "Fa↑",
+     "template_cents": 498.0,
+     "ok": true,
+     "matched_cents": 494.09999084345895,
+     "delta_cents": -3.9000091565410457,
+     "n": 211,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 208
+    },
+    {
+     "label": "Sol↑",
+     "template_cents": 702.0,
+     "ok": true,
+     "matched_cents": 709.0157943254796,
+     "delta_cents": 7.015794325479646,
+     "n": 1031,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 1015
+    },
+    {
+     "label": "Laᵏ↑",
+     "template_cents": 840.0,
+     "ok": true,
+     "matched_cents": 846.5151875513268,
+     "delta_cents": 6.51518755132679,
+     "n": 294,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 294
+    },
+    {
+     "label": "Si↑",
+     "template_cents": 991.0,
+     "ok": false,
+     "matched_cents": null,
+     "delta_cents": null,
+     "n": 0,
+     "octave_folded": true,
+     "native": false,
+     "n_native": 0
+    }
+   ]
+  },
+  "neydavud": {
+   "median_do": 259.13637675467567,
+   "mahur_do": 269.72420201314696,
+   "do_shift_vs_mahur_cents": -69.32811340421259,
+   "n_tracks": 28,
+   "n_tracks_used": 20,
+   "n_strikes": 2972,
+   "do_std_cents": 32.46815324346667,
+   "details": [
+    {
+     "label": "Fa↓",
+     "template_cents": -702.0,
+     "ok": true,
+     "matched_cents": -695.5400314789516,
+     "delta_cents": 6.459968521048381,
+     "n": 156,
+     "octave_folded": true,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Sol↓",
+     "template_cents": -498.0,
+     "ok": true,
+     "matched_cents": -491.57569901003103,
+     "delta_cents": 6.42430098996897,
+     "n": 383,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 106
+    },
+    {
+     "label": "Laᵏ↓",
+     "template_cents": -355.0,
+     "ok": true,
+     "matched_cents": -377.16369406462155,
+     "delta_cents": -22.163694064621552,
+     "n": 84,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 84
+    },
+    {
+     "label": "La↓",
+     "template_cents": -300.0,
+     "ok": true,
+     "matched_cents": -313.18324075866565,
+     "delta_cents": -13.183240758665647,
+     "n": 12,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 12
+    },
+    {
+     "label": "Si↓",
+     "template_cents": -209.0,
+     "ok": true,
+     "matched_cents": -237.60969796658082,
+     "delta_cents": -28.609697966580825,
+     "n": 21,
+     "octave_folded": true,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Do",
+     "template_cents": 0.0,
+     "ok": true,
+     "matched_cents": 0.0,
+     "delta_cents": 0.0,
+     "n": 574,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 574
+    },
+    {
+     "label": "Reᵏ",
+     "template_cents": 138.0,
+     "ok": true,
+     "matched_cents": 133.0750331031927,
+     "delta_cents": -4.924966896807291,
+     "n": 377,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 377
+    },
+    {
+     "label": "Re",
+     "template_cents": 202.0,
+     "ok": false,
+     "matched_cents": 149.01166641565965,
+     "delta_cents": -52.98833358434035,
+     "n": 44,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 42
+    },
+    {
+     "label": "Mi",
+     "template_cents": 400.0,
+     "ok": true,
+     "matched_cents": 389.86081897222505,
+     "delta_cents": -10.139181027774953,
+     "n": 462,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 462
+    },
+    {
+     "label": "Fa↑",
+     "template_cents": 498.0,
+     "ok": true,
+     "matched_cents": 504.4599685210484,
+     "delta_cents": 6.459968521048381,
+     "n": 156,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 156
+    },
+    {
+     "label": "Sol↑",
+     "template_cents": 702.0,
+     "ok": true,
+     "matched_cents": 708.424300989969,
+     "delta_cents": 6.42430098996897,
+     "n": 383,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 276
+    },
+    {
+     "label": "Laᵏ↑",
+     "template_cents": 840.0,
+     "ok": true,
+     "matched_cents": 840.6977776496864,
+     "delta_cents": 0.6977776496863726,
+     "n": 195,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 195
+    },
+    {
+     "label": "Si↑",
+     "template_cents": 991.0,
+     "ok": true,
+     "matched_cents": 962.3903020334192,
+     "delta_cents": -28.609697966580825,
+     "n": 21,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 19
+    }
+   ]
+  },
+  "shahnazi": {
+   "median_do": 389.1827153639276,
+   "mahur_do": 384.30897006940813,
+   "do_shift_vs_mahur_cents": 21.817184658960517,
+   "n_tracks": 14,
+   "n_tracks_used": 14,
+   "n_strikes": 2641,
+   "do_std_cents": 58.39030257577504,
+   "details": [
+    {
+     "label": "Fa↓",
+     "template_cents": -702.0,
+     "ok": true,
+     "matched_cents": -702.7446625906284,
+     "delta_cents": -0.7446625906284225,
+     "n": 363,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 278
+    },
+    {
+     "label": "Sol↓",
+     "template_cents": -498.0,
+     "ok": false,
+     "matched_cents": -542.6762967144057,
+     "delta_cents": -44.67629671440568,
+     "n": 48,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 13
+    },
+    {
+     "label": "Laᵏ↓",
+     "template_cents": -355.0,
+     "ok": true,
+     "matched_cents": -418.2518234839547,
+     "delta_cents": -63.251823483954695,
+     "n": 54,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 54
+    },
+    {
+     "label": "La↓",
+     "template_cents": -300.0,
+     "ok": true,
+     "matched_cents": -298.40109899242043,
+     "delta_cents": 1.5989010075795704,
+     "n": 259,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 259
+    },
+    {
+     "label": "Si↓",
+     "template_cents": -209.0,
+     "ok": true,
+     "matched_cents": -207.62572569165673,
+     "delta_cents": 1.3742743083432742,
+     "n": 161,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 128
+    },
+    {
+     "label": "Do",
+     "template_cents": 0.0,
+     "ok": true,
+     "matched_cents": 0.0,
+     "delta_cents": 0.0,
+     "n": 591,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 591
+    },
+    {
+     "label": "Reᵏ",
+     "template_cents": 138.0,
+     "ok": true,
+     "matched_cents": 138.66267887155985,
+     "delta_cents": 0.662678871559848,
+     "n": 283,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 283
+    },
+    {
+     "label": "Re",
+     "template_cents": 202.0,
+     "ok": false,
+     "matched_cents": 150.4736996648062,
+     "delta_cents": -51.52630033519381,
+     "n": 56,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 50
+    },
+    {
+     "label": "Mi",
+     "template_cents": 400.0,
+     "ok": true,
+     "matched_cents": 402.8491797220649,
+     "delta_cents": 2.849179722064889,
+     "n": 51,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 51
+    },
+    {
+     "label": "Fa↑",
+     "template_cents": 498.0,
+     "ok": true,
+     "matched_cents": 497.2553374093716,
+     "delta_cents": -0.7446625906284225,
+     "n": 363,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 89
+    },
+    {
+     "label": "Sol↑",
+     "template_cents": 702.0,
+     "ok": false,
+     "matched_cents": 657.3237032855943,
+     "delta_cents": -44.67629671440568,
+     "n": 48,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 41
+    },
+    {
+     "label": "Laᵏ↑",
+     "template_cents": 840.0,
+     "ok": true,
+     "matched_cents": 876.1198321822994,
+     "delta_cents": 36.11983218229943,
+     "n": 14,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 14
+    },
+    {
+     "label": "Si↑",
+     "template_cents": 991.0,
+     "ok": true,
+     "matched_cents": 992.3742743083433,
+     "delta_cents": 1.3742743083432742,
+     "n": 161,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 34
+    }
+   ]
+  },
+  "kasaei": {
+   "median_do": 386.0934320947188,
+   "mahur_do": 369.95860266978826,
+   "do_shift_vs_mahur_cents": 73.90339955828418,
+   "n_tracks": 23,
+   "n_tracks_used": 15,
+   "n_strikes": 1412,
+   "do_std_cents": 61.59010143150573,
+   "details": [
+    {
+     "label": "Fa↓",
+     "template_cents": -702.0,
+     "ok": true,
+     "matched_cents": -724.8527273962422,
+     "delta_cents": -22.852727396242244,
+     "n": 41,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 28
+    },
+    {
+     "label": "Sol↓",
+     "template_cents": -498.0,
+     "ok": true,
+     "matched_cents": -496.7239488256673,
+     "delta_cents": 1.2760511743326788,
+     "n": 172,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 172
+    },
+    {
+     "label": "Laᵏ↓",
+     "template_cents": -355.0,
+     "ok": true,
+     "matched_cents": -356.7367590992739,
+     "delta_cents": -1.736759099273911,
+     "n": 86,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 86
+    },
+    {
+     "label": "La↓",
+     "template_cents": -300.0,
+     "ok": true,
+     "matched_cents": -300.76202545006004,
+     "delta_cents": -0.7620254500600367,
+     "n": 7,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 7
+    },
+    {
+     "label": "Si↓",
+     "template_cents": -209.0,
+     "ok": true,
+     "matched_cents": -213.15073547648012,
+     "delta_cents": -4.150735476480122,
+     "n": 25,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 24
+    },
+    {
+     "label": "Do",
+     "template_cents": 0.0,
+     "ok": true,
+     "matched_cents": 0.3638998638812538,
+     "delta_cents": 0.3638998638812538,
+     "n": 117,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 117
+    },
+    {
+     "label": "Reᵏ",
+     "template_cents": 138.0,
+     "ok": false,
+     "matched_cents": null,
+     "delta_cents": null,
+     "n": 0,
+     "octave_folded": false,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Re",
+     "template_cents": 202.0,
+     "ok": true,
+     "matched_cents": 208.44130952947796,
+     "delta_cents": 6.441309529477962,
+     "n": 106,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 38
+    },
+    {
+     "label": "Mi",
+     "template_cents": 400.0,
+     "ok": false,
+     "matched_cents": null,
+     "delta_cents": null,
+     "n": 0,
+     "octave_folded": false,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Fa↑",
+     "template_cents": 498.0,
+     "ok": true,
+     "matched_cents": 475.14727260375764,
+     "delta_cents": -22.852727396242358,
+     "n": 41,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 8
+    },
+    {
+     "label": "Sol↑",
+     "template_cents": 702.0,
+     "ok": true,
+     "matched_cents": 703.2760511743327,
+     "delta_cents": 1.2760511743326788,
+     "n": 172,
+     "octave_folded": true,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Laᵏ↑",
+     "template_cents": 840.0,
+     "ok": false,
+     "matched_cents": null,
+     "delta_cents": null,
+     "n": 0,
+     "octave_folded": false,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Si↑",
+     "template_cents": 991.0,
+     "ok": true,
+     "matched_cents": 986.8492645235199,
+     "delta_cents": -4.150735476480122,
+     "n": 25,
+     "octave_folded": true,
+     "native": false,
+     "n_native": 0
+    }
+   ]
+  },
+  "karimi": {
+   "median_do": 191.9330341670162,
+   "mahur_do": 199.35790601232904,
+   "do_shift_vs_mahur_cents": -65.70933662991949,
+   "n_tracks": 9,
+   "n_tracks_used": 8,
+   "n_strikes": 1440,
+   "do_std_cents": 74.67549423239765,
+   "details": [
+    {
+     "label": "Fa↓",
+     "template_cents": -702.0,
+     "ok": true,
+     "matched_cents": -721.5021703052437,
+     "delta_cents": -19.50217030524368,
+     "n": 116,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 21
+    },
+    {
+     "label": "Sol↓",
+     "template_cents": -498.0,
+     "ok": true,
+     "matched_cents": -498.76759719393795,
+     "delta_cents": -0.7675971939379451,
+     "n": 147,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 113
+    },
+    {
+     "label": "Laᵏ↓",
+     "template_cents": -355.0,
+     "ok": true,
+     "matched_cents": -368.57955870660487,
+     "delta_cents": -13.579558706604871,
+     "n": 167,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 167
+    },
+    {
+     "label": "La↓",
+     "template_cents": -300.0,
+     "ok": true,
+     "matched_cents": -284.30438447067337,
+     "delta_cents": 15.69561552932663,
+     "n": 21,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 21
+    },
+    {
+     "label": "Si↓",
+     "template_cents": -209.0,
+     "ok": true,
+     "matched_cents": -233.73522302060383,
+     "delta_cents": -24.735223020603826,
+     "n": 173,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 166
+    },
+    {
+     "label": "Do",
+     "template_cents": 0.0,
+     "ok": true,
+     "matched_cents": 0.0,
+     "delta_cents": 0.0,
+     "n": 245,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 245
+    },
+    {
+     "label": "Reᵏ",
+     "template_cents": 138.0,
+     "ok": true,
+     "matched_cents": 118.21017402135773,
+     "delta_cents": -19.78982597864227,
+     "n": 136,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 136
+    },
+    {
+     "label": "Re",
+     "template_cents": 202.0,
+     "ok": true,
+     "matched_cents": 232.53902108743,
+     "delta_cents": 30.53902108743,
+     "n": 29,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 26
+    },
+    {
+     "label": "Mi",
+     "template_cents": 400.0,
+     "ok": false,
+     "matched_cents": null,
+     "delta_cents": null,
+     "n": 0,
+     "octave_folded": false,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Fa↑",
+     "template_cents": 498.0,
+     "ok": true,
+     "matched_cents": 478.4978296947564,
+     "delta_cents": -19.502170305243624,
+     "n": 116,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 95
+    },
+    {
+     "label": "Sol↑",
+     "template_cents": 702.0,
+     "ok": true,
+     "matched_cents": 701.232402806062,
+     "delta_cents": -0.7675971939379451,
+     "n": 147,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 33
+    },
+    {
+     "label": "Laᵏ↑",
+     "template_cents": 840.0,
+     "ok": true,
+     "matched_cents": 810.0553428358814,
+     "delta_cents": -29.944657164118553,
+     "n": 42,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 42
+    },
+    {
+     "label": "Si↑",
+     "template_cents": 991.0,
+     "ok": true,
+     "matched_cents": 966.2647769793962,
+     "delta_cents": -24.735223020603826,
+     "n": 173,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 7
+    }
+   ]
+  },
+  "ebadi": {
+   "median_do": 252.8304602243894,
+   "mahur_do": 252.47649171494982,
+   "do_shift_vs_mahur_cents": 2.425466080456547,
+   "n_tracks": 1,
+   "n_tracks_used": 1,
+   "n_strikes": 1193,
+   "do_std_cents": 4.553679937616381,
+   "details": [
+    {
+     "label": "Fa↓",
+     "template_cents": -702.0,
+     "ok": true,
+     "matched_cents": -705.1683927444731,
+     "delta_cents": -3.168392744473067,
+     "n": 78,
+     "octave_folded": true,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Sol↓",
+     "template_cents": -498.0,
+     "ok": true,
+     "matched_cents": -489.1121491740064,
+     "delta_cents": 8.88785082599361,
+     "n": 283,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 35
+    },
+    {
+     "label": "Laᵏ↓",
+     "template_cents": -355.0,
+     "ok": false,
+     "matched_cents": null,
+     "delta_cents": null,
+     "n": 0,
+     "octave_folded": false,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "La↓",
+     "template_cents": -300.0,
+     "ok": false,
+     "matched_cents": null,
+     "delta_cents": null,
+     "n": 0,
+     "octave_folded": false,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Si↓",
+     "template_cents": -209.0,
+     "ok": false,
+     "matched_cents": null,
+     "delta_cents": null,
+     "n": 0,
+     "octave_folded": true,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Do",
+     "template_cents": 0.0,
+     "ok": true,
+     "matched_cents": -0.13054139794411695,
+     "delta_cents": -0.13054139794411695,
+     "n": 185,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 185
+    },
+    {
+     "label": "Reᵏ",
+     "template_cents": 138.0,
+     "ok": true,
+     "matched_cents": 141.53421173730686,
+     "delta_cents": 3.534211737306862,
+     "n": 104,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 104
+    },
+    {
+     "label": "Re",
+     "template_cents": 202.0,
+     "ok": false,
+     "matched_cents": 153.22246201068674,
+     "delta_cents": -48.77753798931326,
+     "n": 19,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 17
+    },
+    {
+     "label": "Mi",
+     "template_cents": 400.0,
+     "ok": true,
+     "matched_cents": 404.351408153701,
+     "delta_cents": 4.351408153701016,
+     "n": 86,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 86
+    },
+    {
+     "label": "Fa↑",
+     "template_cents": 498.0,
+     "ok": true,
+     "matched_cents": 494.83160725552693,
+     "delta_cents": -3.168392744473067,
+     "n": 78,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 78
+    },
+    {
+     "label": "Sol↑",
+     "template_cents": 702.0,
+     "ok": true,
+     "matched_cents": 710.8878508259937,
+     "delta_cents": 8.887850825993723,
+     "n": 283,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 248
+    },
+    {
+     "label": "Laᵏ↑",
+     "template_cents": 840.0,
+     "ok": true,
+     "matched_cents": 846.9877171068093,
+     "delta_cents": 6.987717106809328,
+     "n": 321,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 321
+    },
+    {
+     "label": "Si↑",
+     "template_cents": 991.0,
+     "ok": false,
+     "matched_cents": null,
+     "delta_cents": null,
+     "n": 0,
+     "octave_folded": true,
+     "native": false,
+     "n_native": 0
+    }
+   ]
+  },
+  "saba": {
+   "median_do": 402.03175819733224,
+   "mahur_do": 376.4598270016585,
+   "do_shift_vs_mahur_cents": 113.77626133648909,
+   "n_tracks": 1,
+   "n_tracks_used": 1,
+   "n_strikes": 938,
+   "do_std_cents": 4.5777278334744995,
+   "details": [
+    {
+     "label": "Fa↓",
+     "template_cents": -702.0,
+     "ok": true,
+     "matched_cents": -706.8540075633124,
+     "delta_cents": -4.854007563312393,
+     "n": 117,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 117
+    },
+    {
+     "label": "Sol↓",
+     "template_cents": -498.0,
+     "ok": false,
+     "matched_cents": null,
+     "delta_cents": null,
+     "n": 0,
+     "octave_folded": true,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Laᵏ↓",
+     "template_cents": -355.0,
+     "ok": true,
+     "matched_cents": -364.13982250199604,
+     "delta_cents": -9.139822501996036,
+     "n": 12,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 12
+    },
+    {
+     "label": "La↓",
+     "template_cents": -300.0,
+     "ok": true,
+     "matched_cents": -308.3862268448999,
+     "delta_cents": -8.386226844899909,
+     "n": 191,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 191
+    },
+    {
+     "label": "Si↓",
+     "template_cents": -209.0,
+     "ok": true,
+     "matched_cents": -203.88671748840187,
+     "delta_cents": 5.113282511598129,
+     "n": 68,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 68
+    },
+    {
+     "label": "Do",
+     "template_cents": 0.0,
+     "ok": true,
+     "matched_cents": -0.1580110148513809,
+     "delta_cents": -0.1580110148513809,
+     "n": 91,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 91
+    },
+    {
+     "label": "Reᵏ",
+     "template_cents": 138.0,
+     "ok": true,
+     "matched_cents": 130.08637744224487,
+     "delta_cents": -7.913622557755133,
+     "n": 79,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 79
+    },
+    {
+     "label": "Re",
+     "template_cents": 202.0,
+     "ok": false,
+     "matched_cents": null,
+     "delta_cents": null,
+     "n": 0,
+     "octave_folded": true,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Mi",
+     "template_cents": 400.0,
+     "ok": false,
+     "matched_cents": null,
+     "delta_cents": null,
+     "n": 0,
+     "octave_folded": false,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Fa↑",
+     "template_cents": 498.0,
+     "ok": true,
+     "matched_cents": 493.1459924366877,
+     "delta_cents": -4.85400756331228,
+     "n": 117,
+     "octave_folded": true,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Sol↑",
+     "template_cents": 702.0,
+     "ok": false,
+     "matched_cents": null,
+     "delta_cents": null,
+     "n": 0,
+     "octave_folded": true,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Laᵏ↑",
+     "template_cents": 840.0,
+     "ok": false,
+     "matched_cents": null,
+     "delta_cents": null,
+     "n": 0,
+     "octave_folded": false,
+     "native": false,
+     "n_native": 0
+    },
+    {
+     "label": "Si↑",
+     "template_cents": 991.0,
+     "ok": true,
+     "matched_cents": 996.1132825115981,
+     "delta_cents": 5.113282511598072,
+     "n": 68,
+     "octave_folded": true,
+     "native": false,
+     "n_native": 0
+    }
+   ]
+  },
+  "lotfi": {
+   "median_do": 317.99584551818174,
+   "mahur_do": 325.39562733105157,
+   "do_shift_vs_mahur_cents": -39.82433611689561,
+   "n_tracks": 3,
+   "n_tracks_used": 3,
+   "n_strikes": 3572,
+   "do_std_cents": 25.534745073626205,
+   "details": [
+    {
+     "label": "Fa↓",
+     "template_cents": -702.0,
+     "ok": true,
+     "matched_cents": -706.7000393605715,
+     "delta_cents": -4.700039360571509,
+     "n": 684,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 640
+    },
+    {
+     "label": "Sol↓",
+     "template_cents": -498.0,
+     "ok": true,
+     "matched_cents": -502.60138445238977,
+     "delta_cents": -4.601384452389766,
+     "n": 271,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 234
+    },
+    {
+     "label": "Laᵏ↓",
+     "template_cents": -355.0,
+     "ok": true,
+     "matched_cents": -364.9523788016619,
+     "delta_cents": -9.952378801661894,
+     "n": 129,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 129
+    },
+    {
+     "label": "La↓",
+     "template_cents": -300.0,
+     "ok": true,
+     "matched_cents": -305.6212283872544,
+     "delta_cents": -5.621228387254405,
+     "n": 346,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 346
+    },
+    {
+     "label": "Si↓",
+     "template_cents": -209.0,
+     "ok": true,
+     "matched_cents": -204.1973897402945,
+     "delta_cents": 4.802610259705489,
+     "n": 436,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 388
+    },
+    {
+     "label": "Do",
+     "template_cents": 0.0,
+     "ok": true,
+     "matched_cents": 0.05463804704265308,
+     "delta_cents": 0.05463804704265308,
+     "n": 809,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 809
+    },
+    {
+     "label": "Reᵏ",
+     "template_cents": 138.0,
+     "ok": true,
+     "matched_cents": 140.29443467362088,
+     "delta_cents": 2.2944346736208843,
+     "n": 314,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 314
+    },
+    {
+     "label": "Re",
+     "template_cents": 202.0,
+     "ok": true,
+     "matched_cents": 208.92219650013965,
+     "delta_cents": 6.922196500139648,
+     "n": 64,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 63
+    },
+    {
+     "label": "Mi",
+     "template_cents": 400.0,
+     "ok": true,
+     "matched_cents": 405.2298787296296,
+     "delta_cents": 5.229878729629604,
+     "n": 28,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 28
+    },
+    {
+     "label": "Fa↑",
+     "template_cents": 498.0,
+     "ok": true,
+     "matched_cents": 493.2999606394285,
+     "delta_cents": -4.700039360571509,
+     "n": 684,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 45
+    },
+    {
+     "label": "Sol↑",
+     "template_cents": 702.0,
+     "ok": true,
+     "matched_cents": 697.3986155476102,
+     "delta_cents": -4.601384452389766,
+     "n": 271,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 36
+    },
+    {
+     "label": "Laᵏ↑",
+     "template_cents": 840.0,
+     "ok": true,
+     "matched_cents": 868.6331459447936,
+     "delta_cents": 28.63314594479357,
+     "n": 40,
+     "octave_folded": false,
+     "native": true,
+     "n_native": 40
+    },
+    {
+     "label": "Si↑",
+     "template_cents": 991.0,
+     "ok": true,
+     "matched_cents": 995.8026102597055,
+     "delta_cents": 4.802610259705489,
+     "n": 436,
+     "octave_folded": true,
+     "native": true,
+     "n_native": 49
+    }
+   ]
+  }
+ },
+ "slots": [
+  {
+   "label": "Fa↓",
+   "template": -702.0,
+   "chahargah_cents": -705.534200950507,
+   "chahargah_sd": 8.791926736518656,
+   "n_artists": 10,
+   "per_artist": {
+    "alizadeh": -700.7771790058748,
+    "shekarchi": -699.850887135995,
+    "forutan": -705.900009156541,
+    "neydavud": -695.5400314789516,
+    "shahnazi": -702.7446625906284,
+    "kasaei": -724.8527273962422,
+    "karimi": -721.5021703052437,
+    "ebadi": -705.1683927444731,
+    "saba": -706.8540075633124,
+    "lotfi": -706.7000393605715
+   },
+   "mahur_cents": null
+  },
+  {
+   "label": "Sol↓",
+   "template": -498.0,
+   "chahargah_cents": -496.7239488256673,
+   "chahargah_sd": 6.992370254286447,
+   "n_artists": 9,
+   "per_artist": {
+    "nariman": -513.3490661404725,
+    "shekarchi": -494.0747505896841,
+    "borumand": -498.6333952134098,
+    "forutan": -490.98420567452035,
+    "neydavud": -491.57569901003103,
+    "kasaei": -496.7239488256673,
+    "karimi": -498.76759719393795,
+    "ebadi": -489.1121491740064,
+    "lotfi": -502.60138445238977
+   },
+   "mahur_cents": null
+  },
+  {
+   "label": "Laᵏ↓",
+   "template": -355.0,
+   "chahargah_cents": -364.9523788016619,
+   "chahargah_sd": 19.054380919910276,
+   "n_artists": 11,
+   "per_artist": {
+    "nariman": -391.60912859947535,
+    "alizadeh": -358.479353497852,
+    "shekarchi": -362.1011229969888,
+    "borumand": -366.92522748242834,
+    "forutan": -343.4398125695949,
+    "neydavud": -377.16369406462155,
+    "shahnazi": -418.2518234839547,
+    "kasaei": -356.7367590992739,
+    "karimi": -368.57955870660487,
+    "saba": -364.13982250199604,
+    "lotfi": -364.9523788016619
+   },
+   "mahur_cents": -355.7
+  },
+  {
+   "label": "La↓",
+   "template": -300.0,
+   "chahargah_cents": -303.1916269186572,
+   "chahargah_sd": 15.7308953876183,
+   "n_artists": 10,
+   "per_artist": {
+    "nariman": -274.3576156169671,
+    "alizadeh": -311.18536144010613,
+    "shekarchi": -323.22292082372917,
+    "borumand": -274.8865582703831,
+    "neydavud": -313.18324075866565,
+    "shahnazi": -298.40109899242043,
+    "kasaei": -300.76202545006004,
+    "karimi": -284.30438447067337,
+    "saba": -308.3862268448999,
+    "lotfi": -305.6212283872544
+   },
+   "mahur_cents": null
+  },
+  {
+   "label": "Si↓",
+   "template": -209.0,
+   "chahargah_cents": -213.15073547648012,
+   "chahargah_sd": 12.520477176862098,
+   "n_artists": 9,
+   "per_artist": {
+    "alizadeh": -202.51483792570195,
+    "shekarchi": -215.81557381227276,
+    "borumand": -225.12104288747912,
+    "neydavud": -237.60969796658082,
+    "shahnazi": -207.62572569165673,
+    "kasaei": -213.15073547648012,
+    "karimi": -233.73522302060383,
+    "saba": -203.88671748840187,
+    "lotfi": -204.1973897402945
+   },
+   "mahur_cents": null
+  },
+  {
+   "label": "Do",
+   "template": 0.0,
+   "chahargah_cents": 0.0,
+   "chahargah_sd": 0.12939851510027262,
+   "n_artists": 12,
+   "per_artist": {
+    "nariman": 0.0,
+    "alizadeh": -0.14461367235674494,
+    "shekarchi": -0.006455151094735972,
+    "borumand": -0.05513700206760729,
+    "forutan": 0.0,
+    "neydavud": 0.0,
+    "shahnazi": 0.0,
+    "kasaei": 0.3638998638812538,
+    "karimi": 0.0,
+    "ebadi": -0.13054139794411695,
+    "saba": -0.1580110148513809,
+    "lotfi": 0.05463804704265308
+   },
+   "mahur_cents": 0.0
+  },
+  {
+   "label": "Reᵏ",
+   "template": 138.0,
+   "chahargah_cents": 138.66267887155985,
+   "chahargah_sd": 8.146557040752045,
+   "n_artists": 11,
+   "per_artist": {
+    "nariman": 122.2376800124012,
+    "alizadeh": 144.6221366782022,
+    "shekarchi": 143.1027407288169,
+    "borumand": 138.87836400345793,
+    "forutan": 135.25737318725544,
+    "neydavud": 133.0750331031927,
+    "shahnazi": 138.66267887155985,
+    "karimi": 118.21017402135773,
+    "ebadi": 141.53421173730686,
+    "saba": 130.08637744224487,
+    "lotfi": 140.29443467362088
+   },
+   "mahur_cents": 137.5
+  },
+  {
+   "label": "Re",
+   "template": 202.0,
+   "chahargah_cents": 208.92219650013965,
+   "chahargah_sd": 9.494118245585065,
+   "n_artists": 5,
+   "per_artist": {
+    "nariman": 207.2844738356805,
+    "borumand": 211.6588233895232,
+    "kasaei": 208.44130952947796,
+    "karimi": 232.53902108743,
+    "lotfi": 208.92219650013965
+   },
+   "mahur_cents": 201.5
+  },
+  {
+   "label": "Mi",
+   "template": 400.0,
+   "chahargah_cents": 402.3053818146436,
+   "chahargah_sd": 15.25377491888482,
+   "n_artists": 8,
+   "per_artist": {
+    "alizadeh": 396.87423237874697,
+    "shekarchi": 382.9430396249593,
+    "borumand": 438.2288669204477,
+    "forutan": 401.7615839072224,
+    "neydavud": 389.86081897222505,
+    "shahnazi": 402.8491797220649,
+    "ebadi": 404.351408153701,
+    "lotfi": 405.2298787296296
+   },
+   "mahur_cents": 400.8
+  },
+  {
+   "label": "Fa↑",
+   "template": 498.0,
+   "chahargah_cents": 494.46579904949294,
+   "chahargah_sd": 8.79192673651867,
+   "n_artists": 10,
+   "per_artist": {
+    "alizadeh": 499.2228209941252,
+    "shekarchi": 500.149112864005,
+    "forutan": 494.09999084345895,
+    "neydavud": 504.4599685210484,
+    "shahnazi": 497.2553374093716,
+    "kasaei": 475.14727260375764,
+    "karimi": 478.4978296947564,
+    "ebadi": 494.83160725552693,
+    "saba": 493.1459924366877,
+    "lotfi": 493.2999606394285
+   },
+   "mahur_cents": 495.9
+  },
+  {
+   "label": "Sol↑",
+   "template": 702.0,
+   "chahargah_cents": 703.2760511743327,
+   "chahargah_sd": 6.992370254286491,
+   "n_artists": 9,
+   "per_artist": {
+    "nariman": 686.6509338595274,
+    "shekarchi": 705.9252494103159,
+    "borumand": 701.3666047865902,
+    "forutan": 709.0157943254796,
+    "neydavud": 708.424300989969,
+    "kasaei": 703.2760511743327,
+    "karimi": 701.232402806062,
+    "ebadi": 710.8878508259937,
+    "lotfi": 697.3986155476102
+   },
+   "mahur_cents": 702.1
+  },
+  {
+   "label": "Laᵏ↑",
+   "template": 840.0,
+   "chahargah_cents": 843.6064826005065,
+   "chahargah_sd": 19.712438535737526,
+   "n_artists": 8,
+   "per_artist": {
+    "shekarchi": 834.4344990793871,
+    "borumand": 829.8410183071389,
+    "forutan": 846.5151875513268,
+    "neydavud": 840.6977776496864,
+    "shahnazi": 876.1198321822994,
+    "karimi": 810.0553428358814,
+    "ebadi": 846.9877171068093,
+    "lotfi": 868.6331459447936
+   },
+   "mahur_cents": 837.8
+  },
+  {
+   "label": "Si↑",
+   "template": 991.0,
+   "chahargah_cents": 986.8492645235199,
+   "chahargah_sd": 12.520477176862101,
+   "n_artists": 9,
+   "per_artist": {
+    "alizadeh": 997.485162074298,
+    "shekarchi": 984.1844261877274,
+    "borumand": 974.8789571125208,
+    "neydavud": 962.3903020334192,
+    "shahnazi": 992.3742743083433,
+    "kasaei": 986.8492645235199,
+    "karimi": 966.2647769793962,
+    "saba": 996.1132825115981,
+    "lotfi": 995.8026102597055
+   },
+   "mahur_cents": null
+  }
+ ],
+ "pooled_peaks": [
+  {
+   "cents": -565.5,
+   "rel_strength": 0.0680718405557714
+  },
+  {
+   "cents": -493.5,
+   "rel_strength": 0.41585915543255336
+  },
+  {
+   "cents": -394.5,
+   "rel_strength": 0.06611186104372169
+  },
+  {
+   "cents": -355.5,
+   "rel_strength": 0.22119508113126704
+  },
+  {
+   "cents": -304.5,
+   "rel_strength": 0.1424376665478541
+  },
+  {
+   "cents": -205.5,
+   "rel_strength": 0.10629481735849029
+  },
+  {
+   "cents": -118.5,
+   "rel_strength": 0.06695860668775001
+  },
+  {
+   "cents": -94.5,
+   "rel_strength": 0.07350990770883901
+  },
+  {
+   "cents": 1.5,
+   "rel_strength": 1.0
+  },
+  {
+   "cents": 139.5,
+   "rel_strength": 0.31020841179956354
+  },
+  {
+   "cents": 211.5,
+   "rel_strength": 0.05383693907201409
+  },
+  {
+   "cents": 349.5,
+   "rel_strength": 0.06106071349403276
+  },
+  {
+   "cents": 400.5,
+   "rel_strength": 0.13722956930259195
+  },
+  {
+   "cents": 496.5,
+   "rel_strength": 0.32298484697337787
+  }
+ ],
+ "total_strikes": 33340
+}
