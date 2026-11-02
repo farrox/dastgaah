@@ -826,28 +826,30 @@ def page10() -> str:
 # --------------------------------------------------------------------------- PAGE 11: FULL-PAGE DANG ARCHITECTURE & FRET MAP
 def page11() -> str:
     o = header(11, "11. Modal Anatomy: Dāng Architecture Across the Dastgāhs",
-               "Physical fretboard grid on Setār String 1 (Do centered) with standardized 4-Dāng color coding and note frets")
+               "Physical fretboard grid on Setār String 1 (Do centered) with Tala'i 4-Dāng color coding, continuous vertical frets, and note dots")
 
-    # Legend & Naming Header Card with User's Color Palette:
-    # Shur/Dashti = Blue, Mahur = Green, Segah = Orange, Chahargah = Red
-    card(o, 36, 88, 1328, 72, "The 4 Elemental Dāng Archetypes & Color Code (All Dāngs Span a Pure 4th / ~498¢)", "")
+    # Legend & Naming Header Card with User's Color Palette & Canonical Abbreviations:
+    # S = Shūr (Blue), M = Māhūr (Green), C = Chahārgāh (Red), E = Esfahān (Teal), Sg = Segāh (Orange)
+    card(o, 36, 88, 1328, 72, "Tala'i Canonical Dāng Archetypes & Color Code (All Dāngs Span a Pure 4th / ~498¢)", "")
     
-    C_SHU = "#2563EB"   # Shūr / Dashti = Blue
-    C_MAH = "#059669"   # Māhūr = Green
-    C_SEG = "#EA580C"   # Segāh = Orange
-    C_CHAH = "#DC2626"  # Chahārgāh = Red
+    C_SHU = "#2563EB"   # S = Shūr / Dashti = Blue
+    C_MAH = "#059669"   # M = Māhūr = Green
+    C_CHAH = "#DC2626"  # C = Chahārgāh = Red
+    C_ESF = "#0891B2"   # E = Esfahān / Minor = Teal
+    C_SEG = "#EA580C"   # Sg = Segāh (Derived: S on Re) = Orange
 
     d_defs = [
-        ("D1: Shūr / Dashti (D-SHU)", C_SHU, "Step: N-N-T (139¢ + 155¢ + 204¢)", 56),
-        ("D2: Māhūr / Major (D-MAH)", C_MAH, "Step: T-T-S (204¢ + 204¢ + 90¢)", 375),
-        ("D3: Segāh / Symmetrical (D-SEG)", C_SEG, "Step: N-T-N (141¢ + 211¢ + 141¢)", 695),
-        ("D4: Chahārgāh / Augmented (D-CHAH)", C_CHAH, "Step: N-A-S (139¢ + 269¢ + 90¢)", 1015),
+        ("S: Dāng-e Shūr", C_SHU, "N-N-T (139¢ + 155¢ + 204¢)", 56),
+        ("M: Dāng-e Māhūr", C_MAH, "T-T-S (204¢ + 204¢ + 90¢)", 316),
+        ("C: Dāng-e Chahārgāh", C_CHAH, "N-A-S (139¢ + 269¢ + 90¢)", 576),
+        ("E: Dāng-e Esfahān", C_ESF, "T-S-T (204¢ + 90¢ + 204¢)", 836),
+        ("Sg: Segāh (S on Re)", C_SEG, "N-T-N (141¢ + 211¢ + 141¢)", 1096),
     ]
     for d_name, col, formula, lx in d_defs:
-        o.append(f'<rect x="{lx}" y="{122}" width="290" height="30" rx="5" fill="{col}" fill-opacity="0.12" stroke="{col}" stroke-width="1.5"/>')
-        o.append(f'<circle cx="{lx+14}" cy="{137}" r="5" fill="{col}"/>')
-        o.append(f'<text x="{lx+26}" y="{134}" font-size="10.5" font-weight="700" fill="{col}">{d_name}</text>')
-        o.append(f'<text x="{lx+26}" y="{147}" font-size="9" fill="#334155">{formula}</text>')
+        o.append(f'<rect x="{lx}" y="122" width="252" height="30" rx="5" fill="{col}" fill-opacity="0.12" stroke="{col}" stroke-width="1.5"/>')
+        o.append(f'<circle cx="{lx+14}" cy="137" r="5" fill="{col}"/>')
+        o.append(f'<text x="{lx+26}" y="134" font-size="10.5" font-weight="700" fill="{col}">{d_name}</text>')
+        o.append(f'<text x="{lx+26}" y="147" font-size="9" fill="#334155">{formula}</text>')
 
     # Frets definition: (cents_rel_do, name, ratio, is_primary)
     # Include all needed physical frets: Sol↓, Laᵏ↓, La↓, Si♭↓, Siᵏ↓, Do, Reᵏ, Re, Mi♭, Miᵏ, Mi, Fa, Sol, Laᵏ, La, Si♭, Si, Do'
@@ -897,51 +899,47 @@ def page11() -> str:
         o.append(f'<text x="{xx:.1f}" y="{grid_y_top-5}" font-size="9.5" font-weight="700" fill="{txt_col}" text-anchor="middle">{esc(name)}</text>')
         o.append(f'<text x="{xx:.1f}" y="{grid_y_top-22}" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">{c_val:+.0f}¢</text>')
 
-    # 2. DRAW 7 DASTGAH ROWS (Translucent cards so background vertical frets remain clearly visible)
-    # Color assignments:
-    # Shur = Blue (#2563EB)
-    # Mahur = Green (#059669)
-    # Segah = Orange (#EA580C)
-    # Chahargah = Red (#DC2626)
+    # 2. DRAW 7 DASTGAH ROWS IN CONTINUOUS MODAL SEQUENCE
+    # Continuous progression: Māhūr [M+M] -> Esfahān [E+C] -> Shūr [S+S] -> Navā [S+S] -> Segāh [S+Sg] -> Homāyūn [C+S] -> Chahārgāh [C+C]
     dastgah_rows = [
-        ("Dastgāh-e Chahārgāh", "Symmetrical double-augmented [D4 + D4]", [
-            (0.0, 498.0, "D4-CHAH 1 (Do)", C_CHAH, [(0.0, "Do"), (138.6, "Reᵏ"), (407.8, "Mi"), (498.0, "Fa")]),
-            (702.0, 1200.0, "D4-CHAH 2 (Sol)", C_CHAH, [(702.0, "Sol"), (840.6, "Laᵏ"), (1110.0, "Si"), (1200.0, "Do'")]),
+        ("1. Dastgāh-e Māhūr", "Symmetrical double-major dāngs [M + M] separated by whole tone", [
+            (0.0, 498.0, "M 1 (Do)", C_MAH, [(0.0, "Do"), (203.9, "Re"), (407.8, "Mi"), (498.0, "Fa")]),
+            (702.0, 1200.0, "M 2 (Sol)", C_MAH, [(702.0, "Sol"), (906.0, "La"), (1110.0, "Si"), (1200.0, "Do\'")]),
         ], 192),
 
-        ("Dastgāh-e Shūr", "Symmetrical double-neutral [D1 + D1]", [
-            (0.0, 498.0, "D1-SHU 1 (Do)", C_SHU, [(0.0, "Do"), (138.6, "Reᵏ"), (294.1, "Mi♭"), (498.0, "Fa")]),
-            (702.0, 1200.0, "D1-SHU 2 (Sol)", C_SHU, [(702.0, "Sol"), (834.1, "Laᵏ"), (996.1, "Si♭"), (1200.0, "Do'")]),
+        ("2. Āvāz-e Bayāt-e Esfahān", "Lower Minor dāng [E] on Do + Upper Augmented [C] on Sol", [
+            (0.0, 498.0, "E (Do)", C_ESF, [(0.0, "Do"), (203.9, "Re"), (294.1, "Mi♭"), (498.0, "Fa")]),
+            (702.0, 1200.0, "C (Sol)", C_CHAH, [(702.0, "Sol"), (840.6, "Laᵏ"), (1110.0, "Si"), (1200.0, "Do\'")]),
         ], 302),
 
-        ("Dastgāh-e Māhūr", "Symmetrical double-major [D2 + D2]", [
-            (0.0, 498.0, "D2-MAH 1 (Do)", C_MAH, [(0.0, "Do"), (203.9, "Re"), (407.8, "Mi"), (498.0, "Fa")]),
-            (702.0, 1200.0, "D2-MAH 2 (Sol)", C_MAH, [(702.0, "Sol"), (906.0, "La"), (1110.0, "Si"), (1200.0, "Do'")]),
+        ("3. Dastgāh-e Shūr", "Symmetrical double-neutral dāngs [S + S] separated by whole tone", [
+            (0.0, 498.0, "S 1 (Do)", C_SHU, [(0.0, "Do"), (138.6, "Reᵏ"), (294.1, "Mi♭"), (498.0, "Fa")]),
+            (702.0, 1200.0, "S 2 (Sol)", C_SHU, [(702.0, "Sol"), (834.1, "Laᵏ"), (996.1, "Si♭"), (1200.0, "Do\'")]),
         ], 412),
 
-        ("Dastgāh-e Homāyūn", "Lower augmented [D4] + Upper neutral [D1] conjoined", [
-            (0.0, 498.0, "D4-CHAH (Do)", C_CHAH, [(0.0, "Do"), (138.6, "Reᵏ"), (407.8, "Mi"), (498.0, "Fa")]),
-            (498.0, 996.1, "D1-SHU (Bīdād on Fa)", C_SHU, [(498.0, "Fa"), (702.0, "Sol"), (792.0, "La♭"), (996.1, "Si♭")]),
+        ("4. Dastgāh-e Navā", "Lower pedestal [S] on Do + Core resting axis [S] on Fa", [
+            (0.0, 498.0, "S (Pedestal)", C_SHU, [(0.0, "Do"), (138.6, "Reᵏ"), (294.1, "Mi♭"), (498.0, "Fa")]),
+            (498.0, 996.1, "S (Īst on Fa)", C_SHU, [(498.0, "Fa"), (702.0, "Sol"), (834.1, "Laᵏ"), (996.1, "Si♭")]),
         ], 522),
 
-        ("Dastgāh-e Segāh", "D1-SHU on Re (+204¢) → creates D3-SEG on Miᵏ (+355¢)", [
-            (203.9, 702.0, "D1-SHU (Rooted on Re)", C_SHU, [(203.9, "Re"), (354.5, "Miᵏ"), (498.0, "Fa"), (702.0, "Sol")]),
-            (354.5, 852.5, "D3-SEG (Īst on Miᵏ)", C_SEG, [(354.5, "Miᵏ"), (498.0, "Fa"), (702.0, "Sol"), (848.0, "Laᵏ")]),
+        ("5. Dastgāh-e Segāh", "Tala'i transposition: S on Re (+204¢) creates derived Sg resting on Miᵏ (+355¢)", [
+            (203.9, 702.0, "S (Rooted on Re)", C_SHU, [(203.9, "Re"), (354.5, "Miᵏ"), (498.0, "Fa"), (702.0, "Sol")]),
+            (354.5, 852.5, "Sg (Īst on Miᵏ)", C_SEG, [(354.5, "Miᵏ"), (498.0, "Fa"), (702.0, "Sol"), (848.0, "Laᵏ")]),
         ], 632),
 
-        ("Āvāz-e Bayāt-e Esfahān", "Minor [D2-variant] on Do + Upper [D4] Ouj on Sol", [
-            (0.0, 498.0, "D1/D2 Hybrid (Do)", "#0891B2", [(0.0, "Do"), (203.9, "Re"), (294.1, "Mi♭"), (498.0, "Fa")]),
-            (702.0, 1200.0, "D4-CHAH (Ouj on Sol)", C_CHAH, [(702.0, "Sol"), (840.6, "Laᵏ"), (1110.0, "Si"), (1200.0, "Do'")]),
+        ("6. Dastgāh-e Homāyūn", "Lower Augmented [C] on Do + Upper Neutral [S] on Fa (Bīdād conjoined)", [
+            (0.0, 498.0, "C (Do)", C_CHAH, [(0.0, "Do"), (138.6, "Reᵏ"), (407.8, "Mi"), (498.0, "Fa")]),
+            (498.0, 996.1, "S (Bīdād on Fa)", C_SHU, [(498.0, "Fa"), (702.0, "Sol"), (792.0, "La♭"), (996.1, "Si♭")]),
         ], 742),
 
-        ("Dastgāh-e Navā", "Lower pedestal [D1] + Core resting axis [D1] on Fa", [
-            (0.0, 498.0, "D1-SHU (Pedestal)", C_SHU, [(0.0, "Do"), (138.6, "Reᵏ"), (294.1, "Mi♭"), (498.0, "Fa")]),
-            (498.0, 996.1, "D1-SHU (Īst on Fa)", C_SHU, [(498.0, "Fa"), (702.0, "Sol"), (834.1, "Laᵏ"), (996.1, "Si♭")]),
+        ("7. Dastgāh-e Chahārgāh", "Symmetrical double-augmented dāngs [C + C] separated by whole tone", [
+            (0.0, 498.0, "C 1 (Do)", C_CHAH, [(0.0, "Do"), (138.6, "Reᵏ"), (407.8, "Mi"), (498.0, "Fa")]),
+            (702.0, 1200.0, "C 2 (Sol)", C_CHAH, [(702.0, "Sol"), (840.6, "Laᵏ"), (1110.0, "Si"), (1200.0, "Do\'")]),
         ], 852),
     ]
 
     for title, subtitle, dang_spans, ry in dastgah_rows:
-        # Translucent row card (0.78 opacity) so background fret lines remain visible behind the cards
+        # Translucent row card (0.80 opacity) so background fret lines remain visible behind the cards
         o.append(f'<rect x="36" y="{ry}" width="1328" height="98" rx="6" fill="#FFFFFF" fill-opacity="0.80" stroke="#E2E8F0" stroke-width="1.0"/>')
         o.append(f'<text x="46" y="{ry+22}" font-size="12" font-weight="700" fill="#0F172A">{esc(title)}</text>')
         o.append(f'<text x="46" y="{ry+38}" font-size="9.5" fill="#64748B">{esc(subtitle)}</text>')
@@ -963,9 +961,6 @@ def page11() -> str:
                 nx = c_to_x(n_c)
                 o.append(f'<circle cx="{nx:.1f}" cy="{ry+74}" r="4.5" fill="{col}" stroke="#FFFFFF" stroke-width="1.0"/>')
                 o.append(f'<text x="{nx:.1f}" y="{ry+86}" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">{esc(n_lbl)}</text>')
-
-    o.append("</svg>")
-    return "\n".join(o)
 
     o.append("</svg>")
     return "\n".join(o)
