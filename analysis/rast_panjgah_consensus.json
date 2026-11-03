@@ -1,0 +1,525 @@
+{
+  "dastgah": "Rast-Panjgah",
+  "total_strikes_analyzed": 13306,
+  "masters_count": 12,
+  "consensus_slots": {
+    "zir_e_ist_si": {
+      "name": "Sub-tonic (Si)",
+      "theory_target": -90.2,
+      "theory_ratio": "243/256 (-90.2c)",
+      "strikes_binned": 354,
+      "masters_contributing": 6,
+      "median_cents": -106.1,
+      "mean_cents": -99.7,
+      "std_cents": 19.9,
+      "fretted_median": -103.1,
+      "fretless_median": -109.0
+    },
+    "tonic_do": {
+      "name": "Tonic (Do - Rast)",
+      "theory_target": 0.0,
+      "theory_ratio": "1/1 (0.0c)",
+      "strikes_binned": 3229,
+      "masters_contributing": 12,
+      "median_cents": -0.5,
+      "mean_cents": 0.4,
+      "std_cents": 3.5,
+      "fretted_median": -1.1,
+      "fretless_median": 0.0
+    },
+    "step_2_re": {
+      "name": "Major 2nd (Re)",
+      "theory_target": 203.9,
+      "theory_ratio": "9/8 (+203.9c)",
+      "strikes_binned": 1709,
+      "masters_contributing": 12,
+      "median_cents": 203.9,
+      "mean_cents": 205.3,
+      "std_cents": 8.5,
+      "fretted_median": 202.5,
+      "fretless_median": 206.6
+    },
+    "step_3_mi": {
+      "name": "Major 3rd (Mi)",
+      "theory_target": 400.0,
+      "theory_ratio": "81/64 (+407.8c) vs 5/4 (+386.3c)",
+      "strikes_binned": 602,
+      "masters_contributing": 9,
+      "median_cents": 399.8,
+      "mean_cents": 396.1,
+      "std_cents": 18.2,
+      "fretted_median": 400.7,
+      "fretless_median": 388.3
+    },
+    "step_4_fa": {
+      "name": "Pure 4th (Fa)",
+      "theory_target": 498.0,
+      "theory_ratio": "4/3 (+498.0c)",
+      "strikes_binned": 1431,
+      "masters_contributing": 12,
+      "median_cents": 498.6,
+      "mean_cents": 496.9,
+      "std_cents": 6.7,
+      "fretted_median": 500.7,
+      "fretless_median": 497.5
+    },
+    "step_5_sol": {
+      "name": "Pure 5th (Sol - Panjgah)",
+      "theory_target": 702.0,
+      "theory_ratio": "3/2 (+702.0c)",
+      "strikes_binned": 1672,
+      "masters_contributing": 12,
+      "median_cents": 703.9,
+      "mean_cents": 702.8,
+      "std_cents": 8.0,
+      "fretted_median": 696.2,
+      "fretless_median": 708.5
+    },
+    "mod_la_koron": {
+      "name": "Neutral 6th (La Koron - Oshshaq)",
+      "theory_target": 840.6,
+      "theory_ratio": "13/8 (+840.6c)",
+      "strikes_binned": 727,
+      "masters_contributing": 9,
+      "median_cents": 869.5,
+      "mean_cents": 865.0,
+      "std_cents": 16.3,
+      "fretted_median": 868.3,
+      "fretless_median": 875.2
+    },
+    "step_6_la": {
+      "name": "Major 6th (La)",
+      "theory_target": 905.9,
+      "theory_ratio": "27/16 (+905.9c)",
+      "strikes_binned": 1091,
+      "masters_contributing": 12,
+      "median_cents": 894.2,
+      "mean_cents": 896.7,
+      "std_cents": 10.9,
+      "fretted_median": 892.7,
+      "fretless_median": 901.1
+    },
+    "step_7_si": {
+      "name": "Leading Tone (Si)",
+      "theory_target": 1109.8,
+      "theory_ratio": "243/128 (+1109.8c)",
+      "strikes_binned": 0,
+      "masters_contributing": 0,
+      "median_cents": null,
+      "mean_cents": null,
+      "std_cents": null,
+      "fretted_median": null,
+      "fretless_median": null
+    },
+    "octave_do": {
+      "name": "Octave (Do')",
+      "theory_target": 1200.0,
+      "theory_ratio": "2/1 (+1200.0c)",
+      "strikes_binned": 0,
+      "masters_contributing": 0,
+      "median_cents": null,
+      "mean_cents": null,
+      "std_cents": null,
+      "fretted_median": null,
+      "fretless_median": null
+    }
+  },
+  "sources": {
+    "alizadeh_tar_setar": {
+      "meta": {
+        "fretless": false,
+        "category": "tar_setar",
+        "lineage": "modern"
+      },
+      "tonic_hz": 441.7,
+      "total_strikes": 518,
+      "slot_medians": {
+        "zir_e_ist_si": -103.08712743153772,
+        "tonic_do": -2.308728661118664,
+        "step_2_re": 202.51241807651147,
+        "step_3_mi": null,
+        "step_4_fa": 490.40592470897377,
+        "step_5_sol": 695.4483262569613,
+        "mod_la_koron": 843.7131362397961,
+        "step_6_la": 892.680200258123,
+        "step_7_si": null,
+        "octave_do": null
+      },
+      "slot_counts": {
+        "zir_e_ist_si": 5,
+        "tonic_do": 270,
+        "step_2_re": 18,
+        "step_3_mi": 0,
+        "step_4_fa": 37,
+        "step_5_sol": 55,
+        "mod_la_koron": 30,
+        "step_6_la": 40,
+        "step_7_si": 0,
+        "octave_do": 0
+      }
+    },
+    "shahnazi_tar": {
+      "meta": {
+        "fretless": false,
+        "category": "tar",
+        "lineage": "qajar_radif"
+      },
+      "tonic_hz": 256.1,
+      "total_strikes": 511,
+      "slot_medians": {
+        "zir_e_ist_si": null,
+        "tonic_do": 3.6509358847692113,
+        "step_2_re": 204.74215901064426,
+        "step_3_mi": 401.61526715322157,
+        "step_4_fa": 500.6553445466953,
+        "step_5_sol": 706.9701637279893,
+        "mod_la_koron": 850.9893940832235,
+        "step_6_la": 895.4224469082274,
+        "step_7_si": null,
+        "octave_do": null
+      },
+      "slot_counts": {
+        "zir_e_ist_si": 0,
+        "tonic_do": 173,
+        "step_2_re": 68,
+        "step_3_mi": 21,
+        "step_4_fa": 26,
+        "step_5_sol": 69,
+        "mod_la_koron": 62,
+        "step_6_la": 51,
+        "step_7_si": 0,
+        "octave_do": 0
+      }
+    },
+    "karimi_vocal": {
+      "meta": {
+        "fretless": true,
+        "category": "voice",
+        "lineage": "canonical"
+      },
+      "tonic_hz": 185.7,
+      "total_strikes": 1112,
+      "slot_medians": {
+        "zir_e_ist_si": -109.04919308198734,
+        "tonic_do": -2.216253413078533,
+        "step_2_re": 213.26060558190096,
+        "step_3_mi": 411.9059507682239,
+        "step_4_fa": 497.4792316814322,
+        "step_5_sol": 706.7336351500294,
+        "mod_la_koron": 876.8795139975455,
+        "step_6_la": 902.0556072128388,
+        "step_7_si": null,
+        "octave_do": null
+      },
+      "slot_counts": {
+        "zir_e_ist_si": 197,
+        "tonic_do": 219,
+        "step_2_re": 187,
+        "step_3_mi": 81,
+        "step_4_fa": 34,
+        "step_5_sol": 41,
+        "mod_la_koron": 39,
+        "step_6_la": 163,
+        "step_7_si": 0,
+        "octave_do": 0
+      }
+    },
+    "borumand_tar_setar": {
+      "meta": {
+        "fretless": false,
+        "category": "tar_setar",
+        "lineage": "qajar_radif"
+      },
+      "tonic_hz": 172.9,
+      "total_strikes": 1195,
+      "slot_medians": {
+        "zir_e_ist_si": -111.89814031197714,
+        "tonic_do": -2.6198666005385007,
+        "step_2_re": 195.92253101260224,
+        "step_3_mi": 399.7919756932995,
+        "step_4_fa": 494.5480579536669,
+        "step_5_sol": 691.1098331967007,
+        "mod_la_koron": 879.2590245066676,
+        "step_6_la": 880.6181670836961,
+        "step_7_si": null,
+        "octave_do": null
+      },
+      "slot_counts": {
+        "zir_e_ist_si": 28,
+        "tonic_do": 241,
+        "step_2_re": 245,
+        "step_3_mi": 76,
+        "step_4_fa": 136,
+        "step_5_sol": 282,
+        "mod_la_koron": 56,
+        "step_6_la": 61,
+        "step_7_si": 0,
+        "octave_do": 0
+      }
+    },
+    "nariman_oud": {
+      "meta": {
+        "fretless": true,
+        "category": "oud",
+        "lineage": "classical"
+      },
+      "tonic_hz": 264.7,
+      "total_strikes": 1576,
+      "slot_medians": {
+        "zir_e_ist_si": null,
+        "tonic_do": 0.16504105156144533,
+        "step_2_re": 201.7732223855636,
+        "step_3_mi": 388.3140263542738,
+        "step_4_fa": 482.33131919110167,
+        "step_5_sol": 700.0869032196185,
+        "mod_la_koron": 839.117695073472,
+        "step_6_la": 892.9822195412356,
+        "step_7_si": null,
+        "octave_do": null
+      },
+      "slot_counts": {
+        "zir_e_ist_si": 1,
+        "tonic_do": 264,
+        "step_2_re": 155,
+        "step_3_mi": 59,
+        "step_4_fa": 155,
+        "step_5_sol": 262,
+        "mod_la_koron": 278,
+        "step_6_la": 90,
+        "step_7_si": 0,
+        "octave_do": 0
+      }
+    },
+    "neydavud_tar": {
+      "meta": {
+        "fretless": false,
+        "category": "tar",
+        "lineage": "historical_radif"
+      },
+      "tonic_hz": 266.8,
+      "total_strikes": 772,
+      "slot_medians": {
+        "zir_e_ist_si": null,
+        "tonic_do": 0.4166105292306099,
+        "step_2_re": 200.2146613859345,
+        "step_3_mi": 392.6975993596393,
+        "step_4_fa": 505.26023655164477,
+        "step_5_sol": 696.2383899456195,
+        "mod_la_koron": 867.2234955022504,
+        "step_6_la": 885.7557357457297,
+        "step_7_si": null,
+        "octave_do": null
+      },
+      "slot_counts": {
+        "zir_e_ist_si": 2,
+        "tonic_do": 110,
+        "step_2_re": 63,
+        "step_3_mi": 39,
+        "step_4_fa": 62,
+        "step_5_sol": 112,
+        "mod_la_koron": 120,
+        "step_6_la": 139,
+        "step_7_si": 0,
+        "octave_do": 0
+      }
+    },
+    "shekarchi_kamancheh": {
+      "meta": {
+        "fretless": true,
+        "category": "kamancheh",
+        "lineage": "classical"
+      },
+      "tonic_hz": 584.7,
+      "total_strikes": 1810,
+      "slot_medians": {
+        "zir_e_ist_si": -120.0897719191113,
+        "tonic_do": -1.617302233265292,
+        "step_2_re": 203.1178235764117,
+        "step_3_mi": 364.0053864653361,
+        "step_4_fa": 504.454420884651,
+        "step_5_sol": 708.5472508979051,
+        "mod_la_koron": 875.1762301030955,
+        "step_6_la": 901.0955132781627,
+        "step_7_si": null,
+        "octave_do": null
+      },
+      "slot_counts": {
+        "zir_e_ist_si": 51,
+        "tonic_do": 387,
+        "step_2_re": 204,
+        "step_3_mi": 91,
+        "step_4_fa": 156,
+        "step_5_sol": 365,
+        "mod_la_koron": 94,
+        "step_6_la": 278,
+        "step_7_si": 0,
+        "octave_do": 0
+      }
+    },
+    "kasaei_ney": {
+      "meta": {
+        "fretless": true,
+        "category": "ney",
+        "lineage": "classical"
+      },
+      "tonic_hz": 183.6,
+      "total_strikes": 694,
+      "slot_medians": {
+        "zir_e_ist_si": null,
+        "tonic_do": 0.019095721754723627,
+        "step_2_re": 206.58528281135617,
+        "step_3_mi": 377.22506696503393,
+        "step_4_fa": 499.818446168101,
+        "step_5_sol": 710.8698182663127,
+        "mod_la_koron": null,
+        "step_6_la": 890.7410127710245,
+        "step_7_si": null,
+        "octave_do": null
+      },
+      "slot_counts": {
+        "zir_e_ist_si": 1,
+        "tonic_do": 194,
+        "step_2_re": 90,
+        "step_3_mi": 16,
+        "step_4_fa": 103,
+        "step_5_sol": 8,
+        "mod_la_koron": 3,
+        "step_6_la": 26,
+        "step_7_si": 0,
+        "octave_do": 0
+      }
+    },
+    "shahnaz_tar": {
+      "meta": {
+        "fretless": false,
+        "category": "tar",
+        "lineage": "classical"
+      },
+      "tonic_hz": 226.3,
+      "total_strikes": 3107,
+      "slot_medians": {
+        "zir_e_ist_si": null,
+        "tonic_do": -1.9593843683077807,
+        "step_2_re": 191.7359934077458,
+        "step_3_mi": null,
+        "step_4_fa": 501.7702730978783,
+        "step_5_sol": 701.0568011629894,
+        "mod_la_koron": 869.4544666270002,
+        "step_6_la": 900.3820038373001,
+        "step_7_si": null,
+        "octave_do": null
+      },
+      "slot_counts": {
+        "zir_e_ist_si": 0,
+        "tonic_do": 606,
+        "step_2_re": 401,
+        "step_3_mi": 2,
+        "step_4_fa": 491,
+        "step_5_sol": 254,
+        "mod_la_koron": 35,
+        "step_6_la": 128,
+        "step_7_si": 0,
+        "octave_do": 0
+      }
+    },
+    "ebadi_setar": {
+      "meta": {
+        "fretless": false,
+        "category": "setar",
+        "lineage": "classical"
+      },
+      "tonic_hz": 194.3,
+      "total_strikes": 926,
+      "slot_medians": {
+        "zir_e_ist_si": -64.83334583927687,
+        "tonic_do": 9.12518971426799,
+        "step_2_re": 224.37748867744688,
+        "step_3_mi": 424.8368215744953,
+        "step_4_fa": 501.28962239887295,
+        "step_5_sol": 714.6581094972015,
+        "mod_la_koron": null,
+        "step_6_la": 919.3461426803797,
+        "step_7_si": null,
+        "octave_do": null
+      },
+      "slot_counts": {
+        "zir_e_ist_si": 19,
+        "tonic_do": 518,
+        "step_2_re": 93,
+        "step_3_mi": 47,
+        "step_4_fa": 82,
+        "step_5_sol": 109,
+        "mod_la_koron": 0,
+        "step_6_la": 45,
+        "step_7_si": 0,
+        "octave_do": 0
+      }
+    },
+    "saba_violin": {
+      "meta": {
+        "fretless": true,
+        "category": "violin",
+        "lineage": "classical"
+      },
+      "tonic_hz": 448.1,
+      "total_strikes": 897,
+      "slot_medians": {
+        "zir_e_ist_si": -89.33819890563197,
+        "tonic_do": 3.7927402505787313,
+        "step_2_re": 210.6631900475349,
+        "step_3_mi": 404.8384898534923,
+        "step_4_fa": 494.435856121624,
+        "step_5_sol": 710.7995440487094,
+        "mod_la_koron": null,
+        "step_6_la": 910.9912462887173,
+        "step_7_si": null,
+        "octave_do": null
+      },
+      "slot_counts": {
+        "zir_e_ist_si": 50,
+        "tonic_do": 201,
+        "step_2_re": 163,
+        "step_3_mi": 167,
+        "step_4_fa": 108,
+        "step_5_sol": 107,
+        "mod_la_koron": 3,
+        "step_6_la": 46,
+        "step_7_si": 0,
+        "octave_do": 0
+      }
+    },
+    "lotfi_tar": {
+      "meta": {
+        "fretless": false,
+        "category": "tar",
+        "lineage": "classical"
+      },
+      "tonic_hz": 371.3,
+      "total_strikes": 188,
+      "slot_medians": {
+        "zir_e_ist_si": null,
+        "tonic_do": -1.1166173696042136,
+        "step_2_re": 208.10204701072323,
+        "step_3_mi": null,
+        "step_4_fa": 490.71754423658933,
+        "step_5_sol": 691.5665002946487,
+        "mod_la_koron": 882.9860429388636,
+        "step_6_la": 887.9725511088625,
+        "step_7_si": null,
+        "octave_do": null
+      },
+      "slot_counts": {
+        "zir_e_ist_si": 0,
+        "tonic_do": 46,
+        "step_2_re": 22,
+        "step_3_mi": 3,
+        "step_4_fa": 41,
+        "step_5_sol": 8,
+        "mod_la_koron": 7,
+        "step_6_la": 24,
+        "step_7_si": 0,
+        "octave_do": 0
+      }
+    }
+  }
+}
