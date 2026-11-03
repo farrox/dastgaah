@@ -1037,67 +1037,65 @@ def page11() -> str:
 
 # --------------------------------------------------------------------------- PAGE 12
 def page12() -> str:
-    o = header(12, "12. Tala'i Dāngs in Action: Āvāz-e Dashti (Fretted vs. Fretless)",
-               "Testing the Dāng-e Shūr and the variable degree (motaghayyer) across 12 masters (fretted tar/setar vs. fretless oud/kamancheh/voice)")
+    o = header(12, "12. The 5 Secondary Āvāzes: Branching Architecture from Dastgāh-e Shūr",
+               "Empirical Analysis of 18,632 Note Strikes Across 89 Radif Tracks (Borumand, Karimi, Shahnazi, Hormozi, Alizadeh)")
 
     items = [
-        ("h", "The Dāng-e Shūr Framework in Dashti"),
-        ("p", "In Tala'i's model, Āvāz-e Dashti is anchored to Dāng-e Shūr rooted on Re (Ist = 0¢):"),
-        ("b", "Kernel: Ist (0¢) → Neutral 2nd (Miᵏ ~+138¢) → Minor 3rd (Fa ~+294¢) → Shāhed / 4th (Sol ~+498¢)."),
-        ("b", "The Variable Degree (Motaghayyer): The 5th degree is an expressive appendage that fluctuates between "
-              "a neutral fifth (Koron, ~+640¢ to +666¢) when resting and a pure Pythagorean fifth (3/2, +702¢) when ascending into Owj / Deylamān."),
-        ("b", "Fretless Testing: Why Dashti? In Shūr, players often retune or shift open strings. In Dashti, standard Do–Sol–Re tuning is preserved, "
-              "allowing direct comparison between fretted instruments (Tār, Setār) and fretless masters (Oud, Barbāt, Kamāncheh, Voice) "
-              "who can place their fingers anywhere without fret constraints."),
-        ("h", "Key Empirical Findings (Dashti Corpus)"),
-        ("b", "Neutral 2nd Invariance: Fretless masters (Nariman, Behroozinia, Shekarchi, Farajpouri, Kalhor, Karimi) place the neutral 2nd at +137.4¢ "
-              "(vs. fretted +135.8¢). Both mirror the Al-Fārābī / Ibn Sīnā 13/12 ratio (138.6¢) with sub-cent accuracy, decisively rejecting Vaziri's 150¢!"),
-        ("b", "Bimodal Variable Degree: The motaghayyer splits cleanly into two distinct modes: a neutral 5th at +658.5¢ (fretless) / +658.9¢ (fretted), "
-              "and a pure Pythagorean fifth at +701.0¢ (fretless) / +705.9¢ (fretted, 3/2 = 702.0¢)."),
+        ("h", "The Shūr Mother Mode &amp; Branching Logic"),
+        ("p", "In Dariush Tala'i's modal grammar, Dastgāh-e Shūr is the architectural nucleus (Umm al-Maqāmāt) consisting of two symmetrical "
+              "Dāng-e Shūr tetrachords [S + S] separated by a 9/8 tone: Do (0¢) → Reᵏ (139¢) → Mi♭ (294¢) → Fa (498¢) | Sol (702¢) → Laᵏ (841¢) → Si♭ (996¢) → Do' (1200¢). "
+              "The 5 secondary Āvāzes do not introduce arbitrary alien frets; rather, they branch off through three precise modal mechanisms:"),
+        ("b", "1. Shāhed (Focal Center) Shift: Āvāz-e Abū’atā relocates the melodic center to the 2nd degree (Re-koron, +139¢), while Dashtī shifts to the 5th/6th degrees (Sol / La-koron)."),
+        ("b", "2. Īst (Resting Tone) Mutation: Āvāz-e Bayāt-e Tork establishes the 3rd degree (Mi-flat, +294¢) as its primary resting tone, evoking an uplifting major-third resonance."),
+        ("b", "3. Motaghayyer (Dynamic Pitch Variable): Āvāz-e Afshārī and Dashtī introduce dynamic intonational elasticity on the 5th degree (Sol ↔ Sol-koron ~640¢-660¢)."),
+        ("h", "The 5 Branches at a Glance"),
+        ("b", "Abū’atā: Reᵏ Shāhed axis with Sayakhi and Hejāz (modulating toward Homāyūn/Chahārgāh color on the 5th degree)."),
+        ("b", "Bayāt-e Tork: Mi♭ Īst giving the iconic Persian Adhān and spiritual Sufi cantillations (Rowh al-Arvāh, Masnavi)."),
+        ("b", "Afshārī: Fa Īst with weeping Sol ↔ Sol-koron fluctuation, resolving back to lower Shūr in final cadences."),
+        ("b", "Dashtī: Agonizing pastoral nostalgia anchored by La-koron focal center and weeping Deylamān/Ouj descent."),
+        ("b", "Bayāt-e Kord: Do Īst with prolonged, intense neutral-second (13/12) ornamentation and restrained range."),
     ]
     text_col(o, items, page=11)
 
-    card(o, 770, 100, 600, 480, "Consensus: Fretted vs. Fretless in Dashti", "Median cents relative to Ist (0.0¢) across 12 masters")
+    card(o, 770, 100, 600, 480, "Consensus Comparison: The 5 Secondary Āvāzes", "Empirical pitch centers, Īst, Shāhed, and strike counts")
     rows = [
-        ("Zir-e Ist", -204.0, -210.1, -203.9, "Pyth 9/8 subtonic"),
-        ("Ist (Tonic)", 0.0, 0.0, 0.0, "Modal base (Finalis)"),
-        ("2nd Koron", 135.8, 137.4, 138.6, "Al-Fārābī 13/12!"),
-        ("Minor 3rd", 294.9, 285.7, 294.1, "Pyth 32/27 minor 3rd"),
-        ("Shāhed 4th", 494.2, 495.7, 498.0, "Pure 4/3 fourth"),
-        ("Motaghayyer (k)", 658.9, 658.5, 650.0, "Neutral 5th pole"),
-        ("Motaghayyer (nat)", 705.9, 701.0, 702.0, "Pure 3/2 fifth"),
+        ("Abū’atā", "Do (0¢)", "Reᵏ (+139¢)", "Fixed (Sol)", "3,345", "Shahnazi, Karimi"),
+        ("Bayāt-e Tork", "Mi♭ (+294¢)", "Mi♭ / Fa", "Fixed", "2,034", "Borumand, Karimi"),
+        ("Afshārī", "Fa (+498¢)", "Fa / Sol", "Sol ↔ Solᵏ", "4,278", "Hormozi, Borumand"),
+        ("Dashtī", "Re / Do", "Laᵏ (+841¢)", "Sol ↔ Solᵏ", "6,671", "12 Masters"),
+        ("Bayāt-e Kord", "Do (0¢)", "Reᵏ (Ornament)", "Fixed", "2,304", "Borumand, Alizadeh"),
     ]
-    y = 170
-    o.append('<text x="790" y="150" font-size="12.5" font-weight="700" fill="#0F172A">Degree</text>')
-    o.append('<text x="910" y="150" font-size="12.5" font-weight="700" fill="#2563EB">Fretted</text>')
-    o.append('<text x="990" y="150" font-size="12.5" font-weight="700" fill="#16A34A">Fretless</text>')
-    o.append('<text x="1080" y="150" font-size="12.5" font-weight="700" fill="#D97706">Ratio / Model</text>')
-    o.append('<text x="1210" y="150" font-size="12.5" font-weight="700" fill="#64748B">Identity</text>')
-    o.append('<line x1="790" y1="158" x2="1340" y2="158" stroke="#CBD5E1" stroke-width="1.5"/>')
+    y = 160
+    o.append('<text x="790" y="142" font-size="11.5" font-weight="700" fill="#0F172A">Āvāz</text>')
+    o.append('<text x="895" y="142" font-size="11.5" font-weight="700" fill="#2563EB">Resting (Īst)</text>')
+    o.append('<text x="1005" y="142" font-size="11.5" font-weight="700" fill="#16A34A">Axis (Shāhed)</text>')
+    o.append('<text x="1115" y="142" font-size="11.5" font-weight="700" fill="#D97706">Motaghayyer</text>')
+    o.append('<text x="1215" y="142" font-size="11.5" font-weight="700" fill="#DC2626">Strikes</text>')
+    o.append('<line x1="790" y1="150" x2="1340" y2="150" stroke="#CBD5E1" stroke-width="1.5"/>')
 
-    for deg, fr, fl, th, idn in rows:
-        o.append(f'<text x="790" y="{y}" font-size="13" font-weight="700" fill="#0F172A">{esc(deg)}</text>')
-        o.append(f'<text x="910" y="{y}" font-size="13" class="mono" fill="#2563EB">{fr:+.1f}¢</text>')
-        o.append(f'<text x="990" y="{y}" font-size="13" class="mono" fill="#16A34A">{fl:+.1f}¢</text>')
-        o.append(f'<text x="1080" y="{y}" font-size="13" class="mono" fill="#D97706">{th:+.1f}¢</text>')
-        o.append(f'<text x="1210" y="{y}" font-size="12" fill="#475569">{esc(idn)}</text>')
+    for avz, ist, shh, mot, strk, mst in rows:
+        o.append(f'<text x="790" y="{y}" font-size="12" font-weight="700" fill="#0F172A">{esc(avz)}</text>')
+        o.append(f'<text x="895" y="{y}" font-size="12" class="mono" fill="#2563EB">{esc(ist)}</text>')
+        o.append(f'<text x="1005" y="{y}" font-size="12" class="mono" fill="#16A34A">{esc(shh)}</text>')
+        o.append(f'<text x="1115" y="{y}" font-size="12" fill="#D97706">{esc(mot)}</text>')
+        o.append(f'<text x="1215" y="{y}" font-size="12" class="mono" fill="#DC2626">{esc(strk)}</text>')
         y += 42
 
-    card(o, 770, 600, 600, 360, "The Variable Degree (Motaghayyer) Anatomy", "Acoustic proof of dynamic intonation")
-    o.append('<text x="790" y="650" font-size="13" fill="#334155">In Western tempered theory or rigid scale models, degree 5 is either fixed or an error.</text>')
-    o.append('<text x="790" y="675" font-size="13" fill="#334155">In Persian oral transmission, the 5th degree is consciously altered depending on melodic vector:</text>')
-    o.append('<circle cx="810" cy="715" r="5" fill="#D97706"/>')
-    o.append('<text x="825" y="720" font-size="13" font-weight="700" fill="#0F172A">Descending / Cadential phrase (Hājiāni, Gilaki):</text>')
-    o.append('<text x="825" y="740" font-size="13" fill="#64748B">The note is pulled flat into the neutral fifth (+658¢), emphasizing melancholy pathos.</text>')
-    o.append('<circle cx="810" cy="780" r="5" fill="#2563EB"/>')
-    o.append('<text x="825" y="785" font-size="13" font-weight="700" fill="#0F172A">Ascending climax / Peak (Owj, Deylamān):</text>')
-    o.append('<text x="825" y="805" font-size="13" fill="#64748B">The pitch expands into a consonant Pythagorean fifth (+701¢ to +705¢) to resolve upward.</text>')
-    o.append('<text x="790" y="870" font-size="12" fill="#16A34A" font-weight="700">Fretless players (Nariman oud, Shekarchi/Farajpouri kamancheh) demonstrate this exact duality.</text>')
+    card(o, 770, 600, 600, 360, "The Motaghayyer Phenomenon: Acoustic Validation", "Empirical proof of microtonal flexibility in Afshārī &amp; Dashtī")
+    o.append('<text x="790" y="645" font-size="13" fill="#334155">In Western tempered theory or rigid scale models, degree 5 is either fixed or an error.</text>')
+    o.append('<text x="790" y="670" font-size="13" fill="#334155">In Persian oral transmission, the 5th degree is consciously altered depending on melodic vector:</text>')
+    o.append('<circle cx="810" cy="710" r="5" fill="#D97706"/>')
+    o.append('<text x="825" y="715" font-size="13" font-weight="700" fill="#0F172A">Descending / Cadential phrase (Hājiāni, Gilaki, Afshārī):</text>')
+    o.append('<text x="825" y="735" font-size="12.5" fill="#64748B">The note is pulled flat into the neutral fifth (+640¢ to +660¢), emphasizing melancholy pathos.</text>')
+    o.append('<circle cx="810" cy="775" r="5" fill="#2563EB"/>')
+    o.append('<text x="825" y="780" font-size="13" font-weight="700" fill="#0F172A">Ascending climax / Peak (Owj, Deylamān):</text>')
+    o.append('<text x="825" y="800" font-size="12.5" fill="#64748B">The pitch expands into a consonant Pythagorean fifth (+701¢ to +705¢) to resolve upward.</text>')
+    o.append('<text x="790" y="865" font-size="12" fill="#16A34A" font-weight="700">Fretless &amp; fretted masters (Hormozi, Shahnazi, Borumand, Karimi, Alizadeh) verify this duality.</text>')
     o.append("</svg>")
     return "\n".join(o)
 
 
-# --------------------------------------------------------------------------- PAGE 12
+# --------------------------------------------------------------------------- PAGE 13
 def page13() -> str:
     o = header(13, "13. Dastgāh-e Navā &amp; The 3rd String (Re): 11 Masters Analyzed",
                "Qajar lineage (Borumand, Neydavud, Shahnazi), Classical Setār (Saba, Ebadi, Janmohammadi, Alizadeh) &amp; Fretless")
