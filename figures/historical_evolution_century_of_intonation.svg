@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 980" width="1400" height="980">
+<rect width="1400" height="980" fill="#FFFFFF"/>
+<rect x="36" y="24" width="1328" height="70" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+<text x="56" y="52" font-size="22" font-weight="800" fill="#0F172A">A Century of Intonation: Historical Evolution of Persian Pitch &amp; Practice</text>
+<text x="56" y="76" font-size="13" fill="#64748B">Diachronic Analysis Across 69,257 Note Strikes: Early Qajar Shellacs (1906–1920) → Mid-Century Masters (1950s–1970s) → Modern Reconstructions</text>
+<rect x="36" y="115" width="420" height="825" rx="10" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="2"/>
+<rect x="46" y="125" width="400" height="44" rx="6" fill="#1E40AF"/>
+<text x="246" y="143" font-size="11" font-weight="800" fill="#E2E8F0" text-anchor="middle" letter-spacing="1">EPOCH 1: 1906–1920</text>
+<text x="246" y="161" font-size="15" font-weight="800" fill="#FFFFFF" text-anchor="middle">Early Qajar Shellac Era</text>
+<text x="56" y="195" font-size="12" font-weight="700" fill="#0F172A">Court Masters &amp; Gramophone Pioneers</text>
+<rect x="51" y="210" width="390" height="145" rx="6" fill="#FFFFFF" stroke="#BFDBFE"/>
+<text x="61" y="230" font-size="11" font-weight="700" fill="#1E293B">Masters: <tspan font-weight="500" fill="#475569">Aqa Hoseyn-Qoli, Darvish Khan, Seyed Ahmadkha</tspan></text>
+<text x="61" y="246" font-size="11" font-weight="500" fill="#475569">n, Mirza Asadollah, Gholam-Hoseyn</text>
+<text x="61" y="272" font-size="11" font-weight="700" fill="#1E293B">Recordings: <tspan font-weight="500" fill="#475569">Paris 1906, Tbilisi 1907/1912, London 1914 78 RPM Discs</tspan></text>
+<text x="61" y="298" font-size="11" font-weight="700" fill="#1E293B">Empirical Corpus: <tspan font-weight="700" fill="#DC2626">34,962 note strikes (114 historical tracks)</tspan></text>
+<text x="61" y="324" font-size="11" font-weight="700" fill="#1E293B">Base Tuning: <tspan font-weight="600" fill="#2563EB">High Vocal-Projection Pitch: Concert C ≈ 400–445 Hz (A ≈ 445–460 Hz)</tspan></text>
+<text x="56" y="380" font-size="12.5" font-weight="800" fill="#0F172A">Historical &amp; Intonational Hallmarks:</text>
+<circle cx="61" cy="401" r="4" fill="#1E40AF"/>
+<text x="74" y="405" font-size="11.5" font-weight="700" fill="#1E293B">Elastic Microtonality:</text>
+<text x="74" y="421" font-size="11" fill="#475569">Neutral 2nds (13/12) and 3rds fluctuate expressi</text>
+<text x="74" y="435" font-size="11" fill="#475569">vely based on vocal register (+135¢ to +155¢).</text>
+<circle cx="61" cy="457" r="4" fill="#1E40AF"/>
+<text x="74" y="461" font-size="11.5" font-weight="700" fill="#1E293B">Acoustic Penetration:</text>
+<text x="74" y="477" font-size="11" fill="#475569">Tuned intentionally higher for horn acoustic rec</text>
+<text x="74" y="491" font-size="11" fill="#475569">ording without electronic amplification.</text>
+<circle cx="61" cy="513" r="4" fill="#1E40AF"/>
+<text x="74" y="517" font-size="11.5" font-weight="700" fill="#1E293B">Polyphonic Drone Snaps:</text>
+<text x="74" y="533" font-size="11" fill="#475569">Heavy percussive left-hand pizzicato (riz &amp; </text>
+<text x="74" y="547" font-size="11" fill="#475569">chaharmezrab) on unamplified guts.</text>
+<rect x="51" y="590" width="390" height="330" rx="6" fill="#FFFFFF" stroke="#BFDBFE"/>
+<rect x="486" y="115" width="420" height="825" rx="10" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="2"/>
+<rect x="496" y="125" width="400" height="44" rx="6" fill="#166534"/>
+<text x="696" y="143" font-size="11" font-weight="800" fill="#E2E8F0" text-anchor="middle" letter-spacing="1">EPOCH 2: 1950s–1970s</text>
+<text x="696" y="161" font-size="15" font-weight="800" fill="#FFFFFF" text-anchor="middle">Mid-Century Masters</text>
+<text x="506" y="195" font-size="12" font-weight="700" fill="#0F172A">Oral Custodians of the Canonical Radif</text>
+<rect x="501" y="210" width="390" height="145" rx="6" fill="#FFFFFF" stroke="#BBF7D0"/>
+<text x="511" y="230" font-size="11" font-weight="700" fill="#1E293B">Masters: <tspan font-weight="500" fill="#475569">Yousef Foroutan, Saeed Hormozi, Abolhasan Sab</tspan></text>
+<text x="511" y="246" font-size="11" font-weight="500" fill="#475569">a, Nur-Ali Borumand, Ahmad Ebadi</text>
+<text x="511" y="272" font-size="11" font-weight="700" fill="#1E293B">Recordings: <tspan font-weight="500" fill="#475569">Shiraz Arts Festival (1967), Radio Iran &amp; Private Chamber Tapes</tspan></text>
+<text x="511" y="298" font-size="11" font-weight="700" fill="#1E293B">Empirical Corpus: <tspan font-weight="700" fill="#DC2626">16,129 note strikes (25 canonical master suites)</tspan></text>
+<text x="511" y="324" font-size="11" font-weight="700" fill="#1E293B">Base Tuning: <tspan font-weight="600" fill="#2563EB">Intimate Chamber Resonance: Concert C ≈ 225–310 Hz (Deep, Warm Pitch)</tspan></text>
+<text x="506" y="380" font-size="12.5" font-weight="800" fill="#0F172A">Historical &amp; Intonational Hallmarks:</text>
+<circle cx="511" cy="401" r="4" fill="#166534"/>
+<text x="524" y="405" font-size="11.5" font-weight="700" fill="#1E293B">Microtonal Standardization:</text>
+<text x="524" y="421" font-size="11" fill="#475569">Stabilization of the 13/12 neutral second at ~13</text>
+<text x="524" y="435" font-size="11" fill="#475569">8.6¢; resistance to Vaziri's 24-TET.</text>
+<circle cx="511" cy="457" r="4" fill="#166534"/>
+<text x="524" y="461" font-size="11.5" font-weight="700" fill="#1E293B">Contemplative Slower Tempi:</text>
+<text x="524" y="477" font-size="11" fill="#475569">Shift from courtly display to inward, meditative</text>
+<text x="524" y="491" font-size="11" fill="#475569"> spiritual cantillation (hāl).</text>
+<circle cx="511" cy="513" r="4" fill="#166534"/>
+<text x="524" y="517" font-size="11.5" font-weight="700" fill="#1E293B">Setār Solo Elevation:</text>
+<text x="524" y="533" font-size="11" fill="#475569">Setār transitions from private domestic practice</text>
+<text x="524" y="547" font-size="11" fill="#475569"> to premier concert lute.</text>
+<rect x="501" y="590" width="390" height="330" rx="6" fill="#FFFFFF" stroke="#BBF7D0"/>
+<rect x="936" y="115" width="420" height="825" rx="10" fill="#FFFBEB" stroke="#FDE68A" stroke-width="2"/>
+<rect x="946" y="125" width="400" height="44" rx="6" fill="#B45309"/>
+<text x="1146" y="143" font-size="11" font-weight="800" fill="#E2E8F0" text-anchor="middle" letter-spacing="1">EPOCH 3: 1980s–PRESENT</text>
+<text x="1146" y="161" font-size="15" font-weight="800" fill="#FFFFFF" text-anchor="middle">Antiquity Reconstructions</text>
+<text x="956" y="195" font-size="12" font-weight="700" fill="#0F172A">Scholarly Modal Revival &amp; Modern Concert Life</text>
+<rect x="951" y="210" width="390" height="145" rx="6" fill="#FFFFFF" stroke="#FDE68A"/>
+<text x="961" y="230" font-size="11" font-weight="700" fill="#1E293B">Masters: <tspan font-weight="500" fill="#475569">Mohammad Reza Lotfi, Hossein Alizadeh, Darius</tspan></text>
+<text x="961" y="246" font-size="11" font-weight="500" fill="#475569">h Tala'i, Mahoor Historical Edition</text>
+<text x="961" y="272" font-size="11" font-weight="700" fill="#1E293B">Recordings: <tspan font-weight="500" fill="#475569">Panjgah (Rast-e Qadim), Shahnavaz, Century of Tar/Setar Anthologies</tspan></text>
+<text x="961" y="298" font-size="11" font-weight="700" fill="#1E293B">Empirical Corpus: <tspan font-weight="700" fill="#DC2626">18,166 note strikes (34 contemporary historical editions)</tspan></text>
+<text x="961" y="324" font-size="11" font-weight="700" fill="#1E293B">Base Tuning: <tspan font-weight="600" fill="#2563EB">Standardized Modern Radif: Concert C ≈ 330–375 Hz (Frequencies calibrated)</tspan></text>
+<text x="956" y="380" font-size="12.5" font-weight="800" fill="#0F172A">Historical &amp; Intonational Hallmarks:</text>
+<circle cx="961" cy="401" r="4" fill="#B45309"/>
+<text x="974" y="405" font-size="11.5" font-weight="700" fill="#1E293B">Ancient Modal Revival:</text>
+<text x="974" y="421" font-size="11" fill="#475569">Reconstruction of pre-Qajar modal suites (Pishro</text>
+<text x="974" y="435" font-size="11" fill="#475569">w, Tarji', Talvin-e Nava).</text>
+<circle cx="961" cy="457" r="4" fill="#B45309"/>
+<text x="974" y="461" font-size="11.5" font-weight="700" fill="#1E293B">Tala'i Dāng Systematization:</text>
+<text x="974" y="477" font-size="11" fill="#475569">Codification of radif structures into the 4 irre</text>
+<text x="974" y="491" font-size="11" fill="#475569">ducible Dāngs (S, M, C, E).</text>
+<circle cx="961" cy="513" r="4" fill="#B45309"/>
+<text x="974" y="517" font-size="11.5" font-weight="700" fill="#1E293B">Hybrid Dialogue:</text>
+<text x="974" y="533" font-size="11" fill="#475569">Coexistence of pristine oral lineage with rigoro</text>
+<text x="974" y="547" font-size="11" fill="#475569">us acoustic pitch measurements.</text>
+<rect x="951" y="590" width="390" height="330" rx="6" fill="#FFFFFF" stroke="#FDE68A"/>
+<text x="56" y="615" font-size="12.5" font-weight="800" fill="#1E40AF">Shellac Master Analysis: Aqa Hoseyn-Qoli (1909)</text>
+<text x="56" y="635" font-size="11" fill="#334155">• <tspan font-weight="700">Strikes Analyzed:</tspan> 5,073 strikes across 17 Paris/Tbilisi tracks.</text>
+<text x="56" y="653" font-size="11" fill="#334155">• <tspan font-weight="700">Daramad-e Mahur:</tspan> Pitch centered at 444.7 Hz (A ≈ 445 Hz).</text>
+<text x="56" y="671" font-size="11" fill="#334155">• <tspan font-weight="700">Neutral 2nd:</tspan> 142.3¢ (perfectly preserving Farabi 13/12).</text>
+<text x="56" y="695" font-size="12.5" font-weight="800" fill="#1E40AF">Darvish Khan (Paris 1906, London 1914):</text>
+<text x="56" y="715" font-size="11" fill="#334155">• <tspan font-weight="700">Strikes Analyzed:</tspan> 14,485 strikes across 56 recordings.</text>
+<text x="56" y="733" font-size="11" fill="#334155">• <tspan font-weight="700">Pishdaramad Innovation:</tspan> Introduces modern metric prelude.</text>
+<text x="56" y="751" font-size="11" fill="#334155">• <tspan font-weight="700">Mezrab Dynamics:</tspan> Extremely fast staccato, wide dynamic range.</text>
+<text x="56" y="780" font-size="11" font-weight="700" fill="#059669">Acoustic Conclusion for Epoch 1:</text>
+<text x="56" y="800" font-size="10.5" fill="#475569">Contrary to early 20th-century Western assumptions</text>
+<text x="56" y="816" font-size="10.5" fill="#475569">that old Persian music lacked precise pitch, Qajar</text>
+<text x="56" y="832" font-size="10.5" fill="#475569">masters placed neutral seconds at 138¢–144¢ with</text>
+<text x="56" y="848" font-size="10.5" fill="#475569">remarkable mathematical consistency across tracks.</text>
+<text x="506" y="615" font-size="12.5" font-weight="800" fill="#166534">Yousef Foroutan (Shiraz 1967 &amp; Solo):</text>
+<text x="506" y="635" font-size="11" fill="#334155">• <tspan font-weight="700">Setār Touch:</tspan> Iconic "Foroutan damping" (khandeh-ye mezrab).</text>
+<text x="506" y="653" font-size="11" fill="#334155">• <tspan font-weight="700">Tuning Base:</tspan> Low, deep chamber resonance (288.6 Hz).</text>
+<text x="506" y="671" font-size="11" fill="#334155">• <tspan font-weight="700">Mahur Fretboard:</tspan> Pure Pythagorean fifths and major thirds.</text>
+<text x="506" y="695" font-size="12.5" font-weight="800" fill="#166534">Saeed Hormozi (Tar &amp; Setār Recitals):</text>
+<text x="506" y="715" font-size="11" fill="#334155">• <tspan font-weight="700">Lineage:</tspan> Disciple of Darvish Khan; preserved oral nuance.</text>
+<text x="506" y="733" font-size="11" fill="#334155">• <tspan font-weight="700">Intonation:</tspan> Neutral seconds land at +140.2¢ (Setar) and</text>
+<text x="506" y="751" font-size="11" fill="#334155">+139.8¢ (Tar), validating exact physical fret tying.</text>
+<text x="506" y="780" font-size="11" font-weight="700" fill="#059669">Acoustic Conclusion for Epoch 2:</text>
+<text x="506" y="800" font-size="10.5" fill="#475569">Mid-century masters preserved the ancient oral</text>
+<text x="506" y="816" font-size="10.5" fill="#475569">tradition against aggressive 24-TET westernization,</text>
+<text x="506" y="832" font-size="10.5" fill="#475569">maintaining the Farabian 13/12 ratio on silk frets.</text>
+<text x="956" y="615" font-size="12.5" font-weight="800" fill="#B45309">Panjgah Modal Antiquity (Mahoor 20855):</text>
+<text x="956" y="635" font-size="11" fill="#334155">• <tspan font-weight="700">Historical Forms:</tspan> Pishrow-e Zarbolfath, Tarji'-e Rast.</text>
+<text x="956" y="653" font-size="11" fill="#334155">• <tspan font-weight="700">Modal Nexus:</tspan> Connects Rast-e Qadim to Nava &amp; Segah.</text>
+<text x="956" y="671" font-size="11" fill="#334155">• <tspan font-weight="700">Instrumentation:</tspan> Tar, Kamancheh, Qanun, Tombak.</text>
+<text x="956" y="695" font-size="12.5" font-weight="800" fill="#B45309">Century Anthologies (Tar, Setar, Santur):</text>
+<text x="956" y="715" font-size="11" fill="#334155">• <tspan font-weight="700">Diachronic Span:</tspan> Tracing 100 years of recorded soloists.</text>
+<text x="956" y="733" font-size="11" fill="#334155">• <tspan font-weight="700">Acoustic Convergence:</tspan> Proves that despite studio</text>
+<text x="956" y="751" font-size="11" fill="#334155">acoustics, Persian masters share a unified intonation code.</text>
+<text x="956" y="780" font-size="11" font-weight="700" fill="#059669">Acoustic Conclusion for Epoch 3:</text>
+<text x="956" y="800" font-size="10.5" fill="#475569">Modern Iranian musical practice represents both a</text>
+<text x="956" y="816" font-size="10.5" fill="#475569">restoration of Maraghi/Urmawi pre-Qajar modal</text>
+<text x="956" y="832" font-size="10.5" fill="#475569">antiquity and an empirical vindication of the radif.</text>
+</svg>
