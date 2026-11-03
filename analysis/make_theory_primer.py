@@ -826,11 +826,11 @@ def page10() -> str:
 # --------------------------------------------------------------------------- PAGE 11: FULL-PAGE DANG ARCHITECTURE & FRET MAP
 def page11() -> str:
     o = header(11, "11. Modal Anatomy: Dāng Architecture Across the Dastgāhs",
-               "Physical fretboard grid on Setār String 1 (Do centered) with Tala'i 4-Dāng color coding, continuous vertical frets, and note dots")
+               "Physical fretboard grid on Setār String 1 (Do centered) with Tala'i 4-Dāng color coding, interval distance markers, and note dots")
 
-    # Legend & Naming Header Card with User's Color Palette & Canonical Abbreviations:
+    # Legend Card with User's Color Palette & Canonical Abbreviations:
     # S = Shūr (Blue), M = Māhūr (Green), C = Chahārgāh (Red), E = Esfahān (Teal), Sg = Segāh (Orange)
-    card(o, 36, 88, 1328, 72, "Tala'i Canonical Dāng Archetypes & Color Code (All Dāngs Span a Pure 4th / ~498¢)", "")
+    card(o, 36, 88, 1328, 76, "Tala'i Canonical Dāngs &amp; Characteristic Distance Markers (Deep Red: Aug 2nd ~269¢ | Deep Blue: Semitone ~90¢)", "")
     
     C_SHU = "#2563EB"   # S = Shūr / Dashti = Blue
     C_MAH = "#059669"   # M = Māhūr = Green
@@ -839,20 +839,27 @@ def page11() -> str:
     C_SEG = "#EA580C"   # Sg = Segāh (Derived: S on Re) = Orange
 
     d_defs = [
-        ("S: Dāng-e Shūr", C_SHU, "N-N-T (139¢ + 155¢ + 204¢)", 56),
-        ("M: Dāng-e Māhūr", C_MAH, "T-T-S (204¢ + 204¢ + 90¢)", 316),
-        ("C: Dāng-e Chahārgāh", C_CHAH, "N-A-S (139¢ + 269¢ + 90¢)", 576),
-        ("E: Dāng-e Esfahān", C_ESF, "T-S-T (204¢ + 90¢ + 204¢)", 836),
-        ("Sg: Segāh (S on Re)", C_SEG, "N-T-N (141¢ + 211¢ + 141¢)", 1096),
+        ("S: Dāng-e Shūr", C_SHU, "N-N-T (139¢ + 155¢ + 204¢)", 50),
+        ("M: Dāng-e Māhūr", C_MAH, "T-T-S (204¢ + 204¢ + 90¢)", 265),
+        ("C: Dāng-e Chahārgāh", C_CHAH, "N-A-S [Reᵏ-Mi: 269¢ Red]", 480),
+        ("E: Dāng-e Esfahān", C_ESF, "T-S-T [Re-Mi♭: 90¢ Blue]", 735),
+        ("Sg: Segāh (S on Re)", C_SEG, "N-T-N (141¢ + 211¢ + 141¢)", 975),
     ]
-    for d_name, col, formula, lx in d_defs:
-        o.append(f'<rect x="{lx}" y="122" width="252" height="30" rx="5" fill="{col}" fill-opacity="0.12" stroke="{col}" stroke-width="1.5"/>')
-        o.append(f'<circle cx="{lx+14}" cy="137" r="5" fill="{col}"/>')
-        o.append(f'<text x="{lx+26}" y="134" font-size="10.5" font-weight="700" fill="{col}">{d_name}</text>')
-        o.append(f'<text x="{lx+26}" y="147" font-size="9" fill="#334155">{formula}</text>')
+    for d_name, col, formula, lx in d_defs[:5]:
+        o.append(f'<rect x="{lx}" y="120" width="205" height="32" rx="5" fill="{col}" fill-opacity="0.12" stroke="{col}" stroke-width="1.5"/>')
+        o.append(f'<circle cx="{lx+12}" cy="136" r="5" fill="{col}"/>')
+        o.append(f'<text x="{lx+22}" y="132" font-size="10" font-weight="700" fill="{col}">{d_name}</text>')
+        o.append(f'<text x="{lx+22}" y="145" font-size="8.5" fill="#334155">{formula}</text>')
+
+    # Distance key pill
+    o.append(f'<rect x="1190" y="120" width="165" height="32" rx="5" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.2"/>')
+    o.append(f'<rect x="1196" y="126" width="32" height="12" rx="2" fill="#FEE2E2" stroke="#991B1B" stroke-width="1"/>')
+    o.append(f'<text x="1212" y="135" font-size="7.5" font-weight="800" fill="#991B1B" text-anchor="middle">269¢ (A)</text>')
+    o.append(f'<rect x="1275" y="126" width="26" height="12" rx="2" fill="#DBEAFE" stroke="#1E40AF" stroke-width="1"/>')
+    o.append(f'<text x="1288" y="135" font-size="7.5" font-weight="800" fill="#1E40AF" text-anchor="middle">90¢ (S)</text>')
+    o.append(f'<text x="1272" y="147" font-size="8" fill="#475569" text-anchor="middle">Distance Markers</text>')
 
     # Frets definition: (cents_rel_do, name, ratio, is_primary)
-    # Include all needed physical frets: Sol↓, Laᵏ↓, La↓, Si♭↓, Siᵏ↓, Do, Reᵏ, Re, Mi♭, Miᵏ, Mi, Fa, Sol, Laᵏ, La, Si♭, Si, Do'
     frets = [
         (-498.0, "Sol↓", "3/4", True),
         (-359.5, "Laᵏ↓", "13/16", True),
@@ -900,36 +907,36 @@ def page11() -> str:
         o.append(f'<text x="{xx:.1f}" y="{grid_y_top-22}" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">{c_val:+.0f}¢</text>')
 
     # 2. DRAW 7 DASTGAH ROWS IN CONTINUOUS MODAL SEQUENCE
-    # Continuous progression: Māhūr [M+M] -> Esfahān [E+C] -> Shūr [S+S] -> Navā [S+S] -> Segāh [S+Sg] -> Homāyūn [C+S] -> Chahārgāh [C+C]
+    # Continuous progression: Māhūr [M+M] -> Esfahān [E+C] -> Chahārgāh [C+C] -> Homāyūn [C+S] -> Navā [S+S] -> Shūr [S+S] -> Segāh [S+Sg]
     dastgah_rows = [
         ("1. Dastgāh-e Māhūr", "Symmetrical double-major dāngs [M + M] separated by whole tone (Do / Sol)", [
             (0.0, 498.0, "M 1 (Do)", C_MAH, [(0.0, "Do"), (203.9, "Re"), (407.8, "Mi"), (498.0, "Fa")]),
-            (702.0, 1200.0, "M 2 (Sol)", C_MAH, [(702.0, "Sol"), (906.0, "La"), (1110.0, "Si"), (1200.0, "Do'")]),
+            (702.0, 1200.0, "M 2 (Sol)", C_MAH, [(702.0, "Sol"), (906.0, "La"), (1110.0, "Si"), (1200.0, "Do\'")]),
         ], 192),
 
-        ("2. Āvāz-e Bayāt-e Esfahān", "Lower Minor dāng [E] on Do + Upper Augmented [C] on Sol (Shares right C with Chahārgāh)", [
+        ("2. Āvāz-e Bayāt-e Esfahān", "Lower Minor [E] on Do [Re-Mi♭: 90¢ Deep Blue] + Upper Augmented [C] on Sol [Laᵏ-Si: 269¢ Deep Red]", [
             (0.0, 498.0, "E (Do)", C_ESF, [(0.0, "Do"), (203.9, "Re"), (294.1, "Mi♭"), (498.0, "Fa")]),
-            (702.0, 1200.0, "C (Sol)", C_CHAH, [(702.0, "Sol"), (840.6, "Laᵏ"), (1110.0, "Si"), (1200.0, "Do'")]),
+            (702.0, 1200.0, "C (Sol)", C_CHAH, [(702.0, "Sol"), (840.6, "Laᵏ"), (1110.0, "Si"), (1200.0, "Do\'")]),
         ], 302),
 
-        ("3. Dastgāh-e Chahārgāh", "Symmetrical double-augmented [C + C] (Exact right-side C overlap with Esfahān)", [
+        ("3. Dastgāh-e Chahārgāh", "Symmetrical double-augmented [C + C] [Both dāngs feature Reᵏ-Mi &amp; Laᵏ-Si: 269¢ Deep Red]", [
             (0.0, 498.0, "C 1 (Do)", C_CHAH, [(0.0, "Do"), (138.6, "Reᵏ"), (407.8, "Mi"), (498.0, "Fa")]),
-            (702.0, 1200.0, "C 2 (Sol)", C_CHAH, [(702.0, "Sol"), (840.6, "Laᵏ"), (1110.0, "Si"), (1200.0, "Do'")]),
+            (702.0, 1200.0, "C 2 (Sol)", C_CHAH, [(702.0, "Sol"), (840.6, "Laᵏ"), (1110.0, "Si"), (1200.0, "Do\'")]),
         ], 412),
 
-        ("4. Dastgāh-e Homāyūn", "Lower Augmented [C] on Do + Upper Neutral [S] on Fa (Exact left-side C overlap with Chahārgāh)", [
+        ("4. Dastgāh-e Homāyūn", "Lower Augmented [C] on Do [Reᵏ-Mi: 269¢ Deep Red] + Upper Neutral [S] on Sol [Bīdād]", [
             (0.0, 498.0, "C (Do)", C_CHAH, [(0.0, "Do"), (138.6, "Reᵏ"), (407.8, "Mi"), (498.0, "Fa")]),
-            (498.0, 996.1, "S (Bīdād on Fa)", C_SHU, [(498.0, "Fa"), (702.0, "Sol"), (792.0, "La♭"), (996.1, "Si♭")]),
+            (702.0, 1200.0, "S (Bīdād on Sol)", C_SHU, [(702.0, "Sol"), (840.6, "Laᵏ"), (996.1, "Si♭"), (1200.0, "Do\'")]),
         ], 522),
 
-        ("5. Dastgāh-e Navā", "Lower Pedestal [S] on Do + Core Axis [S] on Fa (Exact right-side S overlap with Homāyūn Bīdād)", [
+        ("5. Dastgāh-e Navā", "Lower Pedestal [S] on Do + Core Resting Axis [S] on Fa [N-N-T Neutral Dāngs]", [
             (0.0, 498.0, "S (Pedestal)", C_SHU, [(0.0, "Do"), (138.6, "Reᵏ"), (294.1, "Mi♭"), (498.0, "Fa")]),
             (498.0, 996.1, "S (Īst on Fa)", C_SHU, [(498.0, "Fa"), (702.0, "Sol"), (834.1, "Laᵏ"), (996.1, "Si♭")]),
         ], 632),
 
-        ("6. Dastgāh-e Shūr", "Symmetrical double-neutral [S + S] (Exact left-side S overlap with Navā Pedestal)", [
+        ("6. Dastgāh-e Shūr", "Symmetrical double-neutral [S + S] separated by whole tone [N-N-T / 139¢ + 155¢ + 204¢]", [
             (0.0, 498.0, "S 1 (Do)", C_SHU, [(0.0, "Do"), (138.6, "Reᵏ"), (294.1, "Mi♭"), (498.0, "Fa")]),
-            (702.0, 1200.0, "S 2 (Sol)", C_SHU, [(702.0, "Sol"), (834.1, "Laᵏ"), (996.1, "Si♭"), (1200.0, "Do'")]),
+            (702.0, 1200.0, "S 2 (Sol)", C_SHU, [(702.0, "Sol"), (834.1, "Laᵏ"), (996.1, "Si♭"), (1200.0, "Do\'")]),
         ], 742),
 
         ("7. Dastgāh-e Segāh", "Tala'i step-shift: S on Re (+204¢) creates derived Sg resting on Miᵏ (+355¢)", [
@@ -937,29 +944,75 @@ def page11() -> str:
             (354.5, 852.5, "Sg (Īst on Miᵏ)", C_SEG, [(354.5, "Miᵏ"), (498.0, "Fa"), (702.0, "Sol"), (848.0, "Laᵏ")]),
         ], 852),
     ]
+
     for title, subtitle, dang_spans, ry in dastgah_rows:
         # Translucent row card (0.80 opacity) so background fret lines remain visible behind the cards
         o.append(f'<rect x="36" y="{ry}" width="1328" height="98" rx="6" fill="#FFFFFF" fill-opacity="0.80" stroke="#E2E8F0" stroke-width="1.0"/>')
-        o.append(f'<text x="46" y="{ry+22}" font-size="12" font-weight="700" fill="#0F172A">{esc(title)}</text>')
-        o.append(f'<text x="46" y="{ry+38}" font-size="9.5" fill="#64748B">{esc(subtitle)}</text>')
+        o.append(f'<text x="46" y="{ry+20}" font-size="12" font-weight="700" fill="#0F172A">{esc(title)}</text>')
+        o.append(f'<text x="46" y="{ry+35}" font-size="9" fill="#64748B">{esc(subtitle)}</text>')
 
-        # Draw each Dāng block with clear color coding
+        # Draw each Dāng block with clear color coding and distance markers
         for c_start, c_end, d_title, col, notes_in_dang in dang_spans:
             x_s = c_to_x(c_start)
             x_e = c_to_x(c_end)
             bw = max(10.0, x_e - x_s)
             
             # Colored Dāng enclosure
-            o.append(f'<rect x="{x_s:.1f}" y="{ry+46}" width="{bw:.1f}" height="42" rx="4" fill="{col}" fill-opacity="0.16" stroke="{col}" stroke-width="1.6"/>')
+            o.append(f'<rect x="{x_s:.1f}" y="{ry+42}" width="{bw:.1f}" height="48" rx="4" fill="{col}" fill-opacity="0.14" stroke="{col}" stroke-width="1.5"/>')
             
             # Badge text
-            o.append(f'<text x="{x_s+6:.1f}" y="{ry+58}" font-size="9.5" font-weight="700" fill="{col}">{esc(d_title)}</text>')
+            o.append(f'<text x="{x_s+6:.1f}" y="{ry+54}" font-size="9" font-weight="700" fill="{col}">{esc(d_title)}</text>')
             
+            # Draw Interval Distance Markers between consecutive notes
+            for idx in range(len(notes_in_dang) - 1):
+                c0, l0 = notes_in_dang[idx]
+                c1, l1 = notes_in_dang[idx+1]
+                x1_val = c_to_x(c0)
+                x2_val = c_to_x(c1)
+                dist_c = round(c1 - c0)
+                mid_x = 0.5 * (x1_val + x2_val)
+                y_mark = ry + 62
+
+                # 1. Augmented 2nd (Reᵏ -> Mi, Laᵏ -> Si, ~269¢): DEEP RED |------| MARKER
+                if dist_c > 240:
+                    # Deep red line and end ticks
+                    o.append(f'<line x1="{x1_val:.1f}" y1="{y_mark}" x2="{x2_val:.1f}" y2="{y_mark}" stroke="#991B1B" stroke-width="2.5"/>')
+                    o.append(f'<line x1="{x1_val:.1f}" y1="{y_mark-4}" x2="{x1_val:.1f}" y2="{y_mark+4}" stroke="#991B1B" stroke-width="1.8"/>')
+                    o.append(f'<line x1="{x2_val:.1f}" y1="{y_mark-4}" x2="{x2_val:.1f}" y2="{y_mark+4}" stroke="#991B1B" stroke-width="1.8"/>')
+                    # Prominent badge
+                    pw = 42
+                    o.append(f'<rect x="{mid_x-pw/2:.1f}" y="{y_mark-6.5}" width="{pw}" height="13" rx="3" fill="#FEE2E2" stroke="#991B1B" stroke-width="1.2"/>')
+                    o.append(f'<text x="{mid_x:.1f}" y="{y_mark+3}" font-size="8" font-weight="800" fill="#991B1B" text-anchor="middle">{dist_c}¢ [A]</text>')
+
+                # 2. Semitone / Minor 2nd (Re -> Mi♭ in Esfahān, Mi -> Fa in Māhūr/Chahārgāh, ~90¢): DEEP BLUE |---| MARKER
+                elif dist_c < 115:
+                    # Deep blue line and end ticks
+                    o.append(f'<line x1="{x1_val:.1f}" y1="{y_mark}" x2="{x2_val:.1f}" y2="{y_mark}" stroke="#1D4ED8" stroke-width="2.2"/>')
+                    o.append(f'<line x1="{x1_val:.1f}" y1="{y_mark-3.5}" x2="{x1_val:.1f}" y2="{y_mark+3.5}" stroke="#1D4ED8" stroke-width="1.5"/>')
+                    o.append(f'<line x1="{x2_val:.1f}" y1="{y_mark-3.5}" x2="{x2_val:.1f}" y2="{y_mark+3.5}" stroke="#1D4ED8" stroke-width="1.5"/>')
+                    pw = 32
+                    o.append(f'<rect x="{mid_x-pw/2:.1f}" y="{y_mark-6.5}" width="{pw}" height="13" rx="2.5" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1"/>')
+                    o.append(f'<text x="{mid_x:.1f}" y="{y_mark+3}" font-size="7.5" font-weight="800" fill="#1D4ED8" text-anchor="middle">{dist_c}¢ [S]</text>')
+
+                # 3. Neutral 2nd (~139¢ or ~155¢): Sky/Cyan badge
+                elif 120 <= dist_c <= 170:
+                    o.append(f'<line x1="{x1_val:.1f}" y1="{y_mark}" x2="{x2_val:.1f}" y2="{y_mark}" stroke="#0284C7" stroke-width="1.4" stroke-dasharray="3,2"/>')
+                    pw = 28
+                    o.append(f'<rect x="{mid_x-pw/2:.1f}" y="{y_mark-5.5}" width="{pw}" height="11" rx="2" fill="#E0F2FE" stroke="#0284C7" stroke-width="0.8"/>')
+                    o.append(f'<text x="{mid_x:.1f}" y="{y_mark+2.5}" font-size="7" font-weight="700" fill="#0369A1" text-anchor="middle">{dist_c}¢</text>')
+
+                # 4. Whole Tone (~204¢): Slate dashed line
+                else:
+                    o.append(f'<line x1="{x1_val:.1f}" y1="{y_mark}" x2="{x2_val:.1f}" y2="{y_mark}" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="2,2"/>')
+                    pw = 26
+                    o.append(f'<rect x="{mid_x-pw/2:.1f}" y="{y_mark-5.5}" width="{pw}" height="11" rx="2" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="0.8"/>')
+                    o.append(f'<text x="{mid_x:.1f}" y="{y_mark+2.5}" font-size="7" fill="#64748B" text-anchor="middle">{dist_c}¢</text>')
+
             # Note dots & labels inside the Dāng
             for n_c, n_lbl in notes_in_dang:
                 nx = c_to_x(n_c)
-                o.append(f'<circle cx="{nx:.1f}" cy="{ry+74}" r="4.5" fill="{col}" stroke="#FFFFFF" stroke-width="1.0"/>')
-                o.append(f'<text x="{nx:.1f}" y="{ry+86}" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">{esc(n_lbl)}</text>')
+                o.append(f'<circle cx="{nx:.1f}" cy="{ry+76}" r="4.5" fill="{col}" stroke="#FFFFFF" stroke-width="1.2"/>')
+                o.append(f'<text x="{nx:.1f}" y="{ry+88}" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">{esc(n_lbl)}</text>')
 
     o.append("</svg>")
     return "\n".join(o)
