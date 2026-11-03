@@ -163,15 +163,14 @@ def page1() -> str:
         ("note", "Rule of thumb: ratio r above the open string → fret at 1/r of the length from the bridge, "
                  "i.e. a distance (1 − 1/r) of the string from the nut. And stacking intervals means multiplying ratios (adding cents)."),
         ("h", "How this document is organised"),
-        ("b", "Page 2 Pythagoras: the 3-limit system that everything else builds on or reacts to."),
-        ("b", "Page 3 The setar as a multiplication machine (frets × strings)."),
-        ("b", "Pages 4–7 Al-Farabi, Ibn Sina, Al-Urmawi, Al-Maraghi: one page each."),
-        ("b", "Page 8 Modern 20th-century theories (Vaziri, Barkechli, Farhat)."),
-        ("b", "Page 9 Side-by-side comparison with our Mahur measurements."),
-        ("b", "Page 10 Dariush Tala'i's Theory of Dāngs &amp; Setār Neck Architecture."),
-        ("b", "Pages 11–15 Empirical modal consensus: Dashti, Navā, Bayāt-e Esfahān, Dastgāh-e Homāyūn, and Dastgāh-e Shūr."),
-        ("b", "Page 16 Harmonizing microtones (Hannaneh quartal, Alizadeh drone, 13-limit spectralism)."),
-        ("b", "Page 17 Historical timeline, technical glossary, and further reading."),
+        ("b", "Page 2 Pythagoras: 3-limit system; Page 3 Setār ratio multiplication."),
+        ("b", "Pages 4–7 Al-Fārābī, Ibn Sīnā, Al-Urmawī, Al-Marāghī monochord models."),
+        ("b", "Pages 8–9 20th-century theories (Vaziri, Barkechli, Farhat) vs. empirical Māhūr."),
+        ("b", "Pages 10–11 Dariush Tala'i's Theory of Dāngs &amp; Continuous Domino Progression."),
+        ("b", "Page 12 The 5 Secondary Āvāzes: Branching Architecture from Shūr (18k strikes)."),
+        ("b", "Pages 13–18 Empirical Dastgāh Consensus: Navā, Esfahān, Homāyūn, Shūr, Segāh."),
+        ("b", "Page 19 Harmonizing Microtonal Dāngs (Hannaneh quartal, 13-limit spectralism)."),
+        ("b", "Page 20 Historical timeline, technical glossary, and bibliography."),
     ]
     text_col(o, items, page=1)
 
