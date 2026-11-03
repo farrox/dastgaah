@@ -826,11 +826,10 @@ def page10() -> str:
 # --------------------------------------------------------------------------- PAGE 11: FULL-PAGE DANG ARCHITECTURE & FRET MAP
 def page11() -> str:
     o = header(11, "11. Modal Anatomy: Dāng Architecture Across the Dastgāhs",
-               "Physical fretboard grid on Setār String 1 (Do centered) with Tala'i 4-Dāng color coding, interval distance markers, and note dots")
+               "Physical fretboard grid on Setār String 1 (Do centered) with Tala'i 4-Dāng color coding and 4-tier interval distance markers")
 
-    # Legend Card with User's Color Palette & Canonical Abbreviations:
-    # S = Shūr (Blue), M = Māhūr (Green), C = Chahārgāh (Red), E = Esfahān (Teal), Sg = Segāh (Orange)
-    card(o, 36, 88, 1328, 76, "Tala'i Canonical Dāngs &amp; Characteristic Distance Markers (Deep Red: Aug 2nd ~269¢ | Deep Blue: Semitone ~90¢)", "")
+    # Legend Card with User's Color Palette, Canonical Abbreviations, and Full 4-Tier Distance Key:
+    card(o, 36, 88, 1328, 76, "Tala'i Canonical Dāngs &amp; 4-Tier Interval Distance Markers (All Dāngs Span a Pure 4th / ~498¢)", "")
     
     C_SHU = "#2563EB"   # S = Shūr / Dashti = Blue
     C_MAH = "#059669"   # M = Māhūr = Green
@@ -839,25 +838,36 @@ def page11() -> str:
     C_SEG = "#EA580C"   # Sg = Segāh (Derived: S on Re) = Orange
 
     d_defs = [
-        ("S: Dāng-e Shūr", C_SHU, "N-N-T (139¢ + 155¢ + 204¢)", 50),
-        ("M: Dāng-e Māhūr", C_MAH, "T-T-S (204¢ + 204¢ + 90¢)", 265),
-        ("C: Dāng-e Chahārgāh", C_CHAH, "N-A-S [Reᵏ-Mi: 269¢ Red]", 480),
-        ("E: Dāng-e Esfahān", C_ESF, "T-S-T [Re-Mi♭: 90¢ Blue]", 735),
-        ("Sg: Segāh (S on Re)", C_SEG, "N-T-N (141¢ + 211¢ + 141¢)", 975),
+        ("S: Dāng-e Shūr", C_SHU, "N-N-T (139¢ + 155¢ + 204¢)", 46),
+        ("M: Dāng-e Māhūr", C_MAH, "T-T-S (204¢ + 204¢ + 90¢)", 246),
+        ("C: Dāng-e Chahārgāh", C_CHAH, "N-A-S [Reᵏ-Mi: 269¢ Red]", 446),
+        ("E: Dāng-e Esfahān", C_ESF, "T-S-T [Re-Mi♭: 90¢ Blue]", 646),
+        ("Sg: Segāh (S on Re)", C_SEG, "N-T-N (141¢ + 211¢ + 141¢)", 846),
     ]
-    for d_name, col, formula, lx in d_defs[:5]:
-        o.append(f'<rect x="{lx}" y="120" width="205" height="32" rx="5" fill="{col}" fill-opacity="0.12" stroke="{col}" stroke-width="1.5"/>')
-        o.append(f'<circle cx="{lx+12}" cy="136" r="5" fill="{col}"/>')
-        o.append(f'<text x="{lx+22}" y="132" font-size="10" font-weight="700" fill="{col}">{d_name}</text>')
-        o.append(f'<text x="{lx+22}" y="145" font-size="8.5" fill="#334155">{formula}</text>')
+    for d_name, col, formula, lx in d_defs:
+        o.append(f'<rect x="{lx}" y="120" width="195" height="32" rx="5" fill="{col}" fill-opacity="0.12" stroke="{col}" stroke-width="1.5"/>')
+        o.append(f'<circle cx="{lx+11}" cy="136" r="4.5" fill="{col}"/>')
+        o.append(f'<text x="{lx+20}" y="132" font-size="9.5" font-weight="700" fill="{col}">{d_name}</text>')
+        o.append(f'<text x="{lx+20}" y="145" font-size="8" fill="#334155">{formula}</text>')
 
-    # Distance key pill
-    o.append(f'<rect x="1190" y="120" width="165" height="32" rx="5" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.2"/>')
-    o.append(f'<rect x="1196" y="126" width="32" height="12" rx="2" fill="#FEE2E2" stroke="#991B1B" stroke-width="1"/>')
-    o.append(f'<text x="1212" y="135" font-size="7.5" font-weight="800" fill="#991B1B" text-anchor="middle">269¢ (A)</text>')
-    o.append(f'<rect x="1275" y="126" width="26" height="12" rx="2" fill="#DBEAFE" stroke="#1E40AF" stroke-width="1"/>')
-    o.append(f'<text x="1288" y="135" font-size="7.5" font-weight="800" fill="#1E40AF" text-anchor="middle">90¢ (S)</text>')
-    o.append(f'<text x="1272" y="147" font-size="8" fill="#475569" text-anchor="middle">Distance Markers</text>')
+    # Comprehensive 4-Distance Key Box on the right (1046 to 1354)
+    o.append(f'<rect x="1046" y="120" width="310" height="32" rx="5" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.2"/>')
+    # 1. Aug 2nd (Deep Red)
+    o.append(f'<rect x="1052" y="125" width="34" height="12" rx="2" fill="#FEE2E2" stroke="#991B1B" stroke-width="1"/>')
+    o.append(f'<text x="1069" y="134" font-size="7.5" font-weight="800" fill="#991B1B" text-anchor="middle">269¢ [A]</text>')
+    o.append(f'<text x="1069" y="146" font-size="7.5" font-weight="600" fill="#991B1B" text-anchor="middle">Aug 2nd</text>')
+    # 2. Tone (Green)
+    o.append(f'<rect x="1126" y="125" width="34" height="12" rx="2" fill="#D1FAE5" stroke="#059669" stroke-width="1"/>')
+    o.append(f'<text x="1143" y="134" font-size="7.5" font-weight="800" fill="#065F46" text-anchor="middle">204¢ [T]</text>')
+    o.append(f'<text x="1143" y="146" font-size="7.5" font-weight="600" fill="#065F46" text-anchor="middle">Whole Tone</text>')
+    # 3. Neutral 2nd (Amber)
+    o.append(f'<rect x="1200" y="125" width="34" height="12" rx="2" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>')
+    o.append(f'<text x="1217" y="134" font-size="7.5" font-weight="800" fill="#92400E" text-anchor="middle">~145¢ [N]</text>')
+    o.append(f'<text x="1217" y="146" font-size="7.5" font-weight="600" fill="#92400E" text-anchor="middle">Neutral 2nd</text>')
+    # 4. Semitone (Deep Blue)
+    o.append(f'<rect x="1276" y="125" width="32" height="12" rx="2" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1"/>')
+    o.append(f'<text x="1292" y="134" font-size="7.5" font-weight="800" fill="#1E40AF" text-anchor="middle">90¢ [S]</text>')
+    o.append(f'<text x="1292" y="146" font-size="7.5" font-weight="600" fill="#1E40AF" text-anchor="middle">Semitone</text>')
 
     # Frets definition: (cents_rel_do, name, ratio, is_primary)
     frets = [
@@ -973,35 +983,43 @@ def page11() -> str:
                 mid_x = 0.5 * (x1_val + x2_val)
                 y_mark = ry + 62
 
-                # 1. Augmented 2nd (Reᵏ -> Mi, Laᵏ -> Si, ~269¢): DEEP RED |------| MARKER
+                # 1. Augmented 2nd (>240¢): DEEP RED |------| MARKER
                 if dist_c > 240:
-                    # Deep red line and end ticks
                     o.append(f'<line x1="{x1_val:.1f}" y1="{y_mark}" x2="{x2_val:.1f}" y2="{y_mark}" stroke="#991B1B" stroke-width="2.5"/>')
                     o.append(f'<line x1="{x1_val:.1f}" y1="{y_mark-4}" x2="{x1_val:.1f}" y2="{y_mark+4}" stroke="#991B1B" stroke-width="1.8"/>')
                     o.append(f'<line x1="{x2_val:.1f}" y1="{y_mark-4}" x2="{x2_val:.1f}" y2="{y_mark+4}" stroke="#991B1B" stroke-width="1.8"/>')
-                    # Prominent badge
                     pw = 42
                     o.append(f'<rect x="{mid_x-pw/2:.1f}" y="{y_mark-6.5}" width="{pw}" height="13" rx="3" fill="#FEE2E2" stroke="#991B1B" stroke-width="1.2"/>')
                     o.append(f'<text x="{mid_x:.1f}" y="{y_mark+3}" font-size="8" font-weight="800" fill="#991B1B" text-anchor="middle">{dist_c}¢ [A]</text>')
 
-                # 2. Semitone / Minor 2nd (Re -> Mi♭ in Esfahān, Mi -> Fa in Māhūr/Chahārgāh, ~90¢): DEEP BLUE |---| MARKER
+                # 2. Whole Tone (185¢–225¢): FOREST GREEN |-----| MARKER
+                elif 185 <= dist_c <= 225:
+                    o.append(f'<line x1="{x1_val:.1f}" y1="{y_mark}" x2="{x2_val:.1f}" y2="{y_mark}" stroke="#059669" stroke-width="2.0"/>')
+                    o.append(f'<line x1="{x1_val:.1f}" y1="{y_mark-3.5}" x2="{x1_val:.1f}" y2="{y_mark+3.5}" stroke="#059669" stroke-width="1.5"/>')
+                    o.append(f'<line x1="{x2_val:.1f}" y1="{y_mark-3.5}" x2="{x2_val:.1f}" y2="{y_mark+3.5}" stroke="#059669" stroke-width="1.5"/>')
+                    pw = 40
+                    o.append(f'<rect x="{mid_x-pw/2:.1f}" y="{y_mark-6.5}" width="{pw}" height="13" rx="2.5" fill="#D1FAE5" stroke="#059669" stroke-width="1"/>')
+                    o.append(f'<text x="{mid_x:.1f}" y="{y_mark+3}" font-size="7.5" font-weight="800" fill="#065F46" text-anchor="middle">{dist_c}¢ [T]</text>')
+
+                # 3. Neutral 2nd (120¢–175¢): AMBER / ORANGE |---| MARKER
+                elif 120 <= dist_c <= 175:
+                    o.append(f'<line x1="{x1_val:.1f}" y1="{y_mark}" x2="{x2_val:.1f}" y2="{y_mark}" stroke="#D97706" stroke-width="2.0"/>')
+                    o.append(f'<line x1="{x1_val:.1f}" y1="{y_mark-3.5}" x2="{x1_val:.1f}" y2="{y_mark+3.5}" stroke="#D97706" stroke-width="1.5"/>')
+                    o.append(f'<line x1="{x2_val:.1f}" y1="{y_mark-3.5}" x2="{x2_val:.1f}" y2="{y_mark+3.5}" stroke="#D97706" stroke-width="1.5"/>')
+                    pw = 38
+                    o.append(f'<rect x="{mid_x-pw/2:.1f}" y="{y_mark-6.5}" width="{pw}" height="13" rx="2.5" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>')
+                    o.append(f'<text x="{mid_x:.1f}" y="{y_mark+3}" font-size="7.5" font-weight="800" fill="#92400E" text-anchor="middle">{dist_c}¢ [N]</text>')
+
+                # 4. Semitone / Minor 2nd (<115¢): DEEP BLUE |--| MARKER
                 elif dist_c < 115:
-                    # Deep blue line and end ticks
                     o.append(f'<line x1="{x1_val:.1f}" y1="{y_mark}" x2="{x2_val:.1f}" y2="{y_mark}" stroke="#1D4ED8" stroke-width="2.2"/>')
                     o.append(f'<line x1="{x1_val:.1f}" y1="{y_mark-3.5}" x2="{x1_val:.1f}" y2="{y_mark+3.5}" stroke="#1D4ED8" stroke-width="1.5"/>')
                     o.append(f'<line x1="{x2_val:.1f}" y1="{y_mark-3.5}" x2="{x2_val:.1f}" y2="{y_mark+3.5}" stroke="#1D4ED8" stroke-width="1.5"/>')
                     pw = 32
                     o.append(f'<rect x="{mid_x-pw/2:.1f}" y="{y_mark-6.5}" width="{pw}" height="13" rx="2.5" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1"/>')
-                    o.append(f'<text x="{mid_x:.1f}" y="{y_mark+3}" font-size="7.5" font-weight="800" fill="#1D4ED8" text-anchor="middle">{dist_c}¢ [S]</text>')
+                    o.append(f'<text x="{mid_x:.1f}" y="{y_mark+3}" font-size="7.5" font-weight="800" fill="#1E40AF" text-anchor="middle">{dist_c}¢ [S]</text>')
 
-                # 3. Neutral 2nd (~139¢ or ~155¢): Sky/Cyan badge
-                elif 120 <= dist_c <= 170:
-                    o.append(f'<line x1="{x1_val:.1f}" y1="{y_mark}" x2="{x2_val:.1f}" y2="{y_mark}" stroke="#0284C7" stroke-width="1.4" stroke-dasharray="3,2"/>')
-                    pw = 28
-                    o.append(f'<rect x="{mid_x-pw/2:.1f}" y="{y_mark-5.5}" width="{pw}" height="11" rx="2" fill="#E0F2FE" stroke="#0284C7" stroke-width="0.8"/>')
-                    o.append(f'<text x="{mid_x:.1f}" y="{y_mark+2.5}" font-size="7" font-weight="700" fill="#0369A1" text-anchor="middle">{dist_c}¢</text>')
-
-                # 4. Whole Tone (~204¢): Slate dashed line
+                # Fallback neutral
                 else:
                     o.append(f'<line x1="{x1_val:.1f}" y1="{y_mark}" x2="{x2_val:.1f}" y2="{y_mark}" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="2,2"/>')
                     pw = 26
@@ -1016,7 +1034,6 @@ def page11() -> str:
 
     o.append("</svg>")
     return "\n".join(o)
-
 
 # --------------------------------------------------------------------------- PAGE 12
 def page12() -> str:
