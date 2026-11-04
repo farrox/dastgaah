@@ -1,0 +1,151 @@
+[
+  {
+    "track": "02 - Reng-e-Dashti",
+    "normalized_track": "02 - reng-e-dashti",
+    "tonic_hz": 390.6,
+    "n_tonic": 23,
+    "n_80_220": 15,
+    "n_window_120_175": 5,
+    "peak_cents": null,
+    "ci_95": null,
+    "ci_width": null,
+    "classification": "Insufficient window strikes (N_win=5 < 8)",
+    "is_usable": false,
+    "presence_prob": 0.0
+  },
+  {
+    "track": "09 - Hejaz",
+    "normalized_track": "09 - hejaz",
+    "tonic_hz": 437.4,
+    "n_tonic": 129,
+    "n_80_220": 11,
+    "n_window_120_175": 1,
+    "peak_cents": null,
+    "ci_95": null,
+    "ci_width": null,
+    "classification": "Insufficient window strikes (N_win=1 < 8)",
+    "is_usable": false,
+    "presence_prob": 0.0
+  },
+  {
+    "track": "15 - Âvâz–e Kord–e Bayât, Reng–e Kord–e Bayât I",
+    "normalized_track": "15 - avaz-e kord-e bayat, reng-e kord-e bayat i",
+    "tonic_hz": 351.9,
+    "n_tonic": 88,
+    "n_80_220": 75,
+    "n_window_120_175": 25,
+    "peak_cents": 129.0,
+    "ci_95": [
+      127.0,
+      174.5
+    ],
+    "ci_width": 47.5,
+    "classification": "Peak Unstable (CI width 47.5¢ > 15¢ gate)",
+    "is_usable": false,
+    "presence_prob": 1.0
+  },
+  {
+    "track": "16 - Âvâz–e Kord–e Bayât, Reng–e Kord–e Bayât II",
+    "normalized_track": "16 - avaz-e kord-e bayat, reng-e kord-e bayat ii",
+    "tonic_hz": 171.9,
+    "n_tonic": 81,
+    "n_80_220": 28,
+    "n_window_120_175": 5,
+    "peak_cents": null,
+    "ci_95": null,
+    "ci_width": null,
+    "classification": "Insufficient window strikes (N_win=5 < 8)",
+    "is_usable": false,
+    "presence_prob": 0.0
+  },
+  {
+    "track": "20 - Âvâz–e Hejâz I",
+    "normalized_track": "20 - avaz-e hejaz i",
+    "tonic_hz": 164.5,
+    "n_tonic": 62,
+    "n_80_220": 36,
+    "n_window_120_175": 23,
+    "peak_cents": 128.0,
+    "ci_95": [
+      123.5,
+      168.0
+    ],
+    "ci_width": 44.5,
+    "classification": "Peak Unstable (CI width 44.5¢ > 15¢ gate)",
+    "is_usable": false,
+    "presence_prob": 1.0
+  },
+  {
+    "track": "21 - Tasnif–e Hejâz",
+    "normalized_track": "21 - tasnif-e hejaz",
+    "tonic_hz": 297.0,
+    "n_tonic": 51,
+    "n_80_220": 57,
+    "n_window_120_175": 31,
+    "peak_cents": 126.0,
+    "ci_95": [
+      121.5,
+      143.0
+    ],
+    "ci_width": 21.5,
+    "classification": "Peak Unstable (CI width 21.5¢ > 15¢ gate)",
+    "is_usable": false,
+    "presence_prob": 1.0
+  },
+  {
+    "track": "22 - Âvâz–e Dashti",
+    "normalized_track": "22 - avaz-e dashti",
+    "tonic_hz": 402.6,
+    "n_tonic": 102,
+    "n_80_220": 9,
+    "n_window_120_175": 1,
+    "peak_cents": null,
+    "ci_95": null,
+    "ci_width": null,
+    "classification": "Insufficient window strikes (N_win=1 < 8)",
+    "is_usable": false,
+    "presence_prob": 0.0
+  },
+  {
+    "track": "33 - Âvâz–e Hejâz II",
+    "normalized_track": "33 - avaz-e hejaz ii",
+    "tonic_hz": 420.1,
+    "n_tonic": 124,
+    "n_80_220": 12,
+    "n_window_120_175": 1,
+    "peak_cents": null,
+    "ci_95": null,
+    "ci_width": null,
+    "classification": "Insufficient window strikes (N_win=1 < 8)",
+    "is_usable": false,
+    "presence_prob": 0.0
+  },
+  {
+    "track": "34 - Tasnif–e Abu’atâ",
+    "normalized_track": "34 - tasnif-e abu'ata",
+    "tonic_hz": 186.2,
+    "n_tonic": 67,
+    "n_80_220": 14,
+    "n_window_120_175": 5,
+    "peak_cents": null,
+    "ci_95": null,
+    "ci_width": null,
+    "classification": "Insufficient window strikes (N_win=5 < 8)",
+    "is_usable": false,
+    "presence_prob": 0.0
+  },
+  {
+    "track": "44 - Tasnif–e Dashti",
+    "normalized_track": "44 - tasnif-e dashti",
+    "tonic_hz": 418.6,
+    "n_tonic": 103,
+    "n_80_220": 0,
+    "n_window_120_175": 0,
+    "peak_cents": null,
+    "ci_95": null,
+    "ci_width": null,
+    "classification": "No data (N = 0)",
+    "is_usable": false,
+    "presence_prob": 0.0
+  }
+]

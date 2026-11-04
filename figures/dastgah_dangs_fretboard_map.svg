@@ -1,0 +1,491 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="990" viewBox="0 0 1400 990">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#0F172A"/><stop offset="100%" stop-color="#1E293B"/></linearGradient><style>text{font-family:-apple-system,"Helvetica Neue",Helvetica,Arial,sans-serif}.mono{font-family:"SF Mono",Menlo,Monaco,monospace}</style></defs>
+<rect width="1400" height="990" fill="#F8FAFC"/>
+<rect width="1400" height="76" fill="url(#g)"/>
+<text x="36" y="34" fill="#F8FAFC" font-size="23" font-weight="700">11. Modal Anatomy: Dāng Architecture Across the Dastgāhs</text>
+<text x="36" y="58" fill="#94A3B8" font-size="13.5">Physical fretboard grid on Setār String 1 (Do centered) with Tala&#x27;i 4-Dāng color coding and 4-tier interval distance markers</text>
+<text x="1364" y="34" fill="#E2E8F0" font-size="13" font-weight="600" text-anchor="end">Persian Tuning Theory Primer (for an engineer with a setar)</text>
+<text x="1364" y="56" fill="#94A3B8" font-size="12" text-anchor="end">Page 11 of 22</text>
+<rect x="36" y="88" width="1328" height="76" rx="10" fill="#FFFFFF" stroke="#CBD5E1"/>
+<text x="52" y="113" fill="#0F172A" font-size="15" font-weight="700">Tala&#x27;i Canonical Dāngs &amp;amp; 4-Tier Interval Distance Markers (All Dāngs Span a Pure 4th / ~498¢)</text>
+<rect x="46" y="120" width="195" height="32" rx="5" fill="#2563EB" fill-opacity="0.12" stroke="#2563EB" stroke-width="1.5"/>
+<circle cx="57" cy="136" r="4.5" fill="#2563EB"/>
+<text x="66" y="132" font-size="9.5" font-weight="700" fill="#2563EB">S: Dāng-e Shūr</text>
+<text x="66" y="145" font-size="8" fill="#334155">N-N-T (139¢ + 155¢ + 204¢ = 498¢)</text>
+<rect x="246" y="120" width="195" height="32" rx="5" fill="#059669" fill-opacity="0.12" stroke="#059669" stroke-width="1.5"/>
+<circle cx="257" cy="136" r="4.5" fill="#059669"/>
+<text x="266" y="132" font-size="9.5" font-weight="700" fill="#059669">M: Dāng-e Māhūr</text>
+<text x="266" y="145" font-size="8" fill="#334155">T-T-S (204¢ + 204¢ + 90¢ = 498¢)</text>
+<rect x="446" y="120" width="195" height="32" rx="5" fill="#DC2626" fill-opacity="0.12" stroke="#DC2626" stroke-width="1.5"/>
+<circle cx="457" cy="136" r="4.5" fill="#DC2626"/>
+<text x="466" y="132" font-size="9.5" font-weight="700" fill="#DC2626">C: Dāng-e Chahārgāh</text>
+<text x="466" y="145" font-size="8" fill="#334155">N-A-S [Reᵏ-Mi: 269¢ Red = 498¢]</text>
+<rect x="646" y="120" width="195" height="32" rx="5" fill="#0891B2" fill-opacity="0.12" stroke="#0891B2" stroke-width="1.5"/>
+<circle cx="657" cy="136" r="4.5" fill="#0891B2"/>
+<text x="666" y="132" font-size="9.5" font-weight="700" fill="#0891B2">E: Dāng-e Esfahān</text>
+<text x="666" y="145" font-size="8" fill="#334155">T-S-T [Re-Mi♭: 90¢ Blue = 498¢]</text>
+<rect x="846" y="120" width="195" height="32" rx="5" fill="#EA580C" fill-opacity="0.12" stroke="#EA580C" stroke-width="1.5"/>
+<circle cx="857" cy="136" r="4.5" fill="#EA580C"/>
+<text x="866" y="132" font-size="9.5" font-weight="700" fill="#EA580C">Sg: Segāh (Īst on Miᵏ)</text>
+<text x="866" y="145" font-size="8" fill="#334155">N-T-N (144¢ + 204¢ + 151¢ = 498¢)</text>
+<rect x="1046" y="120" width="310" height="32" rx="5" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.2"/>
+<rect x="1052" y="125" width="34" height="12" rx="2" fill="#FEE2E2" stroke="#991B1B" stroke-width="1"/>
+<text x="1069" y="134" font-size="7.5" font-weight="800" fill="#991B1B" text-anchor="middle">269¢ [A]</text>
+<text x="1069" y="146" font-size="7.5" font-weight="600" fill="#991B1B" text-anchor="middle">Aug 2nd</text>
+<rect x="1126" y="125" width="34" height="12" rx="2" fill="#D1FAE5" stroke="#059669" stroke-width="1"/>
+<text x="1143" y="134" font-size="7.5" font-weight="800" fill="#065F46" text-anchor="middle">204¢ [T]</text>
+<text x="1143" y="146" font-size="7.5" font-weight="600" fill="#065F46" text-anchor="middle">Whole Tone</text>
+<rect x="1200" y="125" width="34" height="12" rx="2" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+<text x="1217" y="134" font-size="7.5" font-weight="800" fill="#92400E" text-anchor="middle">~145¢ [N]</text>
+<text x="1217" y="146" font-size="7.5" font-weight="600" fill="#92400E" text-anchor="middle">Neutral 2nd</text>
+<rect x="1276" y="125" width="32" height="12" rx="2" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1"/>
+<text x="1292" y="134" font-size="7.5" font-weight="800" fill="#1E40AF" text-anchor="middle">90¢ [S]</text>
+<text x="1292" y="146" font-size="7.5" font-weight="600" fill="#1E40AF" text-anchor="middle">Semitone</text>
+<line x1="267.6" y1="175" x2="267.6" y2="970" stroke="#94A3B8" stroke-width="1.5"/>
+<rect x="249.6" y="157" width="36" height="18" rx="3" fill="#F1F5F9" stroke="#94A3B8" stroke-width="0.8"/>
+<text x="267.6" y="170" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">Sol↓</text>
+<text x="267.6" y="153" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">-498¢</text>
+<line x1="351.7" y1="175" x2="351.7" y2="970" stroke="#94A3B8" stroke-width="1.5"/>
+<rect x="333.7" y="157" width="36" height="18" rx="3" fill="#F1F5F9" stroke="#94A3B8" stroke-width="0.8"/>
+<text x="351.7" y="170" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">Laᵏ↓</text>
+<text x="351.7" y="153" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">-360¢</text>
+<line x1="391.4" y1="175" x2="391.4" y2="970" stroke="#94A3B8" stroke-width="1.5"/>
+<rect x="373.4" y="157" width="36" height="18" rx="3" fill="#F1F5F9" stroke="#94A3B8" stroke-width="0.8"/>
+<text x="391.4" y="170" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">La↓</text>
+<text x="391.4" y="153" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">-294¢</text>
+<line x1="446.2" y1="175" x2="446.2" y2="970" stroke="#94A3B8" stroke-width="1.5"/>
+<rect x="428.2" y="157" width="36" height="18" rx="3" fill="#F1F5F9" stroke="#94A3B8" stroke-width="0.8"/>
+<text x="446.2" y="170" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">Si♭↓</text>
+<text x="446.2" y="153" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">-204¢</text>
+<line x1="515.2" y1="175" x2="515.2" y2="970" stroke="#CBD5E1" stroke-width="1.0" stroke-dasharray="3,3"/>
+<rect x="497.2" y="157" width="36" height="18" rx="3" fill="#FFFFFF" stroke="#94A3B8" stroke-width="0.8"/>
+<text x="515.2" y="170" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">Siᵏ↓</text>
+<text x="515.2" y="153" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">-90¢</text>
+<line x1="570.0" y1="175" x2="570.0" y2="970" stroke="#0F172A" stroke-width="2.5"/>
+<rect x="552.0" y="157" width="36" height="18" rx="3" fill="#0F172A" stroke="#94A3B8" stroke-width="0.8"/>
+<text x="570.0" y="170" font-size="9.5" font-weight="700" fill="#F8FAFC" text-anchor="middle">Do</text>
+<text x="570.0" y="153" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">+0¢</text>
+<line x1="654.1" y1="175" x2="654.1" y2="970" stroke="#94A3B8" stroke-width="1.5"/>
+<rect x="636.1" y="157" width="36" height="18" rx="3" fill="#F1F5F9" stroke="#94A3B8" stroke-width="0.8"/>
+<text x="654.1" y="170" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">Reᵏ</text>
+<text x="654.1" y="153" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">+139¢</text>
+<line x1="693.8" y1="175" x2="693.8" y2="970" stroke="#94A3B8" stroke-width="1.5"/>
+<rect x="675.8" y="157" width="36" height="18" rx="3" fill="#F1F5F9" stroke="#94A3B8" stroke-width="0.8"/>
+<text x="693.8" y="170" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">Re</text>
+<text x="693.8" y="153" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">+204¢</text>
+<line x1="748.6" y1="175" x2="748.6" y2="970" stroke="#94A3B8" stroke-width="1.5"/>
+<rect x="730.6" y="157" width="36" height="18" rx="3" fill="#F1F5F9" stroke="#94A3B8" stroke-width="0.8"/>
+<text x="748.6" y="170" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">Mi♭</text>
+<text x="748.6" y="153" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">+294¢</text>
+<line x1="777.9" y1="175" x2="777.9" y2="970" stroke="#E11D48" stroke-width="1.0" stroke-dasharray="3,3"/>
+<line x1="777.9" y1="173" x2="767.9" y2="151" stroke="#E11D48" stroke-width="1.2"/>
+<rect x="743.9" y="135" width="34" height="16" rx="2.5" fill="#FFF1F2" stroke="#E11D48" stroke-width="0.8"/>
+<text x="760.9" y="147" font-size="8.5" font-weight="800" fill="#E11D48" text-anchor="middle">39/32</text>
+<line x1="785.2" y1="175" x2="785.2" y2="970" stroke="#94A3B8" stroke-width="1.5"/>
+<rect x="767.2" y="157" width="36" height="18" rx="3" fill="#F1F5F9" stroke="#94A3B8" stroke-width="0.8"/>
+<text x="785.2" y="170" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">Miᵏ</text>
+<text x="785.2" y="153" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">+354¢</text>
+<line x1="817.6" y1="175" x2="817.6" y2="970" stroke="#94A3B8" stroke-width="1.5"/>
+<rect x="799.6" y="157" width="36" height="18" rx="3" fill="#F1F5F9" stroke="#94A3B8" stroke-width="0.8"/>
+<text x="817.6" y="170" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">Mi</text>
+<text x="817.6" y="153" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">+408¢</text>
+<line x1="872.4" y1="175" x2="872.4" y2="970" stroke="#94A3B8" stroke-width="1.5"/>
+<rect x="854.4" y="157" width="36" height="18" rx="3" fill="#F1F5F9" stroke="#94A3B8" stroke-width="0.8"/>
+<text x="872.4" y="170" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">Fa</text>
+<text x="872.4" y="153" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">+498¢</text>
+<line x1="996.2" y1="175" x2="996.2" y2="970" stroke="#94A3B8" stroke-width="1.5"/>
+<rect x="978.2" y="157" width="36" height="18" rx="3" fill="#F1F5F9" stroke="#94A3B8" stroke-width="0.8"/>
+<text x="996.2" y="170" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">Sol</text>
+<text x="996.2" y="153" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">+702¢</text>
+<line x1="1080.4" y1="175" x2="1080.4" y2="970" stroke="#94A3B8" stroke-width="1.5"/>
+<rect x="1062.4" y="157" width="36" height="18" rx="3" fill="#F1F5F9" stroke="#94A3B8" stroke-width="0.8"/>
+<text x="1080.4" y="170" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">Laᵏ</text>
+<text x="1080.4" y="153" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">+841¢</text>
+<line x1="1120.1" y1="175" x2="1120.1" y2="970" stroke="#94A3B8" stroke-width="1.5"/>
+<rect x="1102.1" y="157" width="36" height="18" rx="3" fill="#F1F5F9" stroke="#94A3B8" stroke-width="0.8"/>
+<text x="1120.1" y="170" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">La</text>
+<text x="1120.1" y="153" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">+906¢</text>
+<line x1="1174.8" y1="175" x2="1174.8" y2="970" stroke="#94A3B8" stroke-width="1.5"/>
+<rect x="1156.8" y="157" width="36" height="18" rx="3" fill="#F1F5F9" stroke="#94A3B8" stroke-width="0.8"/>
+<text x="1174.8" y="170" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">Si♭</text>
+<text x="1174.8" y="153" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">+996¢</text>
+<line x1="1243.9" y1="175" x2="1243.9" y2="970" stroke="#94A3B8" stroke-width="1.5"/>
+<rect x="1225.9" y="157" width="36" height="18" rx="3" fill="#F1F5F9" stroke="#94A3B8" stroke-width="0.8"/>
+<text x="1243.9" y="170" font-size="9.5" font-weight="700" fill="#334155" text-anchor="middle">Si</text>
+<text x="1243.9" y="153" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">+1110¢</text>
+<line x1="1298.6" y1="175" x2="1298.6" y2="970" stroke="#0F172A" stroke-width="2.5"/>
+<rect x="1280.6" y="157" width="36" height="18" rx="3" fill="#0F172A" stroke="#94A3B8" stroke-width="0.8"/>
+<text x="1298.6" y="170" font-size="9.5" font-weight="700" fill="#F8FAFC" text-anchor="middle">Do&#x27;</text>
+<text x="1298.6" y="153" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">+1200¢</text>
+<rect x="36" y="192" width="1328" height="98" rx="6" fill="#FFFFFF" fill-opacity="0.80" stroke="#E2E8F0" stroke-width="1.0"/>
+<text x="46" y="212" font-size="12" font-weight="700" fill="#0F172A">1. Dastgāh-e Māhūr</text>
+<text x="46" y="227" font-size="9" fill="#64748B">Symmetrical double-major dāngs [M + M] separated by whole tone (Do / Sol)</text>
+<rect x="570.0" y="234" width="302.4" height="48" rx="4" fill="#059669" fill-opacity="0.14" stroke="#059669" stroke-width="1.5"/>
+<text x="576.0" y="246" font-size="9" font-weight="700" fill="#059669">M 1 (Do)</text>
+<line x1="570.0" y1="254" x2="693.8" y2="254" stroke="#059669" stroke-width="2.0"/>
+<line x1="570.0" y1="250.5" x2="570.0" y2="257.5" stroke="#059669" stroke-width="1.5"/>
+<line x1="693.8" y1="250.5" x2="693.8" y2="257.5" stroke="#059669" stroke-width="1.5"/>
+<rect x="611.9" y="247.5" width="40" height="13" rx="2.5" fill="#D1FAE5" stroke="#059669" stroke-width="1"/>
+<text x="631.9" y="257" font-size="7.5" font-weight="800" fill="#065F46" text-anchor="middle">204¢ [T]</text>
+<line x1="693.8" y1="254" x2="817.6" y2="254" stroke="#059669" stroke-width="2.0"/>
+<line x1="693.8" y1="250.5" x2="693.8" y2="257.5" stroke="#059669" stroke-width="1.5"/>
+<line x1="817.6" y1="250.5" x2="817.6" y2="257.5" stroke="#059669" stroke-width="1.5"/>
+<rect x="735.7" y="247.5" width="40" height="13" rx="2.5" fill="#D1FAE5" stroke="#059669" stroke-width="1"/>
+<text x="755.7" y="257" font-size="7.5" font-weight="800" fill="#065F46" text-anchor="middle">204¢ [T]</text>
+<line x1="817.6" y1="254" x2="872.4" y2="254" stroke="#1D4ED8" stroke-width="2.2"/>
+<line x1="817.6" y1="250.5" x2="817.6" y2="257.5" stroke="#1D4ED8" stroke-width="1.5"/>
+<line x1="872.4" y1="250.5" x2="872.4" y2="257.5" stroke="#1D4ED8" stroke-width="1.5"/>
+<rect x="829.0" y="247.5" width="32" height="13" rx="2.5" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1"/>
+<text x="845.0" y="257" font-size="7.5" font-weight="800" fill="#1E40AF" text-anchor="middle">90¢ [S]</text>
+<circle cx="570.0" cy="268" r="4.5" fill="#059669" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="570.0" y="280" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Do</text>
+<circle cx="693.8" cy="268" r="4.5" fill="#059669" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="693.8" y="280" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Re</text>
+<circle cx="817.6" cy="268" r="4.5" fill="#059669" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="817.6" y="280" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Mi</text>
+<circle cx="872.4" cy="268" r="4.5" fill="#059669" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="872.4" y="280" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Fa</text>
+<rect x="996.2" y="234" width="302.4" height="48" rx="4" fill="#059669" fill-opacity="0.14" stroke="#059669" stroke-width="1.5"/>
+<text x="1002.2" y="246" font-size="9" font-weight="700" fill="#059669">M 2 (Sol)</text>
+<line x1="996.2" y1="254" x2="1120.1" y2="254" stroke="#059669" stroke-width="2.0"/>
+<line x1="996.2" y1="250.5" x2="996.2" y2="257.5" stroke="#059669" stroke-width="1.5"/>
+<line x1="1120.1" y1="250.5" x2="1120.1" y2="257.5" stroke="#059669" stroke-width="1.5"/>
+<rect x="1038.1" y="247.5" width="40" height="13" rx="2.5" fill="#D1FAE5" stroke="#059669" stroke-width="1"/>
+<text x="1058.1" y="257" font-size="7.5" font-weight="800" fill="#065F46" text-anchor="middle">204¢ [T]</text>
+<line x1="1120.1" y1="254" x2="1243.9" y2="254" stroke="#059669" stroke-width="2.0"/>
+<line x1="1120.1" y1="250.5" x2="1120.1" y2="257.5" stroke="#059669" stroke-width="1.5"/>
+<line x1="1243.9" y1="250.5" x2="1243.9" y2="257.5" stroke="#059669" stroke-width="1.5"/>
+<rect x="1162.0" y="247.5" width="40" height="13" rx="2.5" fill="#D1FAE5" stroke="#059669" stroke-width="1"/>
+<text x="1182.0" y="257" font-size="7.5" font-weight="800" fill="#065F46" text-anchor="middle">204¢ [T]</text>
+<line x1="1243.9" y1="254" x2="1298.6" y2="254" stroke="#1D4ED8" stroke-width="2.2"/>
+<line x1="1243.9" y1="250.5" x2="1243.9" y2="257.5" stroke="#1D4ED8" stroke-width="1.5"/>
+<line x1="1298.6" y1="250.5" x2="1298.6" y2="257.5" stroke="#1D4ED8" stroke-width="1.5"/>
+<rect x="1255.2" y="247.5" width="32" height="13" rx="2.5" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1"/>
+<text x="1271.2" y="257" font-size="7.5" font-weight="800" fill="#1E40AF" text-anchor="middle">90¢ [S]</text>
+<circle cx="996.2" cy="268" r="4.5" fill="#059669" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="996.2" y="280" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Sol</text>
+<circle cx="1120.1" cy="268" r="4.5" fill="#059669" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="1120.1" y="280" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">La</text>
+<circle cx="1243.9" cy="268" r="4.5" fill="#059669" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="1243.9" y="280" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Si</text>
+<circle cx="1298.6" cy="268" r="4.5" fill="#059669" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="1298.6" y="280" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Do&#x27;</text>
+<rect x="36" y="302" width="1328" height="98" rx="6" fill="#FFFFFF" fill-opacity="0.80" stroke="#E2E8F0" stroke-width="1.0"/>
+<text x="46" y="322" font-size="12" font-weight="700" fill="#0F172A">2. Āvāz-e Bayāt-e Esfahān</text>
+<text x="46" y="337" font-size="9" fill="#64748B">Lower Minor [E] on Do [Re-Mi♭: 90¢ Deep Blue] + Upper Augmented [C] on Sol [Laᵏ-Si: 269¢ Deep Red]</text>
+<rect x="570.0" y="344" width="302.4" height="48" rx="4" fill="#0891B2" fill-opacity="0.14" stroke="#0891B2" stroke-width="1.5"/>
+<text x="576.0" y="356" font-size="9" font-weight="700" fill="#0891B2">E (Do)</text>
+<line x1="570.0" y1="364" x2="693.8" y2="364" stroke="#059669" stroke-width="2.0"/>
+<line x1="570.0" y1="360.5" x2="570.0" y2="367.5" stroke="#059669" stroke-width="1.5"/>
+<line x1="693.8" y1="360.5" x2="693.8" y2="367.5" stroke="#059669" stroke-width="1.5"/>
+<rect x="611.9" y="357.5" width="40" height="13" rx="2.5" fill="#D1FAE5" stroke="#059669" stroke-width="1"/>
+<text x="631.9" y="367" font-size="7.5" font-weight="800" fill="#065F46" text-anchor="middle">204¢ [T]</text>
+<line x1="693.8" y1="364" x2="748.6" y2="364" stroke="#1D4ED8" stroke-width="2.2"/>
+<line x1="693.8" y1="360.5" x2="693.8" y2="367.5" stroke="#1D4ED8" stroke-width="1.5"/>
+<line x1="748.6" y1="360.5" x2="748.6" y2="367.5" stroke="#1D4ED8" stroke-width="1.5"/>
+<rect x="705.2" y="357.5" width="32" height="13" rx="2.5" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1"/>
+<text x="721.2" y="367" font-size="7.5" font-weight="800" fill="#1E40AF" text-anchor="middle">90¢ [S]</text>
+<line x1="748.6" y1="364" x2="872.4" y2="364" stroke="#059669" stroke-width="2.0"/>
+<line x1="748.6" y1="360.5" x2="748.6" y2="367.5" stroke="#059669" stroke-width="1.5"/>
+<line x1="872.4" y1="360.5" x2="872.4" y2="367.5" stroke="#059669" stroke-width="1.5"/>
+<rect x="790.5" y="357.5" width="40" height="13" rx="2.5" fill="#D1FAE5" stroke="#059669" stroke-width="1"/>
+<text x="810.5" y="367" font-size="7.5" font-weight="800" fill="#065F46" text-anchor="middle">204¢ [T]</text>
+<circle cx="570.0" cy="378" r="4.5" fill="#0891B2" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="570.0" y="390" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Do</text>
+<circle cx="693.8" cy="378" r="4.5" fill="#0891B2" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="693.8" y="390" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Re</text>
+<circle cx="748.6" cy="378" r="4.5" fill="#0891B2" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="748.6" y="390" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Mi♭</text>
+<circle cx="872.4" cy="378" r="4.5" fill="#0891B2" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="872.4" y="390" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Fa</text>
+<rect x="996.2" y="344" width="302.4" height="48" rx="4" fill="#DC2626" fill-opacity="0.14" stroke="#DC2626" stroke-width="1.5"/>
+<text x="1002.2" y="356" font-size="9" font-weight="700" fill="#DC2626">C (Sol)</text>
+<line x1="996.2" y1="364" x2="1080.4" y2="364" stroke="#D97706" stroke-width="2.0"/>
+<line x1="996.2" y1="360.5" x2="996.2" y2="367.5" stroke="#D97706" stroke-width="1.5"/>
+<line x1="1080.4" y1="360.5" x2="1080.4" y2="367.5" stroke="#D97706" stroke-width="1.5"/>
+<rect x="1019.3" y="357.5" width="38" height="13" rx="2.5" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+<text x="1038.3" y="367" font-size="7.5" font-weight="800" fill="#92400E" text-anchor="middle">139¢ [N]</text>
+<line x1="1080.4" y1="364" x2="1243.9" y2="364" stroke="#991B1B" stroke-width="2.5"/>
+<line x1="1080.4" y1="360" x2="1080.4" y2="368" stroke="#991B1B" stroke-width="1.8"/>
+<line x1="1243.9" y1="360" x2="1243.9" y2="368" stroke="#991B1B" stroke-width="1.8"/>
+<rect x="1141.1" y="357.5" width="42" height="13" rx="3" fill="#FEE2E2" stroke="#991B1B" stroke-width="1.2"/>
+<text x="1162.1" y="367" font-size="8" font-weight="800" fill="#991B1B" text-anchor="middle">269¢ [A]</text>
+<line x1="1243.9" y1="364" x2="1298.6" y2="364" stroke="#1D4ED8" stroke-width="2.2"/>
+<line x1="1243.9" y1="360.5" x2="1243.9" y2="367.5" stroke="#1D4ED8" stroke-width="1.5"/>
+<line x1="1298.6" y1="360.5" x2="1298.6" y2="367.5" stroke="#1D4ED8" stroke-width="1.5"/>
+<rect x="1255.2" y="357.5" width="32" height="13" rx="2.5" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1"/>
+<text x="1271.2" y="367" font-size="7.5" font-weight="800" fill="#1E40AF" text-anchor="middle">90¢ [S]</text>
+<circle cx="996.2" cy="378" r="4.5" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="996.2" y="390" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Sol</text>
+<circle cx="1080.4" cy="378" r="4.5" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="1080.4" y="390" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Laᵏ</text>
+<circle cx="1243.9" cy="378" r="4.5" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="1243.9" y="390" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Si</text>
+<circle cx="1298.6" cy="378" r="4.5" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="1298.6" y="390" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Do&#x27;</text>
+<rect x="36" y="412" width="1328" height="98" rx="6" fill="#FFFFFF" fill-opacity="0.80" stroke="#E2E8F0" stroke-width="1.0"/>
+<text x="46" y="432" font-size="12" font-weight="700" fill="#0F172A">3. Dastgāh-e Chahārgāh</text>
+<text x="46" y="447" font-size="9" fill="#64748B">Symmetrical double-augmented [C + C] [Both dāngs feature Reᵏ-Mi &amp;amp; Laᵏ-Si: 269¢ Deep Red]</text>
+<rect x="570.0" y="454" width="302.4" height="48" rx="4" fill="#DC2626" fill-opacity="0.14" stroke="#DC2626" stroke-width="1.5"/>
+<text x="576.0" y="466" font-size="9" font-weight="700" fill="#DC2626">C 1 (Do)</text>
+<line x1="570.0" y1="474" x2="654.1" y2="474" stroke="#D97706" stroke-width="2.0"/>
+<line x1="570.0" y1="470.5" x2="570.0" y2="477.5" stroke="#D97706" stroke-width="1.5"/>
+<line x1="654.1" y1="470.5" x2="654.1" y2="477.5" stroke="#D97706" stroke-width="1.5"/>
+<rect x="593.1" y="467.5" width="38" height="13" rx="2.5" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+<text x="612.1" y="477" font-size="7.5" font-weight="800" fill="#92400E" text-anchor="middle">139¢ [N]</text>
+<line x1="654.1" y1="474" x2="817.6" y2="474" stroke="#991B1B" stroke-width="2.5"/>
+<line x1="654.1" y1="470" x2="654.1" y2="478" stroke="#991B1B" stroke-width="1.8"/>
+<line x1="817.6" y1="470" x2="817.6" y2="478" stroke="#991B1B" stroke-width="1.8"/>
+<rect x="714.9" y="467.5" width="42" height="13" rx="3" fill="#FEE2E2" stroke="#991B1B" stroke-width="1.2"/>
+<text x="735.9" y="477" font-size="8" font-weight="800" fill="#991B1B" text-anchor="middle">269¢ [A]</text>
+<line x1="817.6" y1="474" x2="872.4" y2="474" stroke="#1D4ED8" stroke-width="2.2"/>
+<line x1="817.6" y1="470.5" x2="817.6" y2="477.5" stroke="#1D4ED8" stroke-width="1.5"/>
+<line x1="872.4" y1="470.5" x2="872.4" y2="477.5" stroke="#1D4ED8" stroke-width="1.5"/>
+<rect x="829.0" y="467.5" width="32" height="13" rx="2.5" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1"/>
+<text x="845.0" y="477" font-size="7.5" font-weight="800" fill="#1E40AF" text-anchor="middle">90¢ [S]</text>
+<circle cx="570.0" cy="488" r="4.5" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="570.0" y="500" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Do</text>
+<circle cx="654.1" cy="488" r="4.5" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="654.1" y="500" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Reᵏ</text>
+<circle cx="817.6" cy="488" r="4.5" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="817.6" y="500" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Mi</text>
+<circle cx="872.4" cy="488" r="4.5" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="872.4" y="500" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Fa</text>
+<rect x="996.2" y="454" width="302.4" height="48" rx="4" fill="#DC2626" fill-opacity="0.14" stroke="#DC2626" stroke-width="1.5"/>
+<text x="1002.2" y="466" font-size="9" font-weight="700" fill="#DC2626">C 2 (Sol)</text>
+<line x1="996.2" y1="474" x2="1080.4" y2="474" stroke="#D97706" stroke-width="2.0"/>
+<line x1="996.2" y1="470.5" x2="996.2" y2="477.5" stroke="#D97706" stroke-width="1.5"/>
+<line x1="1080.4" y1="470.5" x2="1080.4" y2="477.5" stroke="#D97706" stroke-width="1.5"/>
+<rect x="1019.3" y="467.5" width="38" height="13" rx="2.5" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+<text x="1038.3" y="477" font-size="7.5" font-weight="800" fill="#92400E" text-anchor="middle">139¢ [N]</text>
+<line x1="1080.4" y1="474" x2="1243.9" y2="474" stroke="#991B1B" stroke-width="2.5"/>
+<line x1="1080.4" y1="470" x2="1080.4" y2="478" stroke="#991B1B" stroke-width="1.8"/>
+<line x1="1243.9" y1="470" x2="1243.9" y2="478" stroke="#991B1B" stroke-width="1.8"/>
+<rect x="1141.1" y="467.5" width="42" height="13" rx="3" fill="#FEE2E2" stroke="#991B1B" stroke-width="1.2"/>
+<text x="1162.1" y="477" font-size="8" font-weight="800" fill="#991B1B" text-anchor="middle">269¢ [A]</text>
+<line x1="1243.9" y1="474" x2="1298.6" y2="474" stroke="#1D4ED8" stroke-width="2.2"/>
+<line x1="1243.9" y1="470.5" x2="1243.9" y2="477.5" stroke="#1D4ED8" stroke-width="1.5"/>
+<line x1="1298.6" y1="470.5" x2="1298.6" y2="477.5" stroke="#1D4ED8" stroke-width="1.5"/>
+<rect x="1255.2" y="467.5" width="32" height="13" rx="2.5" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1"/>
+<text x="1271.2" y="477" font-size="7.5" font-weight="800" fill="#1E40AF" text-anchor="middle">90¢ [S]</text>
+<circle cx="996.2" cy="488" r="4.5" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="996.2" y="500" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Sol</text>
+<circle cx="1080.4" cy="488" r="4.5" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="1080.4" y="500" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Laᵏ</text>
+<circle cx="1243.9" cy="488" r="4.5" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="1243.9" y="500" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Si</text>
+<circle cx="1298.6" cy="488" r="4.5" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="1298.6" y="500" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Do&#x27;</text>
+<rect x="36" y="522" width="1328" height="98" rx="6" fill="#FFFFFF" fill-opacity="0.80" stroke="#E2E8F0" stroke-width="1.0"/>
+<text x="46" y="542" font-size="12" font-weight="700" fill="#0F172A">4. Dastgāh-e Homāyūn</text>
+<text x="46" y="557" font-size="9" fill="#64748B">Lower Augmented [C] on Do [Reᵏ-Mi: 269¢ Deep Red] + Upper Neutral [S] on Sol [Bīdād]</text>
+<rect x="570.0" y="564" width="302.4" height="48" rx="4" fill="#DC2626" fill-opacity="0.14" stroke="#DC2626" stroke-width="1.5"/>
+<text x="576.0" y="576" font-size="9" font-weight="700" fill="#DC2626">C (Do)</text>
+<line x1="570.0" y1="584" x2="654.1" y2="584" stroke="#D97706" stroke-width="2.0"/>
+<line x1="570.0" y1="580.5" x2="570.0" y2="587.5" stroke="#D97706" stroke-width="1.5"/>
+<line x1="654.1" y1="580.5" x2="654.1" y2="587.5" stroke="#D97706" stroke-width="1.5"/>
+<rect x="593.1" y="577.5" width="38" height="13" rx="2.5" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+<text x="612.1" y="587" font-size="7.5" font-weight="800" fill="#92400E" text-anchor="middle">139¢ [N]</text>
+<line x1="654.1" y1="584" x2="817.6" y2="584" stroke="#991B1B" stroke-width="2.5"/>
+<line x1="654.1" y1="580" x2="654.1" y2="588" stroke="#991B1B" stroke-width="1.8"/>
+<line x1="817.6" y1="580" x2="817.6" y2="588" stroke="#991B1B" stroke-width="1.8"/>
+<rect x="714.9" y="577.5" width="42" height="13" rx="3" fill="#FEE2E2" stroke="#991B1B" stroke-width="1.2"/>
+<text x="735.9" y="587" font-size="8" font-weight="800" fill="#991B1B" text-anchor="middle">269¢ [A]</text>
+<line x1="817.6" y1="584" x2="872.4" y2="584" stroke="#1D4ED8" stroke-width="2.2"/>
+<line x1="817.6" y1="580.5" x2="817.6" y2="587.5" stroke="#1D4ED8" stroke-width="1.5"/>
+<line x1="872.4" y1="580.5" x2="872.4" y2="587.5" stroke="#1D4ED8" stroke-width="1.5"/>
+<rect x="829.0" y="577.5" width="32" height="13" rx="2.5" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1"/>
+<text x="845.0" y="587" font-size="7.5" font-weight="800" fill="#1E40AF" text-anchor="middle">90¢ [S]</text>
+<circle cx="570.0" cy="598" r="4.5" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="570.0" y="610" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Do</text>
+<circle cx="654.1" cy="598" r="4.5" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="654.1" y="610" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Reᵏ</text>
+<circle cx="817.6" cy="598" r="4.5" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="817.6" y="610" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Mi</text>
+<circle cx="872.4" cy="598" r="4.5" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="872.4" y="610" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Fa</text>
+<rect x="996.2" y="564" width="302.4" height="48" rx="4" fill="#2563EB" fill-opacity="0.14" stroke="#2563EB" stroke-width="1.5"/>
+<text x="1002.2" y="576" font-size="9" font-weight="700" fill="#2563EB">S (Bīdād on Sol)</text>
+<line x1="996.2" y1="584" x2="1080.4" y2="584" stroke="#D97706" stroke-width="2.0"/>
+<line x1="996.2" y1="580.5" x2="996.2" y2="587.5" stroke="#D97706" stroke-width="1.5"/>
+<line x1="1080.4" y1="580.5" x2="1080.4" y2="587.5" stroke="#D97706" stroke-width="1.5"/>
+<rect x="1019.3" y="577.5" width="38" height="13" rx="2.5" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+<text x="1038.3" y="587" font-size="7.5" font-weight="800" fill="#92400E" text-anchor="middle">139¢ [N]</text>
+<line x1="1080.4" y1="584" x2="1174.8" y2="584" stroke="#D97706" stroke-width="2.0"/>
+<line x1="1080.4" y1="580.5" x2="1080.4" y2="587.5" stroke="#D97706" stroke-width="1.5"/>
+<line x1="1174.8" y1="580.5" x2="1174.8" y2="587.5" stroke="#D97706" stroke-width="1.5"/>
+<rect x="1108.6" y="577.5" width="38" height="13" rx="2.5" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+<text x="1127.6" y="587" font-size="7.5" font-weight="800" fill="#92400E" text-anchor="middle">156¢ [N]</text>
+<line x1="1174.8" y1="584" x2="1298.6" y2="584" stroke="#059669" stroke-width="2.0"/>
+<line x1="1174.8" y1="580.5" x2="1174.8" y2="587.5" stroke="#059669" stroke-width="1.5"/>
+<line x1="1298.6" y1="580.5" x2="1298.6" y2="587.5" stroke="#059669" stroke-width="1.5"/>
+<rect x="1216.7" y="577.5" width="40" height="13" rx="2.5" fill="#D1FAE5" stroke="#059669" stroke-width="1"/>
+<text x="1236.7" y="587" font-size="7.5" font-weight="800" fill="#065F46" text-anchor="middle">204¢ [T]</text>
+<circle cx="996.2" cy="598" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="996.2" y="610" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Sol</text>
+<circle cx="1080.4" cy="598" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="1080.4" y="610" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Laᵏ</text>
+<circle cx="1174.8" cy="598" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="1174.8" y="610" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Si♭</text>
+<circle cx="1298.6" cy="598" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="1298.6" y="610" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Do&#x27;</text>
+<rect x="36" y="632" width="1328" height="98" rx="6" fill="#FFFFFF" fill-opacity="0.80" stroke="#E2E8F0" stroke-width="1.0"/>
+<text x="46" y="652" font-size="12" font-weight="700" fill="#0F172A">5. Dastgāh-e Navā</text>
+<text x="46" y="667" font-size="9" fill="#64748B">Lower Pedestal [S] on Do + Core Resting Axis [T-N-N] on Fa [Sol-Laᵏ-Si♭ = 498¢]</text>
+<rect x="570.0" y="674" width="302.4" height="48" rx="4" fill="#2563EB" fill-opacity="0.14" stroke="#2563EB" stroke-width="1.5"/>
+<text x="576.0" y="686" font-size="9" font-weight="700" fill="#2563EB">S (Pedestal)</text>
+<line x1="570.0" y1="694" x2="654.1" y2="694" stroke="#D97706" stroke-width="2.0"/>
+<line x1="570.0" y1="690.5" x2="570.0" y2="697.5" stroke="#D97706" stroke-width="1.5"/>
+<line x1="654.1" y1="690.5" x2="654.1" y2="697.5" stroke="#D97706" stroke-width="1.5"/>
+<rect x="593.1" y="687.5" width="38" height="13" rx="2.5" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+<text x="612.1" y="697" font-size="7.5" font-weight="800" fill="#92400E" text-anchor="middle">139¢ [N]</text>
+<line x1="654.1" y1="694" x2="748.6" y2="694" stroke="#D97706" stroke-width="2.0"/>
+<line x1="654.1" y1="690.5" x2="654.1" y2="697.5" stroke="#D97706" stroke-width="1.5"/>
+<line x1="748.6" y1="690.5" x2="748.6" y2="697.5" stroke="#D97706" stroke-width="1.5"/>
+<rect x="682.4" y="687.5" width="38" height="13" rx="2.5" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+<text x="701.4" y="697" font-size="7.5" font-weight="800" fill="#92400E" text-anchor="middle">156¢ [N]</text>
+<line x1="748.6" y1="694" x2="872.4" y2="694" stroke="#059669" stroke-width="2.0"/>
+<line x1="748.6" y1="690.5" x2="748.6" y2="697.5" stroke="#059669" stroke-width="1.5"/>
+<line x1="872.4" y1="690.5" x2="872.4" y2="697.5" stroke="#059669" stroke-width="1.5"/>
+<rect x="790.5" y="687.5" width="40" height="13" rx="2.5" fill="#D1FAE5" stroke="#059669" stroke-width="1"/>
+<text x="810.5" y="697" font-size="7.5" font-weight="800" fill="#065F46" text-anchor="middle">204¢ [T]</text>
+<circle cx="570.0" cy="708" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="570.0" y="720" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Do</text>
+<circle cx="654.1" cy="708" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="654.1" y="720" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Reᵏ</text>
+<circle cx="748.6" cy="708" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="748.6" y="720" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Mi♭</text>
+<circle cx="872.4" cy="708" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="872.4" y="720" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Fa</text>
+<rect x="872.4" y="674" width="302.4" height="48" rx="4" fill="#2563EB" fill-opacity="0.14" stroke="#2563EB" stroke-width="1.5"/>
+<text x="878.4" y="686" font-size="9" font-weight="700" fill="#2563EB">Navā (Īst on Fa)</text>
+<line x1="872.4" y1="694" x2="996.2" y2="694" stroke="#059669" stroke-width="2.0"/>
+<line x1="872.4" y1="690.5" x2="872.4" y2="697.5" stroke="#059669" stroke-width="1.5"/>
+<line x1="996.2" y1="690.5" x2="996.2" y2="697.5" stroke="#059669" stroke-width="1.5"/>
+<rect x="914.3" y="687.5" width="40" height="13" rx="2.5" fill="#D1FAE5" stroke="#059669" stroke-width="1"/>
+<text x="934.3" y="697" font-size="7.5" font-weight="800" fill="#065F46" text-anchor="middle">204¢ [T]</text>
+<line x1="996.2" y1="694" x2="1080.4" y2="694" stroke="#D97706" stroke-width="2.0"/>
+<line x1="996.2" y1="690.5" x2="996.2" y2="697.5" stroke="#D97706" stroke-width="1.5"/>
+<line x1="1080.4" y1="690.5" x2="1080.4" y2="697.5" stroke="#D97706" stroke-width="1.5"/>
+<rect x="1019.3" y="687.5" width="38" height="13" rx="2.5" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+<text x="1038.3" y="697" font-size="7.5" font-weight="800" fill="#92400E" text-anchor="middle">139¢ [N]</text>
+<line x1="1080.4" y1="694" x2="1174.8" y2="694" stroke="#D97706" stroke-width="2.0"/>
+<line x1="1080.4" y1="690.5" x2="1080.4" y2="697.5" stroke="#D97706" stroke-width="1.5"/>
+<line x1="1174.8" y1="690.5" x2="1174.8" y2="697.5" stroke="#D97706" stroke-width="1.5"/>
+<rect x="1108.6" y="687.5" width="38" height="13" rx="2.5" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+<text x="1127.6" y="697" font-size="7.5" font-weight="800" fill="#92400E" text-anchor="middle">156¢ [N]</text>
+<circle cx="872.4" cy="708" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="872.4" y="720" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Fa</text>
+<circle cx="996.2" cy="708" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="996.2" y="720" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Sol</text>
+<circle cx="1080.4" cy="708" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="1080.4" y="720" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Laᵏ</text>
+<circle cx="1174.8" cy="708" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="1174.8" y="720" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Si♭</text>
+<rect x="36" y="742" width="1328" height="98" rx="6" fill="#FFFFFF" fill-opacity="0.80" stroke="#E2E8F0" stroke-width="1.0"/>
+<text x="46" y="762" font-size="12" font-weight="700" fill="#0F172A">6. Dastgāh-e Shūr</text>
+<text x="46" y="777" font-size="9" fill="#64748B">Symmetrical double-neutral [S + S] separated by whole tone [N-N-T / 139¢ + 156¢ + 204¢ = 498¢]</text>
+<rect x="570.0" y="784" width="302.4" height="48" rx="4" fill="#2563EB" fill-opacity="0.14" stroke="#2563EB" stroke-width="1.5"/>
+<text x="576.0" y="796" font-size="9" font-weight="700" fill="#2563EB">S 1 (Do)</text>
+<line x1="570.0" y1="804" x2="654.1" y2="804" stroke="#D97706" stroke-width="2.0"/>
+<line x1="570.0" y1="800.5" x2="570.0" y2="807.5" stroke="#D97706" stroke-width="1.5"/>
+<line x1="654.1" y1="800.5" x2="654.1" y2="807.5" stroke="#D97706" stroke-width="1.5"/>
+<rect x="593.1" y="797.5" width="38" height="13" rx="2.5" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+<text x="612.1" y="807" font-size="7.5" font-weight="800" fill="#92400E" text-anchor="middle">139¢ [N]</text>
+<line x1="654.1" y1="804" x2="748.6" y2="804" stroke="#D97706" stroke-width="2.0"/>
+<line x1="654.1" y1="800.5" x2="654.1" y2="807.5" stroke="#D97706" stroke-width="1.5"/>
+<line x1="748.6" y1="800.5" x2="748.6" y2="807.5" stroke="#D97706" stroke-width="1.5"/>
+<rect x="682.4" y="797.5" width="38" height="13" rx="2.5" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+<text x="701.4" y="807" font-size="7.5" font-weight="800" fill="#92400E" text-anchor="middle">156¢ [N]</text>
+<line x1="748.6" y1="804" x2="872.4" y2="804" stroke="#059669" stroke-width="2.0"/>
+<line x1="748.6" y1="800.5" x2="748.6" y2="807.5" stroke="#059669" stroke-width="1.5"/>
+<line x1="872.4" y1="800.5" x2="872.4" y2="807.5" stroke="#059669" stroke-width="1.5"/>
+<rect x="790.5" y="797.5" width="40" height="13" rx="2.5" fill="#D1FAE5" stroke="#059669" stroke-width="1"/>
+<text x="810.5" y="807" font-size="7.5" font-weight="800" fill="#065F46" text-anchor="middle">204¢ [T]</text>
+<circle cx="570.0" cy="818" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="570.0" y="830" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Do</text>
+<circle cx="654.1" cy="818" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="654.1" y="830" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Reᵏ</text>
+<circle cx="748.6" cy="818" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="748.6" y="830" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Mi♭</text>
+<circle cx="872.4" cy="818" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="872.4" y="830" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Fa</text>
+<rect x="996.2" y="784" width="302.4" height="48" rx="4" fill="#2563EB" fill-opacity="0.14" stroke="#2563EB" stroke-width="1.5"/>
+<text x="1002.2" y="796" font-size="9" font-weight="700" fill="#2563EB">S 2 (Sol)</text>
+<line x1="996.2" y1="804" x2="1080.4" y2="804" stroke="#D97706" stroke-width="2.0"/>
+<line x1="996.2" y1="800.5" x2="996.2" y2="807.5" stroke="#D97706" stroke-width="1.5"/>
+<line x1="1080.4" y1="800.5" x2="1080.4" y2="807.5" stroke="#D97706" stroke-width="1.5"/>
+<rect x="1019.3" y="797.5" width="38" height="13" rx="2.5" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+<text x="1038.3" y="807" font-size="7.5" font-weight="800" fill="#92400E" text-anchor="middle">139¢ [N]</text>
+<line x1="1080.4" y1="804" x2="1174.8" y2="804" stroke="#D97706" stroke-width="2.0"/>
+<line x1="1080.4" y1="800.5" x2="1080.4" y2="807.5" stroke="#D97706" stroke-width="1.5"/>
+<line x1="1174.8" y1="800.5" x2="1174.8" y2="807.5" stroke="#D97706" stroke-width="1.5"/>
+<rect x="1108.6" y="797.5" width="38" height="13" rx="2.5" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+<text x="1127.6" y="807" font-size="7.5" font-weight="800" fill="#92400E" text-anchor="middle">156¢ [N]</text>
+<line x1="1174.8" y1="804" x2="1298.6" y2="804" stroke="#059669" stroke-width="2.0"/>
+<line x1="1174.8" y1="800.5" x2="1174.8" y2="807.5" stroke="#059669" stroke-width="1.5"/>
+<line x1="1298.6" y1="800.5" x2="1298.6" y2="807.5" stroke="#059669" stroke-width="1.5"/>
+<rect x="1216.7" y="797.5" width="40" height="13" rx="2.5" fill="#D1FAE5" stroke="#059669" stroke-width="1"/>
+<text x="1236.7" y="807" font-size="7.5" font-weight="800" fill="#065F46" text-anchor="middle">204¢ [T]</text>
+<circle cx="996.2" cy="818" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="996.2" y="830" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Sol</text>
+<circle cx="1080.4" cy="818" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="1080.4" y="830" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Laᵏ</text>
+<circle cx="1174.8" cy="818" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="1174.8" y="830" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Si♭</text>
+<circle cx="1298.6" cy="818" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="1298.6" y="830" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Do&#x27;</text>
+<rect x="36" y="852" width="1328" height="98" rx="6" fill="#FFFFFF" fill-opacity="0.80" stroke="#E2E8F0" stroke-width="1.0"/>
+<text x="46" y="872" font-size="12" font-weight="700" fill="#0F172A">7. Dastgāh-e Segāh</text>
+<text x="46" y="887" font-size="9" fill="#64748B">Tala&#x27;i step-shift: Shūr on Re (+204¢) retuned to Zalzal Miᵏ (+355¢); both dāngs span pure 4th (498¢)</text>
+<rect x="693.8" y="894" width="302.4" height="48" rx="4" fill="#2563EB" fill-opacity="0.14" stroke="#2563EB" stroke-width="1.5"/>
+<text x="699.8" y="906" font-size="9" font-weight="700" fill="#2563EB">Shūr-on-Re (Retuned)</text>
+<line x1="693.8" y1="914" x2="785.2" y2="914" stroke="#D97706" stroke-width="2.0"/>
+<line x1="693.8" y1="910.5" x2="693.8" y2="917.5" stroke="#D97706" stroke-width="1.5"/>
+<line x1="785.2" y1="910.5" x2="785.2" y2="917.5" stroke="#D97706" stroke-width="1.5"/>
+<rect x="720.5" y="907.5" width="38" height="13" rx="2.5" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+<text x="739.5" y="917" font-size="7.5" font-weight="800" fill="#92400E" text-anchor="middle">151¢ [N]</text>
+<line x1="785.2" y1="914" x2="872.4" y2="914" stroke="#D97706" stroke-width="2.0"/>
+<line x1="785.2" y1="910.5" x2="785.2" y2="917.5" stroke="#D97706" stroke-width="1.5"/>
+<line x1="872.4" y1="910.5" x2="872.4" y2="917.5" stroke="#D97706" stroke-width="1.5"/>
+<rect x="809.8" y="907.5" width="38" height="13" rx="2.5" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+<text x="828.8" y="917" font-size="7.5" font-weight="800" fill="#92400E" text-anchor="middle">144¢ [N]</text>
+<line x1="872.4" y1="914" x2="996.2" y2="914" stroke="#059669" stroke-width="2.0"/>
+<line x1="872.4" y1="910.5" x2="872.4" y2="917.5" stroke="#059669" stroke-width="1.5"/>
+<line x1="996.2" y1="910.5" x2="996.2" y2="917.5" stroke="#059669" stroke-width="1.5"/>
+<rect x="914.3" y="907.5" width="40" height="13" rx="2.5" fill="#D1FAE5" stroke="#059669" stroke-width="1"/>
+<text x="934.3" y="917" font-size="7.5" font-weight="800" fill="#065F46" text-anchor="middle">204¢ [T]</text>
+<circle cx="693.8" cy="928" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="693.8" y="940" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Re</text>
+<circle cx="785.2" cy="928" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="785.2" y="940" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Miᵏ</text>
+<circle cx="872.4" cy="928" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="872.4" y="940" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Fa</text>
+<circle cx="996.2" cy="928" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="996.2" y="940" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Sol</text>
+<rect x="785.2" y="894" width="302.4" height="48" rx="4" fill="#EA580C" fill-opacity="0.14" stroke="#EA580C" stroke-width="1.5"/>
+<text x="791.2" y="906" font-size="9" font-weight="700" fill="#EA580C">Sg (Īst on Miᵏ)</text>
+<line x1="785.2" y1="914" x2="872.4" y2="914" stroke="#D97706" stroke-width="2.0"/>
+<line x1="785.2" y1="910.5" x2="785.2" y2="917.5" stroke="#D97706" stroke-width="1.5"/>
+<line x1="872.4" y1="910.5" x2="872.4" y2="917.5" stroke="#D97706" stroke-width="1.5"/>
+<rect x="809.8" y="907.5" width="38" height="13" rx="2.5" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+<text x="828.8" y="917" font-size="7.5" font-weight="800" fill="#92400E" text-anchor="middle">144¢ [N]</text>
+<line x1="872.4" y1="914" x2="996.2" y2="914" stroke="#059669" stroke-width="2.0"/>
+<line x1="872.4" y1="910.5" x2="872.4" y2="917.5" stroke="#059669" stroke-width="1.5"/>
+<line x1="996.2" y1="910.5" x2="996.2" y2="917.5" stroke="#059669" stroke-width="1.5"/>
+<rect x="914.3" y="907.5" width="40" height="13" rx="2.5" fill="#D1FAE5" stroke="#059669" stroke-width="1"/>
+<text x="934.3" y="917" font-size="7.5" font-weight="800" fill="#065F46" text-anchor="middle">204¢ [T]</text>
+<line x1="996.2" y1="914" x2="1087.7" y2="914" stroke="#D97706" stroke-width="2.0"/>
+<line x1="996.2" y1="910.5" x2="996.2" y2="917.5" stroke="#D97706" stroke-width="1.5"/>
+<line x1="1087.7" y1="910.5" x2="1087.7" y2="917.5" stroke="#D97706" stroke-width="1.5"/>
+<rect x="1022.9" y="907.5" width="38" height="13" rx="2.5" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+<text x="1041.9" y="917" font-size="7.5" font-weight="800" fill="#92400E" text-anchor="middle">151¢ [N]</text>
+<circle cx="785.2" cy="928" r="4.5" fill="#EA580C" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="785.2" y="940" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Miᵏ</text>
+<circle cx="872.4" cy="928" r="4.5" fill="#EA580C" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="872.4" y="940" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Fa</text>
+<circle cx="996.2" cy="928" r="4.5" fill="#EA580C" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="996.2" y="940" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Sol</text>
+<circle cx="1087.7" cy="928" r="4.5" fill="#EA580C" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="1087.7" y="940" font-size="8.5" font-weight="700" fill="#0F172A" text-anchor="middle">Laᵏ</text>
+</svg>

@@ -10,10 +10,15 @@ import hashlib
 import json
 import math
 import statistics
+import sys
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 ANALYSIS_DIR = BASE_DIR / "analysis"
+if str(BASE_DIR) not in sys.path:
+    sys.path.insert(0, str(BASE_DIR))
+if str(ANALYSIS_DIR) not in sys.path:
+    sys.path.insert(0, str(ANALYSIS_DIR))
 REVIEW_DIR = BASE_DIR / "review"
 REV11_PATH = REVIEW_DIR / "review_11_gpt6.md"
 RESP11_PATH = REVIEW_DIR / "response_11.md"
@@ -193,18 +198,28 @@ def generate_segah_consensus_table(segah_json_path):
     with open(segah_json_path, encoding="utf-8") as f:
         data = json.load(f)
         
+    tols = {
+        "zir_e_ist_re": 50,
+        "ist_tonic": 35,
+        "zabol_fa": 45,
+        "muye_sol": 50,
+        "hesar_la_k": 45,
+        "shahkhatayi_si_b": 45,
+        "mokhalef_do": 55,
+        "octave_ist": 35,
+    }
     lines = []
     lines.append(r"| Scale Degree / Gūsheh | Target Ratio / Name | Window Width (Tol) | Active Masters ($N \ge 8$) | Window Strikes ($N$) | Base Unnormalized Median (¢) | Per-Master Īst-Normalized Median (¢) |")
     lines.append("| :--- | :--- | :---: | :---: | :---: | :---: | :---: |")
     
-    for deg, info in data["consensus_degrees"].items():
-        nm = info["name"]
-        ratio = info["theoretical_ratio"]
-        tol = f"$\\pm {info['tolerance_cents']}¢$"
-        n_mast = info["n_masters_active"]
+    for deg, info in data["consensus"].items():
+        nm = info["label"]
+        ratio = info["theory_ratio"]
+        tol = f"$\\pm {tols.get(deg, 45)}¢$"
+        n_mast = info["masters"]
         strikes = info["strikes"]
-        base_med = f"**{info['base_unnormalized_median_cents']:+.2f}¢**"
-        norm_med = f"**{info['ist_normalized_per_master_median_cents']:+.2f}¢**"
+        base_med = f"**{info['consensus_median_raw']:+.2f}¢**"
+        norm_med = f"**{info['ist_normalized_median']:+.2f}¢**"
         lines.append(
             f"| **{nm}** | {ratio} | {tol} | {n_mast} | {strikes} | {base_med} | {norm_med} |"
         )
@@ -525,13 +540,13 @@ In response to Review 11 §6, the table below is generated directly from [`analy
 1. **Exact Strike Breakdown:**
    - **Direct Register ($0 \\pm 35¢$):** **{b_tot['total_direct_ist']:,} strikes**.
    - **Lower Octaves ($-1200 \\pm 35¢$ and $-2400 \\pm 35¢$):** **{b_tot['total_lower_octaves_combined']} strikes** ({b_tot['total_lower_octave_m1']} in Octave -1; 1 in Octave -2 [Payvar]).
-   - **Total Unique Īst Assigned (`ist_tonic`):** ${b_tot['total_direct_ist']:,} + {b_tot['total_lower_octaves_combined']} = \mathbf{{{b_tot['total_assigned_v7_ist']:,}\text{{ strikes}}}}$.
+   - **Total Unique Īst Assigned (`ist_tonic`):** ${b_tot['total_direct_ist']:,} + {b_tot['total_lower_octaves_combined']} = \\mathbf{{{b_tot['total_assigned_v7_ist']:,}\\text{{ strikes}}}}$.
    - **Upper Octave Assigned (`octave_ist`, $+1200 \\pm 35¢$):** **{b_tot['total_assigned_octave_ist']:,} strikes**.
-   - **Total Folded Strikes ($|c \\pmod{{1200}}| \\le 35¢$):** ${b_tot['total_assigned_v7_ist']:,} + {b_tot['total_assigned_octave_ist']:,} = \mathbf{{{b_tot['total_folded_ist']:,}\text{{ strikes}}}}$.
-   - **Discrepancy:** $(\text{{Total Folded}} - \text{{Upper Octave}}) - \text{{Unique Īst}} = \mathbf{{0}}$ across all 12 performers.
+   - **Total Folded Strikes ($|c \\pmod{{1200}}| \\le 35¢$):** ${b_tot['total_assigned_v7_ist']:,} + {b_tot['total_assigned_octave_ist']:,} = \\mathbf{{{b_tot['total_folded_ist']:,}\\text{{ strikes}}}}$.
+   - **Discrepancy:** $(\\text{{Total Folded}} - \\text{{Upper Octave}}) - \\text{{Unique Īst}} = \\mathbf{{0}}$ across all 12 performers.
 2. **Bridge to Review 10:**
    - Claude's preliminary inspection estimated 2,058 direct, 270 off-octave, and 393 upper-octave strikes ($2,058 + 270 = 2,328$).
-   - Exact execution of standard quality gates (`conf >= 40.0`, `wobble <= 22.0¢`, $100 < f < 950\text{{ Hz}}$) on the actual strike files yields 2,059 direct ({c_rec['direct_difference']:+d}), 262 lower octaves ({c_rec['off_octave_difference']:+d}), and 401 upper octave ({c_rec['upper_octave_difference']:+d}).
+   - Exact execution of standard quality gates (`conf >= 40.0`, `wobble <= 22.0¢`, $100 < f < 950\\text{{ Hz}}$) on the actual strike files yields 2,059 direct ({c_rec['direct_difference']:+d}), 262 lower octaves ({c_rec['off_octave_difference']:+d}), and 401 upper octave ({c_rec['upper_octave_difference']:+d}).
    - The resulting unique Īst strike count is **2,321 strikes**, strictly matching the published inventory without any missing strikes.
 
 ---

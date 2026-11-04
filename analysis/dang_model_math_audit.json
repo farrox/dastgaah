@@ -1,0 +1,221 @@
+{
+  "tetrachords": {
+    "pure_fourth_span_cents": 498.045,
+    "shur": {
+      "ratios": [
+        "1",
+        "13/12",
+        "32/27",
+        "4/3"
+      ],
+      "step_ratios": [
+        "13/12",
+        "128/117",
+        "9/8"
+      ],
+      "step_cents": [
+        138.57,
+        155.56,
+        203.91
+      ],
+      "sum_cents": 498.045,
+      "talai_reported": [
+        140,
+        140,
+        220
+      ],
+      "talai_sum": 500,
+      "discrepancy_vs_talai": [
+        -1.43,
+        15.56,
+        -16.09
+      ]
+    },
+    "mahur_pythagorean": {
+      "ratios": [
+        "1",
+        "9/8",
+        "81/64",
+        "4/3"
+      ],
+      "step_ratios": [
+        "9/8",
+        "9/8",
+        "256/243"
+      ],
+      "step_cents": [
+        203.91,
+        203.91,
+        90.22
+      ],
+      "sum_cents": 498.045,
+      "talai_reported": [
+        200,
+        180,
+        120
+      ],
+      "talai_sum": 500,
+      "discrepancy_vs_talai": [
+        3.91,
+        23.91,
+        -29.78
+      ],
+      "third_degree_cents": 407.82,
+      "third_degree_vs_talai_380": 27.82
+    },
+    "mahur_just": {
+      "ratios": [
+        "1",
+        "9/8",
+        "5/4",
+        "4/3"
+      ],
+      "step_ratios": [
+        "9/8",
+        "10/9",
+        "16/15"
+      ],
+      "step_cents": [
+        203.91,
+        182.4,
+        111.73
+      ],
+      "sum_cents": 498.045,
+      "third_degree_cents": 386.31,
+      "third_degree_vs_talai_380": 6.31
+    },
+    "chahargah_chart": {
+      "ratios": [
+        "1",
+        "13/12",
+        "81/64",
+        "4/3"
+      ],
+      "step_ratios": [
+        "13/12",
+        "243/208",
+        "256/243"
+      ],
+      "step_cents": [
+        138.57,
+        269.25,
+        90.22
+      ],
+      "sum_cents": 498.045,
+      "talai_reported": [
+        140,
+        240,
+        120
+      ],
+      "talai_sum": 500,
+      "discrepancy_vs_talai": [
+        -1.43,
+        29.25,
+        -29.78
+      ],
+      "augmented_second_cents": 269.25,
+      "augmented_second_vs_talai_240": 29.25
+    },
+    "chahargah_just": {
+      "ratios": [
+        "1",
+        "13/12",
+        "5/4",
+        "4/3"
+      ],
+      "step_ratios": [
+        "13/12",
+        "15/13",
+        "16/15"
+      ],
+      "step_cents": [
+        138.57,
+        247.74,
+        111.73
+      ],
+      "sum_cents": 498.045,
+      "augmented_second_cents": 247.74,
+      "augmented_second_vs_talai_240": 7.74
+    },
+    "esfahan": {
+      "ratios": [
+        "1",
+        "9/8",
+        "32/27",
+        "4/3"
+      ],
+      "step_ratios": [
+        "9/8",
+        "256/243",
+        "9/8"
+      ],
+      "step_cents": [
+        203.91,
+        90.22,
+        203.91
+      ],
+      "sum_cents": 498.045
+    }
+  },
+  "segah_transposition": {
+    "literal_transposition_of_shur": {
+      "root": "9/8 (203.91¢)",
+      "degree_2_ratio": "39/32",
+      "degree_2_factorization": "(9/8) * (13/12) = 117/96 = 39/32",
+      "degree_2_cents": 342.4827,
+      "degree_3_ratio": "4/3 (498.05¢)",
+      "degree_4_ratio": "3/2 (701.96¢)"
+    },
+    "retuned_zalzal_model": {
+      "root": "9/8 (203.91¢)",
+      "degree_2_ratio": "27/22",
+      "degree_2_factorization": "(9/8) * (12/11) = 27/22",
+      "degree_2_cents": 354.5471,
+      "step_from_re_cents": 150.64,
+      "step_to_fa_cents": 143.5,
+      "step_fa_to_sol_cents": 203.91,
+      "sum_steps_cents": 498.045
+    },
+    "difference_between_models": {
+      "cents_difference": 12.0644,
+      "ratio_quotient": "144/143",
+      "mathematical_impossibility": "39/32 (342.48¢) and 27/22 (354.55¢) cannot share a single coordinate; 27/22 is NOT (9/8) * (13/12)."
+    },
+    "chart_sum_discrepancies": {
+      "primer_page11_row7_text_sum": "144 + 204 + 146 = 494¢",
+      "primer_page11_legend_sum": "141 + 211 + 141 = 493¢",
+      "pure_fourth_exact": 498.04,
+      "gap_row7": -4.04,
+      "gap_legend": -5.04,
+      "max_rounding_error_bound_for_3_integers": 1.5,
+      "conclusion": "Neither 494¢ nor 493¢ can be explained by nearest-integer rounding (max error 1.5¢). They represent defective step calculations."
+    },
+    "illustrative_pure_fourth_rooted_at_27_22": {
+      "ratios": [
+        "27/22",
+        "4/3",
+        "3/2",
+        "18/11"
+      ],
+      "steps_cents": [
+        143.5,
+        203.91,
+        150.64
+      ],
+      "total_span_cents": 498.045,
+      "spans_pure_fourth": true
+    }
+  },
+  "architecture": {
+    "conjunct_two_fourths": {
+      "formula": "(4/3) * (4/3) = 16/9",
+      "cents": 996.09,
+      "semitone_short_of_octave": 203.91
+    },
+    "disjunct_two_fourths_separated_by_tone": {
+      "formula": "(4/3) * (9/8) * (4/3) = 2/1",
+      "cents": 1200.0,
+      "equals_octave": true
+    }
+  }
+}

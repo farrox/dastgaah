@@ -15,7 +15,7 @@ ROOT = Path("/Users/ed/Developer/dastgaah")
 SCRATCH = Path("/Users/ed/.gemini/antigravity/brain/5ea62a60-87f7-4e63-9f6c-0034aec38b37/scratch/primer")
 SCRATCH.mkdir(parents=True, exist_ok=True)
 W, H = 1400, 990
-TOTAL = 21
+TOTAL = 22
 CHAR_W = 0.52  # average glyph width / font size for wrapping
 
 
@@ -795,9 +795,10 @@ def page10() -> str:
         (138.6, "+139¢", "13/12 [90¢ limma]", "Reᵏ (Shūr/Chah)", "#DC2626", 1),
         (203.9, "+204¢", "9/8", "Re (Māh/Esf)", "#2563EB", 0),
         (294.1, "+294¢", "32/27 [6/5]", "Mi♭ (Shūr/Esf)", "#9333EA", 1),
-        (342.5, "+343¢", "117/96 [27/22]", "[Miᵏ from Re-dang!]", "#E11D48", 0),
-        (407.8, "+408¢", "81/64 [5/4]", "Mi (Māh/Chah)", "#D97706", 1),
-        (498.0, "+498¢", "4/3", "Fa (All 4 Dāngs)", "#16A34A", 0),
+        (342.5, "+343¢", "39/32", "Miᵏ (Shūr on Re)", "#E11D48", 0),
+        (354.5, "+355¢", "27/22", "Miᵏ (Zalzal Fret)", "#7C3AED", 1),
+        (407.8, "+408¢", "81/64 [5/4]", "Mi (Māh/Chah)", "#D97706", 0),
+        (498.0, "+498¢", "4/3", "Fa (All 4 Dāngs)", "#16A34A", 1),
     ]
 
     for c_val, c_str, rat_str, lbl, col, level in super_notes:
@@ -818,7 +819,7 @@ def page10() -> str:
         o.append(f'<text x="{xx:.1f}" y="{y_lbl}" font-size="9.5" fill="{col}" font-weight="{fw}" text-anchor="middle">{lbl}</text>')
 
     o.append(f'<text x="800" y="{y5+156}" font-size="10.5" fill="#1E3A8A" font-weight="600">[Brackets] show historical variants: 13/12 (Fārābī) vs 256/243 (Limma) · 32/27 (Pyth) vs 6/5 (Just) · 81/64 vs 5/4</text>')
-    o.append(f'<text x="800" y="{y5+174}" font-size="10.5" fill="#DC2626">Dashed circle at +343¢ (117/96 or Zalzal 27/22): born only when a dāng starts on Re (9/8 &#215; 13/12)!</text>')
+    o.append(f'<text x="800" y="{y5+174}" font-size="10.5" fill="#334155">Dual Miᵏ: Transposition 39/32 (342.5¢) vs Physical Zalzal fret 27/22 (354.5¢ · measured Segāh +352.7¢)!</text>')
 
     o.append("</svg>")
     return "\n".join(o)
@@ -839,11 +840,11 @@ def page11() -> str:
     C_SEG = "#EA580C"   # Sg = Segāh (Derived: S on Re) = Orange
 
     d_defs = [
-        ("S: Dāng-e Shūr", C_SHU, "N-N-T (139¢ + 155¢ + 204¢)", 46),
-        ("M: Dāng-e Māhūr", C_MAH, "T-T-S (204¢ + 204¢ + 90¢)", 246),
-        ("C: Dāng-e Chahārgāh", C_CHAH, "N-A-S [Reᵏ-Mi: 269¢ Red]", 446),
-        ("E: Dāng-e Esfahān", C_ESF, "T-S-T [Re-Mi♭: 90¢ Blue]", 646),
-        ("Sg: Segāh (S on Re)", C_SEG, "N-T-N (141¢ + 211¢ + 141¢)", 846),
+        ("S: Dāng-e Shūr", C_SHU, "N-N-T (139¢ + 155¢ + 204¢ = 498¢)", 46),
+        ("M: Dāng-e Māhūr", C_MAH, "T-T-S (204¢ + 204¢ + 90¢ = 498¢)", 246),
+        ("C: Dāng-e Chahārgāh", C_CHAH, "N-A-S [Reᵏ-Mi: 269¢ Red = 498¢]", 446),
+        ("E: Dāng-e Esfahān", C_ESF, "T-S-T [Re-Mi♭: 90¢ Blue = 498¢]", 646),
+        ("Sg: Segāh (Īst on Miᵏ)", C_SEG, "N-T-N (144¢ + 204¢ + 151¢ = 498¢)", 846),
     ]
     for d_name, col, formula, lx in d_defs:
         o.append(f'<rect x="{lx}" y="120" width="195" height="32" rx="5" fill="{col}" fill-opacity="0.12" stroke="{col}" stroke-width="1.5"/>')
@@ -881,6 +882,7 @@ def page11() -> str:
         (138.6, "Reᵏ", "13/12", True),
         (203.9, "Re", "9/8", True),
         (294.1, "Mi♭", "32/27", True),
+        (342.5, "39/32", "39/32", False),
         (354.5, "Miᵏ", "27/22", True),
         (407.8, "Mi", "81/64", True),
         (498.0, "Fa", "4/3", True),
@@ -905,17 +907,23 @@ def page11() -> str:
     for c_val, name, ratio, is_primary in frets:
         xx = c_to_x(c_val)
         is_do = (c_val == 0.0 or c_val == 1200.0)
-        line_col = "#0F172A" if is_do else ("#CBD5E1" if not is_primary else "#94A3B8")
-        line_w = 2.5 if is_do else (1.5 if is_primary else 0.8)
+        line_col = "#E11D48" if c_val == 342.5 else ("#0F172A" if is_do else ("#CBD5E1" if not is_primary else "#94A3B8"))
+        line_w = 2.5 if is_do else (1.5 if is_primary else 1.0)
         dash = ' stroke-dasharray="3,3"' if not is_primary and not is_do else ''
         o.append(f'<line x1="{xx:.1f}" y1="{grid_y_top}" x2="{xx:.1f}" y2="{grid_y_bot}" stroke="{line_col}" stroke-width="{line_w}"{dash}/>')
         
         # Fret header label at top
-        bg_col = "#0F172A" if is_do else ("#F1F5F9" if is_primary else "#FFFFFF")
-        txt_col = "#F8FAFC" if is_do else "#334155"
-        o.append(f'<rect x="{xx-18:.1f}" y="{grid_y_top-18}" width="36" height="18" rx="3" fill="{bg_col}" stroke="#94A3B8" stroke-width="0.8"/>')
-        o.append(f'<text x="{xx:.1f}" y="{grid_y_top-5}" font-size="9.5" font-weight="700" fill="{txt_col}" text-anchor="middle">{esc(name)}</text>')
-        o.append(f'<text x="{xx:.1f}" y="{grid_y_top-22}" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">{c_val:+.0f}¢</text>')
+        if c_val == 342.5:
+            # Shifted higher callout for 39/32 to avoid collision with 354.5 Zalzal fret
+            o.append(f'<line x1="{xx:.1f}" y1="{grid_y_top-2}" x2="{xx-10:.1f}" y2="{grid_y_top-24}" stroke="#E11D48" stroke-width="1.2"/>')
+            o.append(f'<rect x="{xx-34:.1f}" y="{grid_y_top-40}" width="34" height="16" rx="2.5" fill="#FFF1F2" stroke="#E11D48" stroke-width="0.8"/>')
+            o.append(f'<text x="{xx-17:.1f}" y="{grid_y_top-28}" font-size="8.5" font-weight="800" fill="#E11D48" text-anchor="middle">39/32</text>')
+        else:
+            bg_col = "#0F172A" if is_do else ("#F1F5F9" if is_primary else "#FFFFFF")
+            txt_col = "#F8FAFC" if is_do else "#334155"
+            o.append(f'<rect x="{xx-18:.1f}" y="{grid_y_top-18}" width="36" height="18" rx="3" fill="{bg_col}" stroke="#94A3B8" stroke-width="0.8"/>')
+            o.append(f'<text x="{xx:.1f}" y="{grid_y_top-5}" font-size="9.5" font-weight="700" fill="{txt_col}" text-anchor="middle">{esc(name)}</text>')
+            o.append(f'<text x="{xx:.1f}" y="{grid_y_top-22}" font-size="8.5" class="mono" fill="#64748B" text-anchor="middle">{c_val:+.0f}¢</text>')
 
     # 2. DRAW 7 DASTGAH ROWS IN CONTINUOUS MODAL SEQUENCE
     # Continuous progression: Māhūr [M+M] -> Esfahān [E+C] -> Chahārgāh [C+C] -> Homāyūn [C+S] -> Navā [S+S] -> Shūr [S+S] -> Segāh [S+Sg]
@@ -940,19 +948,19 @@ def page11() -> str:
             (702.0, 1200.0, "S (Bīdād on Sol)", C_SHU, [(702.0, "Sol"), (840.6, "Laᵏ"), (996.1, "Si♭"), (1200.0, "Do\'")]),
         ], 522),
 
-        ("5. Dastgāh-e Navā", "Lower Pedestal [S] on Do + Core Resting Axis [S] on Fa [N-N-T Neutral Dāngs]", [
+        ("5. Dastgāh-e Navā", "Lower Pedestal [S] on Do + Core Resting Axis [T-N-N] on Fa [Sol-Laᵏ-Si♭ = 498¢]", [
             (0.0, 498.0, "S (Pedestal)", C_SHU, [(0.0, "Do"), (138.6, "Reᵏ"), (294.1, "Mi♭"), (498.0, "Fa")]),
-            (498.0, 996.1, "S (Īst on Fa)", C_SHU, [(498.0, "Fa"), (702.0, "Sol"), (834.1, "Laᵏ"), (996.1, "Si♭")]),
+            (498.0, 996.1, "Navā (Īst on Fa)", C_SHU, [(498.0, "Fa"), (702.0, "Sol"), (840.6, "Laᵏ"), (996.1, "Si♭")]),
         ], 632),
 
-        ("6. Dastgāh-e Shūr", "Symmetrical double-neutral [S + S] separated by whole tone [N-N-T / 139¢ + 155¢ + 204¢]", [
+        ("6. Dastgāh-e Shūr", "Symmetrical double-neutral [S + S] separated by whole tone [N-N-T / 139¢ + 156¢ + 204¢ = 498¢]", [
             (0.0, 498.0, "S 1 (Do)", C_SHU, [(0.0, "Do"), (138.6, "Reᵏ"), (294.1, "Mi♭"), (498.0, "Fa")]),
-            (702.0, 1200.0, "S 2 (Sol)", C_SHU, [(702.0, "Sol"), (834.1, "Laᵏ"), (996.1, "Si♭"), (1200.0, "Do\'")]),
+            (702.0, 1200.0, "S 2 (Sol)", C_SHU, [(702.0, "Sol"), (840.6, "Laᵏ"), (996.1, "Si♭"), (1200.0, "Do\'")]),
         ], 742),
 
-        ("7. Dastgāh-e Segāh", "Tala'i step-shift: S on Re (+204¢) creates derived Sg resting on Miᵏ (+355¢)", [
-            (203.9, 702.0, "S (Rooted on Re)", C_SHU, [(203.9, "Re"), (354.5, "Miᵏ"), (498.0, "Fa"), (702.0, "Sol")]),
-            (354.5, 852.5, "Sg (Īst on Miᵏ)", C_SEG, [(354.5, "Miᵏ"), (498.0, "Fa"), (702.0, "Sol"), (848.0, "Laᵏ")]),
+        ("7. Dastgāh-e Segāh", "Tala'i step-shift: Shūr on Re (+204¢) retuned to Zalzal Miᵏ (+355¢); both dāngs span pure 4th (498¢)", [
+            (203.9, 702.0, "Shūr-on-Re (Retuned)", C_SHU, [(203.9, "Re"), (354.5, "Miᵏ"), (498.0, "Fa"), (702.0, "Sol")]),
+            (354.5, 852.6, "Sg (Īst on Miᵏ)", C_SEG, [(354.5, "Miᵏ"), (498.0, "Fa"), (702.0, "Sol"), (852.6, "Laᵏ")]),
         ], 852),
     ]
 
@@ -1564,8 +1572,9 @@ def page18() -> str:
     o.append('<text x="825" y="785" font-size="13" fill="#64748B">Distance = 352.2¢ - 141.5¢ = 210.7¢ (A pure 9/8 whole tone above Fa!).</text>')
     o.append('<circle cx="810" cy="830" r="5" fill="#DC2626"/>')
     o.append('<text x="825" y="835" font-size="13" font-weight="700" fill="#0F172A">Step 3: Mūyeh (Sol) → Hesār (La Koron):</text>')
-    o.append('<text x="825" y="855" font-size="13" fill="#64748B">Distance = 493.5¢ - 352.2¢ = 141.3¢ (Another exact 13/12 neutral step closing the 4th!).</text>')
-    o.append('<text x="790" y="895" font-size="12" fill="#047857" font-weight="700">Dāng 3 anatomy: Neutral 2nd (141¢) + Major 2nd (211¢) + Neutral 2nd (141¢) = 493¢ (Pure 4th).</text>')
+    o.append('<text x="825" y="855" font-size="13" fill="#64748B">Distance = 493.5¢ - 352.2¢ = 141.3¢ (Empirical neutral step closing toward the 4th).</text>')
+    o.append('<text x="790" y="890" font-size="12" fill="#047857" font-weight="700">Theoretical pure 4th: 88/81 (143.5¢) + 9/8 (203.9¢) + 12/11 (150.6¢) = 498.0¢ (4/3).</text>')
+    o.append('<text x="790" y="908" font-size="11.5" fill="#475569">Measured performance: 141.5¢ + 210.7¢ + 141.3¢ = 493.5¢ (within 4.5¢ of pure fourth).</text>')
     o.append("</svg>")
     return "\n".join(o)
 
@@ -1921,6 +1930,14 @@ def main():
     ana_out = ROOT / "analysis" / "persian_music_theory_primer.pdf"
     subprocess.run(["cp", str(out), str(ana_out)], check=True)
     print("Copied to", ana_out)
+
+    # Render standalone high-res image and SVG of Page 11 (Dastgah Dangs Fretboard Map)
+    p11_png = ROOT / "figures" / "dastgah_dangs_fretboard_map.png"
+    p11_svg_out = ROOT / "figures" / "dastgah_dangs_fretboard_map.svg"
+    p11_svg = SCRATCH / "primer_11.svg"
+    subprocess.run(["cp", str(p11_svg), str(p11_svg_out)], check=True)
+    subprocess.run(["/opt/homebrew/bin/rsvg-convert", "-f", "png", "-w", "2800", "-o", str(p11_png), str(p11_svg)], check=True)
+    print("Rendered high-res fretboard map to", p11_png, "and copied SVG to", p11_svg_out)
     
     pts, gaps = urmawi_17()
     print("17-note gaps:", sorted({round(g, 1) for g in gaps}), "n=", len(pts))

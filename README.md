@@ -4,11 +4,19 @@ Empirical pitch and scale-degree latch analysis of Persian Classical Music (*Rad
 
 ---
 
-## Dariush Tala'i's Theory of Dāngs & Setār Neck Architecture
+## Dariush Talā'ī's Theory of Dāngs: 3-Layer Decoupled Architecture
 
-![Dariush Tala'i Theory of Dangs and Setar Neck Architecture](figures/talai_dangs_architecture.png)
+![Dariush Tala'i Theory of Dangs and Setar Neck Architecture](figures/talai_dangs_architecture.svg)
 
-*The four elemental tetrachord building blocks (Dāngs) of the Radif system according to Dariush Tala'i, plotted with pure mathematical ratios, dual historical tuning shifts, and their physical superimposition on Setār String 1 ($Do$). The phantom $Mi^k$ fret ($+342.5¢$, $117/96$ or Zalzal's $27/22$) appears only when a dāng is rooted on $Re$ ($9/8 \times 13/12$).*
+*The four elemental tetrachord building blocks (Dāngs) of the Radif system according to Dariush Talā'ī, decoupling Layer 1 (Source ~20¢ grid), Layer 2 (Pure rational ratios spanning exact 498.05¢ pure fourth), and Layer 3 (Empirical master consensus). On Setār String 1 ($Do$), the physical neck fret at Zalzal's $27/22$ ($+354.55¢$, measured $+352.7¢$) is strictly separated from the literal Shūr-on-Re transposition at $39/32$ ($+342.48¢$), resolving the phantom fret conundrum ($\Delta = 12.06¢$).*
+
+---
+
+## Modal Anatomy: Dāng Architecture Across the Dastgāhs
+
+![Modal Anatomy: Dāng Architecture Across the Dastgāhs](figures/dastgah_dangs_fretboard_map.svg)
+
+*Full modal anatomy of the 7 Dastgāhs in continuous modal sequence mapped onto the Setār fretboard grid (String 1, $Do$ centered). Every Dāng spans an exact pure fourth ($4/3 = 498.05¢$) with 4-tier color-coded interval distance markers: Augmented 2nd ($>240¢$, Deep Red), Whole Tone ($185\text{–}225¢$, Forest Green), Neutral 2nd ($120\text{–}175¢$, Amber), and Semitone ($<115¢$, Deep Blue).*
 
 ---
 

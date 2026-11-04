@@ -614,7 +614,89 @@ def main():
         json.dump(audit_rows, f, indent=2)
     print(f"\nSaved updated v6 audit results to {OUT / 're_koron_modal_peak_audit.json'}")
 
+    export_darvish_per_track_audit()
     generate_modal_reference_ledger(audit_rows)
+
+def export_darvish_per_track_audit():
+    """Export per-track metrics for Darvish Khan (10 tracks) folded modulo 1200 directly to JSON."""
+    p = OUT / "strikes_historical_epoch1_qajar_darvish_khan.npz"
+    if not p.exists():
+        return
+    track_filter = ["abu'ata", "abuata", "hejaz", "kord", "dashti"]
+    d = read_npz(p)
+    fs = d.get('f', d.get('f0', []))
+    confs = d.get('conf', [60.0]*len(fs))
+    wobs = d.get('wobble_plat_c', [5.0]*len(fs))
+    tracks = get_track_strings(p)
+    norm_filters = [normalize_track_name(tf) for tf in track_filter]
+
+    track_groups = defaultdict(list)
+    track_display_names = {}
+    for i, (f, c, w) in enumerate(zip(fs, confs, wobs)):
+        if c >= 40.0 and w <= 22.0 and 100 < f < 950:
+            tr = tracks[i] if i < len(tracks) else ''
+            ntr = normalize_track_name(tr)
+            if any(tf in ntr for tf in norm_filters):
+                track_groups[ntr].append(f)
+                if ntr not in track_display_names:
+                    track_display_names[ntr] = tr
+
+    tracks_out = []
+    for ntr in sorted(track_groups.keys()):
+        tr_fs = track_groups[ntr]
+        orig_name = track_display_names[ntr]
+        bins = defaultdict(int)
+        for f in tr_fs:
+            c = 1200.0 * math.log2(f / 220.0)
+            bins[round(c / 10.0) * 10.0] += 1
+        top_b = sorted(bins.items(), key=lambda x: x[1], reverse=True)[0][0]
+        base_hz = 220.0 * (2.0 ** (top_b / 1200.0))
+        same_oct = [f for f in tr_fs if 0.8 * base_hz < f < 1.25 * base_hz]
+        c_same = [1200.0 * math.log2(f / base_hz) for f in same_oct]
+        t_same = [c for c in c_same if -45.0 <= c <= 45.0]
+        tr_tonic = base_hz * (2.0 ** (statistics.median(t_same) / 1200.0)) if t_same else base_hz
+        
+        # Octave folded cents
+        c_all = [((1200.0 * math.log2(f / tr_tonic) + 600.0) % 1200.0) - 600.0 for f in tr_fs]
+        c_80_220 = [c for c in c_all if 80.0 <= c <= 220.0]
+        c_win = [c for c in c_all if 120.0 <= c <= 175.0]
+        
+        pk, dens, is_usable, reason = kde_peak_location(c_80_220)
+        ci_lo, ci_hi, prob = (None, None, 0.0)
+        ci_w = None
+        if is_usable:
+            ci_lo, ci_hi, prob = bootstrap_peak_ci(c_80_220, n_boot=500)
+            if ci_lo is not None and ci_hi is not None:
+                ci_w = round(ci_hi - ci_lo, 1)
+                
+        is_stable = False
+        if is_usable and ci_w is not None and ci_w <= 15.0:
+            is_stable = True
+            diag = "Usable modal peak (Stable)"
+        elif is_usable:
+            diag = f"Peak Unstable (CI width {ci_w:.1f}¢ > 15¢ gate)" if ci_w is not None else "Peak Unstable (Missing CI)"
+        else:
+            diag = reason
+            
+        entry = {
+            "track": orig_name,
+            "normalized_track": ntr,
+            "tonic_hz": round(tr_tonic, 1),
+            "n_tonic": len(t_same),
+            "n_80_220": len(c_80_220),
+            "n_window_120_175": len(c_win),
+            "peak_cents": round(pk, 1) if pk is not None else None,
+            "ci_95": [ci_lo, ci_hi] if ci_lo is not None else None,
+            "ci_width": ci_w,
+            "classification": diag,
+            "is_usable": is_stable,
+            "presence_prob": prob
+        }
+        tracks_out.append(entry)
+        
+    with open(OUT / "darvish_per_track_audit.json", "w", encoding="utf-8") as f:
+        json.dump(tracks_out, f, indent=2, ensure_ascii=False)
+    print(f"Saved Darvish per-track audit to {OUT / 'darvish_per_track_audit.json'}")
 
 def generate_modal_reference_ledger(audit_rows):
     """Dynamically write modal_reference_annotations.json with exact 12-TET math and audit outputs."""
@@ -641,7 +723,7 @@ def generate_modal_reference_ledger(audit_rows):
             "performer": "Abolhasan Saba (Violin)",
             "file": "strikes_shur_saba_violin.npz",
             "dastgah_gusheh": "Dastgāh-e Shūr (Darāmad)",
-            "transposed_radif_nominal": "Re (in Saba violin radif vol. 1)",
+            "transposed_radif_nominal": "Re [Pedagogical score convention, unverified edition] (in Saba violin radif vol. 1)",
             "nominal_explanation": "Persian violin radif fingering on G string, sounding at Bb3; melody primarily played in octave register (Bb4 @ 471.5 Hz)",
             "target_degree": "Nominal: Mi-koron; Sounding: C5 -48.8¢ (~508.7 Hz; +129.0¢ above Bb4)",
             "alternative_reference_tested": "Octave register tonic (471.5 Hz) yields identical relative interval (+129.0¢)"
@@ -651,7 +733,7 @@ def generate_modal_reference_ledger(audit_rows):
             "performer": "Ali-Akbar Shahnazi",
             "file": "strikes_shur_shahnazi_tar.npz",
             "dastgah_gusheh": "Dastgāh-e Shūr (Darāmad)",
-            "transposed_radif_nominal": "Do (in Shahnazi radif transcription)",
+            "transposed_radif_nominal": "Do [Pedagogical score convention, unverified edition] (in Shahnazi radif transcription)",
             "nominal_explanation": "Lower register tonic on white/bass strings, sounding at A3 -51.3¢ (213.6 Hz)",
             "target_degree": "Nominal: Re-koron; Sounding: Bb3 -25.2¢ (~229.9 Hz; +128.0¢)",
             "alternative_reference_tested": "Upper octave (all-octaves folded) yields alternative peak at 143.5¢"
@@ -662,9 +744,9 @@ def generate_modal_reference_ledger(audit_rows):
             "file": "strikes_Safvat_Setar_Part1_5zSljfC5jdY.npz",
             "dastgah_gusheh": "Dastgāh-e Shūr (Darāmad Part 1)",
             "transposed_radif_nominal": "Do (sounding at Eb4)",
-            "nominal_explanation": "Setār open white string (sim-e sefid) modal anchor @ 306.1 Hz (Eb4 -28.5¢); bass string @ 152.8 Hz (1202¢ below white string)",
-            "target_degree": "Nominal: Re-koron; Sounding: E4 -71.8¢ (Fb4), ~329.5 Hz (+127.5¢)",
-            "alternative_reference_tested": "Multi-file: Part 1 accounts for 92.6% of performer window strikes"
+            "nominal_explanation": "Setār open white string (sim-e sefid) modal anchor @ 306.06 Hz (Eb4 -28.5¢); bass string @ 152.8 Hz (1202.6¢ below white string; exact mathematical octave is 153.03 Hz)",
+            "target_degree": "Nominal: Re-koron; Sounding: E4 -0.7¢ (~329.5 Hz; +127.5¢ above 306.1 Hz)",
+            "alternative_reference_tested": "Multi-file: Part 1 accounts for 92.6% of performer window strikes (174/188); constituent files have distinct keys"
         },
         {
             "id": "ks_ney",
@@ -681,7 +763,7 @@ def generate_modal_reference_ledger(audit_rows):
             "performer": "Mansour Nariman",
             "file": "strikes_shur_nariman_oud.npz",
             "dastgah_gusheh": "Dastgāh-e Shūr (Darāmad)",
-            "transposed_radif_nominal": "Sol",
+            "transposed_radif_nominal": "Sol [Pedagogical score convention, unverified edition]",
             "nominal_explanation": "Oud radif notation in Shūr-e Sol; open G course @ 196.1 Hz (G3 +0.5¢)",
             "target_degree": "Nominal: La-koron; Sounding: A3 -39.3¢ (~212.8 Hz; +138.0¢)",
             "alternative_reference_tested": "Single recording event density (N_window=825)"
@@ -701,7 +783,7 @@ def generate_modal_reference_ledger(audit_rows):
             "performer": "Hossein Alizadeh",
             "file": "strikes_shur_alizadeh_tar.npz",
             "dastgah_gusheh": "Dastgāh-e Shūr (Darāmad)",
-            "transposed_radif_nominal": "Fa-sharp (in Saba/Vaziri score) / Sol (in Mirzā Abdollāh)",
+            "transposed_radif_nominal": "Fa-sharp [Pedagogical score convention, unverified page citation] / Sol [Mirzā Abdollāh radif convention, unverified edition]",
             "nominal_explanation": "Modern tar tuning with high tension; open bass/tonic drone @ 372.9 Hz (F#4 +13.6¢)",
             "target_degree": "Nominal: Sol-koron (in Fa-sharp key); Sounding: G4 +64.8¢ (or Ab4 -35.2¢ / G-sori), ~407.5 Hz (+153.5¢)",
             "alternative_reference_tested": "Single recording (bootstrap CI width 1.5¢)"
@@ -721,10 +803,10 @@ def generate_modal_reference_ledger(audit_rows):
             "performer": "Darvish Khan (Per-Track Normalized)",
             "file": "strikes_historical_epoch1_qajar_darvish_khan.npz",
             "dastgah_gusheh": "Exploratory Shūr-family anthology (10 tracks)",
-            "transposed_radif_nominal": "Varies by track (165.3–436.2 Hz)",
+            "transposed_radif_nominal": "Varies by track (164.5–437.4 Hz)",
             "nominal_explanation": "Per-track auto-detected tonics (median 324.2 Hz; non-Darāmad: Kord-e Bayāt, Hejāz, etc.)",
             "target_degree": "Second degree of individual gūshehs/tasnīfs",
-            "alternative_reference_tested": "Per-track normalized: peak = 127.5¢ [123.5–138.5¢], N_win=92"
+            "alternative_reference_tested": "Per-track normalized: peak = 127.5¢ [124.0–168.5¢], N_win=97, N_ton=830 (All tracks unstable)"
         },
         {
             "id": "dk_tar_legacy",
@@ -751,7 +833,7 @@ def generate_modal_reference_ledger(audit_rows):
             "performer": "Nour-Ali Borumand",
             "file": "strikes_shur_borumand_tar_setar.npz",
             "dastgah_gusheh": "Dastgāh-e Shūr (Darāmad)",
-            "transposed_radif_nominal": "Do",
+            "transposed_radif_nominal": "Do [Pedagogical score convention, unverified edition]",
             "nominal_explanation": "Nominal 131.0 Hz seed set in exploratory audit",
             "target_degree": "Re-koron",
             "alternative_reference_tested": "Unobserved tonic in recording (zero events within ±45¢)"
@@ -775,12 +857,19 @@ def generate_modal_reference_ledger(audit_rows):
         if m["id"] == "sf_set":
             refined_hz = 306.1
             seed_hz = 306.1
+            observed_n_ton = 217
         elif m["id"] == "dk_tar":
-            refined_hz = 324.2
+            refined_hz = None
             seed_hz = None
+            observed_n_ton = r["n_tonic"] if r else 0
+        else:
+            observed_n_ton = r["n_tonic"] if r else 0
             
         seed_sounding = get_12tet_note(seed_hz) if seed_hz else "—"
-        refined_sounding = get_12tet_note(refined_hz) if refined_hz else "—"
+        if m["id"] == "dk_tar":
+            refined_sounding = "— (Per-track normalized, 10 tracks)"
+        else:
+            refined_sounding = get_12tet_note(refined_hz) if refined_hz else "—"
             
         # Hypothesis status based on audit diagnostic
         if not r:
@@ -815,7 +904,7 @@ def generate_modal_reference_ledger(audit_rows):
             "seed_pitch_12tet": seed_sounding,
             "refined_tonic_hz": round(refined_hz, 1) if refined_hz else None,
             "refined_pitch_12tet": refined_sounding,
-            "observed_n_ton": r["n_tonic"] if r else 0,
+            "observed_n_ton": observed_n_ton,
             "target_degree": m["target_degree"],
             "alternative_reference_tested": m["alternative_reference_tested"],
             "reference_hypothesis_status": status,
