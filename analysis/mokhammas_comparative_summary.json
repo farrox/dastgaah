@@ -1,0 +1,166 @@
+{
+  "Sharifi (Solo Tar - Fretted)": {
+    "total_strikes": 684,
+    "degrees": {
+      "neutral_2nd (Re_k)": {
+        "median": null,
+        "count": 0
+      },
+      "minor_3rd": {
+        "median": 299.5,
+        "count": 32
+      },
+      "zalzal_neutral_3rd (Mi_k)": {
+        "median": null,
+        "count": 2
+      },
+      "major_3rd (Mi)": {
+        "median": 411.4,
+        "count": 13
+      },
+      "fourth": {
+        "median": 497.0,
+        "count": 11
+      },
+      "motaghayyer_5th (Sol_k)": {
+        "median": null,
+        "count": 1
+      },
+      "pure_fifth": {
+        "median": 698.0,
+        "count": 105
+      },
+      "neutral_6th (La_k)": {
+        "median": 842.9,
+        "count": 17
+      },
+      "minor_7th": {
+        "median": 1000.2,
+        "count": 11
+      }
+    }
+  },
+  "Mardane (Kamanche - Fretless)": {
+    "total_strikes": 983,
+    "degrees": {
+      "neutral_2nd (Re_k)": {
+        "median": null,
+        "count": 7
+      },
+      "minor_3rd": {
+        "median": null,
+        "count": 5
+      },
+      "zalzal_neutral_3rd (Mi_k)": {
+        "median": 348.0,
+        "count": 69
+      },
+      "major_3rd (Mi)": {
+        "median": 405.2,
+        "count": 71
+      },
+      "fourth": {
+        "median": 495.6,
+        "count": 52
+      },
+      "motaghayyer_5th (Sol_k)": {
+        "median": null,
+        "count": 6
+      },
+      "pure_fifth": {
+        "median": 704.6,
+        "count": 128
+      },
+      "neutral_6th (La_k)": {
+        "median": null,
+        "count": 1
+      },
+      "minor_7th": {
+        "median": null,
+        "count": 1
+      }
+    }
+  },
+  "Multi-Modal Suite (Track 11: Kereshme-Mokhammas)": {
+    "total_strikes": 672,
+    "degrees": {
+      "neutral_2nd (Re_k)": {
+        "median": 162.4,
+        "count": 20
+      },
+      "minor_3rd": {
+        "median": 289.6,
+        "count": 35
+      },
+      "zalzal_neutral_3rd (Mi_k)": {
+        "median": 345.9,
+        "count": 25
+      },
+      "major_3rd (Mi)": {
+        "median": 387.6,
+        "count": 8
+      },
+      "fourth": {
+        "median": 491.6,
+        "count": 19
+      },
+      "motaghayyer_5th (Sol_k)": {
+        "median": null,
+        "count": 7
+      },
+      "pure_fifth": {
+        "median": 702.5,
+        "count": 73
+      },
+      "neutral_6th (La_k)": {
+        "median": 837.8,
+        "count": 52
+      },
+      "minor_7th": {
+        "median": 1005.3,
+        "count": 16
+      }
+    }
+  },
+  "All Mokhammas (Complete Album)": {
+    "total_strikes": 4233,
+    "degrees": {
+      "neutral_2nd (Re_k)": {
+        "median": 136.9,
+        "count": 109
+      },
+      "minor_3rd": {
+        "median": 294.4,
+        "count": 44
+      },
+      "zalzal_neutral_3rd (Mi_k)": {
+        "median": 350.9,
+        "count": 110
+      },
+      "major_3rd (Mi)": {
+        "median": 400.4,
+        "count": 151
+      },
+      "fourth": {
+        "median": 498.4,
+        "count": 1027
+      },
+      "motaghayyer_5th (Sol_k)": {
+        "median": 663.9,
+        "count": 34
+      },
+      "pure_fifth": {
+        "median": 702.3,
+        "count": 436
+      },
+      "neutral_6th (La_k)": {
+        "median": 845.5,
+        "count": 187
+      },
+      "minor_7th": {
+        "median": 996.0,
+        "count": 185
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "title": "Peak changes under an additional drift gate in four instrumental recordings and one vocal control",
+  "filter_condition": "|drift_c_per_s| <= 15.0 c/s",
+  "base_filter": "conf >= 40.0, wobble (1.4826 * MAD) <= 22.0 c",
+  "candidate_range": "80.0\u2013220.0\u00a2 relative to refined empirical modal tonic (tonic_hz)",
+  "description": "Sensitivity test evaluating the shift of second-degree candidate modal peaks when applying an aggressive drift gate (|drift| <= 15.0 c/s) on matched input pools, reporting post-filter bootstrap 95% confidence intervals.",
+  "tested_sources": [
+    {
+      "performer": "Mahmoud Karimi (Vocal)",
+      "instrument": "Vocal (Unconstrained)",
+      "tonic_hz": 235.5,
+      "unfiltered_peak_cents": 143.5,
+      "unfiltered_ci_95": [
+        137.5,
+        153.5
+      ],
+      "unfiltered_ci_width": 16.0,
+      "filtered_peak_cents": 149.5,
+      "filtered_ci_95": [
+        122.5,
+        158.5
+      ],
+      "filtered_ci_width": 36.0,
+      "shift_cents": 6.0,
+      "n_before": 384,
+      "n_after": 25,
+      "pass_rate_pct": 6.5
+    },
+    {
+      "performer": "Ali-Akbar Shahnazi (Tar)",
+      "instrument": "Tar (Fretted)",
+      "tonic_hz": 213.6,
+      "unfiltered_peak_cents": 128.0,
+      "unfiltered_ci_95": [
+        125.5,
+        130.5
+      ],
+      "unfiltered_ci_width": 5.0,
+      "filtered_peak_cents": 129.0,
+      "filtered_ci_95": [
+        125.0,
+        152.5
+      ],
+      "filtered_ci_width": 27.5,
+      "shift_cents": 1.0,
+      "n_before": 197,
+      "n_after": 43,
+      "pass_rate_pct": 21.8
+    },
+    {
+      "performer": "Abolhasan Saba (Violin)",
+      "instrument": "Violin (Fretless)",
+      "tonic_hz": 235.8,
+      "unfiltered_peak_cents": 129.0,
+      "unfiltered_ci_95": [
+        126.5,
+        131.0
+      ],
+      "unfiltered_ci_width": 4.5,
+      "filtered_peak_cents": 130.5,
+      "filtered_ci_95": [
+        127.0,
+        132.5
+      ],
+      "filtered_ci_width": 5.5,
+      "shift_cents": 1.5,
+      "n_before": 91,
+      "n_after": 15,
+      "pass_rate_pct": 16.5
+    },
+    {
+      "performer": "Hossein Alizadeh (Tar)",
+      "instrument": "Tar (Fretted)",
+      "tonic_hz": 372.9,
+      "unfiltered_peak_cents": 153.5,
+      "unfiltered_ci_95": [
+        153.0,
+        154.5
+      ],
+      "unfiltered_ci_width": 1.5,
+      "filtered_peak_cents": 153.0,
+      "filtered_ci_95": [
+        132.5,
+        154.0
+      ],
+      "filtered_ci_width": 21.5,
+      "shift_cents": -0.5,
+      "n_before": 325,
+      "n_after": 87,
+      "pass_rate_pct": 26.8
+    },
+    {
+      "performer": "Yousef Foroutan (Setar)",
+      "instrument": "Setar (Fretted)",
+      "tonic_hz": 314.6,
+      "unfiltered_peak_cents": 150.5,
+      "unfiltered_ci_95": [
+        148.5,
+        152.5
+      ],
+      "unfiltered_ci_width": 4.0,
+      "filtered_peak_cents": 150.5,
+      "filtered_ci_95": [
+        139.0,
+        153.0
+      ],
+      "filtered_ci_width": 14.0,
+      "shift_cents": 0.0,
+      "n_before": 142,
+      "n_after": 33,
+      "pass_rate_pct": 23.2
+    }
+  ]
+}

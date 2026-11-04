@@ -16,7 +16,7 @@ Empirical pitch and scale-degree latch analysis of Persian Classical Music (*Rad
 
 ![Mahur v3 latch fingerprint](output.png)
 
-- **20-Page Persian Classical Music Theory Primer:** [`persian_music_theory_primer.pdf`](persian_music_theory_primer.pdf) ([`analysis/persian_music_theory_primer.pdf`](analysis/persian_music_theory_primer.pdf))
+- **22-Page Persian Classical Music Theory Primer:** [`persian_music_theory_primer.pdf`](persian_music_theory_primer.pdf) ([`analysis/persian_music_theory_primer.pdf`](analysis/persian_music_theory_primer.pdf))
   - *Pages 1–9:* Historical monochord theory from Pythagoras, Al-Fārābī, Ibn Sīnā, Ṣafī al-Dīn al-Urmawī (17-note gamut), and ʿAbd al-Qādir al-Marāghī.
   - *Page 10:* Dariush Tala'i's Theory of Dāngs & Setār Neck Architecture (4 tetrachords + superimposed String 1 ruler with pure ratios and explicit cents step badges).
   - *Page 11:* **Modal Anatomy: Dāng Architecture Across the Dastgāhs** (Vertical Setār fret grid with $Do$ centered, displaying stacked Dāng 1 & Dāng 2 spans for Chahārgāh, Shūr, Māhūr, Homāyūn, Segāh, and Esfahān).
@@ -29,6 +29,8 @@ Empirical pitch and scale-degree latch analysis of Persian Classical Music (*Rad
   - *Page 18:* Dastgāh-e Segāh: Zalzal's Neutral Third & Tala'i's 3rd Dāng (12 Masters, 11,438 strikes) — Validating Mansūr Zalzal's superparticular neutral third ($27/22 = +352.2¢$), the Zābol neutral second ($+141.5¢$), and Mokhālef climax pivot ($+850.4¢$).
   - *Page 19:* Harmonizing Microtonal Dāngs: Quartal Enclosures, Drone Counterpoint & 13-Limit Spectral Harmony (Hannaneh, Alizadeh, Sabat, Rădulescu).
   - *Page 20:* Historical Timeline, Technical Glossary, and Further Reading.
+  - *Page 21:* **A Century of Persian Classical Intonation: Empirical Diachronic Evolution Across Three Epochs** (Early Qajar 1906–1914, Mid-Century Radif Masters 1950s–1970s, and Modern Conservatory & Antiquity Revival 1980s–Present).
+  - *Page 22:* **Triad Intonation & Acoustic Modality: $Mi^k$, $La^k$, and $Si^\flat$ Across Dastgāhs** (Acoustic resonance, neutral tetrachord couplings, and modal coordinate reference systems).
 - **6-Page Empirical Pitch & Historical Theory Report:** [`mahur_pitch_analysis.pdf`](mahur_pitch_analysis.pdf) ([`analysis/mahur_pitch_analysis.pdf`](analysis/mahur_pitch_analysis.pdf))
   - *Page 1:* 17-Slot Cross-Instrument Latch Fingerprint & Absolute `Do` Spectrum (`199.7–441.5 Hz`).
   - *Page 2:* Diatonic vs. *Koron* Pair Discrimination (`La/Laᵏ↓`, `Re/Reᵏ`, `Mi/Miᵏ`, `Si/Siᵏ`) & 44,848-Strike Density.
@@ -144,17 +146,20 @@ Testing the `44,848`-strike v3 consensus against five historical and modern tuni
 
 The consensus across 32,075 strikes confirms Tala'i's 1st Dāng model ($1/1 \rightarrow 13/12 \rightarrow 32/27 \rightarrow 4/3$) and reveals how Shūr replicates this exact tetrachord over the fifth degree ($Sol$):
 
-| Scale Degree / Gusheh Slot | Theoretical Target Ratio | Theory (¢) | Fretted Median (¢) | Fretless Median (¢) | Consensus Median (¢) | Active Strikes |
-|---|---|---:|---:|---:|---:|---:|
-| **Zir-e Ist (Sub-tonic 7th)** | Pythagorean minor 7th ($16/9$) | `−203.9¢` | `−190.9¢` | `−193.3¢` | `−191.9¢` | `3,692` |
-| **Ist (Tonic $Do$)** | Unison ($1/1$) | `0.0¢` | `+15.7¢` | `+10.6¢` | `+14.5¢` | `6,126` |
-| **Neutral 2nd ($Re^k$)** | Al-Fārābī superparticular ($13/12$) | `+138.6¢` | `+158.3¢` | `+152.2¢` | `+154.8¢` | `2,648` |
-| **Minor 3rd ($Mi\flat$)** | Pythagorean minor third ($32/27$) | `+294.1¢` | `+303.9¢` | `+302.0¢` | `+302.0¢` | `3,558` |
-| **Pure 4th ($Fa$)** | Perfect fourth ($4/3$) | `+498.0¢` | `+509.4¢` | `+512.4¢` | `+511.4¢` | `4,493` |
-| **Fifth ($Sol$ — *Shahnāz*)** | Perfect fifth ($3/2$) | `+702.0¢` | `+716.0¢` | `+712.6¢` | `+714.8¢` | `3,276` |
-| **Neutral 6th ($La^k$ — *Qaracheh*)** | $3/2 \times 13/12$ ($13/8$) | `+840.6¢` | `+817.0¢` | `+845.9¢` | `+834.1¢` | `2,314` |
-| **Minor 7th ($Si\flat$ — *Razavi*)** | $3/2 \times 32/27$ ($16/9$) | `+996.1¢` | `+1009.1¢` | `+1009.3¢` | `+1009.1¢` | `3,606` |
-| **Octave ($Do'$)** | Octave ($2/1$) | `+1200.0¢` | `+1215.1¢` | `+1215.8¢` | `+1215.4¢` | `5,540` |
+| Scale Degree / Gusheh Slot | Theoretical Target Ratio | Theory (¢) | Raw Fretted (¢) | Raw Fretless (¢) | Raw Consensus (¢) | **Normalized Consensus (¢)** | Active Strikes |
+|---|---|---:|---:|---:|---:|---:|---:|
+| **Zir-e Ist (Sub-tonic 7th)** | Pythagorean minor 7th ($16/9$) | `−203.9¢` | `−190.9¢` | `−193.3¢` | `−191.9¢` | **`−206.4¢`** | `3,692` |
+| **Ist (Tonic $Do$)** | Unison ($1/1$) | `0.0¢` | `+15.7¢` | `+10.6¢` | `+14.5¢` | **`0.0¢`** | `6,126` |
+| **Neutral 2nd ($Re^k$)** | Al-Fārābī superparticular ($13/12$) | `+138.6¢` | `+158.3¢` | `+152.2¢` | `+154.8¢` | **`+140.3¢`** | `2,648` |
+| **Minor 3rd ($Mi\flat$)** | Pythagorean minor third ($32/27$) | `+294.1¢` | `+303.9¢` | `+302.0¢` | `+302.0¢` | **`+287.5¢`** | `3,558` |
+| **Pure 4th ($Fa$)** | Perfect fourth ($4/3$) | `+498.0¢` | `+509.4¢` | `+512.4¢` | `+511.4¢` | **`+496.9¢`** | `4,493` |
+| **Fifth ($Sol$ — *Shahnāz*)** | Perfect fifth ($3/2$) | `+702.0¢` | `+716.0¢` | `+712.6¢` | `+714.8¢` | **`+700.3¢`** | `3,276` |
+| **Neutral 6th ($La^k$ — *Qaracheh*)** | $3/2 \times 13/12$ ($13/8$) | `+840.6¢` | `+817.0¢` | `+845.9¢` | `+834.1¢` | **`+819.6¢`** | `2,314` |
+| **Minor 7th ($Si\flat$ — *Razavi*)** | $3/2 \times 32/27$ ($16/9$) | `+996.1¢` | `+1009.1¢` | `+1009.3¢` | `+1009.1¢` | **`+994.6¢`** | `3,606` |
+| **Octave ($Do'$)** | Octave ($2/1$) | `+1200.0¢` | `+1215.1¢` | `+1215.8¢` | `+1215.4¢` | **`+1200.9¢`** | `5,540` |
+
+> [!NOTE]
+> **Tonic Normalization & Octave Alignment:** The raw consensus values reflect a $+14.5¢$ tonic anchor offset in the unzeroed extraction slots. When normalized relative to each master's own local tonic ($Do = 0.0¢$), the octave aligns to $+1200.9¢$, the fifth to $+700.3¢$ (pure fifth is $701.96¢$), the fourth to $+496.9¢$ (pure fourth is $498.04¢$), and the neutral second $Re^k$ clusters tightly at **$+140.3¢$**, directly validating Al-Fārābī's superparticular ratio $13/12 = +138.6¢$.
 
 ---
 

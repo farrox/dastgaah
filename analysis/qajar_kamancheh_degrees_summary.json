@@ -1,0 +1,278 @@
+{
+  "Segah (Track 15)": {
+    "tonic_hz": 383.0,
+    "valid_strikes": 48,
+    "degrees": {
+      "neutral_2nd (Re_k)": {
+        "median": 131.2,
+        "count": 6
+      },
+      "minor_3rd": {
+        "median": null,
+        "count": 0
+      },
+      "zalzal_neutral_3rd (Mi_k)": {
+        "median": null,
+        "count": 1
+      },
+      "augmented_2nd": {
+        "median": null,
+        "count": 0
+      },
+      "major_3rd (Mi)": {
+        "median": 393.9,
+        "count": 11
+      },
+      "fourth": {
+        "median": null,
+        "count": 1
+      },
+      "motaghayyer_5th (Sol_k)": {
+        "median": null,
+        "count": 0
+      },
+      "pure_fifth": {
+        "median": null,
+        "count": 0
+      },
+      "neutral_6th (La_k)": {
+        "median": null,
+        "count": 0
+      },
+      "minor_7th": {
+        "median": null,
+        "count": 0
+      }
+    }
+  },
+  "Chahargah (Tracks 4, 16)": {
+    "tonic_hz": 260.1,
+    "valid_strikes": 132,
+    "degrees": {
+      "neutral_2nd (Re_k)": {
+        "median": 137.2,
+        "count": 16
+      },
+      "minor_3rd": {
+        "median": null,
+        "count": 0
+      },
+      "zalzal_neutral_3rd (Mi_k)": {
+        "median": null,
+        "count": 3
+      },
+      "augmented_2nd": {
+        "median": null,
+        "count": 0
+      },
+      "major_3rd (Mi)": {
+        "median": null,
+        "count": 0
+      },
+      "fourth": {
+        "median": null,
+        "count": 0
+      },
+      "motaghayyer_5th (Sol_k)": {
+        "median": 647.7,
+        "count": 7
+      },
+      "pure_fifth": {
+        "median": null,
+        "count": 1
+      },
+      "neutral_6th (La_k)": {
+        "median": null,
+        "count": 2
+      },
+      "minor_7th": {
+        "median": null,
+        "count": 0
+      }
+    }
+  },
+  "Homayun & Bidad (Tracks 5, 6, 7, 8, 9)": {
+    "tonic_hz": 387.5,
+    "valid_strikes": 255,
+    "degrees": {
+      "neutral_2nd (Re_k)": {
+        "median": 155.3,
+        "count": 6
+      },
+      "minor_3rd": {
+        "median": 294.3,
+        "count": 45
+      },
+      "zalzal_neutral_3rd (Mi_k)": {
+        "median": null,
+        "count": 0
+      },
+      "augmented_2nd": {
+        "median": 258.5,
+        "count": 17
+      },
+      "major_3rd (Mi)": {
+        "median": null,
+        "count": 0
+      },
+      "fourth": {
+        "median": null,
+        "count": 2
+      },
+      "motaghayyer_5th (Sol_k)": {
+        "median": null,
+        "count": 2
+      },
+      "pure_fifth": {
+        "median": 704.2,
+        "count": 19
+      },
+      "neutral_6th (La_k)": {
+        "median": 830.6,
+        "count": 15
+      },
+      "minor_7th": {
+        "median": 1018.3,
+        "count": 16
+      }
+    }
+  },
+  "Shur & Hejaz & Kord (Tracks 3, 11, 13, 14)": {
+    "tonic_hz": 427.5,
+    "valid_strikes": 256,
+    "degrees": {
+      "neutral_2nd (Re_k)": {
+        "median": 143.1,
+        "count": 46
+      },
+      "minor_3rd": {
+        "median": 301.7,
+        "count": 6
+      },
+      "zalzal_neutral_3rd (Mi_k)": {
+        "median": 338.1,
+        "count": 12
+      },
+      "augmented_2nd": {
+        "median": 246.8,
+        "count": 12
+      },
+      "major_3rd (Mi)": {
+        "median": null,
+        "count": 3
+      },
+      "fourth": {
+        "median": 506.1,
+        "count": 4
+      },
+      "motaghayyer_5th (Sol_k)": {
+        "median": null,
+        "count": 0
+      },
+      "pure_fifth": {
+        "median": null,
+        "count": 2
+      },
+      "neutral_6th (La_k)": {
+        "median": 849.5,
+        "count": 9
+      },
+      "minor_7th": {
+        "median": 1015.2,
+        "count": 14
+      }
+    }
+  },
+  "Esfahan (Track 2)": {
+    "tonic_hz": 227.8,
+    "valid_strikes": 67,
+    "degrees": {
+      "neutral_2nd (Re_k)": {
+        "median": null,
+        "count": 0
+      },
+      "minor_3rd": {
+        "median": null,
+        "count": 0
+      },
+      "zalzal_neutral_3rd (Mi_k)": {
+        "median": null,
+        "count": 0
+      },
+      "augmented_2nd": {
+        "median": null,
+        "count": 0
+      },
+      "major_3rd (Mi)": {
+        "median": null,
+        "count": 0
+      },
+      "fourth": {
+        "median": null,
+        "count": 0
+      },
+      "motaghayyer_5th (Sol_k)": {
+        "median": null,
+        "count": 0
+      },
+      "pure_fifth": {
+        "median": null,
+        "count": 3
+      },
+      "neutral_6th (La_k)": {
+        "median": null,
+        "count": 0
+      },
+      "minor_7th": {
+        "median": null,
+        "count": 0
+      }
+    }
+  },
+  "Nava (Track 1)": {
+    "tonic_hz": 245.5,
+    "valid_strikes": 46,
+    "degrees": {
+      "neutral_2nd (Re_k)": {
+        "median": null,
+        "count": 0
+      },
+      "minor_3rd": {
+        "median": null,
+        "count": 0
+      },
+      "zalzal_neutral_3rd (Mi_k)": {
+        "median": null,
+        "count": 0
+      },
+      "augmented_2nd": {
+        "median": null,
+        "count": 2
+      },
+      "major_3rd (Mi)": {
+        "median": null,
+        "count": 0
+      },
+      "fourth": {
+        "median": null,
+        "count": 3
+      },
+      "motaghayyer_5th (Sol_k)": {
+        "median": null,
+        "count": 0
+      },
+      "pure_fifth": {
+        "median": null,
+        "count": 2
+      },
+      "neutral_6th (La_k)": {
+        "median": null,
+        "count": 0
+      },
+      "minor_7th": {
+        "median": 999.3,
+        "count": 14
+      }
+    }
+  }
+}

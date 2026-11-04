@@ -1,0 +1,107 @@
+{
+  "dastgah": "Segah",
+  "total_consensus_corpus_strikes": 11438,
+  "total_assigned_to_canonical_degrees": 8094,
+  "total_outside_slot_windows": 3344,
+  "total_assigned_displayed_slots_thresholded": 8075,
+  "percent_assigned_corpus": 70.8,
+  "explanation": "Strike inventory with octave double-counting eliminated and off-octave Ist strikes preserved. Assigned strikes count all strikes falling inside any of the 8 canonical degree windows. Displayed slots count strikes in slots reaching the N >= 8 master threshold.",
+  "sources": [
+    {
+      "source_id": "alizadeh_tar",
+      "performer": "Alizadeh Tar",
+      "total_strikes": 1193,
+      "assigned_to_canonical_degrees": 791,
+      "outside_slot_windows": 402,
+      "percent_assigned": 66.3
+    },
+    {
+      "source_id": "shahnazi_tar",
+      "performer": "Shahnazi Tar",
+      "total_strikes": 290,
+      "assigned_to_canonical_degrees": 287,
+      "outside_slot_windows": 3,
+      "percent_assigned": 99.0
+    },
+    {
+      "source_id": "karimi_vocal",
+      "performer": "Karimi Vocal",
+      "total_strikes": 910,
+      "assigned_to_canonical_degrees": 617,
+      "outside_slot_windows": 293,
+      "percent_assigned": 67.8
+    },
+    {
+      "source_id": "borumand_tar_setar",
+      "performer": "Borumand Tar Setar",
+      "total_strikes": 1121,
+      "assigned_to_canonical_degrees": 1035,
+      "outside_slot_windows": 86,
+      "percent_assigned": 92.3
+    },
+    {
+      "source_id": "kasaei_ney",
+      "performer": "Kasaei Ney",
+      "total_strikes": 1761,
+      "assigned_to_canonical_degrees": 934,
+      "outside_slot_windows": 827,
+      "percent_assigned": 53.0
+    },
+    {
+      "source_id": "nariman_oud",
+      "performer": "Nariman Oud",
+      "total_strikes": 558,
+      "assigned_to_canonical_degrees": 505,
+      "outside_slot_windows": 53,
+      "percent_assigned": 90.5
+    },
+    {
+      "source_id": "lotfi_tar_setar",
+      "performer": "Lotfi Tar Setar",
+      "total_strikes": 894,
+      "assigned_to_canonical_degrees": 587,
+      "outside_slot_windows": 307,
+      "percent_assigned": 65.7
+    },
+    {
+      "source_id": "saba_violin",
+      "performer": "Saba Violin",
+      "total_strikes": 1012,
+      "assigned_to_canonical_degrees": 887,
+      "outside_slot_windows": 125,
+      "percent_assigned": 87.6
+    },
+    {
+      "source_id": "shahnaz_tar",
+      "performer": "Shahnaz Tar",
+      "total_strikes": 1133,
+      "assigned_to_canonical_degrees": 439,
+      "outside_slot_windows": 694,
+      "percent_assigned": 38.7
+    },
+    {
+      "source_id": "payvar_santur",
+      "performer": "Payvar Santur",
+      "total_strikes": 1544,
+      "assigned_to_canonical_degrees": 1155,
+      "outside_slot_windows": 389,
+      "percent_assigned": 74.8
+    },
+    {
+      "source_id": "bigjekhani_tar",
+      "performer": "Bigjekhani Tar",
+      "total_strikes": 912,
+      "assigned_to_canonical_degrees": 778,
+      "outside_slot_windows": 134,
+      "percent_assigned": 85.3
+    },
+    {
+      "source_id": "darvish_khan_tar",
+      "performer": "Darvish Khan Tar",
+      "total_strikes": 110,
+      "assigned_to_canonical_degrees": 79,
+      "outside_slot_windows": 31,
+      "percent_assigned": 71.8
+    }
+  ]
+}

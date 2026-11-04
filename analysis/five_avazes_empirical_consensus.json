@@ -1,0 +1,377 @@
+{
+  "abuata": {
+    "raw_strikes": 3345,
+    "high_conf_strikes": 2964,
+    "median_hz": 314.02968559156653,
+    "peaks": [
+      {
+        "cent": -567.5,
+        "weight": 9
+      },
+      {
+        "cent": -507.5,
+        "weight": 9
+      },
+      {
+        "cent": -462.5,
+        "weight": 79
+      },
+      {
+        "cent": -357.5,
+        "weight": 11
+      },
+      {
+        "cent": -262.5,
+        "weight": 36
+      },
+      {
+        "cent": -207.5,
+        "weight": 11
+      },
+      {
+        "cent": -162.5,
+        "weight": 76
+      },
+      {
+        "cent": -7.5,
+        "weight": 45
+      },
+      {
+        "cent": 17.5,
+        "weight": 11
+      },
+      {
+        "cent": 147.5,
+        "weight": 55
+      },
+      {
+        "cent": 212.5,
+        "weight": 8
+      },
+      {
+        "cent": 247.5,
+        "weight": 19
+      },
+      {
+        "cent": 277.5,
+        "weight": 7
+      },
+      {
+        "cent": 357.5,
+        "weight": 68
+      },
+      {
+        "cent": 502.5,
+        "weight": 7
+      },
+      {
+        "cent": 557.5,
+        "weight": 69
+      }
+    ]
+  },
+  "bayat_tork": {
+    "raw_strikes": 2034,
+    "high_conf_strikes": 1854,
+    "median_hz": 405.00265266604777,
+    "peaks": [
+      {
+        "cent": -527.5,
+        "weight": 18
+      },
+      {
+        "cent": -297.5,
+        "weight": 39
+      },
+      {
+        "cent": -262.5,
+        "weight": 11
+      },
+      {
+        "cent": -162.5,
+        "weight": 15
+      },
+      {
+        "cent": -137.5,
+        "weight": 19
+      },
+      {
+        "cent": -102.5,
+        "weight": 22
+      },
+      {
+        "cent": -12.5,
+        "weight": 47
+      },
+      {
+        "cent": 187.5,
+        "weight": 95
+      },
+      {
+        "cent": 227.5,
+        "weight": 18
+      },
+      {
+        "cent": 397.5,
+        "weight": 26
+      },
+      {
+        "cent": 522.5,
+        "weight": 10
+      },
+      {
+        "cent": 572.5,
+        "weight": 10
+      }
+    ]
+  },
+  "afshari": {
+    "raw_strikes": 4278,
+    "high_conf_strikes": 3617,
+    "median_hz": 394.87252665789714,
+    "peaks": [
+      {
+        "cent": -587.5,
+        "weight": 11
+      },
+      {
+        "cent": -552.5,
+        "weight": 46
+      },
+      {
+        "cent": -482.5,
+        "weight": 63
+      },
+      {
+        "cent": -282.5,
+        "weight": 136
+      },
+      {
+        "cent": -252.5,
+        "weight": 38
+      },
+      {
+        "cent": -212.5,
+        "weight": 13
+      },
+      {
+        "cent": -132.5,
+        "weight": 11
+      },
+      {
+        "cent": -77.5,
+        "weight": 40
+      },
+      {
+        "cent": -47.5,
+        "weight": 71
+      },
+      {
+        "cent": 2.5,
+        "weight": 35
+      },
+      {
+        "cent": 92.5,
+        "weight": 44
+      },
+      {
+        "cent": 137.5,
+        "weight": 34
+      },
+      {
+        "cent": 162.5,
+        "weight": 44
+      },
+      {
+        "cent": 212.5,
+        "weight": 77
+      },
+      {
+        "cent": 242.5,
+        "weight": 70
+      },
+      {
+        "cent": 342.5,
+        "weight": 24
+      },
+      {
+        "cent": 422.5,
+        "weight": 38
+      },
+      {
+        "cent": 447.5,
+        "weight": 121
+      },
+      {
+        "cent": 477.5,
+        "weight": 13
+      },
+      {
+        "cent": 557.5,
+        "weight": 16
+      }
+    ]
+  },
+  "dashti": {
+    "raw_strikes": 6671,
+    "high_conf_strikes": 5855,
+    "median_hz": 291.4172833948576,
+    "peaks": [
+      {
+        "cent": -517.5,
+        "weight": 44
+      },
+      {
+        "cent": -482.5,
+        "weight": 103
+      },
+      {
+        "cent": -427.5,
+        "weight": 28
+      },
+      {
+        "cent": -392.5,
+        "weight": 58
+      },
+      {
+        "cent": -322.5,
+        "weight": 15
+      },
+      {
+        "cent": -277.5,
+        "weight": 43
+      },
+      {
+        "cent": -227.5,
+        "weight": 44
+      },
+      {
+        "cent": -147.5,
+        "weight": 33
+      },
+      {
+        "cent": -107.5,
+        "weight": 28
+      },
+      {
+        "cent": -77.5,
+        "weight": 36
+      },
+      {
+        "cent": -27.5,
+        "weight": 115
+      },
+      {
+        "cent": 7.5,
+        "weight": 26
+      },
+      {
+        "cent": 57.5,
+        "weight": 11
+      },
+      {
+        "cent": 92.5,
+        "weight": 81
+      },
+      {
+        "cent": 132.5,
+        "weight": 32
+      },
+      {
+        "cent": 172.5,
+        "weight": 63
+      },
+      {
+        "cent": 217.5,
+        "weight": 94
+      },
+      {
+        "cent": 277.5,
+        "weight": 50
+      },
+      {
+        "cent": 307.5,
+        "weight": 54
+      },
+      {
+        "cent": 337.5,
+        "weight": 35
+      },
+      {
+        "cent": 372.5,
+        "weight": 24
+      },
+      {
+        "cent": 422.5,
+        "weight": 25
+      },
+      {
+        "cent": 467.5,
+        "weight": 34
+      },
+      {
+        "cent": 497.5,
+        "weight": 41
+      },
+      {
+        "cent": 527.5,
+        "weight": 33
+      },
+      {
+        "cent": 562.5,
+        "weight": 26
+      },
+      {
+        "cent": 587.5,
+        "weight": 25
+      }
+    ]
+  },
+  "bayat_kord": {
+    "raw_strikes": 2304,
+    "high_conf_strikes": 1951,
+    "median_hz": 505.7175001576029,
+    "peaks": [
+      {
+        "cent": -507.5,
+        "weight": 19
+      },
+      {
+        "cent": -482.5,
+        "weight": 35
+      },
+      {
+        "cent": -337.5,
+        "weight": 65
+      },
+      {
+        "cent": -217.5,
+        "weight": 20
+      },
+      {
+        "cent": -187.5,
+        "weight": 108
+      },
+      {
+        "cent": -2.5,
+        "weight": 31
+      },
+      {
+        "cent": 22.5,
+        "weight": 89
+      },
+      {
+        "cent": 222.5,
+        "weight": 108
+      },
+      {
+        "cent": 292.5,
+        "weight": 30
+      },
+      {
+        "cent": 517.5,
+        "weight": 26
+      }
+    ]
+  }
+}

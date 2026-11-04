@@ -1,0 +1,44 @@
+{
+  "Zir-e Ist (Re)": {
+    "measured": -141.0,
+    "target": -147.9,
+    "delta": 6.9,
+    "count": 1
+  },
+  "Ist (Mi Koron)": {
+    "measured": -6.9,
+    "target": 0.0,
+    "delta": -6.9,
+    "count": 107
+  },
+  "Zabol (Fa)": {
+    "measured": 141.7,
+    "target": 141.5,
+    "delta": 0.2,
+    "count": 16
+  },
+  "Muyeh (Sol)": {
+    "measured": 355.8,
+    "target": 352.2,
+    "delta": 3.6,
+    "count": 22
+  },
+  "Hesar (La Koron)": {
+    "measured": 490.0,
+    "target": 493.5,
+    "delta": -3.5,
+    "count": 29
+  },
+  "Shahkhatayi (Si flat)": {
+    "measured": 686.3,
+    "target": 697.5,
+    "delta": -11.2,
+    "count": 24
+  },
+  "Mokhalef (Do)": {
+    "measured": 850.8,
+    "target": 850.4,
+    "delta": 0.4,
+    "count": 74
+  }
+}

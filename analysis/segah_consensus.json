@@ -2,12 +2,15 @@
   "dastgah": "Segah",
   "n_masters": 12,
   "total_strikes": 11438,
+  "total_assigned_no_double_count": 8075,
   "consensus": {
     "zir_e_ist_re": {
       "label": "Sub-tonic (Re)",
       "theory_cents": -150.0,
-      "theory_ratio": "12/13 (-138.6c)",
-      "consensus_median": -147.89,
+      "theory_ratio": "11/12 (-150.64c)",
+      "consensus_median_raw": -147.89,
+      "ist_normalized_median": -148.81,
+      "ist_normalized_mean": -153.75,
       "spread_sigma": 25.8,
       "fretted_median": -147.89,
       "fretless_median": -161.37,
@@ -17,19 +20,23 @@
     "ist_tonic": {
       "label": "Ist (Mi Koron)",
       "theory_cents": 0.0,
-      "theory_ratio": "1/1 (0.0c)",
-      "consensus_median": -0.51,
-      "spread_sigma": 4.17,
-      "fretted_median": -0.06,
-      "fretless_median": -0.88,
-      "strikes": 2722,
+      "theory_ratio": "1/1 (0.00c)",
+      "consensus_median_raw": -0.5,
+      "ist_normalized_median": 0.0,
+      "ist_normalized_mean": 0.0,
+      "spread_sigma": 3.93,
+      "fretted_median": -0.33,
+      "fretless_median": -1.07,
+      "strikes": 2321,
       "masters": 12
     },
     "zabol_fa": {
       "label": "Zabol (Fa)",
       "theory_cents": 154.8,
-      "theory_ratio": "13/12 (+138.6c)",
-      "consensus_median": 141.5,
+      "theory_ratio": "88/81 (+143.50c)",
+      "consensus_median_raw": 141.5,
+      "ist_normalized_median": 142.44,
+      "ist_normalized_mean": 140.31,
       "spread_sigma": 11.8,
       "fretted_median": 141.72,
       "fretless_median": 140.45,
@@ -39,10 +46,12 @@
     "muye_sol": {
       "label": "Muye (Sol)",
       "theory_cents": 354.5,
-      "theory_ratio": "27/22 (+354.5c) / 11/9 (+347.4c)",
-      "consensus_median": 352.17,
+      "theory_ratio": "11/9 (+347.41c)",
+      "consensus_median_raw": 352.18,
+      "ist_normalized_median": 352.69,
+      "ist_normalized_mean": 350.03,
       "spread_sigma": 21.44,
-      "fretted_median": 353.34,
+      "fretted_median": 353.35,
       "fretless_median": 346.09,
       "strikes": 1282,
       "masters": 12
@@ -50,19 +59,23 @@
     "hesar_la_k": {
       "label": "Hesar (La Koron)",
       "theory_cents": 498.0,
-      "theory_ratio": "4/3 (+498.0c)",
-      "consensus_median": 493.47,
+      "theory_ratio": "4/3 (+498.04c)",
+      "consensus_median_raw": 493.47,
+      "ist_normalized_median": 494.17,
+      "ist_normalized_mean": 494.83,
       "spread_sigma": 11.55,
       "fretted_median": 495.44,
-      "fretless_median": 486.04,
+      "fretless_median": 486.03,
       "strikes": 796,
       "masters": 11
     },
     "shahkhatayi_si_b": {
       "label": "Shahkhatayi (Si b)",
       "theory_cents": 702.0,
-      "theory_ratio": "3/2 (+702.0c)",
-      "consensus_median": 697.62,
+      "theory_ratio": "121/81 (+694.82c) / 3/2 (+701.96c)",
+      "consensus_median_raw": 697.62,
+      "ist_normalized_median": 700.38,
+      "ist_normalized_mean": 699.01,
       "spread_sigma": 17.58,
       "fretted_median": 697.62,
       "fretless_median": 697.46,
@@ -72,8 +85,10 @@
     "mokhalef_do": {
       "label": "Mokhalef (Do)",
       "theory_cents": 850.0,
-      "theory_ratio": "18/11 (+852.6c) / 3/2 x 13/12 (+840.6c)",
-      "consensus_median": 850.42,
+      "theory_ratio": "44/27 (+845.45c)",
+      "consensus_median_raw": 850.42,
+      "ist_normalized_median": 852.33,
+      "ist_normalized_mean": 851.47,
       "spread_sigma": 23.91,
       "fretted_median": 850.42,
       "fretless_median": 847.97,
@@ -83,8 +98,10 @@
     "octave_ist": {
       "label": "Octave (Mi Koron')",
       "theory_cents": 1200.0,
-      "theory_ratio": "2/1 (+1200.0c)",
-      "consensus_median": 1201.83,
+      "theory_ratio": "2/1 (+1200.00c)",
+      "consensus_median_raw": 1201.83,
+      "ist_normalized_median": 1202.72,
+      "ist_normalized_mean": 1203.42,
       "spread_sigma": 9.04,
       "fretted_median": 1201.64,
       "fretless_median": 1202.02,
@@ -99,40 +116,42 @@
       "fretless": false,
       "ist_hz": 386.1,
       "strikes": 1193,
+      "assigned_strikes": 791,
+      "outside_slot_windows": 402,
       "slots": {
         "zir_e_ist_re": {
-          "median_cents": -177.0134687704514,
-          "sigma": 18.6502391945793,
+          "median_cents": -177.01,
+          "sigma": 18.87,
           "n": 43
         },
         "ist_tonic": {
-          "median_cents": -2.084058717451626,
-          "sigma": 7.445132750305973,
+          "median_cents": -2.08,
+          "sigma": 7.46,
           "n": 269
         },
         "zabol_fa": {
-          "median_cents": 139.37138974339177,
-          "sigma": 10.839964531570011,
+          "median_cents": 139.37,
+          "sigma": 10.89,
           "n": 108
         },
         "muye_sol": {
-          "median_cents": 334.04157932049304,
-          "sigma": 19.57070206059573,
+          "median_cents": 334.04,
+          "sigma": 19.8,
           "n": 43
         },
         "hesar_la_k": {
-          "median_cents": 507.98537276274317,
-          "sigma": 10.425589143304869,
+          "median_cents": 507.99,
+          "sigma": 10.48,
           "n": 100
         },
         "shahkhatayi_si_b": {
-          "median_cents": 693.2973523976129,
-          "sigma": 23.686299824410046,
+          "median_cents": 693.3,
+          "sigma": 23.84,
           "n": 79
         },
         "mokhalef_do": {
-          "median_cents": 838.3712808885109,
-          "sigma": 16.321240447866728,
+          "median_cents": 838.37,
+          "sigma": 16.38,
           "n": 149
         },
         "octave_ist": null
@@ -144,36 +163,38 @@
       "fretless": false,
       "ist_hz": 307.6,
       "strikes": 290,
+      "assigned_strikes": 287,
+      "outside_slot_windows": 3,
       "slots": {
         "zir_e_ist_re": {
-          "median_cents": -141.06316828022392,
-          "sigma": 5.921258520545473,
+          "median_cents": -141.06,
+          "sigma": 6.14,
           "n": 14
         },
         "ist_tonic": {
-          "median_cents": -1.9070191118472621,
-          "sigma": 3.3041356590533986,
+          "median_cents": -1.91,
+          "sigma": 3.32,
           "n": 135
         },
         "zabol_fa": null,
         "muye_sol": {
-          "median_cents": 356.1388867016383,
-          "sigma": 22.543503545502762,
+          "median_cents": 356.14,
+          "sigma": 23.24,
           "n": 17
         },
         "hesar_la_k": {
-          "median_cents": 492.262254866332,
-          "sigma": 6.470796592142002,
+          "median_cents": 492.26,
+          "sigma": 6.57,
           "n": 35
         },
         "shahkhatayi_si_b": {
-          "median_cents": 697.7548315005424,
-          "sigma": 5.409184379780748,
+          "median_cents": 697.75,
+          "sigma": 5.47,
           "n": 42
         },
         "mokhalef_do": {
-          "median_cents": 850.4222616835334,
-          "sigma": 4.643067950289971,
+          "median_cents": 850.42,
+          "sigma": 4.71,
           "n": 37
         },
         "octave_ist": null
@@ -185,45 +206,47 @@
       "fretless": true,
       "ist_hz": 184.7,
       "strikes": 910,
+      "assigned_strikes": 617,
+      "outside_slot_windows": 293,
       "slots": {
         "zir_e_ist_re": {
-          "median_cents": -191.38711069812157,
-          "sigma": 15.44078065985901,
+          "median_cents": -191.39,
+          "sigma": 15.76,
           "n": 25
         },
         "ist_tonic": {
-          "median_cents": -1.6712478064707739,
-          "sigma": 14.155537873892875,
-          "n": 232
+          "median_cents": -2.06,
+          "sigma": 14.46,
+          "n": 215
         },
         "zabol_fa": {
-          "median_cents": 133.0971145911165,
-          "sigma": 15.071267240544167,
+          "median_cents": 133.1,
+          "sigma": 15.18,
           "n": 72
         },
         "muye_sol": {
-          "median_cents": 325.4117214489484,
-          "sigma": 14.204794890059468,
+          "median_cents": 325.41,
+          "sigma": 14.36,
           "n": 48
         },
         "hesar_la_k": {
-          "median_cents": 478.56528654061543,
-          "sigma": 14.345793223653299,
+          "median_cents": 478.57,
+          "sigma": 14.43,
           "n": 90
         },
         "shahkhatayi_si_b": {
-          "median_cents": 719.4016374948528,
-          "sigma": 22.7270016838222,
+          "median_cents": 719.4,
+          "sigma": 23.84,
           "n": 11
         },
         "mokhalef_do": {
-          "median_cents": 837.6049813017371,
-          "sigma": 21.06800163589122,
+          "median_cents": 837.6,
+          "sigma": 21.14,
           "n": 139
         },
         "octave_ist": {
-          "median_cents": 1202.0160051413088,
-          "sigma": 9.641361277437083,
+          "median_cents": 1202.02,
+          "sigma": 9.94,
           "n": 17
         }
       }
@@ -234,45 +257,47 @@
       "fretless": false,
       "ist_hz": 205.9,
       "strikes": 1121,
+      "assigned_strikes": 1035,
+      "outside_slot_windows": 86,
       "slots": {
         "zir_e_ist_re": {
-          "median_cents": -138.83588042346295,
-          "sigma": 8.71725375565585,
+          "median_cents": -138.84,
+          "sigma": 8.99,
           "n": 17
         },
         "ist_tonic": {
-          "median_cents": 3.1275014365158995,
-          "sigma": 5.004990779267192,
-          "n": 322
+          "median_cents": 4.26,
+          "sigma": 4.73,
+          "n": 174
         },
         "zabol_fa": {
-          "median_cents": 144.07374814068243,
-          "sigma": 8.184505050412314,
+          "median_cents": 144.07,
+          "sigma": 8.21,
           "n": 174
         },
         "muye_sol": {
-          "median_cents": 356.08829104018264,
-          "sigma": 5.386041501823705,
+          "median_cents": 356.09,
+          "sigma": 5.4,
           "n": 241
         },
         "hesar_la_k": {
-          "median_cents": 495.43502459408126,
-          "sigma": 7.231381743855592,
+          "median_cents": 495.44,
+          "sigma": 7.26,
           "n": 109
         },
         "shahkhatayi_si_b": {
-          "median_cents": 705.3655001168435,
-          "sigma": 6.073532371994843,
+          "median_cents": 705.37,
+          "sigma": 6.12,
           "n": 72
         },
         "mokhalef_do": {
-          "median_cents": 855.9306223677637,
-          "sigma": 7.745061946234726,
+          "median_cents": 855.93,
+          "sigma": 7.78,
           "n": 100
         },
         "octave_ist": {
-          "median_cents": 1201.6413387628966,
-          "sigma": 4.933272019329316,
+          "median_cents": 1201.64,
+          "sigma": 4.95,
           "n": 148
         }
       }
@@ -283,45 +308,47 @@
       "fretless": true,
       "ist_hz": 320.3,
       "strikes": 1761,
+      "assigned_strikes": 934,
+      "outside_slot_windows": 827,
       "slots": {
         "zir_e_ist_re": {
-          "median_cents": -129.15117588050663,
-          "sigma": 19.149783072625937,
+          "median_cents": -129.15,
+          "sigma": 19.56,
           "n": 24
         },
         "ist_tonic": {
-          "median_cents": 4.499844661473901,
-          "sigma": 12.979425447316935,
-          "n": 310
+          "median_cents": -0.08,
+          "sigma": 11.8,
+          "n": 212
         },
         "zabol_fa": {
-          "median_cents": 145.29354596968034,
-          "sigma": 24.1328261397585,
+          "median_cents": 145.29,
+          "sigma": 24.21,
           "n": 153
         },
         "muye_sol": {
-          "median_cents": 367.1548280272415,
-          "sigma": 23.257011014154557,
+          "median_cents": 367.15,
+          "sigma": 23.3,
           "n": 245
         },
         "hesar_la_k": {
-          "median_cents": 493.1831843374217,
-          "sigma": 23.887706301985183,
+          "median_cents": 493.18,
+          "sigma": 24.21,
           "n": 38
         },
         "shahkhatayi_si_b": {
-          "median_cents": 705.7622212983404,
-          "sigma": 22.856030048123497,
+          "median_cents": 705.76,
+          "sigma": 23.33,
           "n": 25
         },
         "mokhalef_do": {
-          "median_cents": 874.4347048113538,
-          "sigma": 27.08850150773212,
+          "median_cents": 874.43,
+          "sigma": 27.19,
           "n": 139
         },
         "octave_ist": {
-          "median_cents": 1214.6083397904824,
-          "sigma": 10.196289998674136,
+          "median_cents": 1214.61,
+          "sigma": 10.25,
           "n": 98
         }
       }
@@ -332,45 +359,47 @@
       "fretless": true,
       "ist_hz": 163.5,
       "strikes": 558,
+      "assigned_strikes": 505,
+      "outside_slot_windows": 53,
       "slots": {
         "zir_e_ist_re": {
-          "median_cents": -177.74907461510634,
-          "sigma": 13.205863003938438,
+          "median_cents": -177.75,
+          "sigma": 13.37,
           "n": 41
         },
         "ist_tonic": {
-          "median_cents": -8.658338223264423,
-          "sigma": 10.155178171682577,
-          "n": 200
+          "median_cents": -8.5,
+          "sigma": 10.38,
+          "n": 191
         },
         "zabol_fa": {
-          "median_cents": 137.2804753005272,
-          "sigma": 17.61873295031247,
+          "median_cents": 137.28,
+          "sigma": 17.76,
           "n": 62
         },
         "muye_sol": {
-          "median_cents": 338.42214293045834,
-          "sigma": 11.113779431712784,
+          "median_cents": 338.42,
+          "sigma": 11.17,
           "n": 104
         },
         "hesar_la_k": {
-          "median_cents": 478.89302601023155,
-          "sigma": 17.029342085251574,
+          "median_cents": 478.89,
+          "sigma": 17.3,
           "n": 32
         },
         "shahkhatayi_si_b": {
-          "median_cents": 689.1556511307174,
-          "sigma": 23.29589315823625,
+          "median_cents": 689.16,
+          "sigma": 24.33,
           "n": 12
         },
         "mokhalef_do": {
-          "median_cents": 825.9994189821668,
-          "sigma": 16.901628672166105,
+          "median_cents": 826.0,
+          "sigma": 17.06,
           "n": 54
         },
         "octave_ist": {
-          "median_cents": 1190.0330342213756,
-          "sigma": 3.9496821348143984,
+          "median_cents": 1190.03,
+          "sigma": 4.19,
           "n": 9
         }
       }
@@ -381,45 +410,47 @@
       "fretless": false,
       "ist_hz": 273.7,
       "strikes": 894,
+      "assigned_strikes": 587,
+      "outside_slot_windows": 307,
       "slots": {
         "zir_e_ist_re": {
-          "median_cents": -191.95023423282026,
-          "sigma": 8.710087763156428,
+          "median_cents": -191.95,
+          "sigma": 8.83,
           "n": 36
         },
         "ist_tonic": {
-          "median_cents": 5.671052584402332,
-          "sigma": 10.992492526193372,
-          "n": 244
+          "median_cents": 5.15,
+          "sigma": 10.49,
+          "n": 163
         },
         "zabol_fa": {
-          "median_cents": 125.0691445236053,
-          "sigma": 12.483688164757746,
+          "median_cents": 125.07,
+          "sigma": 12.59,
           "n": 61
         },
         "muye_sol": {
-          "median_cents": 313.2567049539957,
-          "sigma": 4.511964821169609,
+          "median_cents": 313.26,
+          "sigma": 4.53,
           "n": 99
         },
         "hesar_la_k": {
-          "median_cents": 508.4157091036855,
-          "sigma": 17.471499449238777,
+          "median_cents": 508.42,
+          "sigma": 17.61,
           "n": 62
         },
         "shahkhatayi_si_b": {
-          "median_cents": 669.976774528003,
-          "sigma": 14.451024809588514,
+          "median_cents": 669.98,
+          "sigma": 15.23,
           "n": 10
         },
         "mokhalef_do": {
-          "median_cents": 807.1304883798105,
-          "sigma": 28.2253956652605,
+          "median_cents": 807.13,
+          "sigma": 28.42,
           "n": 75
         },
         "octave_ist": {
-          "median_cents": 1209.620720643676,
-          "sigma": 11.47169994466691,
+          "median_cents": 1209.62,
+          "sigma": 11.54,
           "n": 81
         }
       }
@@ -430,40 +461,42 @@
       "fretless": true,
       "ist_hz": 358.5,
       "strikes": 1012,
+      "assigned_strikes": 887,
+      "outside_slot_windows": 125,
       "slots": {
         "zir_e_ist_re": {
-          "median_cents": -144.98262783422592,
-          "sigma": 17.143721025995777,
+          "median_cents": -144.98,
+          "sigma": 17.2,
           "n": 152
         },
         "ist_tonic": {
-          "median_cents": -0.09743959586694473,
-          "sigma": 9.786571124075836,
-          "n": 137
+          "median_cents": 0.19,
+          "sigma": 9.58,
+          "n": 132
         },
         "zabol_fa": {
-          "median_cents": 143.62606220838302,
-          "sigma": 17.566252049358894,
+          "median_cents": 143.63,
+          "sigma": 17.61,
           "n": 190
         },
         "muye_sol": {
-          "median_cents": 353.7487907471676,
-          "sigma": 9.758858440778218,
+          "median_cents": 353.75,
+          "sigma": 9.84,
           "n": 64
         },
         "hesar_la_k": {
-          "median_cents": 507.1931506490423,
-          "sigma": 10.671443895060966,
+          "median_cents": 507.19,
+          "sigma": 10.72,
           "n": 123
         },
         "shahkhatayi_si_b": {
-          "median_cents": 687.4129312660651,
-          "sigma": 21.979499143617048,
+          "median_cents": 687.41,
+          "sigma": 22.05,
           "n": 168
         },
         "mokhalef_do": {
-          "median_cents": 858.3261189280067,
-          "sigma": 16.22623622756202,
+          "median_cents": 858.33,
+          "sigma": 16.38,
           "n": 53
         },
         "octave_ist": null
@@ -475,40 +508,42 @@
       "fretless": false,
       "ist_hz": 261.0,
       "strikes": 1133,
+      "assigned_strikes": 439,
+      "outside_slot_windows": 694,
       "slots": {
         "zir_e_ist_re": {
-          "median_cents": -107.1628951034939,
-          "sigma": 20.677933011175707,
+          "median_cents": -107.16,
+          "sigma": 20.95,
           "n": 39
         },
         "ist_tonic": {
-          "median_cents": 0.8083954083776916,
-          "sigma": 13.214166280866028,
-          "n": 131
+          "median_cents": 0.27,
+          "sigma": 12.83,
+          "n": 128
         },
         "zabol_fa": {
-          "median_cents": 117.1987509742927,
-          "sigma": 23.412016011923967,
+          "median_cents": 117.2,
+          "sigma": 24.68,
           "n": 10
         },
         "muye_sol": {
-          "median_cents": 396.30189756410414,
-          "sigma": 10.60363917214521,
+          "median_cents": 396.3,
+          "sigma": 10.64,
           "n": 134
         },
         "hesar_la_k": {
-          "median_cents": 477.6580044983091,
-          "sigma": 13.604572672204794,
+          "median_cents": 477.66,
+          "sigma": 13.86,
           "n": 27
         },
         "shahkhatayi_si_b": {
-          "median_cents": 732.3257551097984,
-          "sigma": 30.851976121961368,
+          "median_cents": 732.33,
+          "sigma": 31.58,
           "n": 22
         },
         "mokhalef_do": {
-          "median_cents": 896.3486435058162,
-          "sigma": 21.49662489625821,
+          "median_cents": 896.35,
+          "sigma": 21.64,
           "n": 76
         },
         "octave_ist": null
@@ -520,40 +555,42 @@
       "fretless": false,
       "ist_hz": 470.9,
       "strikes": 1544,
+      "assigned_strikes": 1155,
+      "outside_slot_windows": 389,
       "slots": {
         "zir_e_ist_re": {
-          "median_cents": -148.28851051038077,
-          "sigma": 8.919131624981146,
+          "median_cents": -148.29,
+          "sigma": 9.0,
           "n": 58
         },
         "ist_tonic": {
-          "median_cents": -0.9243588898305006,
-          "sigma": 4.512665297705942,
+          "median_cents": -0.92,
+          "sigma": 4.52,
           "n": 342
         },
         "zabol_fa": {
-          "median_cents": 156.22822501582215,
-          "sigma": 14.929385926988385,
+          "median_cents": 156.23,
+          "sigma": 14.97,
           "n": 170
         },
         "muye_sol": {
-          "median_cents": 359.8611379949294,
-          "sigma": 15.976355238656524,
+          "median_cents": 359.86,
+          "sigma": 16.03,
           "n": 164
         },
         "hesar_la_k": {
-          "median_cents": 498.11869800282807,
-          "sigma": 14.428749498232674,
+          "median_cents": 498.12,
+          "sigma": 14.48,
           "n": 147
         },
         "shahkhatayi_si_b": {
-          "median_cents": 674.0681821555436,
-          "sigma": 15.514414577149337,
+          "median_cents": 674.07,
+          "sigma": 15.56,
           "n": 179
         },
         "mokhalef_do": {
-          "median_cents": 862.6193868814848,
-          "sigma": 21.39878891290255,
+          "median_cents": 862.62,
+          "sigma": 21.51,
           "n": 95
         },
         "octave_ist": null
@@ -565,45 +602,47 @@
       "fretless": false,
       "ist_hz": 320.3,
       "strikes": 912,
+      "assigned_strikes": 778,
+      "outside_slot_windows": 134,
       "slots": {
         "zir_e_ist_re": {
-          "median_cents": -159.17752115902275,
-          "sigma": 15.570585916502356,
+          "median_cents": -159.18,
+          "sigma": 15.68,
           "n": 69
         },
         "ist_tonic": {
-          "median_cents": -6.024522491911682,
-          "sigma": 7.245764365908981,
-          "n": 368
+          "median_cents": -6.29,
+          "sigma": 7.52,
+          "n": 328
         },
         "zabol_fa": {
-          "median_cents": 151.78009109903297,
-          "sigma": 17.688822705045926,
+          "median_cents": 151.78,
+          "sigma": 17.84,
           "n": 58
         },
         "muye_sol": {
-          "median_cents": 350.5959113410275,
-          "sigma": 11.571803807927099,
+          "median_cents": 350.6,
+          "sigma": 11.63,
           "n": 108
         },
         "hesar_la_k": {
-          "median_cents": 493.4675576148461,
-          "sigma": 8.823860860136179,
+          "median_cents": 493.47,
+          "sigma": 8.96,
           "n": 33
         },
         "shahkhatayi_si_b": {
-          "median_cents": 697.4757280045493,
-          "sigma": 13.251281171834176,
+          "median_cents": 697.48,
+          "sigma": 13.33,
           "n": 83
         },
         "mokhalef_do": {
-          "median_cents": 847.0376377103789,
-          "sigma": 22.202847635305492,
+          "median_cents": 847.04,
+          "sigma": 22.39,
           "n": 59
         },
         "octave_ist": {
-          "median_cents": 1195.0707895862643,
-          "sigma": 4.149916847712937,
+          "median_cents": 1195.07,
+          "sigma": 4.2,
           "n": 40
         }
       }
@@ -614,27 +653,29 @@
       "fretless": false,
       "ist_hz": 462.4,
       "strikes": 110,
+      "assigned_strikes": 79,
+      "outside_slot_windows": 31,
       "slots": {
         "zir_e_ist_re": {
-          "median_cents": -147.49980617633332,
-          "sigma": 9.665112770718558,
+          "median_cents": -147.5,
+          "sigma": 9.95,
           "n": 18
         },
         "ist_tonic": {
-          "median_cents": 2.7393688725229026,
-          "sigma": 6.127623212930022,
+          "median_cents": 2.74,
+          "sigma": 6.23,
           "n": 32
         },
         "zabol_fa": null,
         "muye_sol": {
-          "median_cents": 340.14301598895247,
-          "sigma": 9.175837153414747,
+          "median_cents": 340.14,
+          "sigma": 9.5,
           "n": 15
         },
         "hesar_la_k": null,
         "shahkhatayi_si_b": {
-          "median_cents": 706.895692687222,
-          "sigma": 3.8611904990294175,
+          "median_cents": 706.9,
+          "sigma": 4.07,
           "n": 10
         },
         "mokhalef_do": null,

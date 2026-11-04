@@ -1,0 +1,33 @@
+{
+  "Epoch 1: Early Qajar Shellac (1906\u20131920)": {
+    "raw_strikes": 34962,
+    "high_conf_strikes": 25068,
+    "median_hz": 400.79,
+    "files": [
+      "strikes_historical_epoch1_qajar_aqa_hoseyn_qoli.npz",
+      "strikes_historical_epoch1_qajar_darvish_khan.npz",
+      "strikes_historical_epoch1_qajar_tar_anthology.npz"
+    ]
+  },
+  "Epoch 2: Mid-Century Masters (1950s\u20131970s)": {
+    "raw_strikes": 16129,
+    "high_conf_strikes": 13298,
+    "median_hz": 292.64,
+    "files": [
+      "strikes_historical_epoch2_mid_foroutan_setar.npz",
+      "strikes_historical_epoch2_mid_hormozi_tar_setar.npz",
+      "strikes_historical_epoch2_mid_saba_setar.npz",
+      "strikes_historical_epoch2_mid_century_setar.npz"
+    ]
+  },
+  "Epoch 3: Antiquity Reconstructions & Modern Masters (1980s\u2013Present)": {
+    "raw_strikes": 18166,
+    "high_conf_strikes": 15397,
+    "median_hz": 332.55,
+    "files": [
+      "strikes_historical_epoch3_panjgah_antiquity.npz",
+      "strikes_historical_epoch3_shahnavaz_anthology.npz",
+      "strikes_historical_epoch3_century_tar_anthology.npz"
+    ]
+  }
+}
